@@ -1,0 +1,16 @@
+.skill-info{
+	color: red;
+}
+.skill-info-box-desc{
+}
+.skill-info-box-img{
+	display: inline;
+	vertical-align: -4px;
+	height: 25px;
+	width: 25px;
+	margin-right: 6px;
+}
+.skill-info-box-title{
+	font-weight: bold;
+	font-size: 25px;
+}

@@ -1,6 +1,74 @@
-<HTML>
-    <head>
-        <title> test </title>
-        sd
-    </head>
-</HTML>
+<html>
+
+	<head>
+		<title>우마무스메 HELPER</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=0.7, user-scalable=no, maximum-scale=0.7, width=device-width" />
+		<link rel="icon" href="./imgs/icon/icon.png">
+		<link rel="stylesheet" href="./css/main.css">
+		<link rel="stylesheet" href="./css/content.css">
+		<link rel="stylesheet" href="./css/highlight.css">
+		<link rel="stylesheet" href="./css/skill.css">
+		<link rel="stylesheet" href="./css/scenarioCondition.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<div class="blank"></div>
+			<div class="search-box">
+				<div>
+					<h1>우마무스메 HELPER</h1>
+					<span class="help">?</span>
+					<span class="open-setting"></span>
+					<div class="setting">
+						<span>아이템 표시 개수</span>
+						<input type="text" class="itemNumInput">
+						<div class="chkbox-container">
+							<label style="margin-right: 10px;" title="키워드가 많이 검색된 항목을 상단에 배치합니다."><input type="checkbox" id="chkbox-toggle-accumulation" class="chkbox">검색량 누적</label><br>
+							<label style="margin-right: 10px;" title="내용을 검색 대상에 포함합니다."><input type="checkbox" id="chkbox-search-desc" class="chkbox">내용도 검색</label><br>
+							<label style="margin-right: 10px;" title="검색어를 하이라이팅합니다."><input checked type="checkbox" id="chkbox-toggle-highlight" class="chkbox">하이라이트</label><br>
+							<label style="margin-right: 10px;" title="모든 키워드가 필수검색어가 됩니다."><input checked type="checkbox" id="chkbox-toggle-essential" class="chkbox">모두 필수검색어</label><br>
+							<label style="margin-right: 10px;" title="페이지로 되돌아왔을 때 자동으로 검색어를 지웁니다."><input checked type="checkbox" id="chkbox-toggle-auto-clear" class="chkbox">검색어 자동 지우기</label>
+						</div>
+					</div>
+					<span class="zoom-btn" onclick="zoomOut();">-</span>
+					<span class="zoom-value">100%</span>
+					<span class="zoom-btn" onclick="zoomIn();">+</span>
+				</div>
+				<div>
+					<div>
+						<select name="subjects" id="select-subject" onchange="search();">
+							<option value="all">전체</option>
+							<option value="chara">말딸</option>
+							<option value="skill">스킬</option>
+							<option value="event">커뮤</option>
+							<option value="tip">TIP</option>
+						</select>
+						<input type="search" id="value" placeholder="심볼리 루돌프 어록">
+					</div>
+				</div>
+			</div>
+			<div class="content">
+			</div>
+		</div>
+		<div class="info-box"></div>
+
+		<script src="./js/mark.min.js"></script>
+
+		<script src="./js/search.js"></script>
+		<script src="./js/createItem.js"></script>
+
+		<script src="./js/items/scenarioConditions.js"></script>
+		<script src="./js/items/strings.js"></script>
+		<script src="./js/items/skills.js"></script>
+		<script src="./js/items/userItems.js"></script>
+		<script src="./js/items/scenarioEvents.js"></script>
+		<script src="./js/items/characterEvents.js"></script>
+		<script src="./js/items/supportEvents.js"></script>
+
+		<script src="./js/main.js"></script>
+	</body>
+</html>
+		

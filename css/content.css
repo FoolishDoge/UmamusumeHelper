@@ -1,0 +1,183 @@
+.content{
+	background: #FFF2F2;
+	padding: 1%;
+	margin-top: 5px;
+}
+.item{
+	margin-top: 7px;
+	margin-right: 4px;
+	margin-left: 4px;
+	margin-bottom: 7px;
+	display: block;
+	align-items: center;
+	background: #ffffff;
+	padding: 1px;
+	border-radius: 12px;
+}
+summary{
+	cursor: pointer;
+}
+summary::marker{
+	display: none;
+	content: "";
+}
+details[open] summary::marker {
+	display: none;
+	content: "";
+}
+
+.title{
+	font-size: 20px;
+	font-weight: 470;
+	color: #333;
+	padding: 11px;
+}
+.title-img{
+	display: inline;
+	float: left;
+	height: 25px;
+	width: 25px;
+	border-radius: 20%;
+	border: 1px solid pink;
+	margin-right: 6px;
+}
+
+.icon{
+	display: block;
+	float: left;
+	width: 25px;
+	height: 25px;
+	background: #EF9F9F;
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	line-height: 25px;
+	border-radius: 50%;
+	margin-right: 8px;
+	font-weight: bold;
+}
+.icon-expired{
+	display: block;
+	float: left;
+	width: 25px;
+	height: 25px;
+	background: #808080;
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	line-height: 25px;
+	border-radius: 50%;
+	margin-right: 8px;
+	font-weight: bold;
+}
+.desc{
+	font-size: 16px;
+	display: block;
+	margin-top: 8px;
+	margin-left: 40px;
+	margin-right: 10px;
+}
+.desc-img{
+	display: block;
+	max-width: 300px;
+	max-height: 300px;
+	margin-bottom: 10px;
+}
+.card-img{
+	max-width: 100px;
+	max-height: 100px;
+}
+.desc:before{
+}
+
+.desc-bottom{
+	color: #808080;
+	font-size: 10px;
+	text-align: right;
+	margin-right: 6px;
+	margin-bottom: 4px;
+	margin-top: 6px;
+}
+
+.desc-table{
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+.td-label{
+	border: 2px solid pink;
+	background-color: #FFF2F2;
+	border-radius: 5px;
+	padding: 5px;
+}
+.td-desc{
+	border: 2px solid pink;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	padding: 5px;
+}
+.td-invalid{
+	border: 2px solid pink;
+	background-color: #cccccc;
+	border-radius: 5px;
+	padding: 5px;
+}
+.td-blank{
+	border: none;
+	width: 20px;
+}
+.font-small{
+	font-size: 10px;
+}
+.align-left{
+	text-align: left;
+}
+
+.nothing-here{
+	margin: 12px;
+	text-align: center;
+}
+
+.highlight {
+	background-color: lightyellow;
+}
+
+
+
+
+
+
+.title-outline-blue{
+	text-shadow: -1px 0 blue, 0 1px blue, 1px 0 blue, 0 -1px blue;
+}
+.title-outline-red{
+	text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
+}
+.title-grey{
+	color: grey;
+}
+.title-red{
+	color: red;
+}
+.title-bold{
+	font-weight: bold;
+}
+.title-vibration:hover{
+	position: relative;
+	animation: title-vibration-animation .05s infinite;
+}
+@keyframes title-vibration-animation{
+	from{ left: -2px } to{ left: 2px }
+}
+.title-background-lightyellow{
+	background-color: lightyellow;
+}
+
+
+.title-card-name{
+	color: #EF9F9F;
+}
+.title-chara-name{
+	color: #EF9F9F;
+}

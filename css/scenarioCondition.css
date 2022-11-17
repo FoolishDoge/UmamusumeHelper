@@ -1,0 +1,36 @@
+.scenario-condition-bad{
+	display:inline-block;
+	padding-top:5px;
+	text-align:center;
+	font-size:15px;
+	background:linear-gradient(130deg, rgba(71,150,239,.5) 0% 25%, rgba(47, 133, 236,.5) 25% 75%, rgba(71,150,239,.5) 75% 100%), linear-gradient(60deg, rgb(71, 150, 239) 0% 20%, rgb(47, 133, 236) 20% 75%, rgb(71, 150, 239) 75% 100%);
+	border-radius:22px;
+	color:#fff;
+	font-weight:200;
+	width:200px;
+	height:35px;
+	font-size:20px;
+}
+.scenario-condition-good{
+	display:inline-block;
+	padding-top:5px;
+	text-align:center;
+	font-size:15px;
+	background:linear-gradient(130deg, rgba(255, 181, 63,.5) 0% 25%, rgba(255, 157, 33,.5) 25% 75%, rgba(255, 181, 63,.5) 75% 100%), linear-gradient(60deg, rgb(255, 181, 63) 0% 20%, rgb(255, 157, 33) 20% 75%, rgb(266, 181, 63) 75% 100%);
+	border-radius:22px;
+	color:#fff;
+	font-weight:200;
+	width:200px;
+	height:35px;
+	font-size:20px;
+}
+
+.condition-info{
+	color: blue;
+}
+.condition-info-box-desc{
+}
+.condition-info-box-img{
+}
+.condition-info-box-title{
+}
