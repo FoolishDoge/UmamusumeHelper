@@ -13,6 +13,9 @@ function subjectFinder(type){
 		case "tip":
 			icon = "T";
 			break;
+		case "race":
+			icon = "R";
+			break;
 		default:
 			icon = "?";
 			break;
@@ -43,6 +46,9 @@ function createItem(item){
 		case "tip":
 			inner = createTipItem(inner, item);
 			break;
+		case "race":
+			inner = createRaceItem(inner, item);
+			break;
 	}
 	
 	inner += `</div><div class="desc-bottom" title="ID: ${item['id']}">작성기준일: `;
@@ -56,7 +62,6 @@ function createItem(item){
 	e.innerHTML = inner;
 	content.appendChild(e);
 }
-
 
 function createCharaItem(inner, item){
 	inner =  `<details id="${item['id']}"><summary class="title">`
@@ -143,7 +148,6 @@ function createCharaItem(inner, item){
 	
 	return inner;
 }
-
 
 function createEventItem(inner, item){
 	inner =  `<details id="${item['id']}"><summary class="title">`
@@ -245,8 +249,6 @@ function createSkillItem(inner, item){
 	return inner;
 }
 
-
-
 function createTipItem(inner, item){
 	inner =  `<details id="${item['id']}"><summary class="title">`
 		+ subjectFinder(item['type']);
@@ -260,6 +262,39 @@ function createTipItem(inner, item){
 		inner += `<img src="${imgUrl}" class="desc-img">`;
 	}
 	inner += `${item['desc']}`;
+	
+	return inner;
+}
+
+function createRaceItem(inner, item){
+	inner =  `<details id="${item['id']}"><summary class="title">`
+		+ subjectFinder(item['type']);
+	inner += `<span class="${item['titleStyle']}">[${item['raceGrade']}] ${item['title']} (${item['raceDate']})</span></summary><div class='desc'>`;
+	if(item['descImg']){
+		let imgUrl = "./imgs/desc/" + item['descImg'];
+		inner += `<img src="${imgUrl}" class="desc-img">`;
+	}
+
+	inner += `<table class="desc-table"><tr><td class="td-label" colspan="2">${item['title']}</td></tr>`;
+	if(item['raceDate']){
+		inner += `<tr><td class="td-label">시기</td><td class="td-desc">${item['raceDate']}</td></tr>`;
+	}
+	if(item['raceBasic']){
+		inner += `<tr><td class="td-label">비고</td><td class="td-desc">${item['raceBasic']}</td></tr>`;
+	}
+	if(item['raceNumber']){
+		inner += `<tr><td class="td-label">인원</td><td class="td-desc">${item['raceNumber']}</td></tr>`;
+	}
+	if(item['raceCondition']){
+		inner += `<tr><td class="td-label">조건</td><td class="td-desc">${item['raceCondition']}</td></tr>`;
+	}
+	if(item['raceFan']){
+		inner += `<tr><td class="td-label">획득<br>팬수</td><td class="td-desc">${item['raceFan']}</td></tr>`;
+	}
+	if(item['comment']){
+		inner += `<tr><td class="td-label">코멘트</td><td class="td-desc">${item['comment']}</td></tr>`;
+	}
+	inner += `</table>`;
 	
 	return inner;
 }

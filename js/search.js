@@ -1,11 +1,9 @@
 function search(){
 	let searchValue = document.querySelector("#value").value.toLowerCase();
-	let toggleHighlight = document.querySelector("#chkbox-toggle-highlight");
 	let toggleAccumulation = document.querySelector("#chkbox-toggle-accumulation");
 	let toggleEssential = document.querySelector("#chkbox-toggle-essential");
 	let searchDesc = document.querySelector("#chkbox-search-desc");
 	let keywords = searchValue.split(" ");
-	let totalScore = 0;
 	
 	keywords = keywords.filter(function(e){
 		return e != '';
@@ -18,7 +16,7 @@ function search(){
 			continue;
 		}
 		if( keywords == false ){ // show everything if value is empty.
-			if(items[i]['type'] == 'chara' || items[i]['type'] == 'tip'){ // hide skill, event content for reducing load weight.
+			if(items[i]['type'] == 'chara' || items[i]['type'] == 'tip'){ // hide skill, event, race content for reducing load weight.
 				items[i]['score'] = 1;
 			} else if(subjectBool == 2){ // In case of skill and event item, it only be shown when subject is correct.
 				items[i]['score'] = 1;
@@ -76,6 +74,11 @@ function filter(item, keyword, isEssential, toggleAcc, toggleEss, searchDesc){
 		if(searchDesc){
 			searchTarget += `${item['desc']}`;
 		}
+	} else if(item['type'] == "race"){
+		searchTarget += `${item['raceGrade']} ${item['title']} ${item['hiddenTag']} ${item['raceDate']}`.toLowerCase();
+		if(searchDesc){
+			searchTarget += `${item['raceBasic']} ${item['comment']}`;
+		}
 	}
 	searchTarget = searchTarget.replace(/(<([^>]+)>)/gi, " ");
 	
@@ -115,6 +118,7 @@ function isCorrectSubject(item){
 		return 1;
 	} else if(optionValue == item['type']){
 		return 2;
+	} else{
+		return false;
 	}
-	return false;
 }
