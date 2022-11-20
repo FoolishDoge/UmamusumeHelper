@@ -428,3 +428,37 @@ const TIP12_DESC = `
 <br>
 결론: 최소한 URA시나리오에서 만큼은 타즈나는 0티어 서폿이 맞다. 컨디션 기복이 심한 말딸한테는 -1티어 서폿이다.
 `;
+
+const TIP14_DESC = `
+[기본 정보]<br>
+- 한신 / 잔디 / 2200m(중거리) / 우, 내측 / 여름 / 맑음 / 양호<br>
+- 타카라즈카 경기장과 동일한 조건<br>
+- 중반코너가속기 매우 효과적: 세이운 스카이의 <span class="skill-info">[일반] 앵글링×스키밍</span>, 메지로 라이언의 <span class="skill-info">[일반] 레츠 아나볼릭!</span> 채용.<br>
+- 최종코너가속기 효과적: 마루젠스키의 <span class="skill-info">[일반] 홍염 기어/LP1211-M</span>, 타이키 셔틀의 <span class="skill-info">[일반] 빅토리 샷!</span> 추천.<br>
+- 최종코너속도기 무효.<br>
+- 오르막은 꽤 있지만 내리막은 없다: 내리막에서 발동하는 스킬 배우지 않도록 주의.<br>
+<br><br>
+[필요 스태미나 예상치]
+<table class="desc-table"><tr>
+<td class="td-label">힐스킬</td><td class="td-label">없음</td><td class="td-label">은딱1</td><td class="td-label">은딱2</td><td class="td-label">금딱1</td><td class="td-label">금딱1은딱1</td><td class="td-label">금딱1은딱2</td></tr><tr>
+<td class="td-label">도주</td><td class="td-desc">840</td><td class="td-desc">785</td><td class="td-desc">732</td><td class="td-desc">646</td><td class="td-desc">596</td><td class="td-desc">548</td></tr><tr>
+<td class="td-label">선행</td><td class="td-desc">970</td><td class="td-desc">911</td><td class="td-desc">852</td><td class="td-desc">759</td><td class="td-desc">705</td><td class="td-desc">652</td></tr><tr>
+<td class="td-label">선입</td><td class="td-desc">910</td><td class="td-desc">856</td><td class="td-desc">804</td><td class="td-desc">720</td><td class="td-desc">671</td><td class="td-desc">624</td></tr><tr>
+<td class="td-label">추입</td><td class="td-desc">930</td><td class="td-desc">876</td><td class="td-desc">823</td><td class="td-desc">738</td><td class="td-desc">689</td><td class="td-desc">641</td></tr></table>
+※ 근성300, 디버프 없음 가정(일반 디버프 -38, 레어 디버프 -113)<br>
+<br><br>
+[추천 육성마]
+<table class="desc-table">
+<tr><td class="td-label">도주<br>마루젠스키(수영복)</td><td class="td-desc">- 중반 고유기 발동으로 상대 세이운 스카이(또는 <span class="skill-info">[일반] 앵글링×스키밍</span> 계승받은 도주마) 방해, 본인이 계승받은 <span class="skill-info">[일반] 앵글링×스키밍</span>으로 선두를 확정짓는 메타</td></tr>
+<tr><td class="td-label">도주<br>세이운 스카이</td><td class="td-desc">- 가속 고유기 효율 최고<br>- 다만 긴 종반 속도기 부재가 불안</td></tr>
+<tr><td class="td-label">선행<br>오구리 캡</td><td class="td-desc">- 먹보 내장, 성장 보정치 우수<br>- 최종 경합에 강한 고유기</td></tr>
+<tr><td class="td-label">선행<br>타이키 셔틀</td><td class="td-desc">- 고유 가속기가 스퍼트 타이밍과 맞아떨어짐. 통상 마루젠스키의 고유기와 같이 쓰면 더 날아갈 수 있음.<br>- 단 고유기가 3~5위 발동이라서 통상 마루젠스키의 고유기보다 조건이 빡빡함. 중반 속도기가 많고 지능이 높거나, 도주가 없는 상황이라면 고유기 불발 가능성이 존재함.</td></tr>
+<tr><td class="td-label">선입<br>그래스 원더</td><td class="td-desc">- <span class="skill-info">[레어] 독점력</span>, <span class="skill-info">[레어] 능숙한 환승</span></td></tr>
+<tr><td class="td-label">선입<br>심볼리 루돌프</td><td class="td-desc">- <span class="skill-info">[레어] 독점력</span>, 강력한 고유기</td></tr>
+<tr><td class="td-label">선입<br>나이스 네이처</td><td class="td-desc">- <span class="skill-info">[레어] 사방팔방 째려보기</span>, <span class="skill-info">[레어] 매혹적인 속삭임</span>을 보유한 최강 디버퍼</td></tr>
+<tr><td class="td-label">추입<br>골드 쉽</td><td class="td-desc">- 그냥 쎄다<br>- <span class="skill-info">[레어] 육박하는 그림자</span>가 무효가 되는 경기장이라 나리타 타이신보다 골드 쉽.</td></tr>
+<tr><td class="td-label">추입<br>심볼리 루돌프</td><td class="td-desc">- <span class="skill-info">[레어] 독점력</span>을 안정적으로 발동시키고 싶을 때 조커픽.</td></tr>
+</table>
+<br><br>
+이 이상의 정보는 말악귀들의 영역이므로 생략함.
+`;

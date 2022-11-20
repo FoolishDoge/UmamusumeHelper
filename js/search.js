@@ -16,7 +16,7 @@ function search(){
 			continue;
 		}
 		if( keywords == false ){ // show everything if value is empty.
-			if(items[i]['type'] == 'chara' || items[i]['type'] == 'tip'){ // hide skill, event, race content for reducing load weight.
+			if(items[i]['fix']){ // only show fixed items for reducing load weight.
 				items[i]['score'] = 1;
 			} else if(subjectBool == 2){ // In case of skill and event item, it only be shown when subject is correct.
 				items[i]['score'] = 1;
