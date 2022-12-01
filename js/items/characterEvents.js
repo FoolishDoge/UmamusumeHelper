@@ -221,6 +221,23 @@ const characterEvents = [
 {createDate:`2022-08-13`, character:`마치카네 후쿠키타루`, eventType:`chara`, cardName: `[운기상승☆행복만래] 마치카네 후쿠키타루`, title: `후쿠키타루식 주문`, choice: [`손을 잡는다`, `하이 파이브로 얼버무린다`, `정중히 거절한다`], effect: [`스피드+5<br>근성+5`, `스태미나+5<br>파워+5`, `지능+10`]},
 //맨하탄 카페
 //메이쇼 도토
+{createDate:`2022-12-02`, character:`메이쇼 도토`, eventType:`chara`,  cardName: `[블루/레이징] 메이쇼 도토`, title: `격해지는 마음, 아아 닿고 있나요`, choice: [`앙코르!`, `멋진 노래였어…!`, `우승은 확정이네`], effect: [`파워+10`, `스피드+10`, `근성+10`]},
+{createDate:`2022-12-02`, character:`메이쇼 도토`, eventType:`chara`,  cardName: `[블루/레이징] 메이쇼 도토`, title: `구원의 말`, choice: [`스트레이트하게 부딪치자!`, `표현을 부드럽게 하는 편이 좋을 것 같아…`], effect: [`파워+10<br>스킬 Pt+15`, `<span class='skill-info'>[일반] 새 출발</span> 힌트 LV+1`]},
+{createDate:`2022-12-02`, character:`메이쇼 도토`, eventType:`chara`,  cardName: `[블루/레이징] 메이쇼 도토`, title: `나는 혼자서 방황할 뿐`, choice: [`연습이 잘 되면 들려 줘`, `나도 연습 도와 줄게!`], effect: [`스태미나+10`, `근성+10`]},
+{createDate:`2022-12-02`, character:`메이쇼 도토`, eventType:`chara`,  cardName: `[블루/레이징] 메이쇼 도토`, title: `당신의 주먹이 아쉬움에 흔들리고`, choice: [`좋은 노랫소리였어!`, `겸손해하지 말고, 당당해져도 돼`], effect: [`파워+10`, `스태미나+10`]},
+{createDate:`2022-12-02`, character:`메이쇼 도토`, eventType:`chara`,  cardName: `[블루/레이징] 메이쇼 도토`, title: `댄스 레슨`, choice: [`실제'처럼 연습하자`, `긴장하지 않는 주문을 찾자`], effect: [`근성+10`, `파워+10`]},
+{createDate:`2022-12-02`, character:`메이쇼 도토`, eventType:`chara`,  cardName: `[블루/레이징] 메이쇼 도토`, title: `등가 교환?`, choice: [`대신 같이 연습해 달라는 건 어때?`, `네가 추천하는 제품도 알려 줘!`], effect: [`스피드+10`, `지능+10`]},
+{createDate:`2022-12-02`, character:`메이쇼 도토`, eventType:`chara`,  cardName: `[블루/레이징] 메이쇼 도토`, title: `베스트 샷의 행방`, choice: [`웃는 얼굴을 이미지해 보자!`, `조금 달릴래?`], effect: [`지능+10`, `스태미나+10`]},
+{createDate:`2022-12-02`, character:`메이쇼 도토`, eventType:`chara`,  cardName: `[블루/레이징] 메이쇼 도토`, title: `불굴의 한 걸음은 작은 한 걸음`, choice: [`좋은 근성이야!`, `일단 좀 쉬고 가자`], effect: [`근성+10`, `체력+10`]},
+{createDate:`2022-12-02`, character:`메이쇼 도토`, eventType:`chara`,  cardName: `[블루/레이징] 메이쇼 도토`, title: `새해 첫 참배`, choice: [`다 같이 노닥거리기`, `새해맞이 산속 수행`, `수면 학습`], effect: [`체력+30`, `5개 스테이터스+5`, `스킬 Pt+35`]},
+{createDate:`2022-12-02`, character:`메이쇼 도토`, eventType:`chara`,  cardName: `[블루/레이징] 메이쇼 도토`, title: `신년 포부`, choice: [`새해맞이 등산`, `백화점 지하 순례`, `여러가지 새해 놀이`], effect: [`근성+10`, `체력+20`, `스킬 Pt+20`]},
+{createDate:`2022-12-02`, character:`메이쇼 도토`, eventType:`chara`,  cardName: `[블루/레이징] 메이쇼 도토`, title: `싱글벙글한 소동`, choice: [`열심히 트레이닝한다`, `자중하고 쉰다`], effect: [`성공 시 : 체력-5<br>컨디션 상승<br>5개 스테이터스 중 랜덤으로 2개+10<br>실패 시 :<br>체력−10<br>근성+10`, `체력+10`]},
+{createDate:`2022-12-02`, character:`메이쇼 도토`, eventType:`chara`,  cardName: `[블루/레이징] 메이쇼 도토`, title: `안심 가방`, choice: [`소중한 가방이라면 관리해 주러 갈까?`, `안에는 뭐가 들어있어?`], effect: [`지능+10<br>스킬 Pt+15`, `파워+20`]},
+{createDate:`2022-12-02`, character:`메이쇼 도토`, eventType:`chara`,  cardName: `[블루/레이징] 메이쇼 도토`, title: `여름 합숙(2년 차)에서`, choice: [`탑 위에서 연설하기`, `자신의 별에게 맹세하기`], effect: [`파워+10`, `근성+10`]},
+{createDate:`2022-12-02`, character:`메이쇼 도토`, eventType:`chara`,  cardName: `[블루/레이징] 메이쇼 도토`, title: `열투! 매운맛 승부`, choice: [`서두르지 말고 지금 페이스대로`, `속도를 3배로 올리자!`], effect: [`스태미나+20`, `스피드+20`]},
+{createDate:`2022-12-02`, character:`메이쇼 도토`, eventType:`chara`,  cardName: `[블루/레이징] 메이쇼 도토`, title: `우뚝 솟은 칼로리`, choice: [`맛있게 먹을 수 있는 만큼만 먹어!`, `감사히 전부 먹자`], effect: [`체력+10<br>스킬 Pt+5`, `성공 시 :<br>체력+30<br>스킬 Pt+10<br>실패 시 :<br>체력+30<br>스킬 Pt+10<br>스피드-5<br>파워+5<br><span class='condition-info'>살찜 주의</span> 획득`]},
+{createDate:`2022-12-02`, character:`메이쇼 도토`, eventType:`chara`,  cardName: `[블루/레이징] 메이쇼 도토`, title: `우먀우먀우먀`, choice: [`이왕이면 즐겁게 연습하자`, `근본적인 해결책을 찾는게 어떨까…?`], effect: [`파워+10<br>지능+10<br>랜덤으로 <span class='condition-info'>훈련 능숙○</span> 획득`, `근성+20<br>랜덤으로 <span class='condition-info'>훈련 능숙○</span> 획득`]},
+{createDate:`2022-12-02`, character:`메이쇼 도토`, eventType:`chara`,  cardName: `[블루/레이징] 메이쇼 도토`, title: `우유 맛 해질녘`, choice: [`쇼핑 갈까?`, `그러면 지금부터 더 먹으며 돌아다니자!`], effect: [`지능+10`, `스피드+5<br>스태미나+5`]},
 //메지로 도베르
 //메지로 라모누
 //메지로 라이언

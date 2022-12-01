@@ -432,6 +432,8 @@ const skills = {
 '[일반] 뭉클하게♪Chu':{ createDate:`2022-11-17`, img:'powerful_normal', cost:'200', condition:`진행거리 비율 50% 이상 / 발동한 지구력 회복 스킬 1개 이상 / 순위 3 이하 (1~3위)`, effect:'속도 상승 0.15', duration:'지속 시간 3초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
 '[고유] 정말로 귀엽네♪머린 다이브':{ createDate:`2022-11-17`, img:'heal_unique', cost:null, condition:`레이스 중반 / 순위 2 이상, 순위 비율 70% 이하 / 레이스 중반에 발동한 스킬 2개 이상 (챔피언스 미팅 : 2~6위 / 팀 경기장 : 2~8위 / 풀 게이트 : 2~13위)`, effect:'지구력 회복 0.055', duration:'지속 시간 0초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
 '[일반] 정말로 귀엽네♪머린 다이브':{ createDate:`2022-11-17`, img:'heal_normal', cost:'200', condition:`레이스 중반 / 순위 2 이상, 순위 비율 70% 이하 / 레이스 중반에 발동한 스킬 2개 이상 (챔피언스 미팅 : 2~6위 / 팀 경기장 : 2~8위 / 풀 게이트 : 2~13위)`, effect:'지구력 회복 0.015', duration:'지속 시간 0초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
+'[고유] I Never Goof Up!':{ createDate:`2022-12-02`, img:'powerful_unique', cost:null, condition:`레이스 종반 및 이후 / 코너 / 순위 3 이상 (3위~18위) / 순위 상승`, effect:'속도 상승 0.25 / 가속 상승 0.3', duration:'지속 시간 5초 / 쿨타임 500초', comment:"성능은 나쁘지 않은 스킬이지만, 선행에선 잘 안 터진다.", recommend:[0,0,0,0] },
+'[일반] I Never Goof Up!':{ createDate:`2022-12-02`, img:'powerful_normal', cost:'200', condition:`레이스 종반 및 이후 / 코너 / 순위 3 이상 (3위~18위) / 순위 상승`, effect:'속도 상승 0.05 / 가속 상승 0.1', duration:'지속 시간 3초 / 쿨타임 500초', comment:"성능은 나쁘지 않은 스킬이지만, 선행에선 잘 안 터진다.", recommend:[0,0,0,0] },
 };
 
 /*
