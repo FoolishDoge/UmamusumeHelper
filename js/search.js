@@ -62,7 +62,7 @@ function filter(item, keyword, isEssential, toggleAcc, toggleEss, searchDesc){
 	} else if(item['type'] == "event"){
 		searchTarget += `${item['title']} ${item['hiddenTag']} ${item['cardName']} ${item['character']}`.toLowerCase();
 		if(searchDesc){
-		searchTarget += `${item['choice']}`.toLowerCase();
+		searchTarget += `${item['choice']} ${item['effect']}`.toLowerCase();
 		}
 	} else if(item['type'] == "skill"){
 		searchTarget += `${item['title']} ${item['hiddenTag']}`.toLowerCase();
