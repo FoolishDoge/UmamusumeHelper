@@ -30,12 +30,25 @@ function loadUserData(){
 	let toggleHighlight = document.querySelector('#chkbox-toggle-highlight');
 	let toggleEssential = document.querySelector('#chkbox-toggle-essential');
 	let autoClear = document.querySelector('#chkbox-toggle-auto-clear');
+
+	let excludeCharaItem = document.querySelector('#exclude-chara-item');
+	let excludeEventItem = document.querySelector('#exclude-event-item');
+	let excludeSkillItem = document.querySelector('#exclude-skill-item');
+	let excludeTipItem = document.querySelector('#exclude-tip-item');
+	let excludeRaceItem = document.querySelector('#exclude-race-item');
+
 	
 	if(localStorage.getItem('umaHelperToggleAccumulation') == 't'){ toggleAccumulation.checked = true; }
 	if(localStorage.getItem('umaHelperSearchDesc') == 't'){ searchDesc.checked = true; }
 	if(localStorage.getItem('umaHelperToggleHighlight') == 'f'){ toggleHighlight.checked = false; }
 	if(localStorage.getItem('umaHelperToggleEssential') == 'f'){ toggleEssential.checked = false; }
 	if(localStorage.getItem('umaHelperAutoClear') == 'f'){ autoClear.checked = false; }
+
+	if(localStorage.getItem('umaHelperExcludeCharaItem') == 't'){ excludeCharaItem.checked = true }
+	if(localStorage.getItem('umaHelperExcludeEventItem') == 't'){ excludeEventItem.checked = true }
+	if(localStorage.getItem('umaHelperExcludeSkillItem') == 't'){ excludeSkillItem.checked = true }
+	if(localStorage.getItem('umaHelperExcludeTipItem') == 't'){ excludeTipItem.checked = true }
+	if(localStorage.getItem('umaHelperExcludeRaceItem') == 't'){ excludeRaceItem.checked = true }
 	
 	toggleAccumulation.addEventListener('change', function(){
 		if(toggleAccumulation.checked == true){
@@ -77,7 +90,47 @@ function loadUserData(){
 		}
 		search();
 	});
-	
+
+	excludeCharaItem.addEventListener('change', function(){
+		if(excludeCharaItem.checked == true){
+			localStorage.setItem('umaHelperExcludeCharaItem', 't');
+		} else{
+			localStorage.setItem('umaHelperExcludeCharaItem', 'f');
+		}
+		search();
+	});
+	excludeEventItem.addEventListener('change', function(){
+		if(excludeEventItem.checked == true){
+			localStorage.setItem('umaHelperExcludeEventItem', 't');
+		} else{
+			localStorage.setItem('umaHelperExcludeEventItem', 'f');
+		}
+		search();
+	});
+	excludeSkillItem.addEventListener('change', function(){
+		if(excludeSkillItem.checked == true){
+			localStorage.setItem('umaHelperExcludeSkillItem', 't');
+		} else{
+			localStorage.setItem('umaHelperExcludeSkillItem', 'f');
+		}
+		search();
+	});
+	excludeTipItem.addEventListener('change', function(){
+		if(excludeTipItem.checked == true){
+			localStorage.setItem('umaHelperExcludeTipItem', 't');
+		} else{
+			localStorage.setItem('umaHelperExcludeTipItem', 'f');
+		}
+		search();
+	});
+	excludeRaceItem.addEventListener('change', function(){
+		if(excludeRaceItem.checked == true){
+			localStorage.setItem('umaHelperExcludeRaceItem', 't');
+		} else{
+			localStorage.setItem('umaHelperExcludeRaceItem', 'f');
+		}
+		search();
+	});
 }
 
 

@@ -6,20 +6,24 @@ function search(){
 	let keywords = searchValue.split(" ");
 	
 	keywords = keywords.filter(function(e){
-		return e != '';
+		return e != '';jh
 	});
 	
 	for(let i in items){
 		items[i]['score'] = 0;
 		let subjectBool = isCorrectSubject(items[i]);
-		if(!subjectBool){ // hide if subject is not same.
-			continue;
-		}
-		if( keywords == false ){ // show everything if value is empty.
-			if(items[i]['fix']){ // only show fixed items for reducing load weight.
+
+		if(keywords != false){
+			if(!subjectBool){ // hide if subject is not same.
+				continue;
+			}
+		} else{
+			if(subjectBool == 2){
 				items[i]['score'] = 1;
-			} else if(subjectBool == 2){ // In case of skill and event item, it only be shown when subject is correct.
-				items[i]['score'] = 1;
+			} else{
+				if(items[i]['fix']){ // only show fixed items for reducing load weight.
+					items[i]['score'] = 1;
+				}
 			}
 			continue;
 		}
@@ -112,9 +116,20 @@ function isEssentialKeyword(keyword){
 }
 
 function isCorrectSubject(item){
+	let excludeCharaItem = document.querySelector('#exclude-chara-item');
+	let excludeEventItem = document.querySelector('#exclude-event-item');
+	let excludeSkillItem = document.querySelector('#exclude-skill-item');
+	let excludeTipItem = document.querySelector('#exclude-tip-item');
+	let excludeRaceItem = document.querySelector('#exclude-race-item');
+
 	var optionValue = document.querySelector("#select-subject").options[document.querySelector("#select-subject").selectedIndex].value;
 	
 	if(optionValue == "all"){
+		if(item['type'] == 'chara' && excludeCharaItem.checked){ return false }
+		else if(item['type'] == 'event' && excludeEventItem.checked){ return false }
+		else if(item['type'] == 'skill' && excludeSkillItem.checked){ return false }
+		else if(item['type'] == 'tip' && excludeTipItem.checked){ return false }
+		else if(item['type'] == 'race' && excludeRaceItem.checked){ return false }
 		return 1;
 	} else if(optionValue == item['type']){
 		return 2;
