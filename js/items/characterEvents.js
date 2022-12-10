@@ -521,6 +521,23 @@ const characterEvents = [
 {createDate:`2022-09-16`, character:`에어 그루브`, eventType:`chara`,  cardName: `[퀘르쿠스 키윌리스] 에어 그루브`, title: `옆에 서는 것은…!`, choice: [`둘이서 최고의 지면을 만들자!`, `차라리 셋이서 찍는 건?`], effect: [`<span class='skill-info'>[일반] 임기응변</span> 힌트 LV+2`, `근성+10<br>지능+10`]},
 //에어 샤커
 //에이신 플래시
+{createDate:`2022-12-10`, character:`에이신 플래시`, eventType:`chara`,  cardName: `[Meisterschaft] 에이신 플래시`, title: `가르치기 위해서라면`, choice: [`빨리 끝내는 방법이 있다`, `끈기 있게 이해를 진행하자!`], effect: [`스피드+10`, `근성+10`]},
+{createDate:`2022-12-10`, character:`에이신 플래시`, eventType:`chara`,  cardName: `[Meisterschaft] 에이신 플래시`, title: `갓 튀겨낸 바삭바삭함을!`, choice: [`하나를 반씩 나눠 먹지 않을래?`, `많이 걸었으니까 잔뜩 먹자!`], effect: [`체력+10<br>스킬 Pt+5`, `성공 시 :<br>체력+30<br>스킬 Pt+10<br>실패 시 :<br>체력+30<br>스킬 Pt+10<br>스피드-5<br>파워+5<br><span class='condition-info'>살찜 주의</span> 획득`]},
+{createDate:`2022-12-10`, character:`에이신 플래시`, eventType:`chara`,  cardName: `[Meisterschaft] 에이신 플래시`, title: `긍지를 휘감기 위해서`, choice: [`일단 잔뜩 달려서 익숙해진다, 일까`, `…이럴 땐 과자 만들기다!`], effect: [`파워+20`, `스킬 Pt+40`]},
+{createDate:`2022-12-10`, character:`에이신 플래시`, eventType:`chara`,  cardName: `[Meisterschaft] 에이신 플래시`, title: `댄스 레슨`, choice: [`독일 노래가 좋지 않을까?`, `…우선 시범을!`], effect: [`스피드+10`, `지능+10`]},
+{createDate:`2022-12-10`, character:`에이신 플래시`, eventType:`chara`,  cardName: `[Meisterschaft] 에이신 플래시`, title: `명예를 걸고`, choice: [`너라면 이길 수 있어!`, `원수를…갚아다오…!`], effect: [`근성+20<br>랜덤으로 <span class='condition-info'>수완가</span> 획득`, `지능+20<br>랜덤으로 <span class='condition-info'>수완가</span> 획득`]},
+{createDate:`2022-12-10`, character:`에이신 플래시`, eventType:`chara`,  cardName: `[Meisterschaft] 에이신 플래시`, title: `새해 첫 참배`, choice: [`새해를 자면서 보내자!`, `소원을 적자!`, `연하장을 교환하자!`], effect: [`체력+30`, `5개 스테이터스+5`, `스킬 Pt+35`]},
+{createDate:`2022-12-10`, character:`에이신 플래시`, eventType:`chara`,  cardName: `[Meisterschaft] 에이신 플래시`, title: `성의를 당신에게`, choice: [`이것저것 보고 정하고 싶어`, `네가 골라준 거라면 뭐든지!`], effect: [`스피드+10`, `지능+10`]},
+{createDate:`2022-12-10`, character:`에이신 플래시`, eventType:`chara`,  cardName: `[Meisterschaft] 에이신 플래시`, title: `시험: 플래시 플랜`, choice: [`다음 트레이닝은 맡길게!`, `사양할게`], effect: [`컨디션 상승<br>5개 스테이터스 중 랜덤으로 4종류의 트레이닝이 제한<br>다음 턴에 「결과 : 플래시 플랜」 발생`, `「결과 : 플래시 플랜」이 발생하지 않는다`]},
+{createDate:`2022-12-10`, character:`에이신 플래시`, eventType:`chara`,  cardName: `[Meisterschaft] 에이신 플래시`, title: `신년 포부`, choice: [`연날리기로 성장 기원!`, `새해 요리로 건강 기원!`, `새해 첫 붓글씨로 결의 표명!`], effect: [`스피드+10`, `체력+20`, `스킬 Pt+20`]},
+{createDate:`2022-12-10`, character:`에이신 플래시`, eventType:`chara`,  cardName: `[Meisterschaft] 에이신 플래시`, title: `어둠 속에 꿈틀거리는 그림자는…`, choice: [`일단 도망치자!`, `이젠 싸울 수밖에 없어….`], effect: [`스피드+10<br>근성+10`, `스태미나+20`]},
+{createDate:`2022-12-10`, character:`에이신 플래시`, eventType:`chara`,  cardName: `[Meisterschaft] 에이신 플래시`, title: `여름 합숙(2년 차)에서`, choice: [`파워를 내는 요령을 가르쳐줘`, `마지막까지 끈질기게 버티는 요령을 가르쳐줘`], effect: [`파워+10`, `근성+10`]},
+{createDate:`2022-12-10`, character:`에이신 플래시`, eventType:`chara`,  cardName: `[Meisterschaft] 에이신 플래시`, title: `익숙해져 가는 나날들 속에서`, choice: [`친구들에게 물어보는 건?`, `쌓아나갈 수밖에 없어`, `잠시 독일어를 금지한다거나`], effect: [`파워+10`, `근성+10`, `스태미나+10`]},
+{createDate:`2022-12-10`, character:`에이신 플래시`, eventType:`chara`,  cardName: `[Meisterschaft] 에이신 플래시`, title: `조화로운 마음에 닿아`, choice: [`다음에는 숙박해 보는 건 어때?`, `직원분께 질문해 보자`], effect: [`근성+10`, `스피드+10`]},
+{createDate:`2022-12-10`, character:`에이신 플래시`, eventType:`chara`,  cardName: `[Meisterschaft] 에이신 플래시`, title: `천도의 수호자`, choice: [`체력이 버티지 못할지도…`, `힘이 될 수 있다면!`], effect: [`스태미나+10`, `파워+10`]},
+{createDate:`2022-12-10`, character:`에이신 플래시`, eventType:`chara`,  cardName: `[Meisterschaft] 에이신 플래시`, title: `추억의 Freizeitpark`, choice: [`…오늘만은 그게 정답이었어`, `모처럼인데 더 보고 가지 그래?`], effect: [`파워+10`, `스태미나+10`]},
+{createDate:`2022-12-10`, character:`에이신 플래시`, eventType:`chara`,  cardName: `[Meisterschaft] 에이신 플래시`, title: `트렌드를 쫓아`, choice: [`추임새는 나한테 맡겨!`, `자주 부르는 노래가 좋아`], effect: [`지능+10`, `스태미나+10`]},
+{createDate:`2022-12-10`, character:`에이신 플래시`, eventType:`chara`,  cardName: `[Meisterschaft] 에이신 플래시`, title: `하늘을 나는 가이던스`, choice: [`하루를 관찰시켜 준다거나`, `요령을 가르쳐 주는 건?`], effect: [`스피드+5<br>스태미나+5<br>파워+5`, `<span class='skill-info'>[일반] 근간거리○</span> 힌트 LV+1`]},
 //엘 콘도르 파사
 {createDate:`2022-08-13`, character:`엘 콘도르 파사`, eventType:`chara`, cardName: null, title: `꽃말을 선물하다`, choice: [`캐모마일은 어때?`, `안개꽃은 어때?`], effect: [`컨디션 상승<br>지능+5`, `체력+10`]},
 {createDate:`2022-08-13`, character:`엘 콘도르 파사`, eventType:`chara`, cardName: null, title: `다시 한번, 결의를`, choice: [`자신을 겹쳐 보았다거나?`, `너무 놀라버린 거겠지`, `팬의 심리 아니었을까`], effect: [`근성＋10`, `스태미나＋10`, `스피드+5<br>스태미나+5`]},

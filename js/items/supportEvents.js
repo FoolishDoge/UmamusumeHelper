@@ -39,6 +39,9 @@ const supportEvents = [
 {createDate:`2022-08-13`, character:`나이스 네이처`, eventType:`support`, cardName: `[순진천진난만] 나이스 네이처`, title: `② 뒤, 순풍을 받고`, choice: [`(선택지 없음)`], effect: [`체력+10<br>지능+5<br><span class='skill-info'>[일반] 복병○</span> 힌트 LV+3<br>나이스 네이처의 우정도+5`]},
 {createDate:`2022-08-13`, character:`나이스 네이처`, eventType:`support`, cardName: `[…그냥 물방울이라니까요] 나이스 네이처`, title: `① (노력을 잘해서) 적당히 잘하는`, choice: [`(선택지 없음)`], effect: [`스태미너+5<br>근성+5`]},
 {createDate:`2022-08-13`, character:`나이스 네이처`, eventType:`support`, cardName: `[…그냥 물방울이라니까요] 나이스 네이처`, title: `② 결과는 뻔하지(그래도!)`, choice: [`(선택지 없음)`], effect: [`스태미너+5<br>근성+10<br><span class='skill-info'>[일반] 외장 탱크</span> 힌트 LV+1`]},
+{createDate:`2022-12-10`, character:`나이스 네이처`, eventType:`support`,  cardName: `[소원까지는 닦지 않아] 나이스 네이처`, title: `① 최강 무적의 네이처 씨?`, choice: [`(선택지 없음)`], effect: [`컨디션 상승<br>근성+5<br>지능+5<br>나이스 네이처의 우정도+5`]},
+{createDate:`2022-12-10`, character:`나이스 네이처`, eventType:`support`,  cardName: `[소원까지는 닦지 않아] 나이스 네이처`, title: `② 억누를 수 없는 마음`, choice: [`단과자를 먹자`, `달리면서 머리를 비우자`], effect: [`체력+10<br>나이스 네이처의 우정도+5`, `체력-5<br>스피드+5<br>파워+5<br>배드 컨디션 회복<br>나이스 네이처의 우정도+5`]},
+{createDate:`2022-12-10`, character:`나이스 네이처`, eventType:`support`,  cardName: `[소원까지는 닦지 않아] 나이스 네이처`, title: `③ 퀴즈로 복수!!`, choice: [`(선택지 없음)`], effect: [`체력+10<br>스피드+5<br>지능+5<br><span class='skill-info'>[레어] 능숙한 환승</span> 힌트 LV+1<br>나이스 네이처의 우정도+5`]},
 //나카야마 페스타
 //니시노 플라워
 {createDate:`2022-08-13`, character:`니시노 플라워`, eventType:`support`, cardName: null, title: `예쁘게 피우자♪`, choice: [`분담해서 효율적으로 진행하자!`, `서둘러 물뿌리개에 물을 담아올게!`], effect: [`지능+15<br>니시노 플라워의 우정도+5`, `스피드+10<br>파워+5<br>니시노 플라워의 우정도+5`]},
@@ -381,6 +384,10 @@ const supportEvents = [
 {createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`support`, cardName: `[트레센 학원] 타이키 셔틀`, title: `Oh! Tonight Party☆`, choice: [`멀리 돌아서 전력 대시다!`, `집단을 헤친다는 이미지로 달리자!`], effect: [`체력-10<br>스피드+5<br>파워+10`, `<span class='skill-info'>[일반] 빠져나갈 준비</span> 힌트 LV+1`]},
 {createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`support`, cardName: `[트레센 학원] 타이키 셔틀`, title: `Yes! Let's hug☆`, choice: [`스피드라고 생각해`, `파워라고 생각해`], effect: [`스피드+10`, `스피드+5<br>파워+5`]},
 //토센 조던
+{createDate:`2022-12-10`, character:`토센 조던`, eventType:`support`,  cardName: null, title: `리뷰는 반쯤 도박이잖아?`, choice: [`달리지 않는 날에만 쓴다거나`, `다른 활용방법을 찾는다`], effect: [`체력+10<br>컨디션 상승<br>토센 조던의 우정도+5`, `토센 조던의 우정도+5`]},
+{createDate:`2022-12-10`, character:`토센 조던`, eventType:`support`,  cardName: null, title: `스마트폰은 시간 도둑이잖아?`, choice: [`우선 한 바퀴 기록을 잰다`, `평소와 다른 장소에서 조깅`], effect: [`컨디션 상승<br>스피드+5<br>토센 조던의 우정도+5`, `스태미나+10<br>토센 조던의 우정도+5`]},
+{createDate:`2022-12-10`, character:`토센 조던`, eventType:`support`,  cardName: `[nail on Turf] 토센 조던`, title: `① 잔디에 네일리스트`, choice: [`혁신적이다!`, `그만두는 게…`], effect: [`성공 시 :<br>스킬 Pt+40<br>토센 조던의 우정도+5<br>실패 시 :<br>컨디션 하락<br>스킬 Pt+10`, `스태미나+10<br>토센 조던의 우정도+5`]},
+{createDate:`2022-12-10`, character:`토센 조던`, eventType:`support`,  cardName: `[nail on Turf] 토센 조던`, title: `② 소질이 있어야만 가능한 네일이지`, choice: [`멋만 부리는 게 아니라 도움도 되는 거구나`, `승부에 진심인 점은 멋지다고 생각해`], effect: [`성공 시 :<br>체력+10<br><span class='skill-info'>[일반] 페이스 업</span> 힌트 LV+3<br>토센 조던의 우정도+5<br>실패 시 :<br><span class='skill-info'>[일반] 페이스 업</span> 힌트 LV+1`, `체력-5<br>스태미나+20<br>토센 조던의 우정도+5`]},
 //토카이 테이오
 {createDate:`2022-08-13`, character:`토카이 테이오`, eventType:`support`, cardName: null, title: `나의 무기`, choice: [`전부 할 수 있게 되면 멋있겠네!`, `지금도 충분히 멋진 무기를 갖고 있어.`], effect: [`컨디션 상승<br>근성+10<br>토카이 테이오의 우정도+5`, `<span class='skill-info'>[일반] 선행 직선○</span> 힌트 LV+1<br>토카이 테이오의 우정도+5`]},
 {createDate:`2022-08-13`, character:`토카이 테이오`, eventType:`support`, cardName: null, title: `나의 방식`, choice: [`자기한테 맞는 방법이 제일이지!`, `참은 뒤 달리면 좀 더 기분 좋을 거야.`], effect: [`컨디션 상승<br>스킬 Pt+15<br>토카이 테이오의 우정도+5`, `근성+15<br>토카이 테이오의 우정도+5`]},
