@@ -4,9 +4,10 @@ function search(){
 	let toggleEssential = document.querySelector("#chkbox-toggle-essential");
 	let searchDesc = document.querySelector("#chkbox-search-desc");
 	let keywords = searchValue.split(" ");
-	
+	let optionValue = document.querySelector("#select-subject").options[document.querySelector("#select-subject").selectedIndex].value;
+
 	keywords = keywords.filter(function(e){
-		return e != '';jh
+		return e != '';
 	});
 	
 	for(let i in items){
@@ -18,12 +19,12 @@ function search(){
 				continue;
 			}
 		} else{
+			if(optionValue == 'all' && items[i]['fix']){
+				items[i]['score'] = 1;
+				continue;
+			}
 			if(subjectBool == 2){
 				items[i]['score'] = 1;
-			} else{
-				if(items[i]['fix']){ // only show fixed items for reducing load weight.
-					items[i]['score'] = 1;
-				}
 			}
 			continue;
 		}
@@ -86,8 +87,6 @@ function filter(item, keyword, isEssential, toggleAcc, toggleEss, searchDesc){
 	}
 	searchTarget = searchTarget.replace(/(<([^>]+)>)/gi, " ");
 	
-	// I have no idea what if someone type multiple times with the same keyword.
-	// Should I prevent it?
 	let tempScore = searchTarget.split(keyword).length - 1;
 	if( !toggleAcc ){
 		if( (isEssential || toggleEss) && tempScore == 0 ){
