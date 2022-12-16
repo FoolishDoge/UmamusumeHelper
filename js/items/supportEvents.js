@@ -176,6 +176,9 @@ const supportEvents = [
 {createDate:`2022-08-13`, character:`사일런스 스즈카`, eventType:`support`, cardName: `[빛나는 경치, 그 너머에] 사일런스 스즈카`, title: `① 편지→?`, choice: [`(선택지 없음)`], effect: [`스피드+10`]},
 {createDate:`2022-08-13`, character:`사일런스 스즈카`, eventType:`support`, cardName: `[빛나는 경치, 그 너머에] 사일런스 스즈카`, title: `② 편지→모두의 마음→?`, choice: [`(선택지 없음)`], effect: [`스피드+10<br>파워+10`]},
 {createDate:`2022-08-13`, character:`사일런스 스즈카`, eventType:`support`, cardName: `[빛나는 경치, 그 너머에] 사일런스 스즈카`, title: `③ 편지→모두의 마음→기다리고 있어줘`, choice: [`(선택지 없음)`], effect: [`스피드+10<br><span class='skill-info'>[레어] 도망자</span> 힌트 LV+1`]},
+{createDate:`2022-12-16`, character:`사일런스 스즈카`, eventType:`support`,  cardName: `[WINNING DREAM] 사일런스 스즈카`, title: `① 연주하자 WINNING!`, choice: [`친목회!!`, `몸을 움직이면 연습도 될 거야`], effect: [`<span class='skill-info'>[일반] 영양 보급</span> 힌트 LV+1<br>근성+10`, `<span class='skill-info'>[일반] 경쾌한 스텝</span> 힌트 LV+1<br>스피드+10`]},
+{createDate:`2022-12-16`, character:`사일런스 스즈카`, eventType:`support`,  cardName: `[WINNING DREAM] 사일런스 스즈카`, title: `② 춤춰라 DREAM!`, choice: [`(선택지 없음)`], effect: [`스태미나+10<br>스킬 Pt+10`]},
+{createDate:`2022-12-16`, character:`사일런스 스즈카`, eventType:`support`,  cardName: `[WINNING DREAM] 사일런스 스즈카`, title: `③ 울려 퍼지는 Stage!`, choice: [`(선택지 없음)`], effect: [`스피드+5<br>스태미나+5<br><span class='skill-info'>[레어] 컨센트레이션</span> 힌트 LV+1`]},
 //사쿠라 로렐
 //사쿠라 바쿠신 오
 {createDate:`2022-08-13`, character:`사쿠라 바쿠신 오`, eventType:`support`, cardName: null, title: `뛰고 싶어질 정도로!!`, choice: [`다 읽으면 빌려도 될까?`, `참고하게 달리기를 보여줄 있어?`], effect: [`사쿠라 바쿠신 오의 우정도+5<br><span class='skill-info'>[일반] 바짝 붙기</span> 힌트 LV+1`, `체력-10<br>스피드+10<br>파워+5<br>사쿠라 바쿠신 오의 우정도+5`]},
