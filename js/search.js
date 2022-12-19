@@ -120,6 +120,9 @@ function isCorrectSubject(item){
 	let excludeSkillItem = document.querySelector('#exclude-skill-item');
 	let excludeTipItem = document.querySelector('#exclude-tip-item');
 	let excludeRaceItem = document.querySelector('#exclude-race-item');
+	let excludeCharaEventItem = document.querySelector('#exclude-charaEvent-item');
+	let excludeSupportEventItem = document.querySelector('#exclude-supportEvent-item');
+	let excludeScenarioEventItem = document.querySelector('#exclude-scenarioEvent-item');
 
 	var optionValue = document.querySelector("#select-subject").options[document.querySelector("#select-subject").selectedIndex].value;
 	
@@ -129,6 +132,9 @@ function isCorrectSubject(item){
 		else if(item['type'] == 'skill' && excludeSkillItem.checked){ return false }
 		else if(item['type'] == 'tip' && excludeTipItem.checked){ return false }
 		else if(item['type'] == 'race' && excludeRaceItem.checked){ return false }
+		else if(item['type'] == 'event' && item['typeDetail'] == 'chara' && excludeCharaEventItem.checked){ return false }
+		else if(item['type'] == 'event' && item['typeDetail'] == 'support' && excludeSupportEventItem.checked){ return false }
+		else if(item['type'] == 'event' && item['typeDetail'] == 'scenario' && excludeScenarioEventItem.checked){ return false }
 		return 1;
 	} else if(optionValue == item['type']){
 		return 2;

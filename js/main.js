@@ -36,6 +36,9 @@ function loadUserData(){
 	let excludeSkillItem = document.querySelector('#exclude-skill-item');
 	let excludeTipItem = document.querySelector('#exclude-tip-item');
 	let excludeRaceItem = document.querySelector('#exclude-race-item');
+	let excludeCharaEventItem = document.querySelector('#exclude-charaEvent-item');
+	let excludeSupportEventItem = document.querySelector('#exclude-supportEvent-item');
+	let excludeScenarioEventItem = document.querySelector('#exclude-scenarioEvent-item');
 
 	
 	if(localStorage.getItem('umaHelperToggleAccumulation') == 't'){ toggleAccumulation.checked = true; }
@@ -49,6 +52,9 @@ function loadUserData(){
 	if(localStorage.getItem('umaHelperExcludeSkillItem') == 't'){ excludeSkillItem.checked = true }
 	if(localStorage.getItem('umaHelperExcludeTipItem') == 't'){ excludeTipItem.checked = true }
 	if(localStorage.getItem('umaHelperExcludeRaceItem') == 't'){ excludeRaceItem.checked = true }
+	if(localStorage.getItem('umaHelperCharaEventItem') == 't'){ excludeCharaEventItem.checked = true }
+	if(localStorage.getItem('umaHelperSupportEventItem') == 't'){ excludeSupportEventItem.checked = true }
+	if(localStorage.getItem('umaHelperScenarioEventItem') == 't'){ excludeScenarioEventItem.checked = true }
 	
 	toggleAccumulation.addEventListener('change', function(){
 		if(toggleAccumulation.checked == true){
@@ -128,6 +134,30 @@ function loadUserData(){
 			localStorage.setItem('umaHelperExcludeRaceItem', 't');
 		} else{
 			localStorage.setItem('umaHelperExcludeRaceItem', 'f');
+		}
+		search();
+	});
+	excludeCharaEventItem.addEventListener('change', function(){
+		if(excludeCharaEventItem.checked == true){
+			localStorage.setItem('umaHelperCharaEventItem', 't');
+		} else{
+			localStorage.setItem('umaHelperCharaEventItem', 'f');
+		}
+		search();
+	});
+	excludeSupportEventItem.addEventListener('change', function(){
+		if(excludeSupportEventItem.checked == true){
+			localStorage.setItem('umaHelperSupportEventItem', 't');
+		} else{
+			localStorage.setItem('umaHelperSupportEventItem', 'f');
+		}
+		search();
+	});
+	excludeScenarioEventItem.addEventListener('change', function(){
+		if(excludeScenarioEventItem.checked == true){
+			localStorage.setItem('umaHelperScenarioEventItem', 't');
+		} else{
+			localStorage.setItem('umaHelperScenarioEventItem', 'f');
 		}
 		search();
 	});
@@ -303,6 +333,7 @@ function modifyEvents(){
 	for(let [key, val] of Object.entries(scenarioEvents)){
 		dict = {};
 		dict['type'] = 'event';
+		dict['typeDetail'] = 'scenario'
 		dict['id'] = 'event_' + String(cnt);
 		dict['score'] = 0;
 		if(val['createDate']){
@@ -325,6 +356,7 @@ function modifyEvents(){
 	for(let [key, val] of Object.entries(characterEvents)){
 		dict = {};
 		dict['type'] = 'event';
+		dict['typeDetail'] = 'chara'
 		dict['id'] = 'event_' + String(cnt);
 		dict['score'] = 0;
 		if(val['createDate']){
@@ -347,6 +379,7 @@ function modifyEvents(){
 	for(let [key, val] of Object.entries(supportEvents)){
 		dict = {};
 		dict['type'] = 'event';
+		dict['typeDetail'] = 'support'
 		dict['id'] = 'event_' + String(cnt);
 		dict['score'] = 0;
 		if(val['createDate']){
