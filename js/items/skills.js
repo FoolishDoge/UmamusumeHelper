@@ -434,6 +434,18 @@ const skills = {
 '[일반] 정말로 귀엽네♪머린 다이브':{ createDate:`2022-11-17`, img:'heal_normal', cost:'200', condition:`레이스 중반 / 순위 2 이상, 순위 비율 70% 이하 / 레이스 중반에 발동한 스킬 2개 이상 (챔피언스 미팅 : 2~6위 / 팀 경기장 : 2~8위 / 풀 게이트 : 2~13위)`, effect:'지구력 회복 0.015', duration:'지속 시간 0초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
 '[고유] I Never Goof Up!':{ createDate:`2022-12-02`, img:'powerful_unique', cost:null, condition:`레이스 종반 및 이후 / 코너 / 순위 3 이상 (3위~18위) / 순위 상승`, effect:'속도 상승 0.25 / 가속 상승 0.3', duration:'지속 시간 5초 / 쿨타임 500초', comment:"성능은 나쁘지 않은 스킬이지만, 선행에선 잘 안 터진다.", recommend:[0,0,0,0] },
 '[일반] I Never Goof Up!':{ createDate:`2022-12-02`, img:'powerful_normal', cost:'200', condition:`레이스 종반 및 이후 / 코너 / 순위 3 이상 (3위~18위) / 순위 상승`, effect:'속도 상승 0.05 / 가속 상승 0.1', duration:'지속 시간 3초 / 쿨타임 500초', comment:"성능은 나쁘지 않은 스킬이지만, 선행에선 잘 안 터진다.", recommend:[0,0,0,0] },
+'[레어] 아오하루 연소・속':{ createDate:`2022-12-19`, img:'powerful_aoharu_rare', cost:'200', condition:`레이스 중반 무작위`, effect:'속도 상승 0.35', duration:'지속 시간 1.8초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
+'[일반] 아오하루 점화・속':{ createDate:`2022-12-19`, img:'powerful_aoharu_normal', cost:'200', condition:`레이스 중반 무작위`, effect:'속도 상승 0.15', duration:'지속 시간 1.8초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
+'[레어] 아오하루 연소・체':{ createDate:`2022-12-19`, img:'heal_aoharu_rare', cost:'200', condition:`레이스 중반 무작위`, effect:'지구력 회복 0.055', duration:'지속 시간 0초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
+'[일반] 아오하루 점화・체':{ createDate:`2022-12-19`, img:'heal_aoharu_normal', cost:'200', condition:`레이스 중반 무작위`, effect:'지구력 회복 0.015', duration:'지속 시간 0초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
+'[레어] 아오하루 연소・역':{ createDate:`2022-12-19`, img:'smooth_aoharu_rare', cost:'200', condition:`레이스 종반 무작위`, effect:'가속 상승 0.4', duration:'지속 시간 1.2초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
+'[일반] 아오하루 점화・역':{ createDate:`2022-12-19`, img:'smooth_aoharu_normal', cost:'200', condition:`레이스 종반 무작위`, effect:'가속 상승 0.2', duration:'지속 시간 1.2초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
+'[레어] 아오하루 연소・근':{ createDate:`2022-12-19`, img:'powerful_aoharu_rare', cost:'200', condition:`레이스 종반 무작위`, effect:'속도 상승 0.25 / 가속 상승 0.3', duration:'지속 시간 1.8초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
+'[일반] 아오하루 점화・근':{ createDate:`2022-12-19`, img:'powerful_aoharu_normal', cost:'200', condition:`레이스 종반 무작위`, effect:'속도 상승 0.05 / 가속 상승 0.1', duration:'지속 시간 1.8초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
+'[레어] ':{ createDate:`2022-12-19`, img:'positioning_aoharu_rare', cost:'200', condition:`레이스 초반 무작위`, effect:'포지셔닝 0.035 / 시야 상승 15', duration:'지속 시간 3초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
+'[일반] ':{ createDate:`2022-12-19`, img:'positioning_aoharu_normal', cost:'200', condition:`레이스 초반 무작위`, effect:'포지셔닝 0.015 / 시야 상승 5', duration:'지속 시간 3초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
+'[고유] 벼가 곧 무르익노라':{ createDate:`2022-12-19`, img:'powerful_unique', cost:null, condition:`진행거리 비율 50% 이상 / 순위 비율 40% 이상 / 자신이 따라잡기 대상이 됨 2초 이상 (챔피언스 미팅 : 4~8위 / 팀 경기장 : 5~11위 / 풀 게이트 : 7~17위)`, effect:'속도 상승 0.35', duration:'지속 시간 5초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
+'[일반] 벼가 곧 무르익노라':{ createDate:`2022-12-19`, img:'powerful_normal', cost:'200', condition:`진행거리 비율 50% 이상 / 순위 비율 40% 이상 / 자신이 따라잡기 대상이 됨 2초 이상 (챔피언스 미팅 : 4~8위 / 팀 경기장 : 5~11위 / 풀 게이트 : 7~17위)`, effect:'속도 상승 0.15', duration:'지속 시간 5초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
 };
 
 /*

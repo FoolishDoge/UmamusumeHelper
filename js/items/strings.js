@@ -464,10 +464,44 @@ const TIP14_DESC = `
 `;
 
 const TIP15_DESC = `
-1. 핵심은 혼게이지 빨리 올려 훈련랭크 높이는 것<br>
-2. 초반엔 혼보다 인연게이지 우선해도 됨.<br>
-3. 클래식까지 팀랭크 높이는 걸 목표로, 시니어부터 본격적으로 무지개 위주로 챙기면서 스탯작.<br>
-4. 팀레이스는 패배시 잃는 게 너무 크다. 일단 이기는 게 최우선.<br>
-5. 팀레이스 순위는 10위~14위 정도를 목표로 하는 게 적당하다. (도달하기도 어렵지 않고 보너스도 챙길 수 있는 순위)<br>
-6. 클래식 합숙 시점에서 C~B랭크, 시니어 초반에 A랭크, 시니어 합숙에서 S랭크면 순조로운 육성이라고 할 수 있음.<br>
+1. 핵심은 아오하루 특훈 -> 팀원 스탯 높이기 -> 훈련 레벨 높이기 -> 스탯작.<br>
+2. 클래식까지 팀 랭크 높여서 훈련 레벨작 해놓고, 시니어부터 본격적으로 무지개 위주로 챙기면서 스탯작.<br>
+3. 클래식 합숙 시점에서 C~B랭크, 시니어 초반에 A랭크, 시니어 합숙에서 S랭크면 순조로운 육성이라고 할 수 있음.<br>
+<br><br>
+[팀명별 획득 스킬]<br>
+<table class="desc-table">
+<tr><td class="td-label">제안자</td><td class="td-label">팀명</td><td class="td-label">획득 스킬</td></tr>
+<tr><td class="td-desc">타이키 셔틀</td><td class="td-desc">HOP CHEERS</td><td class="td-desc"><span class="skill-info">[레어] 마일의 지배자</span></td></tr>
+<tr><td class="td-desc">라이스 샤워</td><td class="td-desc">블룸스</td><td class="td-desc"><span class="skill-info">[레어] 쿨다운</span></td></tr>
+<tr><td class="td-desc">하루 우라라</td><td class="td-desc">당근 푸딩</td><td class="td-desc"><span class="skill-info">[레어] 꺾이지 않는 마음</span></td></tr>
+<tr><td class="td-desc">마치카네 후쿠키타루</td><td class="td-desc">경삿날 러너스</td><td class="td-desc"><span class="skill-info">[레어] 천리안</span></td></tr>
+<tr><td class="td-desc">(기본)</td><td class="td-desc">팀 캐럿츠</td><td class="td-desc"><span class="skill-info">[레어] 논스톱 걸</span></td></tr>
+</tr></table>
+<br><br>
+[팀레이스 랭킹별 기초 능력치 보너스]<br>
+<table class="desc-table"><tr>
+<td class="td-label">랭킹</td><td class="td-desc">1~5위</td>
+<td class="td-desc">6~10위</td><td class="td-desc">11~15위</td>
+<td class="td-desc">16~20위</td><td class="td-desc">21~30위</td></tr>
+<tr><td class="td-label">보너스</td><td class="td-desc">+50</td>
+<td class="td-desc">+30</td><td class="td-desc">+20</td>
+<td class="td-desc">+10</td><td class="td-desc">없음</td></tr></table>
+<br><br>
+[팀 랭크별 트레이닝 레벨]<br>
+<table class="desc-table">
+<tr><td class="td-label">스탯 랭크</td><td class="td-label">트레이닝Lv</td></tr>
+<tr><td class="td-desc">G ~ F</td><td class="td-desc">Lv.1</td></tr>
+<tr><td class="td-desc">E ~ D</td><td class="td-desc">Lv.2</td></tr>
+<tr><td class="td-desc">C ~ B</td><td class="td-desc">Lv.3</td></tr>
+<tr><td class="td-desc">A</td><td class="td-desc">Lv.4</td></tr>
+<tr><td class="td-desc">S</td><td class="td-desc">Lv.5</td></tr>
+</tr></table>
+<br><br>
+[기타]<br>
+1. 팀 랭크에는 제한이 걸려있으며, 아오하루배 레이스를 진행할 때마다 상한이 높아진다.<br>
+2. URA시나리오보다 훈련비중이 훨씬 커지는 반면 따로 스킬Pt를 챙겨주는 이벤트가 없다. 결론만 말해서 URA시나리오보다 스탯 고점은 확실히 높지만, 스킬Pt는 적게 얻을 수밖에 없다.<br>
+3. 어떤 트레이닝에서 아오하루 특훈을 진행했느냐에 따라 팀원들의 스탯 상승량에 차이가 있다(예컨대 스태미너 훈련에서 특훈시 스태미너, 근성이 가장 많이 오르고 나머지 스탯은 상대적으로 소폭 상승). 물론 특훈이 뜨는 것도 완전히 랜덤이기 때문에 제어는 사실상 불가능하다.<br>
+4. 아오하루 시나리오에만 있는 능력치 상승(아오하루 특훈, 팀원 보너스, 혼 폭발 보너스)은 컨디션이나 서포트 카드의 푼련 효과 증가 등의 영향을 받지 않는 상수이며, 중첩시에도 합연산으로 올라간다. 따라서 중첩 보너스에 너무 신경쓸 필요는 없다.<br>
+5. 혼 폭발은 능력치 상승분이 가장 크기 때문에 육성 우마무스메에게 유리한 훈련에서 터트리는 것이 제일 좋지만, 일단 혼 폭발을 하게 되면 팀 스탯은 물론 아오하루 특훈으로 얻을 수 있는 능력치 상승분도 높아지기 때문에 원하는 훈련에 뜰 때까지 존버하는 건 오히려 손해일 수도 있다.
+6. 시나리오 마지막에 주는 '아오하루'류  스킬 힌트는 혼폭발 누적횟수에 따라 다르게 준다: 13회 이상 레어(힌트Lv3), 10회 이상 레어(힌트Lv1), 4회 이상 노말(힌트Lv3)
 `;
