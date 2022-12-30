@@ -568,7 +568,7 @@ let items = [
 		titleStyle: null,
 		hiddenTag: null,
 		character: null,
-		title: "레오배 대비 육성 팁",
+		title: "버고배 대비 육성 팁",
 		descImg: null,
 		desc: TIP14_DESC,
 	},

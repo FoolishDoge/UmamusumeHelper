@@ -431,36 +431,26 @@ const TIP12_DESC = `
 
 const TIP14_DESC = `
 [기본 정보]<br>
-- 한신 / 잔디 / 2200m(중거리) / 우, 내측 / 여름 / 맑음 / 양호<br>
-- 타카라즈카 경기장과 동일한 조건<br>
-- 중반코너가속기 매우 효과적: 세이운 스카이의 <span class="skill-info">[일반] 앵글링×스키밍</span>, 메지로 라이언의 <span class="skill-info">[일반] 레츠 아나볼릭!</span> 채용.<br>
-- 최종코너가속기 효과적: 마루젠스키의 <span class="skill-info">[일반] 홍염 기어/LP1211-M</span>, 타이키 셔틀의 <span class="skill-info">[일반] 빅토리 샷!</span> 추천.<br>
-- 최종코너속도기 무효.<br>
-- 오르막은 꽤 있지만 내리막은 없다: 내리막에서 발동하는 스킬 배우지 않도록 주의.<br>
-<br><br>
-[필요 스태미나 예상치]
+- 2023년 1월 10일 ~ 1월 16일<br>
+- 한신 / 잔디 / 1600m(마일) / 우, 외측 / 가을 / 맑음 / 양호<br>
+- 최종 코너 후 가속스킬 매우 효과적: <span class="skill-info">[레어] 강인한 다리</span>, <span class="skill-info">[레어] 능숙한 환승</span>, <span class="skill-info">[일반] 레츠 아나볼릭!</span> 등 채용.<br>
+- 일섭 유저들은 '2도주, 1선입' 선호.<br>
+- 오르막과 급경사 구간이 있어 파워 소모가 심함 → 높은 파워와 가속스킬 유리.<br>
+- 선행마의 경우 좋은 고유가속기가 부족하고, 도주마가 많을 것으로 예상되는 반면 도주마가 많을 수록 힘을 쓰기 어렵기 때문에 추천되지 않음.<br>
+<br>
+[필요 스태미너]
 <table class="desc-table"><tr>
-<td class="td-label">힐스킬</td><td class="td-label">없음</td><td class="td-label">은딱1</td><td class="td-label">은딱2</td><td class="td-label">금딱1</td><td class="td-label">금딱1은딱1</td><td class="td-label">금딱1은딱2</td></tr><tr>
-<td class="td-label">도주</td><td class="td-desc">840</td><td class="td-desc">785</td><td class="td-desc">732</td><td class="td-desc">646</td><td class="td-desc">596</td><td class="td-desc">548</td></tr><tr>
-<td class="td-label">선행</td><td class="td-desc">970</td><td class="td-desc">911</td><td class="td-desc">852</td><td class="td-desc">759</td><td class="td-desc">705</td><td class="td-desc">652</td></tr><tr>
-<td class="td-label">선입</td><td class="td-desc">910</td><td class="td-desc">856</td><td class="td-desc">804</td><td class="td-desc">720</td><td class="td-desc">671</td><td class="td-desc">624</td></tr><tr>
-<td class="td-label">추입</td><td class="td-desc">930</td><td class="td-desc">876</td><td class="td-desc">823</td><td class="td-desc">738</td><td class="td-desc">689</td><td class="td-desc">641</td></tr></table>
-※ 근성300, 디버프 없음 가정(일반 디버프 -38, 레어 디버프 -113)<br>
-<br><br>
+<td class="td-label">도주</td><td class="td-label">선행</td><td class="td-label">선입</td><td class="td-label">추입</td></tr><tr>
+<td class="td-desc">592</td><td class="td-desc">683</td><td class="td-desc">636</td><td class="td-desc">649</td></tr></table>
+※ 근성301, 디버프 없음으로 가정(일반 디버프 -38, 레어 디버프 -113)한 최소치. 여유있게 더 챙기는 걸 추천함.<br>
+<br>
 [추천 육성마]
 <table class="desc-table">
-<tr><td class="td-label">도주<br>마루젠스키(수영복)</td><td class="td-desc">- 중반 고유기 발동으로 상대 세이운 스카이(또는 <span class="skill-info">[일반] 앵글링×스키밍</span> 계승받은 도주마) 방해, 본인이 계승받은 <span class="skill-info">[일반] 앵글링×스키밍</span>으로 선두를 확정짓는 메타</td></tr>
-<tr><td class="td-label">도주<br>세이운 스카이</td><td class="td-desc">- 가속 고유기 효율 최고<br>- 다만 긴 종반 속도기 부재가 불안</td></tr>
-<tr><td class="td-label">선행<br>오구리 캡</td><td class="td-desc">- 먹보 내장, 성장 보정치 우수<br>- 최종 경합에 강한 고유기</td></tr>
-<tr><td class="td-label">선행<br>타이키 셔틀</td><td class="td-desc">- 고유 가속기가 스퍼트 타이밍과 맞아떨어짐. 통상 마루젠스키의 고유기와 같이 쓰면 더 날아갈 수 있음.<br>- 단 고유기가 3~5위 발동이라서 통상 마루젠스키의 고유기보다 조건이 빡빡함. 중반 속도기가 많고 지능이 높거나, 도주가 없는 상황이라면 고유기 불발 가능성이 존재함.</td></tr>
-<tr><td class="td-label">선입<br>그래스 원더</td><td class="td-desc">- <span class="skill-info">[레어] 독점력</span>, <span class="skill-info">[레어] 능숙한 환승</span></td></tr>
-<tr><td class="td-label">선입<br>심볼리 루돌프</td><td class="td-desc">- <span class="skill-info">[레어] 독점력</span>, 강력한 고유기</td></tr>
-<tr><td class="td-label">선입<br>나이스 네이처</td><td class="td-desc">- <span class="skill-info">[레어] 사방팔방 째려보기</span>, <span class="skill-info">[레어] 매혹적인 속삭임</span>을 보유한 최강 디버퍼</td></tr>
-<tr><td class="td-label">추입<br>골드 쉽</td><td class="td-desc">- 그냥 쎄다<br>- <span class="skill-info">[레어] 육박하는 그림자</span>가 무효가 되는 경기장이라 나리타 타이신보다 골드 쉽.</td></tr>
-<tr><td class="td-label">추입<br>심볼리 루돌프</td><td class="td-desc">- <span class="skill-info">[레어] 독점력</span>을 안정적으로 발동시키고 싶을 때 조커픽.</td></tr>
+<tr><td class="td-label">도주</td><td class="td-desc"><b>마루젠스키(수영복)</b><br><b>스마트 팔콘</b><br>세이운 스카이<br>마루젠스키</td></tr>
+<tr><td class="td-label">선행</td><td class="td-desc">마루젠스키<br>오구리 캡</td></tr>
+<tr><td class="td-label">선입</td><td class="td-desc"><b>보드카</b><br>오구리 캡<br>그래스 원더</td></tr>
+<tr><td class="td-label">추입</td><td class="td-desc">나리타 타이신<br></td></tr>
 </table>
-<br><br>
-이 이상의 정보는 말악귀들의 영역이므로 생략함.
 `;
 
 const TIP15_DESC = `
