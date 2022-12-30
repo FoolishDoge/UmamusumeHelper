@@ -446,6 +446,8 @@ const skills = {
 '[일반] ':{ createDate:`2022-12-19`, img:'positioning_aoharu_normal', cost:'200', condition:`레이스 초반 무작위`, effect:'포지셔닝 0.015 / 시야 상승 5', duration:'지속 시간 3초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
 '[고유] 벼가 곧 무르익노라':{ createDate:`2022-12-19`, img:'powerful_unique', cost:null, condition:`진행거리 비율 50% 이상 / 순위 비율 40% 이상 / 자신이 따라잡기 대상이 됨 2초 이상 (챔피언스 미팅 : 4~8위 / 팀 경기장 : 5~11위 / 풀 게이트 : 7~17위)`, effect:'속도 상승 0.35', duration:'지속 시간 5초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
 '[일반] 벼가 곧 무르익노라':{ createDate:`2022-12-19`, img:'powerful_normal', cost:'200', condition:`진행거리 비율 50% 이상 / 순위 비율 40% 이상 / 자신이 따라잡기 대상이 됨 2초 이상 (챔피언스 미팅 : 4~8위 / 팀 경기장 : 5~11위 / 풀 게이트 : 7~17위)`, effect:'속도 상승 0.15', duration:'지속 시간 5초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
+"[고유] I'M☆FULL☆SPEED!!":{ createDate:`2022-12-30`, img:'powerful_unique', cost:null, condition:`진행거리 비율 45% 이상, 60% 이하 / 순위 3 이상, 순위 비율 50% 이하 (챔피언스 미팅 : 3~5위 / 팀 경기장 : 3~6위 / 풀 게이트 : 3~9위) / 남은 지구력 70% 이하`, effect:'속도 상승 0.25 / 가속 상승 0.3', duration:'지속 시간 5초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
+"[일반] I'M☆FULL☆SPEED!!":{ createDate:`2022-12-30`, img:'powerful_normal', cost:'200', condition:`진행거리 비율 45% 이상, 60% 이하 / 순위 3 이상, 순위 비율 50% 이하 (챔피언스 미팅 : 3~5위 / 팀 경기장 : 3~6위 / 풀 게이트 : 3~9위) / 남은 지구력 70% 이하`, effect:'속도 상승 0.05 / 가속 상승 0.1', duration:'지속 시간 3초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
 };
 
 /*
