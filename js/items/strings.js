@@ -1,6 +1,6 @@
 const TIP0_DESC = `
 [상단]<br>
-<img src="./imgs/desc/tuto-1.png" class="desc-img" style="margin-top:10px; margin-bottom: 10px;">
+<img src="./imgs/desc/tuto-1.PNG" class="desc-img" style="margin-top:10px; margin-bottom: 10px;">
 (1) 설정창 열기.<br>
 (2) UI 크기 설정. 설정값은 인터넷 브라우저에 저장됨.<br>
 (3) 검색어 입력창.<br>
@@ -9,7 +9,7 @@ const TIP0_DESC = `
 <li>[3] 검색어 지우기 버튼.</li></ul>
 <br><br>
 [설정창]<br>
-<img src="./imgs/desc/tuto-2.png" class="desc-img" style="margin-top:10px; margin-bottom: 10px;">
+<img src="./imgs/desc/tuto-2.PNG" class="desc-img" style="margin-top:10px; margin-bottom: 10px;">
 모든 설정은 인터넷 브라우저에 저장됨.<br>
 <ul style="margin-top:2px; margin-bottom:-5px;">
 <li>아이템 표시 개수: 표시될 수 있는 최대 항목 수 설정. 표시되는 항목의 개수가 너무 많으면 렉걸림.</li>
@@ -23,13 +23,13 @@ const TIP0_DESC = `
 </ul>
 <br><br>
 [하단 컨트롤 패널]<br>
-<img src="./imgs/desc/tuto-3.png" class="desc-img" style="margin-top:10px; margin-bottom: 10px;">
+<img src="./imgs/desc/tuto-3.PNG" class="desc-img" style="margin-top:10px; margin-bottom: 10px;">
 ▲, ▼ 버튼을 눌러 현재 열려있는 항목 중 최상단 항목의 위, 아래 항목을 열고<br>
 SEARCH 버튼을 눌러 검색창으로 이동 후 자판을 엶. 설정창에서 '검색어 자동 지우기'가 체크된 경우 검색창을 지움.<br>
 검색창이 상단에 있어서 손꾸락 움직이기 귀찮아서 만듦.<br>
 <br><br>
 [항목 보기 예시]
-<img src="./imgs/desc/tuto-4.png" class="desc-img" style="margin-top:10px; margin-bottom: 10px;">
+<img src="./imgs/desc/tuto-4.PNG" class="desc-img" style="margin-top:10px; margin-bottom: 10px;">
 (1) 박스쳐진 것처럼 스킬, 시나리오 컨디션 항목은 각각 빨갛게, 파랗게 칠해지며 누를 경우 해당 스킬[컨디션]에 대한 정보창이 뜸.<br>
 (2) 정보창은 다른 항목을 열거나, 정보창을 클릭해 지울 수 있음.
 `;
