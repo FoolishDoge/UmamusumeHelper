@@ -21,7 +21,7 @@ const characterEvents = [
 {createDate:`2022-08-13`, character:`골드 쉽`, eventType:`chara`, cardName: `[레드 스트라이프] 골드 쉽`, title: `커플 할인 상습범`, choice: [`『내던져라, 에비스코』`, `『JAM・기적의 탄창』`], effect: [`근성+10`, `스태미나+10`]},
 {createDate:`2022-08-13`, character:`골드 쉽`, eventType:`chara`, cardName: `[레드 스트라이프] 골드 쉽`, title: `타카라즈카 기념 후에・키워드 ②`, choice: [`무지막지 대단하지.`, `역사에 이름을 남길 정도로 대단하지.`], effect: [`5개 스테이터스+3<br>컨디션 상승<br>스킬 Pt+45<br>시나리오 NPC의 우정도+4`, `5개 스테이터스+3<br>컨디션 상승<br>스킬 Pt+45<br><span class='condition-info'>애교○</span>또는<span class='skill-info'>[일반] 게이트 난동</span> 획득<br>시나리오 NPC의 우정도+4`]},
 //골드 시티
-{createDate:`2022-11-08`, character:`골드 시티`, eventType:`chara`,  cardName: `[오센틱/1928] 골드 시티`, title: `order from client`, choice: [`앞으로 나아가려고 하는 의지`, `흙냄새라거나…?`], effect: [`스피드+20`, `근성+20`]},
+{createDate:`2022-11-08`, character:`골드 시티`, eventType:`chara`,  cardName: `[오센틱/1928] 골드 시티`, title: `order from client`, hiddenTag: `오더 프롬 클라이언트`, choice: [`앞으로 나아가려고 하는 의지`, `흙냄새라거나…?`], effect: [`스피드+20`, `근성+20`]},
 {createDate:`2022-11-08`, character:`골드 시티`, eventType:`chara`,  cardName: `[오센틱/1928] 골드 시티`, title: `가끔은 맨발이 되고 싶어`, choice: [`사과할 필요 없어`, `귀중한 시간을 보내게 됐어`, `더 하고 싶은 거 없어?`], effect: [`스태미나+10`, `스피드+10`, `파워+10`]},
 {createDate:`2022-11-08`, character:`골드 시티`, eventType:`chara`,  cardName: `[오센틱/1928] 골드 시티`, title: `기숙사 대항 퀴즈 배틀`, choice: [`스피드 승부 『빨리 누르기 배틀』`, `경쟁심으로 승부 『퀴즈 줍기 대결』`], effect: [`스피드+10<br>파워+5`, `<span class='skill-info'>[일반] 오기</span> 힌트 LV+1`]},
 {createDate:`2022-11-08`, character:`골드 시티`, eventType:`chara`,  cardName: `[오센틱/1928] 골드 시티`, title: `대놓고는 말 안 하겠지만`, choice: [`트레이닝 책을 추천한다`, `모델 자서전을 산다`], effect: [`스태미나+5<br>파워+5`, `근성+10`]},
@@ -79,10 +79,10 @@ const characterEvents = [
 {createDate:`2022-09-05`, character:`나리타 브라이언`, eventType:`chara`,  cardName: `[Maverick] 나리타 브라이언`, title: `특기 거리?`, choice: [`학원까지 경주하기`, `학생회 일은 어때?`], effect: [`스태미나+10`, `지능+10`]},
 {createDate:`2022-09-05`, character:`나리타 브라이언`, eventType:`chara`,  cardName: `[Maverick] 나리타 브라이언`, title: `패밀리 레스토랑`, choice: [`앞으로도 계속 노력하자!`, `네 노력은 달리기에서 꼭 보답받을 거야!`, `힘든 일이 있으면 말해 줘`], effect: [`스피드+10`, `스태미나+10`, `근성+10`]},
 //나리타 타이신
-{createDate:`2022-08-19`, character:`나리타 타이신`, eventType:`chara`, cardName: `[Nevertheless] 나리타 타이신`, title: `Unknown music`, choice: [`라이브 연주 R&B`, `세카이계 팝`], effect: [`파워+10`, `지능+10`]},
-{createDate:`2022-08-19`, character:`나리타 타이신`, eventType:`chara`, cardName: `[Nevertheless] 나리타 타이신`, title: `『bg』`, choice: [`끝말잇기 하자!`, `술래잡기로 승부!`], effect: [`스태미나+10`, `스피드+10`]},
-{createDate:`2022-08-19`, character:`나리타 타이신`, eventType:`chara`, cardName: `[Nevertheless] 나리타 타이신`, title: `『easy game』`, choice: [`부탁합니다!`, `아직 멀었어!`], effect: [`파워+10`, `근성+10`]},
-{createDate:`2022-08-19`, character:`나리타 타이신`, eventType:`chara`, cardName: `[Nevertheless] 나리타 타이신`, title: `『gg』`, choice: [`위닝 티켓`, `비와 하야히데`, `슈퍼 크릭`], effect: [`근성+10`, `지능+10`, `스태미나+10`]},
+{createDate:`2022-08-19`, character:`나리타 타이신`, eventType:`chara`, cardName: `[Nevertheless] 나리타 타이신`, title: `Unknown music`, hiddenTag: `언노운 뮤식`, choice: [`라이브 연주 R&B`, `세카이계 팝`], effect: [`파워+10`, `지능+10`]},
+{createDate:`2022-08-19`, character:`나리타 타이신`, eventType:`chara`, cardName: `[Nevertheless] 나리타 타이신`, title: `『bg』`, hiddenTag: `비쥐`, choice: [`끝말잇기 하자!`, `술래잡기로 승부!`], effect: [`스태미나+10`, `스피드+10`]},
+{createDate:`2022-08-19`, character:`나리타 타이신`, eventType:`chara`, cardName: `[Nevertheless] 나리타 타이신`, title: `『easy game』`, hiddenTag: `이지 게임`, choice: [`부탁합니다!`, `아직 멀었어!`], effect: [`파워+10`, `근성+10`]},
+{createDate:`2022-08-19`, character:`나리타 타이신`, eventType:`chara`, cardName: `[Nevertheless] 나리타 타이신`, title: `『gg』`, hiddenTag: `쥐쥐`, choice: [`위닝 티켓`, `비와 하야히데`, `슈퍼 크릭`], effect: [`근성+10`, `지능+10`, `스태미나+10`]},
 {createDate:`2022-08-19`, character:`나리타 타이신`, eventType:`chara`, cardName: `[Nevertheless] 나리타 타이신`, title: `거리`, choice: [`찾으러 가야 한다`, `가만히 기다려야 한다`], effect: [`컨디션 상승<br>근성+10`, `<span class='skill-info'>[일반] 후방 대기</span> 힌트 LV+1`]},
 {createDate:`2022-08-19`, character:`나리타 타이신`, eventType:`chara`, cardName: `[Nevertheless] 나리타 타이신`, title: `과묵한 둘`, choice: [`하야히데, 분명 좋아할 거야`, `…어, 이만 갈까`], effect: [`스태미나+10`, `스피드+10`]},
 {createDate:`2022-08-19`, character:`나리타 타이신`, eventType:`chara`, cardName: `[Nevertheless] 나리타 타이신`, title: `나인 채로, 강하게`, choice: [`지금부터가 진짜 시작이네!`, `그래도 나한테는 의지했으면 좋겠어.`], effect: [`파워+20`, `스피드+20`]},
@@ -95,7 +95,7 @@ const characterEvents = [
 {createDate:`2022-08-19`, character:`나리타 타이신`, eventType:`chara`, cardName: `[Nevertheless] 나리타 타이신`, title: `열받은 마음은 자율 트레이닝으로`, choice: [`오히려 그만 마무리하는 게 좋아`, `해도 되지만 적당히 해`, `실컷 해!`], effect: [`체력+10`, `체력-10<br>스킬 Pt+25`, `성공 시 :<br>체력-15<br>컨디션 상승<br>5개 스테이터스 중 랜덤으로 2개+15<br>실패 시 :<br>체력-15<br>5개 스테이터스 중 랜덤으로 1개+10`]},
 {createDate:`2022-08-19`, character:`나리타 타이신`, eventType:`chara`, cardName: `[Nevertheless] 나리타 타이신`, title: `영양 식품은 희망의 식품?`, choice: [`과식하지 않도록 조심해`, `좋아! 영양 듬뿍 섭취하자!`], effect: [`체력+10<br>스킬 Pt+5`, `성공 시 :<br>체력+30<br>스킬 Pt+10<br>실패 시 :<br>체력+30<br>스킬 Pt+10<br>스피드-5<br>파워+5<br><span class='condition-info'>살찜 주의</span> 획득`]},
 {createDate:`2022-08-19`, character:`나리타 타이신`, eventType:`chara`, cardName: `[Nevertheless] 나리타 타이신`, title: `조마조마 서바이벌`, choice: [`여기서도 할 수 있는 트레이닝이 있어!`, `얼른 발견되도록 노력하자!`], effect: [`파워+20<br>랜덤으로 <span class='condition-info'>애교○</span> 획득`, `근성+10<br>지능+10<br>랜덤으로 <span class='condition-info'>애교○</span> 획득`]},
-{createDate:`2022-08-19`, character:`나리타 타이신`, eventType:`chara`, cardName: `[Nevertheless] 나리타 타이신`, title: `타이신의 SOS`, choice: [`내가 신발 사 올게`, `신발가게까지 어깨를 빌려줄게`], effect: [`스피드+10<br>지능+10`, `스태미나+20`]},
+{createDate:`2022-08-19`, character:`나리타 타이신`, eventType:`chara`, cardName: `[Nevertheless] 나리타 타이신`, title: `타이신의 SOS`, hiddenTag: `에스오에스`, choice: [`내가 신발 사 올게`, `신발가게까지 어깨를 빌려줄게`], effect: [`스피드+10<br>지능+10`, `스태미나+20`]},
 {createDate:`2022-08-19`, character:`나리타 타이신`, eventType:`chara`, cardName: `[Nevertheless] 나리타 타이신`, title: `훗날 보고서 제출 완료`, choice: [`소화 속도를 현저히 높이는 약을 권한다`, `영양 섭취 효율을 높이는 약을 권한다`], effect: [`스피드+10`, `스태미나+5<br>파워+5`]},
 //나리타 탑 로드
 //나이스 네이처
@@ -355,7 +355,7 @@ const characterEvents = [
 {createDate:`2022-08-13`, character:`비와 하야히데`, eventType:`chara`, cardName: `[pf.Victory formula...] 비와 하야히데`, title: `카페에서 독서를`, choice: [`멋진 취미네`, `따로 추천할 만한 곳이 있으면 알려줘`], effect: [`스태미나+10`, `스피드+10`]},
 //비코 페가수스
 //사일런스 스즈카
-{createDate:`2022-08-13`, character:`사일런스 스즈카`, eventType:`chara`, cardName: `[사일런트 이노센스] 사일런스 스즈카`, title: `Landscape color`, choice: [`초록색을 좋아하는구나`, `하얀색을 좋아하는구나`], effect: [`근성+20`, `파워+20`]},
+{createDate:`2022-08-13`, character:`사일런스 스즈카`, eventType:`chara`, cardName: `[사일런트 이노센스] 사일런스 스즈카`, title: `Landscape color`, hiddenTag: `랜드스케이프 컬러`, choice: [`초록색을 좋아하는구나`, `하얀색을 좋아하는구나`], effect: [`근성+20`, `파워+20`]},
 {createDate:`2022-08-13`, character:`사일런스 스즈카`, eventType:`chara`, cardName: `[사일런트 이노센스] 사일런스 스즈카`, title: `나와 당신의, 작은 설경`, choice: [`고마워, 정말 기뻐`, `고향의 눈도 아름답구나`, `스위치 켜봐도 돼?`], effect: [`스태미나+10`, `스피드+10`, `파워+10`]},
 {createDate:`2022-08-13`, character:`사일런스 스즈카`, eventType:`chara`, cardName: `[사일런트 이노센스] 사일런스 스즈카`, title: `나의 작은 설경`, choice: [`응원할게!`, `대신 해봐도 돼?`], effect: [`스태미나+10`, `지능+10`]},
 {createDate:`2022-08-13`, character:`사일런스 스즈카`, eventType:`chara`, cardName: `[사일런트 이노센스] 사일런스 스즈카`, title: `당신이 기뻐하는 경치`, choice: [`자유롭게 달려 주면 좋겠어`, `지나치게 많이 달리지 않게 조심했으면 좋겠어`], effect: [`파워+10`, `스피드+5<br>근성+5`]},
@@ -430,8 +430,8 @@ const characterEvents = [
 {createDate:`2022-08-13`, character:`슈퍼 크릭`, eventType:`chara`, cardName: `[머머링 스트림] 슈퍼 크릭`, title: `조급해하지 말아요`, choice: [`확실해`, `지금은 아직 어리광 부려도 돼`], effect: [`근성+20<br>랜덤으로 <span class='condition-info'>주목받는 신예</span> 획득`, `스태미나+10<br>파워+10<br>랜덤으로 <span class='condition-info'>주목받는 신예</span> 획득`]},
 {createDate:`2022-08-13`, character:`슈퍼 크릭`, eventType:`chara`, cardName: `[머머링 스트림] 슈퍼 크릭`, title: `친구를 위해`, choice: [`하지만 역시 이건 좀…`, `힘내, 크릭!`], effect: [`체력+10<br>스킬 Pt+5`, `성공 시 :<br>체력+30<br>스킬 Pt+10<br>실패 시 :<br>체력+30<br>스킬 Pt+10<br>스피드-5<br>파워+5<br><span class='condition-info'>살찜 주의</span> 획득`]},
 //스마트 팔콘
-{createDate:`2022-08-26`, character:`스마트 팔콘`, eventType:`chara`,  cardName: `[앱설루트☆LOVE] 스마트 팔콘`, title: `갈고 닦아☆DIAMOND`, choice: [`반짝반짝 빛나서 모두를 매료시키자!`, `앞으로도 갈고 닦자!`], effect: [`스피드+20`, `파워+10<br>근성+10`]},
-{createDate:`2022-08-26`, character:`스마트 팔콘`, eventType:`chara`,  cardName: `[앱설루트☆LOVE] 스마트 팔콘`, title: `닿아라 for YOU☆은혜 갚기♪`, choice: [`나도 즐거우니까 괜찮아`, `팔코가 즐거우면 만족해`], effect: [`스피드+10`, `파워+10`]},
+{createDate:`2022-08-26`, character:`스마트 팔콘`, eventType:`chara`,  cardName: `[앱설루트☆LOVE] 스마트 팔콘`, title: `갈고 닦아☆DIAMOND`, hiddenTag: `다이아몬드`, choice: [`반짝반짝 빛나서 모두를 매료시키자!`, `앞으로도 갈고 닦자!`], effect: [`스피드+20`, `파워+10<br>근성+10`]},
+{createDate:`2022-08-26`, character:`스마트 팔콘`, eventType:`chara`,  cardName: `[앱설루트☆LOVE] 스마트 팔콘`, title: `닿아라 for YOU☆은혜 갚기♪`, hiddenTag: `포 유`, choice: [`나도 즐거우니까 괜찮아`, `팔코가 즐거우면 만족해`], effect: [`스피드+10`, `파워+10`]},
 {createDate:`2022-08-26`, character:`스마트 팔콘`, eventType:`chara`,  cardName: `[앱설루트☆LOVE] 스마트 팔콘`, title: `댄스 레슨`, choice: [`꾸준한 연습만이 있을 뿐`, `특별하게 어필하자`], effect: [`근성+10`, `지능+10`]},
 {createDate:`2022-08-26`, character:`스마트 팔콘`, eventType:`chara`,  cardName: `[앱설루트☆LOVE] 스마트 팔콘`, title: `두근두근☆시추에이션`, choice: [`좀 더 전력으로 해보자`, `반복 연습이 중요해`], effect: [`파워+10`, `스태미나+10`]},
 {createDate:`2022-08-26`, character:`스마트 팔콘`, eventType:`chara`,  cardName: `[앱설루트☆LOVE] 스마트 팔콘`, title: `메모리☆성지 순례`, choice: [`팔~코~! 팔~코~!`, `한걸음 한걸음씩 성장해가고 있구나`, `너의 담당이 될 수 있어서 다행이다`], effect: [`파워+10`, `근성+10`, `스피드+10`]},
@@ -442,7 +442,7 @@ const characterEvents = [
 {createDate:`2022-08-26`, character:`스마트 팔콘`, eventType:`chara`,  cardName: `[앱설루트☆LOVE] 스마트 팔콘`, title: `여름 합숙(2년 차)에서`, choice: [`신체! 해변에서 댄스 레슨`, `인내! 합숙소에서 댄스 레슨`], effect: [`파워+10`, `근성+10`]},
 {createDate:`2022-08-26`, character:`스마트 팔콘`, eventType:`chara`,  cardName: `[앱설루트☆LOVE] 스마트 팔콘`, title: `연구대상은 우마돌?`, choice: [`우마돌 파워 올라갔으면 좋겠다`, `연구란, 어떤 걸 하는 거지?`], effect: [`파워+10`, `지능+10`]},
 {createDate:`2022-08-26`, character:`스마트 팔콘`, eventType:`chara`,  cardName: `[앱설루트☆LOVE] 스마트 팔콘`, title: `우당탕탕☆KIDS 패닉!`, choice: [`좋아, 애니송을 부르자!`, `매지컬☆더비짱 쇼!`], effect: [`스피드+20<br>랜덤으로 <span class='condition-info'>애교○</span> 획득`, `스태미나+20<br>랜덤으로 <span class='condition-info'>애교○</span> 획득`]},
-{createDate:`2022-08-26`, character:`스마트 팔콘`, eventType:`chara`,  cardName: `[앱설루트☆LOVE] 스마트 팔콘`, title: `우마돌☆Friendship!`, choice: [`긴장을 풀어줄 수 없을까?`, `대신 나가주지 그래?`], effect: [`지능+20`, `파워+20`]},
+{createDate:`2022-08-26`, character:`스마트 팔콘`, eventType:`chara`,  cardName: `[앱설루트☆LOVE] 스마트 팔콘`, title: `우마돌☆Friendship!`, hiddenTag: `프렌드쉽`, choice: [`긴장을 풀어줄 수 없을까?`, `대신 나가주지 그래?`], effect: [`지능+20`, `파워+20`]},
 {createDate:`2022-08-26`, character:`스마트 팔콘`, eventType:`chara`,  cardName: `[앱설루트☆LOVE] 스마트 팔콘`, title: `큐트☆리서치`, choice: [`미안, 도저히 허락할 수 없어…!`, `좋아! 잘 다녀와!`], effect: [`체력+10<br>스킬 Pt+5`, `성공 시 :<br>체력+30<br>스킬 Pt+10<br>실패 시 :<br>체력+30<br>스킬 Pt+10<br>스피드-5<br>파워+5<br><span class='condition-info'>살찜 주의</span> 획득`]},
 {createDate:`2022-08-26`, character:`스마트 팔콘`, eventType:`chara`,  cardName: `[앱설루트☆LOVE] 스마트 팔콘`, title: `테스트로 회복☆`, choice: [`침착하게 기초를 다지자!`, `쪽집게로 승부다!`], effect: [`지능+10`, `파워+10`]},
 {createDate:`2022-08-26`, character:`스마트 팔콘`, eventType:`chara`,  cardName: `[앱설루트☆LOVE] 스마트 팔콘`, title: `퓨처☆로케이션 헌팅`, choice: [`…아쿠아리움!`, `…영화관!`], effect: [`지능+10`, `파워+10`]},
@@ -553,7 +553,7 @@ const characterEvents = [
 {createDate:`2022-12-10`, character:`에이신 플래시`, eventType:`chara`,  cardName: `[Meisterschaft] 에이신 플래시`, title: `익숙해져 가는 나날들 속에서`, choice: [`친구들에게 물어보는 건?`, `쌓아나갈 수밖에 없어`, `잠시 독일어를 금지한다거나`], effect: [`파워+10`, `근성+10`, `스태미나+10`]},
 {createDate:`2022-12-10`, character:`에이신 플래시`, eventType:`chara`,  cardName: `[Meisterschaft] 에이신 플래시`, title: `조화로운 마음에 닿아`, choice: [`다음에는 숙박해 보는 건 어때?`, `직원분께 질문해 보자`], effect: [`근성+10`, `스피드+10`]},
 {createDate:`2022-12-10`, character:`에이신 플래시`, eventType:`chara`,  cardName: `[Meisterschaft] 에이신 플래시`, title: `천도의 수호자`, choice: [`체력이 버티지 못할지도…`, `힘이 될 수 있다면!`], effect: [`스태미나+10`, `파워+10`]},
-{createDate:`2022-12-10`, character:`에이신 플래시`, eventType:`chara`,  cardName: `[Meisterschaft] 에이신 플래시`, title: `추억의 Freizeitpark`, choice: [`…오늘만은 그게 정답이었어`, `모처럼인데 더 보고 가지 그래?`], effect: [`파워+10`, `스태미나+10`]},
+{createDate:`2022-12-10`, character:`에이신 플래시`, eventType:`chara`,  cardName: `[Meisterschaft] 에이신 플래시`, title: `추억의 Freizeitpark`, chiddenTag: `프라이자이트파크`, choice: [`…오늘만은 그게 정답이었어`, `모처럼인데 더 보고 가지 그래?`], effect: [`파워+10`, `스태미나+10`]},
 {createDate:`2022-12-10`, character:`에이신 플래시`, eventType:`chara`,  cardName: `[Meisterschaft] 에이신 플래시`, title: `트렌드를 쫓아`, choice: [`추임새는 나한테 맡겨!`, `자주 부르는 노래가 좋아`], effect: [`지능+10`, `스태미나+10`]},
 {createDate:`2022-12-10`, character:`에이신 플래시`, eventType:`chara`,  cardName: `[Meisterschaft] 에이신 플래시`, title: `하늘을 나는 가이던스`, choice: [`하루를 관찰시켜 준다거나`, `요령을 가르쳐 주는 건?`], effect: [`스피드+5<br>스태미나+5<br>파워+5`, `<span class='skill-info'>[일반] 근간거리○</span> 힌트 LV+1`]},
 //엘 콘도르 파사
@@ -618,7 +618,7 @@ const characterEvents = [
 //젠노 롭 로이
 //츠루마루 츠요시
 //카렌짱
-{createDate:`2022-08-13`, character:`카렌짱`, eventType:`chara`, cardName: `[피유 에클레르] 카렌짱`, title: `World is…?`, choice: [`카렌은 파워풀하군!`, `대단한 행동력이야…`], effect: [`파워+10`, `스피드+10`]},
+{createDate:`2022-08-13`, character:`카렌짱`, eventType:`chara`, cardName: `[피유 에클레르] 카렌짱`, title: `World is…?`, hiddenTag: `월드 이즈 이스`, choice: [`카렌은 파워풀하군!`, `대단한 행동력이야…`], effect: [`파워+10`, `스피드+10`]},
 {createDate:`2022-08-13`, character:`카렌짱`, eventType:`chara`, cardName: `[피유 에클레르] 카렌짱`, title: `같이 안 먹을래?`, choice: [`나도 같이 먹어줄까?`, `카렌, 힘내!`], effect: [`체력+10<br>스킬 Pt+5`, `성공 시 :<br>체력+30<br>스킬 Pt+10<br>실패 시 :<br>체력+30<br>스킬 Pt+10<br>스피드-5<br>파워+5<br><span class="condition-info">살찜 주의</span> 획득`]},
 {createDate:`2022-08-13`, character:`카렌짱`, eventType:`chara`, cardName: `[피유 에클레르] 카렌짱`, title: `달캉, 덜컹, 쿨쿨`, choice: [`자게 두자`, `…깨워줄까`], effect: [`지능+10`, `스태미나+10`]},
 {createDate:`2022-08-13`, character:`카렌짱`, eventType:`chara`, cardName: `[피유 에클레르] 카렌짱`, title: `댄스 레슨`, choice: [`춤 출 거면 다른 곳으로 가자`, `안 돼, 제대로 견학해야지`], effect: [`스피드+10`, `근성+10`]},
@@ -632,7 +632,7 @@ const characterEvents = [
 {createDate:`2022-08-13`, character:`카렌짱`, eventType:`chara`, cardName: `[피유 에클레르] 카렌짱`, title: `이게 바로 카렌의 승부복`, choice: [`(전설의 옷감을 찾으러 바다로…)`, `(기적의 염료를 찾아서 산으로…)`], effect: [`스피드+10<br>스태미나+10<br>랜덤으로 <span class="condition-info">훈련 능숙○</span> 획득`, `스피드+10<br>파워+10<br>랜덤으로 <span class="condition-info">훈련 능숙○</span> 획득`]},
 {createDate:`2022-08-13`, character:`카렌짱`, eventType:`chara`, cardName: `[피유 에클레르] 카렌짱`, title: `잘 배워가도록 할게요♪`, choice: [`함께 추자고 하자!`, `견학하자!`], effect: [`체력-10<br>스피드+20`, `<span class='skill-info'>[일반] 선입 심리전</span> 힌트 LV+1`]},
 {createDate:`2022-08-13`, character:`카렌짱`, eventType:`chara`, cardName: `[피유 에클레르] 카렌짱`, title: `추억의 맛`, choice: [`싫어하는 게 나으려나`, `좋아하는 거!`], effect: [`스태미나+10`, `파워+10`]},
-{createDate:`2022-08-13`, character:`카렌짱`, eventType:`chara`, cardName: `[피유 에클레르] 카렌짱`, title: `카렌식 SNS 사용법♪`, choice: [`카렌의 귀여움으로 인도한다`, `가이드 라인에 따라서 대처`], effect: [`스피드+20`, `지능+20`]},
+{createDate:`2022-08-13`, character:`카렌짱`, eventType:`chara`, cardName: `[피유 에클레르] 카렌짱`, title: `카렌식 SNS 사용법♪`, hiddenTag: `에스엔에스`, choice: [`카렌의 귀여움으로 인도한다`, `가이드 라인에 따라서 대처`], effect: [`스피드+20`, `지능+20`]},
 {createDate:`2022-08-13`, character:`카렌짱`, eventType:`chara`, cardName: `[피유 에클레르] 카렌짱`, title: `하나 둘!`, choice: [`멋진 달리기를 보여줘!`, `정말 괜찮아…?`], effect: [`스피드+10`, `지능+10`]},
 //카와카미 프린세스
 //케이에스 미라클
@@ -660,23 +660,23 @@ const characterEvents = [
 //타니노 김렛
 //타마모 크로스
 //타이키 셔틀
-{createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `Burger in Japan!`, choice: [`같이 가자`, `테이크아웃 하자`], effect: [`성공 시 :<br>컨디션 상승<br>스피드+10<br>파워+5<br>실패 시 :<br>컨디션 하락`, `지능+10`]},
-{createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `Hide and Seek!`, choice: [`도망가자…`, `그대로 버티자!`], effect: [`스피드+10`, `스태미나+10`]},
-{createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `Let's 순찰!`, choice: [`마음대로 하게 둔다`, `데리고 돌아간다`], effect: [`파워+10`, `체력+10`]},
-{createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `Rainy Choice!`, choice: [`들고 달릴 수 있는 가벼운 우산`, `내구력이 좋은 튼튼한 우산`], effect: [`스피드+5<br>근성+5`, `스태미나+5<br>지능+5`]},
-{createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `Rainy Pickup!`, choice: [`데려다줘서 고마워`, `그때는 마지못해 샀지만`, `빚이 생겼군`], effect: [`스킬 Pt+30`, `파워+5<br>지능+5`, `스피드+5<br>근성+5`]},
-{createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `Rainy Powerful!`, choice: [`이렇게 된 이상 힘으로라도…!`, `그럼 역까지 경주하자!`], effect: [`파워+10`, `스킬 Pt+30`]},
-{createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `Shall we hug?`, choice: [`겁내지 말고 당당하게 안아줘`, `더 편안하게 안아줘`], effect: [`파워+10`, `체력+10`]},
-{createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `TO THE NO.1!`, choice: [`그럼 조금만 더 하도록 해`, `괜찮아, 꼭 이기게 해줄게!`], effect: [`파워+10<br>근성+10<br>랜덤으로 <span class='condition-info'>수완가</span> 획득`, `스피드+10<br>지능+10<br>랜덤으로 <span class='condition-info'>수완가</span> 획득`]},
-{createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `고기의 하늘로!`, choice: [`Take Care!`, `Take off!`], effect: [`체력+10<br>스킬 Pt+5`, `성공 시 :<br>체력+30<br>스킬 Pt+10<br>실패 시 :<br>체력+30<br>스킬 Pt+10<br>스피드-5<br>파워+5<br><span class='condition-info'>살찜 주의</span> 획득`]},
+{createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `Burger in Japan!`, hiddenTag: `버거 인 재팬`, choice: [`같이 가자`, `테이크아웃 하자`], effect: [`성공 시 :<br>컨디션 상승<br>스피드+10<br>파워+5<br>실패 시 :<br>컨디션 하락`, `지능+10`]},
+{createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `Hide and Seek!`, hiddenTag: `하이드 앤 시크`, choice: [`도망가자…`, `그대로 버티자!`], effect: [`스피드+10`, `스태미나+10`]},
+{createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `Let's 순찰!`, hiddenTag: `렛츠`, choice: [`마음대로 하게 둔다`, `데리고 돌아간다`], effect: [`파워+10`, `체력+10`]},
+{createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `Rainy Choice!`, hiddenTag: `레이니 초이스`, choice: [`들고 달릴 수 있는 가벼운 우산`, `내구력이 좋은 튼튼한 우산`], effect: [`스피드+5<br>근성+5`, `스태미나+5<br>지능+5`]},
+{createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `Rainy Pickup!`, hiddenTag: `레이니 픽업`, choice: [`데려다줘서 고마워`, `그때는 마지못해 샀지만`, `빚이 생겼군`], effect: [`스킬 Pt+30`, `파워+5<br>지능+5`, `스피드+5<br>근성+5`]},
+{createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `Rainy Powerful!`, hiddenTag: `레이니 파워풀`, choice: [`이렇게 된 이상 힘으로라도…!`, `그럼 역까지 경주하자!`], effect: [`파워+10`, `스킬 Pt+30`]},
+{createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `Shall we hug?`, hiddenTag: `셀 쉘 위 허그`, choice: [`겁내지 말고 당당하게 안아줘`, `더 편안하게 안아줘`], effect: [`파워+10`, `체력+10`]},
+{createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `TO THE NO.1!`, hiddenTag: `투 더 넘버원`, choice: [`그럼 조금만 더 하도록 해`, `괜찮아, 꼭 이기게 해줄게!`], effect: [`파워+10<br>근성+10<br>랜덤으로 <span class='condition-info'>수완가</span> 획득`, `스피드+10<br>지능+10<br>랜덤으로 <span class='condition-info'>수완가</span> 획득`]},
+{createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `고기의 하늘로!`, hiddenTag: `테이크 케어 테이크 오프`, choice: [`Take Care!`, `Take off!`], effect: [`체력+10<br>스킬 Pt+5`, `성공 시 :<br>체력+30<br>스킬 Pt+10<br>실패 시 :<br>체력+30<br>스킬 Pt+10<br>스피드-5<br>파워+5<br><span class='condition-info'>살찜 주의</span> 획득`]},
 {createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `댄스 레슨`, choice: [`한계까지 함께 춤추자!`, `일단 안무를 좀 알려줬으면 좋겠어`], effect: [`파워+10`, `스피드+10`]},
-{createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `빨리 쏘기 Battle!`, choice: [`타이키 셔틀`, `나`], effect: [`체력+10<br>스피드+10`, `체력+10<br>지능+10`]},
+{createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `빨리 쏘기 Battle!`, hiddenTag: `배틀`, choice: [`타이키 셔틀`, `나`], effect: [`체력+10<br>스피드+10`, `체력+10<br>지능+10`]},
 {createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `새해 첫 참배`, choice: [`타이키가 건강하길`, `타이키가 무럭무럭 성장하기를`, `타이키의 달리기 실력이 늘기를`], effect: [`체력+30`, `5개 스테이터스+5`, `스킬 Pt+35`]},
-{createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `수확 Festival!`, choice: [`대결하자!`, `시범을 보여줄게`], effect: [`파워+10<br>스킬 Pt+15`, `<span class='skill-info'>[일반] 빠져나갈 준비</span> 힌트 LV+1`]},
+{createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `수확 Festival!`, hiddenTag: `페스티벌`, choice: [`대결하자!`, `시범을 보여줄게`], effect: [`파워+10<br>스킬 Pt+15`, `<span class='skill-info'>[일반] 빠져나갈 준비</span> 힌트 LV+1`]},
 {createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `신년 포부`, choice: [`스피드를 늘려 가자`, `쉴 때는 확실히 쉬자`, `무기를 계속 단련하자`], effect: [`스피드+10`, `체력+20`, `스킬 Pt+20`]},
 {createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `여름 합숙(2년 차)에서`, choice: [`그럼 바다 트레이닝으로 할까`, `얼른 트레이닝을 끝내자!`], effect: [`파워+10`, `근성+10`]},
 {createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `질 수 없는 싸움이, 있는 거예YO`, choice: [`음식에 대한 집념이 아닐까`, `카우걸 정신일까`], effect: [`지능+20`, `스태미나+20`]},
-{createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `특급 riddle편?`, choice: [`혹시 그림의 떡?`, `케이크가 아닌 거 같은데?`], effect: [`컨디션 상승<br>스태미나+5<br>파워+10<br>랜덤으로 컨디션 하락`, `지능+10`]},
+{createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `특급 riddle편?`, hiddenTag: `리들`, choice: [`혹시 그림의 떡?`, `케이크가 아닌 거 같은데?`], effect: [`컨디션 상승<br>스태미나+5<br>파워+10<br>랜덤으로 컨디션 하락`, `지능+10`]},
 {createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `함께 돌아가YO!`, choice: [`그래, 지루하게 해서 미안`, `침 나왔는데?`], effect: [`컨디션 상승<br>스피드+5`, `컨디션 상승<br>스태미나+5`]},
 //토센 조던
 //토카이 테이오
@@ -739,10 +739,10 @@ const characterEvents = [
 {createDate:`2022-08-13`, character:`하루 우라라`, eventType:`chara`, cardName: `[화창한 1등상♪] 하루 우라라`, title: `함께 취재!`, choice: [`과자를 줘서 진정시킨다`, `놀고 오라며 이야기한다`], effect: [`파워+20`, `스태미나+20`]},
 //홋코 타루마에
 //후지 키세키
-{createDate:`2022-11-05`, character:`후지 키세키`, eventType:`chara`,  cardName: `[슈팅 스타 레뷔] 후지 키세키`, title: `@DREAM_MAKER`, choice: [`보기 전문이려나`, `기록용 블로그라면…`], effect: [`파워+10`, `지능+10`]},
-{createDate:`2022-11-05`, character:`후지 키세키`, eventType:`chara`,  cardName: `[슈팅 스타 레뷔] 후지 키세키`, title: `A Quiet Moment`, choice: [`나에게만큼은 응석 부렸으면 해`, `곤란할 때는 서로 도와야지!`], effect: [`근성+20<br>랜덤으로 <span class='condition-info'>훈련 능숙○</span> 획득`, `스태미나+20<br>랜덤으로 <span class='condition-info'>훈련 능숙○</span> 획득`]},
-{createDate:`2022-11-05`, character:`후지 키세키`, eventType:`chara`,  cardName: `[슈팅 스타 레뷔] 후지 키세키`, title: `my dear sister.`, choice: [`그럼 후지는 내가 지킬게!`, `확실히 자매로 보이긴 해`], effect: [`파워+20`, `지능+20`]},
-{createDate:`2022-11-05`, character:`후지 키세키`, eventType:`chara`,  cardName: `[슈팅 스타 레뷔] 후지 키세키`, title: `What a wonderful stage!`, choice: [`모처럼이니 줄을 서볼까`, `이대로 지켜볼게`], effect: [`스태미나+20`, `스피드+10<br>파워+10`]},
+{createDate:`2022-11-05`, character:`후지 키세키`, eventType:`chara`,  cardName: `[슈팅 스타 레뷔] 후지 키세키`, title: `@DREAM_MAKER`, hiddenTag: `드림 메이커`, choice: [`보기 전문이려나`, `기록용 블로그라면…`], effect: [`파워+10`, `지능+10`]},
+{createDate:`2022-11-05`, character:`후지 키세키`, eventType:`chara`,  cardName: `[슈팅 스타 레뷔] 후지 키세키`, title: `A Quiet Moment`, hiddenTag: `어 콰이어트 모멘트`, choice: [`나에게만큼은 응석 부렸으면 해`, `곤란할 때는 서로 도와야지!`], effect: [`근성+20<br>랜덤으로 <span class='condition-info'>훈련 능숙○</span> 획득`, `스태미나+20<br>랜덤으로 <span class='condition-info'>훈련 능숙○</span> 획득`]},
+{createDate:`2022-11-05`, character:`후지 키세키`, eventType:`chara`,  cardName: `[슈팅 스타 레뷔] 후지 키세키`, title: `my dear sister.`, hiddenTag: `마이 디어 시스터`, choice: [`그럼 후지는 내가 지킬게!`, `확실히 자매로 보이긴 해`], effect: [`파워+20`, `지능+20`]},
+{createDate:`2022-11-05`, character:`후지 키세키`, eventType:`chara`,  cardName: `[슈팅 스타 레뷔] 후지 키세키`, title: `What a wonderful stage!`, hiddenTag: `왓 어 원더풀 스테이지`, choice: [`모처럼이니 줄을 서볼까`, `이대로 지켜볼게`], effect: [`스태미나+20`, `스피드+10<br>파워+10`]},
 {createDate:`2022-11-05`, character:`후지 키세키`, eventType:`chara`,  cardName: `[슈팅 스타 레뷔] 후지 키세키`, title: `그대만을 위해서`, choice: [`후지 키세키를 안고 1층으로 뛰어내린다`, `미끼가 된다`], effect: [`근성+10`, `스피드+10`]},
 {createDate:`2022-11-05`, character:`후지 키세키`, eventType:`chara`,  cardName: `[슈팅 스타 레뷔] 후지 키세키`, title: `대스타 두 명의 경연`, choice: [`여기선 굳이 여주인공!`, `이야기를 고조시키는 내레이터`], effect: [`근성+10<br>스킬 Pt+15`, `<span class='skill-info'>[일반] 교란</span> 힌트 LV+1`]},
 {createDate:`2022-11-05`, character:`후지 키세키`, eventType:`chara`,  cardName: `[슈팅 스타 레뷔] 후지 키세키`, title: `댄스 레슨`, choice: [`최고의 댄스`, `조화를 이룬 퍼포먼스`], effect: [`스피드+10`, `스태미나+10`]},

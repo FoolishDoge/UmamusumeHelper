@@ -74,7 +74,7 @@ let items = [
 		idealStatTaget: "단거리 도주마",
 		idealStat: [1200, 410, 950, "x", 1100],
 		hiddenMissionCondition: ["▶ 스프린터스 스테이크스 2연패(모두 육성목표에 있음)"],
-		hiddenMissionReward: ["컨디션 +3, 스피드 +13, 스태미나·파워·근성·지능 +3, 스킬Pt +51, 시나리오NPC 우정도 +4<br><span class='skill-info'>[일반] 기세에 맡기기</span> 힌트Lv +1<br><span class='skill-info'>[일반] 나카야마 경기장○</span> 힌트Lv +1<br><span class='condition-info'>주목받는 신예</span> 획득"]
+		hiddenMissionReward: ["컨디션 +3, 스피드 +13, 스태미나·파워·근성·지능 +3, 스킬Pt +51, 시나리오NPC 우정도 +4<br><span class='skill-info'>[일반] 기세로 밀어붙이기</span> 힌트Lv +1<br><span class='skill-info'>[일반] 나카야마 경기장○</span> 힌트Lv +1<br><span class='condition-info'>주목받는 신예</span> 획득"]
 	},
 	{ 	type: 'chara', id: 'chara_4', score: 0,
 		createDate: "2022-08-13",
@@ -445,7 +445,15 @@ let items = [
 
 	
 	
-	
+	{	type: 'tip', id: 'tip_0', score: 1, fix: true,
+		createDate: "2022-12-31",
+		titleStyle: null,
+		hiddenTag: null,
+		character: null,
+		title: "우마무스메HELPER 사용법",
+		descImg: null,
+		desc: TIP0_DESC,
+	},
 	{	type: 'tip', id: 'tip_1', score: 0,
 		createDate: "2022-07-20",
 		titleStyle: null,

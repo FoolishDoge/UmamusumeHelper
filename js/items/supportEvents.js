@@ -63,8 +63,8 @@ const supportEvents = [
 //다이타쿠 헬리오스
 {createDate:`2022-08-13`, character:`다이타쿠 헬리오스`, eventType:`support`, cardName: null, title: `미소 포에버`, choice: [`기합으로 참아!`, `일단 진정하자`], effect: [`스피드+5<br>파워+10<br>다이타쿠 헬리오스의 우정도+5`, `다이타쿠 헬리오스의 우정도+5<br><span class='skill-info'>[일반] 복병○</span> 힌트 LV+1`]},
 {createDate:`2022-08-13`, character:`다이타쿠 헬리오스`, eventType:`support`, cardName: null, title: `태양과 인카운터☆`, choice: [`각오하고 열창한다`, `추임새를 넣으며 분위기를 띄운다`], effect: [`파워+10<br>다이타쿠 헬리오스의 우정도+5`, `<span class='condition-info'>주목받는 신예</span> 상태 획득<br>다이타쿠 헬리오스의 우정도+5`]},
-{createDate:`2022-08-13`, character:`다이타쿠 헬리오스`, eventType:`support`, cardName: `[파티 피플 · 파티 나이트!] 다이타쿠 헬리오스`, title: `① #bff #Party!`, choice: [`잘 부탁해! 웨~이!`, `뭐, 나도!?`], effect: [`파워+10<br>다이타쿠 헬리오스의 우정도+5`, `스피드+10<br>다이타쿠 헬리오스의 우정도+5`]},
-{createDate:`2022-08-13`, character:`다이타쿠 헬리오스`, eventType:`support`, cardName: `[파티 피플 · 파티 나이트!] 다이타쿠 헬리오스`, title: `② #lol #Party!! #2nd`, choice: [`피해!`, `잡아!`], effect: [`파워+10<br><span class='skill-info'>[일반] 직활강</span> 힌트 LV+1<br>다이타쿠 헬리오스의 우정도+5<br>또는<br>스피드+10<br>파워+10<br><span class='skill-info'>[일반] 직활강</span> 힌트 LV+3<br>다이타쿠 헬리오스의 우정도+5`, `체력+20<br>다이타쿠 헬리오스의 우정도+5<br><span class='skill-info'>[일반] 전개 살피기</span> 힌트 LV+1`]},
+{createDate:`2022-08-13`, character:`다이타쿠 헬리오스`, eventType:`support`, cardName: `[파티 피플 · 파티 나이트!] 다이타쿠 헬리오스`, title: `① #bff #Party!`, hiddenTag: `비에프에프 파티`, choice: [`잘 부탁해! 웨~이!`, `뭐, 나도!?`], effect: [`파워+10<br>다이타쿠 헬리오스의 우정도+5`, `스피드+10<br>다이타쿠 헬리오스의 우정도+5`]},
+{createDate:`2022-08-13`, character:`다이타쿠 헬리오스`, eventType:`support`, cardName: `[파티 피플 · 파티 나이트!] 다이타쿠 헬리오스`, title: `② #lol #Party!! #2nd`, hiddenTag: `롤 파티`, choice: [`피해!`, `잡아!`], effect: [`파워+10<br><span class='skill-info'>[일반] 직활강</span> 힌트 LV+1<br>다이타쿠 헬리오스의 우정도+5<br>또는<br>스피드+10<br>파워+10<br><span class='skill-info'>[일반] 직활강</span> 힌트 LV+3<br>다이타쿠 헬리오스의 우정도+5`, `체력+20<br>다이타쿠 헬리오스의 우정도+5<br><span class='skill-info'>[일반] 전개 살피기</span> 힌트 LV+1`]},
 //데어링 택트
 //라이스 샤워
 {createDate:`2022-08-13`, character:`라이스 샤워`, eventType:`support`, cardName: null, title: `꽃집에서의 1페이지`, choice: [`물 주는 거 도와줄까?`, `꽃 진열하고 올까?`], effect: [`컨디션 2단계 상승<br>라이스 샤워의 우정도+5`, `스태미나+10<br>라이스 샤워의 우정도+5`]},
@@ -81,8 +81,8 @@ const supportEvents = [
 //마블러스 선데이
 {createDate:`2022-08-13`, character:`마블러스 선데이`, eventType:`support`, cardName: null, title: `Marvelous하게 만들려면☆`, choice: [`직접 전력을 다해서 부딪혀 본다든가…?`, `간사이 출신처럼 말해 본다든가…?`], effect: [`체력+10<br>컨디션 상승<br>마블러스 선데이의 우정도+5`, `<span class='skill-info'>[일반] 한신 경기장○</span> 힌트 LV+1<br>마블러스 선데이의 우정도+5`]},
 {createDate:`2022-08-13`, character:`마블러스 선데이`, eventType:`support`, cardName: null, title: `문답무용 Marvelous☆`, choice: [`요즘 힘이 잘 안나`, `컨디션이 더 생겼으면 좋겠어`], effect: [`체력+10<br>스피드+5<br>마블러스 선데이의 우정도+5`, `컨디션 상승<br>스피드+5<br>마블러스 선데이의 우정도+5`]},
-{createDate:`2022-08-13`, character:`마블러스 선데이`, eventType:`support`, cardName: `[마블러스☆대작전] 마블러스 선데이`, title: `① 세계 Marvelous 계획☆`, choice: [`(선택지 없음)`], effect: [`지능+5<br>근성+5`]},
-{createDate:`2022-08-13`, character:`마블러스 선데이`, eventType:`support`, cardName: `[마블러스☆대작전] 마블러스 선데이`, title: `② 정말로 대단해 Marvelous☆`, choice: [`(선택지 없음)`], effect: [`지능+15<br>근성+15`]},
+{createDate:`2022-08-13`, character:`마블러스 선데이`, eventType:`support`, cardName: `[마블러스☆대작전] 마블러스 선데이`, title: `① 세계 Marvelous 계획☆`, hiddenTag: `마블러스`, choice: [`(선택지 없음)`], effect: [`지능+5<br>근성+5`]},
+{createDate:`2022-08-13`, character:`마블러스 선데이`, eventType:`support`, cardName: `[마블러스☆대작전] 마블러스 선데이`, title: `② 정말로 대단해 Marvelous☆`, hiddenTag: `마블러스`, choice: [`(선택지 없음)`], effect: [`지능+15<br>근성+15`]},
 //마야노 탑건
 {createDate:`2022-08-13`, character:`마야노 탑건`, eventType:`support`, cardName: null, title: `마야노식 간식 회의!`, choice: [`새로운 맛에 도전!`, `확실한 게 제일!`], effect: [`스태미나+5<br>근성+5<br>마야노 탑건의 우정도+5`, `스태미나+10<br>마야노 탑건의 우정도+5`]},
 {createDate:`2022-08-13`, character:`마야노 탑건`, eventType:`support`, cardName: null, title: `마야노식 패션 회의!`, choice: [`최신 유행의 센스 극강 코디!`, `움직이기 편한 기능성 코디!`], effect: [`마야노 탑건의 우정도+5<br><span class='skill-info'>[일반] 직선 달인</span> 힌트 LV+1`, `스태미나+10<br>마야노 탑건의 우정도+5`]},
@@ -170,7 +170,7 @@ const supportEvents = [
 {createDate:`2022-08-13`, character:`비와 하야히데`, eventType:`support`, cardName: null, title: `탈 무난론`, choice: [`머리로 생각하기보다 먼저 행동해 보자`, `다치면 다 소용없어`], effect: [`체력-10<br>비와 하야히데의 우정도+5<br><span class='skill-info'>[일반] 안쪽 코너 여포</span> 힌트 LV+1`, `체력+10<br>스태미나+10<br>비와 하야히데의 우정도+5`]},
 {createDate:`2022-08-13`, character:`비와 하야히데`, eventType:`support`, cardName: `[검증, 개시] 비와 하야히데`, title: `① 참견쟁이 언니`, choice: [`(선택지 없음)`], effect: [`체력-10<br>파워+15`]},
 {createDate:`2022-08-13`, character:`비와 하야히데`, eventType:`support`, cardName: `[검증, 개시] 비와 하야히데`, title: `② 트레이닝은 이론적으로`, choice: [`(선택지 없음)`], effect: [`체력-10<br>스태미너+5<br>파워+15<br><span class='skill-info'>[일반] 추격</span> 힌트 LV+3<br>또는<br>체력-20<br>파워+5<br><span class='skill-info'>[일반] 추격</span> 힌트 LV+1`]},
-{createDate:`2022-12-30`, character:`비와 하야히데`, eventType:`support`,  cardName: `[함께 울리는 스트레인] 비와 하야히데`, title: `① plan：Safety`, choice: [`(선택지 없음)`], effect: [`파워+5<br>지능+5<br>비와 하야히데의 우정도+5`]},
+{createDate:`2022-12-30`, character:`비와 하야히데`, eventType:`support`,  cardName: `[함께 울리는 스트레인] 비와 하야히데`, title: `① plan：Safety`, hiddenTag: `플랜 세이프티`, choice: [`(선택지 없음)`], effect: [`파워+5<br>지능+5<br>비와 하야히데의 우정도+5`]},
 {createDate:`2022-12-30`, character:`비와 하야히데`, eventType:`support`,  cardName: `[함께 울리는 스트레인] 비와 하야히데`, title: `② 약간 진하게, 딱딱하게, 왕 곱빼기`, choice: [`(선택지 없음)`], effect: [`성공 시 :<br><span class='skill-info'>[일반] 코너 회복○</span> 힌트 LV+1<br>스킬 Pt+10<br>실패 시 :<br>스킬 Pt+10`]},
 {createDate:`2022-12-30`, character:`비와 하야히데`, eventType:`support`,  cardName: `[함께 울리는 스트레인] 비와 하야히데`, title: `③ 친구가 준 것`, choice: [`(선택지 없음)`], effect: [`<span class='skill-info'>[레어] 쿨다운</span> 힌트 LV+1<br>파워+5<br>지능+5<br>비와 하야히데의 우정도+5`]},
 //비코 페가수스
@@ -185,7 +185,7 @@ const supportEvents = [
 {createDate:`2022-08-13`, character:`사일런스 스즈카`, eventType:`support`, cardName: `[빛나는 경치, 그 너머에] 사일런스 스즈카`, title: `① 편지→?`, choice: [`(선택지 없음)`], effect: [`스피드+10`]},
 {createDate:`2022-08-13`, character:`사일런스 스즈카`, eventType:`support`, cardName: `[빛나는 경치, 그 너머에] 사일런스 스즈카`, title: `② 편지→모두의 마음→?`, choice: [`(선택지 없음)`], effect: [`스피드+10<br>파워+10`]},
 {createDate:`2022-08-13`, character:`사일런스 스즈카`, eventType:`support`, cardName: `[빛나는 경치, 그 너머에] 사일런스 스즈카`, title: `③ 편지→모두의 마음→기다리고 있어줘`, choice: [`(선택지 없음)`], effect: [`스피드+10<br><span class='skill-info'>[레어] 도망자</span> 힌트 LV+1`]},
-{createDate:`2022-12-16`, character:`사일런스 스즈카`, eventType:`support`,  cardName: `[WINNING DREAM] 사일런스 스즈카`, title: `① 연주하자 WINNING!`, choice: [`친목회!!`, `몸을 움직이면 연습도 될 거야`], effect: [`<span class='skill-info'>[일반] 영양 보급</span> 힌트 LV+1<br>근성+10`, `<span class='skill-info'>[일반] 경쾌한 스텝</span> 힌트 LV+1<br>스피드+10`]},
+{createDate:`2022-12-16`, character:`사일런스 스즈카`, eventType:`support`,  cardName: `[WINNING DREAM] 사일런스 스즈카`, title: `① 연주하자 WINNING!`, hiddenTag: `위닝`, choice: [`친목회!!`, `몸을 움직이면 연습도 될 거야`], effect: [`<span class='skill-info'>[일반] 영양 보급</span> 힌트 LV+1<br>근성+10`, `<span class='skill-info'>[일반] 경쾌한 스텝</span> 힌트 LV+1<br>스피드+10`]},
 {createDate:`2022-12-16`, character:`사일런스 스즈카`, eventType:`support`,  cardName: `[WINNING DREAM] 사일런스 스즈카`, title: `② 춤춰라 DREAM!`, choice: [`(선택지 없음)`], effect: [`스태미나+10<br>스킬 Pt+10`]},
 {createDate:`2022-12-16`, character:`사일런스 스즈카`, eventType:`support`,  cardName: `[WINNING DREAM] 사일런스 스즈카`, title: `③ 울려 퍼지는 Stage!`, choice: [`(선택지 없음)`], effect: [`스피드+5<br>스태미나+5<br><span class='skill-info'>[레어] 컨센트레이션</span> 힌트 LV+1`]},
 //사쿠라 로렐
@@ -406,8 +406,8 @@ const supportEvents = [
 {createDate:`2022-08-13`, character:`타마모 크로스`, eventType:`support`, cardName: `[하늘도 갈라버리는 번개 소녀!] 타마모 크로스`, title: `② 없는 형편 나름대로의 레이트 쇼`, choice: [`(선택지 없음)`], effect: [`스태미너+5<br>파워+5<br>근성+5`]},
 {createDate:`2022-08-13`, character:`타마모 크로스`, eventType:`support`, cardName: `[하늘도 갈라버리는 번개 소녀!] 타마모 크로스`, title: `③ 가난함은 친구다!`, choice: [`(선택지 없음)`], effect: [`<span class='skill-info'>[레어] 신속 과감</span> 힌트 LV+1`]},
 //타이키 셔틀
-{createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`support`, cardName: `[트레센 학원] 타이키 셔틀`, title: `Oh! Tonight Party☆`, choice: [`멀리 돌아서 전력 대시다!`, `집단을 헤친다는 이미지로 달리자!`], effect: [`체력-10<br>스피드+5<br>파워+10`, `<span class='skill-info'>[일반] 빠져나갈 준비</span> 힌트 LV+1`]},
-{createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`support`, cardName: `[트레센 학원] 타이키 셔틀`, title: `Yes! Let's hug☆`, choice: [`스피드라고 생각해`, `파워라고 생각해`], effect: [`스피드+10`, `스피드+5<br>파워+5`]},
+{createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`support`, cardName: `[트레센 학원] 타이키 셔틀`, title: `Oh! Tonight Party☆`, hiddenTag: `오 투나잇 파티`, choice: [`멀리 돌아서 전력 대시다!`, `집단을 헤친다는 이미지로 달리자!`], effect: [`체력-10<br>스피드+5<br>파워+10`, `<span class='skill-info'>[일반] 빠져나갈 준비</span> 힌트 LV+1`]},
+{createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`support`, cardName: `[트레센 학원] 타이키 셔틀`, title: `Yes! Let's hug☆`, hiddenTag: `예스 렛츠 허그`, choice: [`스피드라고 생각해`, `파워라고 생각해`], effect: [`스피드+10`, `스피드+5<br>파워+5`]},
 //토센 조던
 {createDate:`2022-12-10`, character:`토센 조던`, eventType:`support`,  cardName: null, title: `리뷰는 반쯤 도박이잖아?`, choice: [`달리지 않는 날에만 쓴다거나`, `다른 활용방법을 찾는다`], effect: [`체력+10<br>컨디션 상승<br>토센 조던의 우정도+5`, `토센 조던의 우정도+5`]},
 {createDate:`2022-12-10`, character:`토센 조던`, eventType:`support`,  cardName: null, title: `스마트폰은 시간 도둑이잖아?`, choice: [`우선 한 바퀴 기록을 잰다`, `평소와 다른 장소에서 조깅`], effect: [`컨디션 상승<br>스피드+5<br>토센 조던의 우정도+5`, `스태미나+10<br>토센 조던의 우정도+5`]},

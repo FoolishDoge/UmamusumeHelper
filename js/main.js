@@ -30,6 +30,7 @@ function loadUserData(){
 	let toggleHighlight = document.querySelector('#chkbox-toggle-highlight');
 	let toggleEssential = document.querySelector('#chkbox-toggle-essential');
 	let autoClear = document.querySelector('#chkbox-toggle-auto-clear');
+	let toggleBottomControl = document.querySelector('#toggle-bottom-control');
 
 	let excludeCharaItem = document.querySelector('#exclude-chara-item');
 	let excludeEventItem = document.querySelector('#exclude-event-item');
@@ -46,6 +47,12 @@ function loadUserData(){
 	if(localStorage.getItem('umaHelperToggleHighlight') == 'f'){ toggleHighlight.checked = false; }
 	if(localStorage.getItem('umaHelperToggleEssential') == 'f'){ toggleEssential.checked = false; }
 	if(localStorage.getItem('umaHelperAutoClear') == 'f'){ autoClear.checked = false; }
+	if(localStorage.getItem('umaToggleBottomControl') == 'f'){
+		toggleBottomControl.checked = false
+		document.querySelector('.open-upper-item').style.display = 'none';
+		document.querySelector('.open-lower-item').style.display = 'none';
+		document.querySelector('.goto-search-btn').style.display = 'none';
+	}
 
 	if(localStorage.getItem('umaHelperExcludeCharaItem') == 't'){ excludeCharaItem.checked = true }
 	if(localStorage.getItem('umaHelperExcludeEventItem') == 't'){ excludeEventItem.checked = true }
@@ -93,6 +100,20 @@ function loadUserData(){
 			localStorage.setItem('umaHelperAutoClear', 't');
 		} else{
 			localStorage.setItem('umaHelperAutoClear', 'f');
+		}
+		search();
+	});
+	toggleBottomControl.addEventListener('change', function(){
+		if(toggleBottomControl.checked == true){
+			localStorage.setItem('umaToggleBottomControl', 't');
+			document.querySelector('.open-upper-item').style.display = 'block';
+			document.querySelector('.open-lower-item').style.display = 'block';
+			document.querySelector('.goto-search-btn').style.display = 'block';
+		} else{
+			localStorage.setItem('umaToggleBottomControl', 'f');
+			document.querySelector('.open-upper-item').style.display = 'none';
+			document.querySelector('.open-lower-item').style.display = 'none';
+			document.querySelector('.goto-search-btn').style.display = 'none';
 		}
 		search();
 	});
@@ -315,7 +336,11 @@ function modifySkills(){
 		}
 		dict['titleStyle'] = null;
 		dict['img'] = val['img'];
-		dict['hiddenTag'] = null;
+		if(val['hiddenTag']){
+			dict['hiddenTag'] = val['hiddenTag'];
+		} else{
+			dict['hiddenTag'] = null;
+		}
 		dict['title'] = key;
 		dict['descImg'] = null;
 		dict['cost'] = val['cost'];
@@ -342,7 +367,11 @@ function modifyEvents(){
 			dict['createDate'] = null
 		}
 		dict['titleStyle'] = null;
-		dict['hiddenTag'] = null;
+		if(val['hiddenTag']){
+			dict['hiddenTag'] = val['hiddenTag'];
+		} else{
+			dict['hiddenTag'] = null;
+		}
 		dict['character'] = val['character'];
 		dict['eventType'] = val['eventType'];
 		dict['cardName'] = val['cardName'];
@@ -365,7 +394,11 @@ function modifyEvents(){
 			dict['createDate'] = null
 		}
 		dict['titleStyle'] = null;
-		dict['hiddenTag'] = null;
+		if(val['hiddenTag']){
+			dict['hiddenTag'] = val['hiddenTag'];
+		} else{
+			dict['hiddenTag'] = null;
+		}
 		dict['character'] = val['character'];
 		dict['eventType'] = val['eventType'];
 		dict['cardName'] = val['cardName'];
@@ -388,7 +421,11 @@ function modifyEvents(){
 			dict['createDate'] = null
 		}
 		dict['titleStyle'] = null;
-		dict['hiddenTag'] = null;
+		if(val['hiddenTag']){
+			dict['hiddenTag'] = val['hiddenTag'];
+		} else{
+			dict['hiddenTag'] = null;
+		}
 		dict['character'] = val['character'];
 		dict['eventType'] = val['eventType'];
 		dict['cardName'] = val['cardName'];
@@ -413,7 +450,11 @@ function modifyRaces(){
 			dict['createDate'] = null
 		}
 		dict['titleStyle'] = null;
-		dict['hiddenTag'] = null;
+		if(val['hiddenTag']){
+			dict['hiddenTag'] = val['hiddenTag'];
+		} else{
+			dict['hiddenTag'] = null;
+		}
 		dict['title'] = val['raceName'];
 		dict['descImg'] = val['raceImg'];
 		dict['raceGrade'] = val['raceGrade'];
@@ -439,23 +480,6 @@ function changePlaceholder(){
 	let rd = Math.floor((Math.random()*lst.length));
 	
 	ph.placeholder = lst[rd]
-}
-function enableHelpIcon(){
-	let helpIcon = document.querySelector(".help");
-	let box = document.querySelector('.info-box');
-	helpIcon.addEventListener('click', function(){
-		const helpIconRect = helpIcon.getBoundingClientRect();
-		let posX = helpIconRect.left + 5;
-		let posY = helpIconRect.top + 25;
-		
-		if(box.style.display == "block"){
-			box.style.display = "none";
-		} else{
-			let inner = `우마무스메 HELPER<br>▶ 검색창에 키워드를 넣어 검색하세요. 띄어쓰기로 키워드를 구분하고 ""로 묶어 반드시 해당 키워드가 포함되어야지만 표시되게 할 수 있습니다.<br>▶ 검색창 좌측에서 종류를 선택하세요. (전체 → 모든 정보 / 말딸 → 캐릭터 육성정보 / 스킬 → 스킬 정보 / 커뮤 → 선택지 정보 / 경주 → 레이스 정보)<br>▶ 빨갛게 혹은 파랗게 칠해져있는 스킬과 시나리오 컨디션을 누르면 정보창이 열립니다. 정보창을 다시 누르면 사라집니다.<br><br>▶ 우측 톱니바퀴를 눌러 설정창을 여세요.<br>&nbsp▷ 아이템 표시 개수: 표시될 수 있는 최대 아이템 개수를 설정합니다. 너무 많은 아이템이 표시되도록 하면 렉이 걸릴 수 있습니다.<br>&nbsp▷ 검색량 누적: 각 키워드마다 검색된 양을 합산한 숫자를 기준으로 정렬합니다. 끌 경우 각 검색 키워드들이 검색 되었는지 혹은 안 되었는지 여부에 따라서 정렬됩니다.<br>&nbsp▷ 내용도 검색: 내용까지 검색대상에 추가합니다. 꺼진 상태에선 제목만 검색됩니다<br>&nbsp▷ 하이라이트: 검색된 키워드를 하이라이팅합니다. 끌 경우 속도가 향상됩니다.<br>&nbsp▷ 모두 필수검색어: 모든 키워드를 ""로 묶은 것으로 인식합니다. 즉, 타이핑된 키워드들 중 하나라도 없는 아이템은 검색되지 않습니다.<br>&nbsp▷ 검색어 자동 지우기: 다른 작업을 하다가 페이지로 돌아왔을 때 검색창을 자동으로 초기화하고 키패드가 열리게 합니다.`;
-			box.innerHTML = inner;
-			infoBoxPositioning(box, posX, posY);
-		}
-	});
 }
 function enableSettingIcon(){
 	let settingIcon = document.querySelector(".open-setting");
@@ -505,7 +529,77 @@ function enableSettingIcon(){
 		}
 	});
 }
+function enableBottomControl(){
+	let goToSearchBtn = document.querySelector(".goto-search-btn");
+	let openUpperItemBtn = document.querySelector('.open-upper-item');
+	let openLowerItemBtn = document.querySelector('.open-lower-item');
 
+	goToSearchBtn.addEventListener('click', function(){
+		let autoClear = document.querySelector("#chkbox-toggle-auto-clear");
+		if(autoClear.checked){
+			document.querySelector('#value').value = "";
+			document.querySelector('#value').blur();
+			document.querySelector('#value').focus();
+			search();
+		} else{
+			document.querySelector('#value').blur();
+			document.querySelector('#value').focus();
+		}
+	});
+
+	openUpperItemBtn.addEventListener('click', function(){
+		const content = document.querySelector(".content");
+		const contentLen = document.querySelector(".content").children.length;
+		if(contentLen == 1){
+			content.children[0].children[0].open = true;
+		}
+		if(contentLen > 1){
+			let cur = -1;
+			for(let i = 0; i < contentLen; i++){
+				if(content.children[i].children[0].open == true){
+					cur = i;
+					break
+				}
+			}
+			if(cur == -1){ // if nothing opened
+				cur = 0;
+			}
+			if(cur-1 < 0){ // prevent underflow
+				content.children[cur].children[0].open = true;
+			} else{
+				content.children[cur].children[0].open = false;
+				content.children[cur-1].children[0].open = true;
+			}
+		}
+	});
+	openLowerItemBtn.addEventListener('click', function(){
+		const content = document.querySelector(".content");
+		const contentLen = document.querySelector(".content").children.length;
+		if(contentLen == 1){
+			content.children[0].children[0].open = true;
+		}
+		if(contentLen > 1){
+			let cur = -1;
+			for(let i = 0; i < contentLen; i++){
+				if(content.children[i].children[0].open == true){
+					cur = i;
+					break
+				}
+			}
+			if(cur == -1){ // if nothing opened
+				cur = 0;
+				content.children[cur].children[0].open = true;
+			} else{
+				if(cur+1 > contentLen-1){ // prevent overflow
+					content.children[cur].children[0].open = true;
+				} else{
+					content.children[cur].children[0].open = false;
+					content.children[cur+1].children[0].open = true;
+				}
+			}
+		}
+	});
+}
 
 
 
@@ -654,7 +748,7 @@ inputBox.addEventListener('search', function(){
 	timeout = setTimeout(function(){
 		// In case of mobile chrome, there is a bug that x button doesn't clear the value.
 		// It seems to because of mobile web browser's way of handle input value. When user input something at element, browser load it on the buffer and it is not cleared untill a series of action done.
-		// One of a simple trick to make a circuit from the problem is, out-focus input tag to make browser believe that a series of action is done.
+		// One of a simple trick to make a circuit from the problem is, using out-focus input tag to make browser believe that a series of action was done.
 		inputBox.blur();
 		search();
 		inputBox.focus();
@@ -687,7 +781,7 @@ inputBox.addEventListener('search', function(){
 
 // Autofocusing when user return.
 window.addEventListener('focus', function(){
-	let autoClear = document.querySelector("#chkbox-toggle-auto-clear")
+	let autoClear = document.querySelector("#chkbox-toggle-auto-clear");
 	
 	changePlaceholder();
 	if(autoClear.checked){
@@ -702,10 +796,8 @@ window.addEventListener('focus', function(){
 modifySkills();
 modifyEvents();
 modifyRaces();
-enableHelpIcon();
 enableSettingIcon();
+enableBottomControl();
 changePlaceholder();
 loadUserData();
 search();
-
-console.log('build 2210111831');
