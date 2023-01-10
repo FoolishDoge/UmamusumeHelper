@@ -325,7 +325,7 @@ const skills = {
 '[일반] 슬립 스트림':{ createDate:`2022-08-13`, img:'powerful_normal', cost:'160', condition:`앞의 우마무스메와 인접 3초 이상 / 레이스 경과 10초 이상`, effect:'속도 상승 0.15', duration:'지속 시간 3초 / 쿨타임 30초', comment:null, recommend:[1,0,2,2] },
 '[일반] 장난은 끝이야!':{ createDate:`2022-08-13`, img:'powerful_normal', cost:'160', condition:`뒤의 우마무스메와 인접 3초 이상 / 레이스 경과 10초 이상`, effect:'속도 상승 0.15', duration:'지속 시간 3초 / 쿨타임 30초', comment:null, recommend:[0,0,0,1] },
 '[레어] 차트 급상승!':{ createDate:`2022-08-13`, img:'powerful_rare', cost:'180', condition:`더트 / 레이스 중반 / 옆쪽 가로막힘 2초 이상`, effect:'속도 상승 0.35', duration:'지속 시간 1.8초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
-'[일반] 리커멘드':{ createDate:`2022-08-13`, img:'powerful_normal', cost:'180', condition:`더트 / 레이스 중반 / 옆쪽 가로막힘 2초 이상`, effect:'속도 상승 0.15', duration:'지속 시간 1.8초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
+'[일반] 레커멘드':{ createDate:`2022-08-13`, img:'powerful_normal', cost:'180', condition:`더트 / 레이스 중반 / 옆쪽 가로막힘 2초 이상`, effect:'속도 상승 0.15', duration:'지속 시간 1.8초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
 '[일반] 낫지 않는 갈증':{ createDate:`2022-08-13`, img:'familiar_common_normal', cost:null, condition:`교토에서 개최되는 레이스`, effect:'스태미나 보정 40', duration:'지속 시간 0초 / 쿨타임 0초', comment:null, recommend:[0,0,0,0] },
 '[레어] 변함없는 채로':{ createDate:`2022-08-13`, img:'move_common_rare', cost:null, condition:`겨울에 개최되는 레이스`, effect:'스피드 보정 80', duration:'지속 시간 0초 / 쿨타임 0초', comment:null, recommend:[0,0,0,0] },
 '[일반] 슈팅 스타':{ createDate:`2022-08-13`, img:'powerful_normal', cost:'200', condition:`레이스 종반 및 이후 / 순위 2 이상, 순위 비율 50% 이하 / 조건 하에서 추월 시 발동 (챔피언스 미팅 : 2~4위 / 팀 경기장 : 2~6위 / 풀 게이트 : 2~9위)`, effect:'속도 상승 0.15', duration:'지속 시간 3초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
@@ -448,9 +448,11 @@ const skills = {
 '[일반] 벼가 곧 무르익노라':{ createDate:`2022-12-19`, img:'powerful_normal', cost:'200', condition:`진행거리 비율 50% 이상 / 순위 비율 40% 이상 / 자신이 따라잡기 대상이 됨 2초 이상 (챔피언스 미팅 : 4~8위 / 팀 경기장 : 5~11위 / 풀 게이트 : 7~17위)`, effect:'속도 상승 0.15', duration:'지속 시간 5초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
 "[고유] I'M☆FULL☆SPEED!!":{ createDate:`2022-12-30`, img:'powerful_unique', cost:null, condition:`진행거리 비율 45% 이상, 60% 이하 / 순위 3 이상, 순위 비율 50% 이하 (챔피언스 미팅 : 3~5위 / 팀 경기장 : 3~6위 / 풀 게이트 : 3~9위) / 남은 지구력 70% 이하`, effect:'속도 상승 0.25 / 가속 상승 0.3', duration:'지속 시간 5초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
 "[일반] I'M☆FULL☆SPEED!!":{ createDate:`2022-12-30`, img:'powerful_normal', cost:'200', condition:`진행거리 비율 45% 이상, 60% 이하 / 순위 3 이상, 순위 비율 50% 이하 (챔피언스 미팅 : 3~5위 / 팀 경기장 : 3~6위 / 풀 게이트 : 3~9위) / 남은 지구력 70% 이하`, effect:'속도 상승 0.05 / 가속 상승 0.1', duration:'지속 시간 3초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
+'[고유] 존귀☆라스트 스퍼—(ﾟ∀ﾟ)—트!':{ createDate:`2023-01-10`, img:'powerful_unique', cost:null, condition:`레이스 종반 및 이후에 순위 상승 2 이상`, effect:'속도 상승 0.35', duration:'지속 시간 5초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
+'[일반] 존귀☆라스트 스퍼—(ﾟ∀ﾟ)—트!':{ createDate:`2023-01-10`, img:'powerful_normal', cost:'200', condition:`레이스 종반 및 이후에 순위 상승 2 이상`, effect:'속도 상승 0.15', duration:'지속 시간 3초 / 쿨타임 500초', comment:null, recommend:[0,0,0,0] },
 };
 
 /*
-'[고유] ':{ createDate:`2022--`, img:'powerful_unique', cost:null, condition:``, effect:'', duration:'', comment:null, recommend:[0,0,0,0] },
-'[일반] ':{ createDate:`2022--`, img:'powerful_normal', cost:'200', condition:``, effect:'', duration:'', comment:null, recommend:[0,0,0,0] },
+'[고유] ':{ createDate:`2023--`, img:'powerful_unique', cost:null, condition:``, effect:'', duration:'', comment:null, recommend:[0,0,0,0] },
+'[일반] ':{ createDate:`2023--`, img:'powerful_normal', cost:'200', condition:``, effect:'', duration:'', comment:null, recommend:[0,0,0,0] },
 */
