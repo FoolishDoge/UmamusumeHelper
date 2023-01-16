@@ -466,28 +466,60 @@ const TIP12_DESC = `
 
 const TIP14_DESC = `
 [기본 정보]<br>
-- 2023년 1월 10일 ~ 1월 16일<br>
-- 한신 / 잔디 / 1600m(마일) / 우, 외측 / 가을 / 맑음 / 양호<br>
-- 최종 코너 후 가속스킬 매우 효과적: <span class="skill-info">[레어] 강인한 다리</span>, <span class="skill-info">[레어] 능숙한 환승</span>, <span class="skill-info">[일반] 레츠 아나볼릭!</span> 등 채용.<br>
-- 일섭 유저들은 '2도주, 1선입' 선호.<br>
-- 내리막길 없음.<br>
-- 오르막과 급경사 구간이 있어 파워 소모가 심함 → 높은 파워와 가속스킬 유리.<br>
-- 선행마의 경우 좋은 고유가속기가 부족하고, 도주마가 많을 것으로 예상되는 반면 도주마가 많을 수록 힘을 쓰기 어렵기 때문에 추천되지 않음.<br>
-- 파워 301, 601, 901 이상부터 스피드 보너스가 달림.<br>
+- (예상) 2023년 2월 10일 ~ 2월 16일<br>
+<table class="desc-table"><tr>
+<td class="td-label">경기장</td><td class="td-label">거리</td><td class="td-label">방향</td><td class="td-label">계절</td><td class="td-label">날씨</td><td class="td-label">상태</td></tr><tr>
+<td class="td-desc">교토</td><td class="td-desc">3000m<br>장거리</td><td class="td-desc">시계(우)<br>바깥쪽(외)</td><td class="td-desc">가을</td><td class="td-desc">맑음</td><td class="td-desc">양호</td></tr></table>
+- 거리적성 S 효과 매우 큼.<br>
+- 3000m의 초장거리 레이스기 때문에 힐스킬이 필수적이며, 좋은 금딱 힐을 내장하고 있는 캐릭터들이 매우 유리함.<br>
+- 스타트 직후 오르막이 있어 <span class="skill-info">[일반] 등산가</span> 스킬의 입지가 <span class="skill-info">[일반] 터다지기</span>급으로 좋아짐.<br>
+- 앞각질의 경우 초반 목표 속도가 높음 → 가속에 걸리는 시간이 길어 첫 오르막에서 가속중이기 때문에 <span class="skill-info">[일반] 등산가</span>가 효과를 보았으나, 뒷각질의 경우 초반 목표속도가 낮아 스킬이 터지는 시점에서 가속이 완료되어 효과를 보지 못 함.<br>
+- 파워, 지능이 301, 601, 901을 넘길 때마다 마장 보너스를 얻는다. 파워 901 이상, 지능 901 이상일 경우 스피드 보정 +20%<br>
+- 도주마의 <span class="skill-info">[일반] 앵글링×스키밍</span>, 선·추입마의 <span class="skill-info">[일반] 레츠 아나볼릭!</span>은 여전히 효과적이나, 이전과 달리 완벽하게 종반 시작과 함께 발동하지 않기 때문에 다소 약화됨.<br>
+- 종반 구간이 직선으로 시작하기 때문에, <span class="skill-info">[레어] 육박하는 그림자</span>, <span class="skill-info">[일반] 직선 주파</span>가 매우 효과적.<br>
+- 최종 코너 가속기는 거의 효과가 없음.<br>
+- 선입마의 경우 좋은 스킬은 가지고 있으나 추입이 많아질 경우 순위조건에서 밀려나 <span class="skill-info">[일반] 레츠 아나볼릭!</span>의 발동이 어려워질 것.<br>
+- 이상의 이유로 추입 > 선행 > 선입 > 도주 순으로 유리할 것으로 보임.<br>
+<br>
 <br>
 [필요 스태미너]
 <table class="desc-table"><tr>
+<td class="td-blank"></td>
 <td class="td-label">도주</td><td class="td-label">선행</td><td class="td-label">선입</td><td class="td-label">추입</td></tr><tr>
-<td class="td-desc">592</td><td class="td-desc">683</td><td class="td-desc">636</td><td class="td-desc">649</td></tr></table>
-※ 근성301, 디버프 없음으로 가정(일반 디버프 -38, 레어 디버프 -113)한 최소치. 여유있게 더 챙기는 걸 추천함.<br>
+<td class="td-label">-</td>
+<td class="td-desc">1220</td><td class="td-desc">1390</td><td class="td-desc">1300</td><td class="td-desc">1335</td></tr>
+<td class="td-label" nowrap>금1</td>
+<td class="td-desc">945</td><td class="td-desc">1100</td><td class="td-desc">1040</td><td class="td-desc">1070</td></tr>
+<td class="td-label"nowrap>금1은1</td>
+<td class="td-desc">875</td><td class="td-desc">1020</td><td class="td-desc">970</td><td class="td-desc">1000</td>
+</tr></table>
+※ 다른 요소 고려 없이 필요 스태미나만 측정한 값. 실제로는 다른 스탯의 영향이나 스킬 발동으로 필요 스태미나는 낮아짐.<br>
+※ 은딱 힐 하나당 -80, 금딱 힐 하나당 -260, 은딱 디버프 +38, 금딱 디버프 +113 정도로 가산할 것.<br>
+※ 지능 목표치가 최대 601 정도로 낮은 만큼 힐 스킬이 확률적으로 발동되지 않을 수도 있다는 걸 고려하기 바람.<br>
+<br>
 <br>
 [추천 육성마]
 <table class="desc-table">
-<tr><td class="td-label">도주</td><td class="td-desc"><b>마루젠스키(수영복)</b><br><b>스마트 팔콘</b><br>세이운 스카이<br>마루젠스키</td></tr>
-<tr><td class="td-label">선행</td><td class="td-desc">마루젠스키<br>오구리 캡</td></tr>
-<tr><td class="td-label">선입</td><td class="td-desc"><b>보드카</b><br>오구리 캡<br>그래스 원더</td></tr>
-<tr><td class="td-label">추입</td><td class="td-desc">나리타 타이신<br></td></tr>
+<tr><td class="td-label">추입</td><td class="td-desc">
+<b>나리타 타이신</b><br>
+<b>골드 쉽</b></tr>
+<tr><td class="td-label">선행</td><td class="td-desc">
+슈퍼 크릭<br>
+세이운 스카이<br>
+메지로 맥퀸<br>
+수영복 마루젠스키
+</td></tr>
+<tr><td class="td-label">선입</td><td class="td-desc">
+나이스 네이처(디버프 담당)<br>
+</td></tr>
+<tr><td class="td-label">도주</td><td class="td-desc">
+하루 우라라(선행 페이스메이커 저격용 조커픽)<br>
+할로윈 라이스샤워
+</td></tr>
 </table>
+<br><br>
+[참고용 사이트]<br>
+<a target="_blank" href="https://gall.dcinside.com/mgallery/board/view/?id=umamusu&no=1417153&page=1">우마무스메 프리티 더비 갤러리 리브라배 관련 공략 모음.ZIP (01.12 new)</a>
 `;
 
 const TIP15_DESC = `

@@ -1,7 +1,7 @@
 const races = [
     {createDate:`2022-11-17`, eventType:`race`, raceImg:null, raceName:`하코다테 주니어 스테이크스`, raceGrade:`G3`, raceDate:`주니어급 7월 후반`, raceBasic:`GⅢ / 하코다테 / 잔디 / 1200m(단거리) / 우`, raceNumber:`16명`, raceCondition:`350명 이상`, raceFan:`3100명`, comment:``},
     {createDate:`2022-11-17`, eventType:`race`, raceImg:null, raceName:`니이가타 주니어 스테이크스`, raceGrade:`G3`, raceDate:`주니어급 8월 후반`, raceBasic:`GⅢ / 니이가타 / 잔디 / 1600m(마일) / 좌, 외측`, raceNumber:`18명`, raceCondition:`350명 이상`, raceFan:`3100명`, comment:``},
-    {createDate:`2022-11-17`, eventType:`race`, raceImg:null, raceName:`삿포로 주니어 스테이크스`, raceGrade:`G3`,  raceBasic:`GⅢ / 삿포로 / 잔디 / 1800m(마일) / 우`, raceNumber:`14명`, raceCondition:`350명 이상`, raceFan:`3100명`, comment:``},
+    {createDate:`2022-11-17`, eventType:`race`, raceImg:null, raceName:`삿포로 주니어 스테이크스`, raceGrade:`G3`,  raceDate:`주니어급 9월 전반`, raceBasic:`GⅢ / 삿포로 / 잔디 / 1800m(마일) / 우`, raceNumber:`14명`, raceCondition:`350명 이상`, raceFan:`3100명`, comment:``},
     {createDate:`2022-11-17`, eventType:`race`, raceImg:null, raceName:`코쿠라 주니어 스테이크스`, raceGrade:`G3`, raceDate:`주니어급 9월 전반`, raceBasic:`GⅢ / 코쿠라 / 잔디 / 1200m(단거리) / 우`, raceNumber:`18명`, raceCondition:`350명 이상`, raceFan:`3100명`, comment:``},
     {createDate:`2022-11-17`, eventType:`race`, raceImg:null, raceName:`사우디아라비아 로열컵`, raceGrade:`G3`, raceDate:`주니어급 10월 전반`, raceBasic:`GⅢ / 도쿄 / 잔디 / 1600m(마일) / 좌`, raceNumber:`18명`, raceCondition:`350명 이상`, raceFan:`3300명`, comment:``},
     {createDate:`2022-11-17`, eventType:`race`, raceImg:null, raceName:`아르테미스 스테이크스`, raceGrade:`G3`, raceDate:`주니어급 10월 후반`, raceBasic:`GⅢ / 도쿄 / 잔디 / 1600m(마일) / 좌`, raceNumber:`18명`, raceCondition:`350명 이상`, raceFan:`2900명`, comment:``},
