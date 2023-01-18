@@ -227,6 +227,9 @@ function createSkillItem(inner, item){
 	}
 	
 	inner += `<table class="desc-table">`;
+	if(item['owner']){
+		inner += `<tr><td nowrap class="td-label">보유자</td><td class="td-desc">${item['owner']}</td></tr>`;
+	}
 	if(item['cost']){
 		inner += `<tr><td nowrap class="td-label">스킬Pt비용</td><td class="td-desc">${item['cost']}</td></tr>`;
 	}

@@ -341,6 +341,11 @@ function modifySkills(){
 		} else{
 			dict['hiddenTag'] = null;
 		}
+		if(val['owner']){
+			dict['owner'] = val['owner'];
+		} else{
+			dict['owner'] = null;
+		}
 		dict['title'] = key;
 		dict['descImg'] = null;
 		dict['cost'] = val['cost'];

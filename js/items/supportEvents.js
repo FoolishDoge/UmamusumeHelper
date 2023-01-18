@@ -11,9 +11,9 @@ const supportEvents = [
 //골드 시티
 {createDate:`2022-08-13`, character:`골드 시티`, eventType:`support`, cardName: null, title: `08:36 / 아, 늦잠 잤네`, choice: [`이제 곧 수업 시작하는데……`, `서둘러도 별수 없지`], effect: [`컨디션 하락<br>스킬 Pt+45<br>골드 시티의 우정도+5`, `체력+10<br>지능+5<br>골드 시티의 우정도+5`]},
 {createDate:`2022-08-13`, character:`골드 시티`, eventType:`support`, cardName: null, title: `13:12 / 점심시간, 기합 좀 넣어야지`, choice: [`우선은 눈앞의 일에 집중하자`, `에너지음료 마실래?`], effect: [`스킬 Pt+30<br>골드 시티의 우정도+5`, `<span class='skill-info'>[일반] 짧은 휴식</span> 힌트 LV+1<br>골드 시티의 우정도+5`]},
-{createDate:`2022-08-13`, character:`골드 시티`, eventType:`support`, cardName: `[Run(my)way] 골드 시티`, title: `① Pride`, choice: [`(선택지 없음)`], effect: [`체력+20`]},
-{createDate:`2022-08-13`, character:`골드 시티`, eventType:`support`, cardName: `[Run(my)way] 골드 시티`, title: `② Struggle`, choice: [`(선택지 없음)`], effect: [`체력+10<br>스태미너+10`]},
-{createDate:`2022-08-13`, character:`골드 시티`, eventType:`support`, cardName: `[Run(my)way] 골드 시티`, title: `③ One Step`, choice: [`(선택지 없음)`], effect: [`스태미너+10<br><span class='skill-info'>[레어] 혜안</span> 힌트 LV+1`]},
+{createDate:`2022-08-13`, character:`골드 시티`, eventType:`support`, cardName: `[Run(my)way] 골드 시티`, title: `① Pride`, hiddenTag: `프라이드`, choice: [`(선택지 없음)`], effect: [`체력+20`]},
+{createDate:`2022-08-13`, character:`골드 시티`, eventType:`support`, cardName: `[Run(my)way] 골드 시티`, title: `② Struggle`, hiddenTag: `스트러글`, choice: [`(선택지 없음)`], effect: [`체력+10<br>스태미너+10`]},
+{createDate:`2022-08-13`, character:`골드 시티`, eventType:`support`, cardName: `[Run(my)way] 골드 시티`, title: `③ One Step`, hiddenTag: `원 스텝`, choice: [`(선택지 없음)`], effect: [`스태미너+10<br><span class='skill-info'>[레어] 혜안</span> 힌트 LV+1`]},
 //그래스 원더
 {createDate:`2022-08-13`, character:`그래스 원더`, eventType:`support`, cardName: null, title: `낮 무렵에 이야기를 나누다`, choice: [`동요시켜서 페이스를 무너뜨리는 게 좋아`, `철저히 마크해서 마음대로 달리지 못하게 해`], effect: [`그래스 원더의 우정도+5<br><span class='skill-info'>[일반] 선행 심리전</span> 힌트 LV+1`, `<span class='skill-info'>[일반] 집중 마크○</span> 힌트 LV+1<br>그래스 원더의 우정도+5`]},
 {createDate:`2022-08-13`, character:`그래스 원더`, eventType:`support`, cardName: null, title: `서고에서 고민하다`, choice: [`우선은 찾은 한 권을 자세히 읽자`, `같이 찾아볼까?`], effect: [`지능+10<br>그래스 원더의 우정도+5`, `근성+5<br>지능+5<br>그래스 원더의 우정도+5`]},
@@ -79,8 +79,8 @@ const supportEvents = [
 {createDate:`2022-08-13`, character:`마루젠스키`, eventType:`support`, cardName: `[트레센 학원] 마루젠스키`, title: `귀여운 후배를 위해서인걸`, choice: [`무릎을 쓰는 방법을 가르쳐 준다`, `기초 체력을 늘린다`], effect: [`<span class='skill-info'>[일반] 앞장서기</span> 힌트 LV+1`, `체력+5<br>스피드+10`]},
 {createDate:`2022-08-13`, character:`마루젠스키`, eventType:`support`, cardName: `[트레센 학원] 마루젠스키`, title: `알흠다운 드라이브랍니다~`, choice: [`해안`, `모르는 거리`], effect: [`<span class='skill-info'>[일반] 비오는 날○</span> 힌트 LV+1`, `컨디션 상승<br>지능+5`]},
 //마블러스 선데이
-{createDate:`2022-08-13`, character:`마블러스 선데이`, eventType:`support`, cardName: null, title: `Marvelous하게 만들려면☆`, choice: [`직접 전력을 다해서 부딪혀 본다든가…?`, `간사이 출신처럼 말해 본다든가…?`], effect: [`체력+10<br>컨디션 상승<br>마블러스 선데이의 우정도+5`, `<span class='skill-info'>[일반] 한신 경기장○</span> 힌트 LV+1<br>마블러스 선데이의 우정도+5`]},
-{createDate:`2022-08-13`, character:`마블러스 선데이`, eventType:`support`, cardName: null, title: `문답무용 Marvelous☆`, choice: [`요즘 힘이 잘 안나`, `컨디션이 더 생겼으면 좋겠어`], effect: [`체력+10<br>스피드+5<br>마블러스 선데이의 우정도+5`, `컨디션 상승<br>스피드+5<br>마블러스 선데이의 우정도+5`]},
+{createDate:`2022-08-13`, character:`마블러스 선데이`, eventType:`support`, cardName: null, title: `Marvelous하게 만들려면☆`, hiddenTag: `마블러스`, choice: [`직접 전력을 다해서 부딪혀 본다든가…?`, `간사이 출신처럼 말해 본다든가…?`], effect: [`체력+10<br>컨디션 상승<br>마블러스 선데이의 우정도+5`, `<span class='skill-info'>[일반] 한신 경기장○</span> 힌트 LV+1<br>마블러스 선데이의 우정도+5`]},
+{createDate:`2022-08-13`, character:`마블러스 선데이`, eventType:`support`, cardName: null, title: `문답무용 Marvelous☆`, hiddenTag: `마블러스`, choice: [`요즘 힘이 잘 안나`, `컨디션이 더 생겼으면 좋겠어`], effect: [`체력+10<br>스피드+5<br>마블러스 선데이의 우정도+5`, `컨디션 상승<br>스피드+5<br>마블러스 선데이의 우정도+5`]},
 {createDate:`2022-08-13`, character:`마블러스 선데이`, eventType:`support`, cardName: `[마블러스☆대작전] 마블러스 선데이`, title: `① 세계 Marvelous 계획☆`, hiddenTag: `마블러스`, choice: [`(선택지 없음)`], effect: [`지능+5<br>근성+5`]},
 {createDate:`2022-08-13`, character:`마블러스 선데이`, eventType:`support`, cardName: `[마블러스☆대작전] 마블러스 선데이`, title: `② 정말로 대단해 Marvelous☆`, hiddenTag: `마블러스`, choice: [`(선택지 없음)`], effect: [`지능+15<br>근성+15`]},
 //마야노 탑건
@@ -153,6 +153,9 @@ const supportEvents = [
 {createDate:`2022-12-30`, character:`미호노 부르봉`, eventType:`support`,  cardName: `[축복은 푸가] 미호노 부르봉`, title: `① 단짝☆친구 ~탐구편~`, choice: [`확실히 『멋진 아이』구나!`, `지, 진정해`], effect: [`스킬 Pt+10<br>미호노 부르봉의 우정도+5`, `컨디션 2단계 상승<br>미호노 부르봉의 우정도-5`]},
 {createDate:`2022-12-30`, character:`미호노 부르봉`, eventType:`support`,  cardName: `[축복은 푸가] 미호노 부르봉`, title: `② 단짝☆친구 ~조사편~`, choice: [`(선택지 없음)`], effect: [`스피드+5<br>스태미나+5<br>미호노 부르봉의 우정도+5`]},
 {createDate:`2022-12-30`, character:`미호노 부르봉`, eventType:`support`,  cardName: `[축복은 푸가] 미호노 부르봉`, title: `③ 단짝☆친구 ~실천편~`, choice: [`(선택지 없음)`], effect: [`<span class='skill-info'>[레어] 도망자</span> 힌트 LV+3<br>스태미나+10<br>미호노 부르봉의 우정도+5<br>또는<br><span class='skill-info'>[일반] 굳히기 준비</span> 힌트 LV+3<br>스태미나+5<br>미호노 부르봉의 우정도+5`]},
+{createDate:`2023-01-18`, character:`미호노 부르봉`, eventType:`support`, cardName: `[유령과 할로윈의 마법] 미호노 부르봉`, title: `① 스테이터스 『재미없음?』`, choice: [`지금 이대로가 좋아!`, `표정을 바꾸지 않아도 되는 컨셉이면 어때?`], effect: [`스피드+10<br>미호노 부르봉의 우정도+5<br><span class='skill-info'>[일반] 기세로 밀어붙이기</span> 힌트 LV+1`, `지능+15<br>미호노 부르봉의 우정도+5`]},
+{createDate:`2023-01-18`, character:`미호노 부르봉`, eventType:`support`, cardName: `[유령과 할로윈의 마법] 미호노 부르봉`, title: `② 스테이터스 『그대로』`, choice: [`(선택지 없음)`], effect: [`스태미나+5<br>지능+10`]},
+{createDate:`2023-01-18`, character:`미호노 부르봉`, eventType:`support`, cardName: `[유령과 할로윈의 마법] 미호노 부르봉`, title: `③ 스테이터스 『재밌어!』`, choice: [`(선택지 없음)`], effect: [`스태미나+5<br>지능+10<br><span class='skill-info'>[레어] 선수 필승</span> 힌트 LV+1`]},
 //뱀부 메모리
 {createDate:`2022-10-11`, character:`뱀부 메모리`, eventType:`support`,  cardName: `[Head-on fight!] 뱀부 메모리`, title: `① 목표는 득점왕임다!`, choice: [`(선택지 없음)`], effect: [`체력-10<br>스태미나+3<br>파워+3<br>근성+3<br><span class='skill-info'>[일반] 대항 의식○</span> 힌트 LV+1`]},
 {createDate:`2022-10-11`, character:`뱀부 메모리`, eventType:`support`,  cardName: `[Head-on fight!] 뱀부 메모리`, title: `② 상대가 누구든 교칙은 절대적임다!`, choice: [`아무튼 이제 안심이군`, `명콤비였군`, `……만약 유령이 겁내지 않으면?`], effect: [`체력 최대치+4<br>체력-10<br>스태미나+10<br>파워+10<br>근성+5<br>뱀부 메모리의 우정도+5<br><br>또는<br><br>체력-20<br>스태미나+10<br>파워+10<br>근성+5<br>뱀부 메모리의 우정도+5<br><br>또는<br><br>체력-20<br>스태미나+10<br>근성+10<br><span class='skill-info'>[일반] 공회전</span> 획득<br><span class='skill-info'>[일반] 뒷심</span> 힌트 LV+1`, `체력-10<br>컨디션 상승<br>스태미나+5<br>파워+5<br>뱀부 메모리의 우정도+5`, `체력+30<br><span class='skill-info'>[일반] 선입 주저</span> 힌트 LV+1<br>연속 이벤트 종료`]},
@@ -186,8 +189,8 @@ const supportEvents = [
 {createDate:`2022-08-13`, character:`사일런스 스즈카`, eventType:`support`, cardName: `[빛나는 경치, 그 너머에] 사일런스 스즈카`, title: `② 편지→모두의 마음→?`, choice: [`(선택지 없음)`], effect: [`스피드+10<br>파워+10`]},
 {createDate:`2022-08-13`, character:`사일런스 스즈카`, eventType:`support`, cardName: `[빛나는 경치, 그 너머에] 사일런스 스즈카`, title: `③ 편지→모두의 마음→기다리고 있어줘`, choice: [`(선택지 없음)`], effect: [`스피드+10<br><span class='skill-info'>[레어] 도망자</span> 힌트 LV+1`]},
 {createDate:`2022-12-16`, character:`사일런스 스즈카`, eventType:`support`,  cardName: `[WINNING DREAM] 사일런스 스즈카`, title: `① 연주하자 WINNING!`, hiddenTag: `위닝`, choice: [`친목회!!`, `몸을 움직이면 연습도 될 거야`], effect: [`<span class='skill-info'>[일반] 영양 보급</span> 힌트 LV+1<br>근성+10`, `<span class='skill-info'>[일반] 경쾌한 스텝</span> 힌트 LV+1<br>스피드+10`]},
-{createDate:`2022-12-16`, character:`사일런스 스즈카`, eventType:`support`,  cardName: `[WINNING DREAM] 사일런스 스즈카`, title: `② 춤춰라 DREAM!`, choice: [`(선택지 없음)`], effect: [`스태미나+10<br>스킬 Pt+10`]},
-{createDate:`2022-12-16`, character:`사일런스 스즈카`, eventType:`support`,  cardName: `[WINNING DREAM] 사일런스 스즈카`, title: `③ 울려 퍼지는 Stage!`, choice: [`(선택지 없음)`], effect: [`스피드+5<br>스태미나+5<br><span class='skill-info'>[레어] 컨센트레이션</span> 힌트 LV+1`]},
+{createDate:`2022-12-16`, character:`사일런스 스즈카`, eventType:`support`,  cardName: `[WINNING DREAM] 사일런스 스즈카`, title: `② 춤춰라 DREAM!`, hiddenTag: `드림`, choice: [`(선택지 없음)`], effect: [`스태미나+10<br>스킬 Pt+10`]},
+{createDate:`2022-12-16`, character:`사일런스 스즈카`, eventType:`support`,  cardName: `[WINNING DREAM] 사일런스 스즈카`, title: `③ 울려 퍼지는 Stage!`, hiddenTag: `스테이지`, choice: [`(선택지 없음)`], effect: [`스피드+5<br>스태미나+5<br><span class='skill-info'>[레어] 컨센트레이션</span> 힌트 LV+1`]},
 //사쿠라 로렐
 //사쿠라 바쿠신 오
 {createDate:`2022-08-13`, character:`사쿠라 바쿠신 오`, eventType:`support`, cardName: null, title: `뛰고 싶어질 정도로!!`, choice: [`다 읽으면 빌려도 될까?`, `참고하게 달리기를 보여줄 있어?`], effect: [`사쿠라 바쿠신 오의 우정도+5<br><span class='skill-info'>[일반] 바짝 붙기</span> 힌트 LV+1`, `체력-10<br>스피드+10<br>파워+5<br>사쿠라 바쿠신 오의 우정도+5`]},
@@ -270,8 +273,8 @@ const supportEvents = [
 //아그네스 타키온
 {createDate:`2022-08-13`, character:`아그네스 타키온`, eventType:`support`, cardName: null, title: `검증 필요・수면 시간과 작업 능률`, choice: [`힘이 넘치네`, `어려운 논문을 쓰는 모양이군`], effect: [`파워+5<br>지능+5<br>아그네스 타키온의 우정도+5`, `지능+10<br>아그네스 타키온의 우정도+5`]},
 {createDate:`2022-08-13`, character:`아그네스 타키온`, eventType:`support`, cardName: null, title: `검증 필요・타인의 개입으로 촉발된 우발성`, choice: [`주법`, `판단력`], effect: [`아그네스 타키온의 우정도+5<br><span class='skill-info'>[일반] 선입의 요령○</span> 힌트 LV+1`, `지능+10<br>아그네스 타키온의 우정도+5`]},
-{createDate:`2022-08-13`, character:`아그네스 타키온`, eventType:`support`, cardName: `[생체 A에 관한 실험적 연구] 아그네스 타키온`, title: `① Report『특화 단련에 의한 가능성』`, choice: [`(선택지 없음)`], effect: [`지능+5<br>스킬 Pt+15`]},
-{createDate:`2022-08-13`, character:`아그네스 타키온`, eventType:`support`, cardName: `[생체 A에 관한 실험적 연구] 아그네스 타키온`, title: `② Report『미정 (휴식도 중요)』`, choice: [`(선택지 없음)`], effect: [`지능+10<br>스킬 Pt+15<br><span class='skill-info'>[일반] 도주 견제</span> 힌트 LV+1`]},
+{createDate:`2022-08-13`, character:`아그네스 타키온`, eventType:`support`, cardName: `[생체 A에 관한 실험적 연구] 아그네스 타키온`, title: `① Report『특화 단련에 의한 가능성』`, hiddenTag: `리포트`, choice: [`(선택지 없음)`], effect: [`지능+5<br>스킬 Pt+15`]},
+{createDate:`2022-08-13`, character:`아그네스 타키온`, eventType:`support`, cardName: `[생체 A에 관한 실험적 연구] 아그네스 타키온`, title: `② Report『미정 (휴식도 중요)』`, hiddenTag: `리포트`, choice: [`(선택지 없음)`], effect: [`지능+10<br>스킬 Pt+15<br><span class='skill-info'>[일반] 도주 견제</span> 힌트 LV+1`]},
 //아이네스 후진
 {createDate:`2022-08-13`, character:`아이네스 후진`, eventType:`support`, cardName: null, title: `술래잡기야!`, choice: [`느긋하게 즐긴다`, `전력을 다해 논다!`], effect: [`체력+10<br>스피드+5<br>아이네스 후진의 우정도+5`, `<span class='skill-info'>[일반] 빠른 걸음</span> 힌트 LV+1<br>아이네스 후진의 우정도+5`]},
 {createDate:`2022-08-13`, character:`아이네스 후진`, eventType:`support`, cardName: null, title: `앞으로 10분이야!`, choice: [`고민되면 일단 뛰어보자!`, `자세를 확인하는 건 어때?`], effect: [`근성+15<br>아이네스 후진의 우정도+5`, `아이네스 후진의 우정도+5<br>랜덤으로 지능+15<br>스태미나+5<br>근성+10`]},
@@ -324,7 +327,7 @@ const supportEvents = [
 {createDate:`2022-08-19`, character:`위닝 티켓`, eventType:`support`, cardName: `[꿈은 정말로 이루어지는구나!] 위닝 티켓`, title: `③ 도전! 꿈은 이루기 위해 있다!`, choice: [`(선택지 없음)`], effect: [`체력-30<br>스태미나+5<br>파워+5<br><span class='skill-info'>[레어] 전심전력</span> 힌트 LV+2`]},
 {createDate:`2022-08-13`, character:`위닝 티켓`, eventType:`support`, cardName: `[B · N · Winner!!] 위닝 티켓`, title: `① 유저 네임 『W&T』`, choice: [`(선택지 없음)`], effect: [`근성+10`]},
 {createDate:`2022-08-13`, character:`위닝 티켓`, eventType:`support`, cardName: `[B · N · Winner!!] 위닝 티켓`, title: `② 다음날 전원 근육통!`, choice: [`(선택지 없음)`], effect: [`스태미너+5<br>근성+5`]},
-{createDate:`2022-08-13`, character:`위닝 티켓`, eventType:`support`, cardName: `[B · N · Winner!!] 위닝 티켓`, title: `③ We are BNW!!`, choice: [`(선택지 없음)`], effect: [`근성+10<br><span class='skill-info'>[레어] 능숙한 환승</span> 힌트 LV+1`]},
+{createDate:`2022-08-13`, character:`위닝 티켓`, eventType:`support`, cardName: `[B · N · Winner!!] 위닝 티켓`, title: `③ We are BNW!!`, hiddenTag: `위 어 비엔더블유`, choice: [`(선택지 없음)`], effect: [`근성+10<br><span class='skill-info'>[레어] 능숙한 환승</span> 힌트 LV+1`]},
 {createDate:`2022-11-17`, character:`위닝 티켓`, eventType:`support`,  cardName: `[전력! 탠트럼!] 위닝 티켓`, title: `① 티케조☆탐험대!`, choice: [`(선택지 없음)`], effect: [`스피드+5<br>스태미너+5`]},
 {createDate:`2022-11-17`, character:`위닝 티켓`, eventType:`support`,  cardName: `[전력! 탠트럼!] 위닝 티켓`, title: `② 티케조☆프렌드십!`, choice: [`웃어 웃어!`, `일단 어디서 진정 좀 할래?`], effect: [`<span class='skill-info'>[일반] 십만 마력</span> 힌트 LV+1<br>스태미나+3<br>근성+3<br>위닝 티켓의 우정도+10`, `<span class='skill-info'>[일반] 단독○</span> 힌트 LV+3<br>체력+25<br>위닝 티켓의 우정도-5<br>연속 이벤트 종료`]},
 {createDate:`2022-11-17`, character:`위닝 티켓`, eventType:`support`,  cardName: `[전력! 탠트럼!] 위닝 티켓`, title: `③ 티케조☆나이트 피버!`, choice: [`(선택지 없음)`], effect: [`<span class='skill-info'>[레어] 노력가</span> 힌트 LV+1<br>스피드+8<br>스태미나+8<br>근성+8`]},
@@ -342,14 +345,17 @@ const supportEvents = [
 {createDate:`2022-08-13`, character:`이쿠노 딕터스`, eventType:`support`, cardName: null, title: `이쿠노식 매니지먼트론`, choice: [`내 스케줄도 봐줄래?`, `비법 좀 가르쳐줘`], effect: [`스태미나+20<br>이쿠노 딕터스의 우정도+5`, `이쿠노 딕터스의 우정도+5<br><span class='skill-info'>[일반] 트릭(뒤)</span> 힌트 LV+1`]},
 {createDate:`2022-08-13`, character:`이쿠노 딕터스`, eventType:`support`, cardName: `[준비운동은 게을리하지 말 것] 이쿠노 딕터스`, title: `① 이쿠노식 우정 매서드`, choice: [`(선택지 없음)`], effect: [`지능+10<br>스킬 Pt+20`]},
 {createDate:`2022-08-13`, character:`이쿠노 딕터스`, eventType:`support`, cardName: `[준비운동은 게을리하지 말 것] 이쿠노 딕터스`, title: `② 이쿠노식 서포트 메서드`, choice: [`심폐기능을 단련해서 도주에 특화!`, `다릿심을 강화하는 추입으로!`], effect: [`지능+15<br><span class='skill-info'>[일반] 도주 심리전</span> 힌트 LV+3<br>이쿠노 딕터스의 우정도+5`, `지능+15<br>이쿠노 딕터스의 우정도+5<br><span class='skill-info'>[일반] 추입 심리전</span> 힌트 LV+3`]},
-{createDate:`2023-01-10`, character:`이쿠노 딕터스`, eventType:`support`,  cardName: `[마음과 기반은 따뜻하게] 이쿠노 딕터스`, title: `① 탐정U`, choice: [`(선택지 없음)`], effect: [`최대 체력+4<br>스태미나+10<br>지능+5`]},
-{createDate:`2023-01-10`, character:`이쿠노 딕터스`, eventType:`support`,  cardName: `[마음과 기반은 따뜻하게] 이쿠노 딕터스`, title: `② U려되는 사태?`, choice: [`얘기한 내용에 자신은 있어?`, `나한테도 편자를 만들어 줄 수 있어?`], effect: [`근성+15<br>이쿠노 딕터스의 우정도+5<br><span class='skill-info'>[일반] 임기응변</span> 힌트 LV+1`, `체력+20<br>스피드+10<br>스킬 Pt+10<br>※ 다음 이벤트가 발생하지 않음`]},
-{createDate:`2023-01-10`, character:`이쿠노 딕터스`, eventType:`support`,  cardName: `[마음과 기반은 따뜻하게] 이쿠노 딕터스`, title: `③ U정`, choice: [`(선택지 없음)`], effect: [`스태미나+20<br>근성+10<br>스킬 Pt+10<br><span class='skill-info'>[레어] 대국관</span> 힌트 LV+1`]},
+{createDate:`2023-01-10`, character:`이쿠노 딕터스`, eventType:`support`,  cardName: `[마음과 기반은 따뜻하게] 이쿠노 딕터스`, title: `① 탐정U`, hiddenTag: `탐정유`, choice: [`(선택지 없음)`], effect: [`최대 체력+4<br>스태미나+10<br>지능+5`]},
+{createDate:`2023-01-10`, character:`이쿠노 딕터스`, eventType:`support`,  cardName: `[마음과 기반은 따뜻하게] 이쿠노 딕터스`, title: `② U려되는 사태?`, hiddenTag: `우려되는`, choice: [`얘기한 내용에 자신은 있어?`, `나한테도 편자를 만들어 줄 수 있어?`], effect: [`근성+15<br>이쿠노 딕터스의 우정도+5<br><span class='skill-info'>[일반] 임기응변</span> 힌트 LV+1`, `체력+20<br>스피드+10<br>스킬 Pt+10<br>※ 다음 이벤트가 발생하지 않음`]},
+{createDate:`2023-01-10`, character:`이쿠노 딕터스`, eventType:`support`,  cardName: `[마음과 기반은 따뜻하게] 이쿠노 딕터스`, title: `③ U정`, hiddenTag: `우정`, choice: [`(선택지 없음)`], effect: [`스태미나+20<br>근성+10<br>스킬 Pt+10<br><span class='skill-info'>[레어] 대국관</span> 힌트 LV+1`]},
 //젠노 롭 로이
 {createDate:`2022-08-19`, character:`젠노 롭 로이`, eventType:`support`, cardName: `[추천하는 책이 있어요!] 젠노 롭 로이`, title: `① 독서 소녀와 마법 소녀?`, choice: [`독서로 지식을 넓히자`, `우선 근력 증강부터!`], effect: [`스태미나+5<br>지능+5<br>젠노 롭 로이의 우정도+5`, `체력+20<br>파워+10<br>젠노 롭 로이의 우정도+5<br>연속 이벤트 종료`]},
 {createDate:`2022-08-19`, character:`젠노 롭 로이`, eventType:`support`, cardName: `[추천하는 책이 있어요!] 젠노 롭 로이`, title: `② 언젠가, 『이야기』의 주인공이`, choice: [`(선택지 없음)`], effect: [`스태미나+10<br>지능+10<br><span class='skill-info'>[일반] 날카로운 눈빛</span> 힌트 LV+1`]},
 {createDate:`2022-08-19`, character:`젠노 롭 로이`, eventType:`support`, cardName: null, title: `독서가의 공감 이야기`, choice: [`클라이맥스의 자동차 추격 신이 굉장했어`, `영상이 예쁘더라`], effect: [`스피드+5<br>지능+5<br>젠노 롭 로이의 우정도+5`, `체력+10<br>파워+5<br>젠노 롭 로이의 우정도+5`]},
 {createDate:`2022-08-19`, character:`젠노 롭 로이`, eventType:`support`, cardName: null, title: `맡겨진 이야기`, choice: [`도서부원한테 물어보는 게 좋겠네`, `그 책은 무슨 스토리인데?`], effect: [`스태미나+10<br>지능+10<br>젠노 롭 로이의 우정도+5`, `<span class='skill-info'>[일반] 중거리 직선○</span> 힌트 LV+1<br>젠노 롭 로이의 우정도+5`]},
+{createDate:`2023-01-18`, character:`젠노 롭 로이`, eventType:`support`, cardName: `[마력을 받은 영웅] 젠노 롭 로이`, title: `① 독서 소녀와 마법사의 행사`, choice: [`(선택지 없음)`], effect: [`스킬 Pt+15`]},
+{createDate:`2023-01-18`, character:`젠노 롭 로이`, eventType:`support`, cardName: `[마력을 받은 영웅] 젠노 롭 로이`, title: `② 독서 소녀와 비밀의 작전회의`, choice: [`매력적인 선전?`, `분위기를 좀 더 살린다든지…`, `의상에도 공들이는 게 좋겠어!`], effect: [`스태미나+5<br>젠노 롭 로이의 우정도+5<br><span class='skill-info'>[일반] 시계 방향○</span> 힌트 LV+2`, `스피드+5<br>젠노 롭 로이의 우정도+5<br><span class='skill-info'>[일반] 반시계 방향○</span> 힌트 LV+2`, `지능+30<br>젠노 롭 로이의 우정도+5`]},
+{createDate:`2023-01-18`, character:`젠노 롭 로이`, eventType:`support`, cardName: `[마력을 받은 영웅] 젠노 롭 로이`, title: `③ 독서 소녀와 어느 개구리인 친구`, choice: [`(선택지 없음)`], effect: [`스킬 Pt+20<br><span class='skill-info'>[레어] 잠복 태세</span> 힌트 LV+1`]},
 //츠루마루 츠요시
 //카렌짱
 //카시모토 리코s
@@ -408,6 +414,9 @@ const supportEvents = [
 {createDate:`2022-08-13`, character:`타마모 크로스`, eventType:`support`, cardName: `[하늘도 갈라버리는 번개 소녀!] 타마모 크로스`, title: `① 소・돼지・닭・카레!`, choice: [`(선택지 없음)`], effect: [`스태미너+5<br>파워+5`]},
 {createDate:`2022-08-13`, character:`타마모 크로스`, eventType:`support`, cardName: `[하늘도 갈라버리는 번개 소녀!] 타마모 크로스`, title: `② 없는 형편 나름대로의 레이트 쇼`, choice: [`(선택지 없음)`], effect: [`스태미너+5<br>파워+5<br>근성+5`]},
 {createDate:`2022-08-13`, character:`타마모 크로스`, eventType:`support`, cardName: `[하늘도 갈라버리는 번개 소녀!] 타마모 크로스`, title: `③ 가난함은 친구다!`, choice: [`(선택지 없음)`], effect: [`<span class='skill-info'>[레어] 신속 과감</span> 힌트 LV+1`]},
+{createDate:`2023-01-18`, character:`타마모 크로스`, eventType:`support`, cardName: `[붙어보자, 할로윈 나이트!] 타마모 크로스`, title: `① 미라 헌트 ~코미디를 타파하라!~`, choice: [`재밌었어!`, `무섭단 느낌은 안 들었는데…`], effect: [`파워+10<br>타마모 크로스의 우정도+5`, `체력+20<br>스피드+10<br>연속 이벤트 종료<br><span class='skill-info'>[일반] 진창길○</span> 힌트 LV+1`]},
+{createDate:`2023-01-18`, character:`타마모 크로스`, eventType:`support`, cardName: `[붙어보자, 할로윈 나이트!] 타마모 크로스`, title: `② 미라 헌트 ~각성하라, 사냥꾼!~`, choice: [`(선택지 없음)`], effect: [`스피드+10<br>파워+10`]},
+{createDate:`2023-01-18`, character:`타마모 크로스`, eventType:`support`, cardName: `[붙어보자, 할로윈 나이트!] 타마모 크로스`, title: `③ 미라 헌트 ~가장 무서운 스위트 마미~`, choice: [`(선택지 없음)`], effect: [`스피드+5<br>파워+5<br><span class='skill-info'>[레어] 백만 마력</span> 힌트 LV+1<br>또는<br>스피드+15<br>파워+15<br><span class='skill-info'>[레어] 백만 마력</span> 힌트 LV+3`]},
 //타이키 셔틀
 {createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`support`, cardName: `[트레센 학원] 타이키 셔틀`, title: `Oh! Tonight Party☆`, hiddenTag: `오 투나잇 파티`, choice: [`멀리 돌아서 전력 대시다!`, `집단을 헤친다는 이미지로 달리자!`], effect: [`체력-10<br>스피드+5<br>파워+10`, `<span class='skill-info'>[일반] 빠져나갈 준비</span> 힌트 LV+1`]},
 {createDate:`2022-08-13`, character:`타이키 셔틀`, eventType:`support`, cardName: `[트레센 학원] 타이키 셔틀`, title: `Yes! Let's hug☆`, hiddenTag: `예스 렛츠 허그`, choice: [`스피드라고 생각해`, `파워라고 생각해`], effect: [`스피드+10`, `스피드+5<br>파워+5`]},
