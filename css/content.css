@@ -27,7 +27,7 @@ details[open] summary::marker {
 }
 
 .title{
-	font-size: 20px;
+	font-size: 25px;
 	font-weight: 470;
 	color: #333;
 	padding: 11px;
@@ -37,21 +37,21 @@ details[open] summary::marker {
 	float: left;
 	height: 25px;
 	width: 25px;
-	border-radius: 20%;
-	border: 1px solid pink;
+	/*border-radius: 20%;
+	border: 1px solid pink;*/
 	margin-right: 6px;
 }
 
 .icon{
 	display: block;
 	float: left;
-	width: 25px;
-	height: 25px;
+	width: 30px;
+	height: 30px;
 	background: #EF9F9F;
 	color: white;
-	font-size: 15px;
+	font-size: 20px;
 	text-align: center;
-	line-height: 25px;
+	line-height: 33px;
 	border-radius: 50%;
 	margin-right: 8px;
 	font-weight: bold;
@@ -59,19 +59,19 @@ details[open] summary::marker {
 .icon-expired{
 	display: block;
 	float: left;
-	width: 25px;
-	height: 25px;
+	width: 30px;
+	height: 30px;
 	background: #808080;
 	color: white;
-	font-size: 15px;
+	font-size: 20px;
 	text-align: center;
-	line-height: 25px;
+	line-height: 33px;
 	border-radius: 50%;
 	margin-right: 8px;
 	font-weight: bold;
 }
 .desc{
-	font-size: 16px;
+	font-size: 20px;
 	display: block;
 	margin-top: 8px;
 	margin-left: 40px;

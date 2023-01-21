@@ -224,7 +224,7 @@ function organizeContent(threshold){
 	let ts = document.querySelectorAll(".skill-info");
 	for(let i = 0, len = ts.length; i < len; i++){
 		ts[i].addEventListener('click', function(){
-			showSkillInfo(this);
+			showSkillInfo(this, this.getAttribute('code'));
 		});
 	}
 	ts = document.querySelectorAll(".condition-info");
@@ -292,13 +292,13 @@ function highlight(val){
 
 // zoom
 function zoomIn(){
-	scale += 0.1;
-	scale = Math.round(scale*10)/10;
+	scale += 0.05;
+	scale = Math.round(scale*100)/100;
 	setScale();
 }
 function zoomOut(){
-	scale -= 0.1;
-	scale = Math.round(scale*10)/10;
+	scale -= 0.05;
+	scale = Math.round(scale*100)/100;
 	setScale();
 }
 function setScale(){
@@ -308,7 +308,7 @@ function setScale(){
 }
 if( localStorage.getItem('umaHelperScale') !== null ){
 	scale = parseFloat(localStorage.getItem('umaHelperScale'));
-	if( isNaN(scale) || scale < 0.3 || scale > 2.6 ){
+	if( isNaN(scale) || scale < 0.3 || scale > 2.0 ){
 		scale = 1.0;
 	}
 } else{
@@ -335,7 +335,7 @@ function modifySkills(){
 			dict['createDate'] = null
 		}
 		dict['titleStyle'] = null;
-		dict['img'] = val['img'];
+		dict['img'] = val['icon'];
 		if(val['hiddenTag']){
 			dict['hiddenTag'] = val['hiddenTag'];
 		} else{
@@ -346,8 +346,9 @@ function modifySkills(){
 		} else{
 			dict['owner'] = null;
 		}
-		dict['title'] = key;
+		dict['title'] = val['name'];
 		dict['descImg'] = null;
+		dict['grade'] = val['grade'];
 		dict['cost'] = val['cost'];
 		dict['condition'] = val['condition'];
 		dict['effect'] = val['effect'];
@@ -641,34 +642,33 @@ function infoBoxPositioning(box, posX, posY){
 		box.style.top = posY + "px";
 		box.style.width = boxWidth + "px";
 }
-function showSkillInfo(e){
+function showSkillInfo(e, code){
 	let box = document.querySelector('.info-box');
 	let inner = "";
-	let name = e.innerText;
-	
+	let item = skills[code]
 	const eRect = e.getBoundingClientRect();
 	let posX = eRect.left;
 	let posY = eRect.top + 20;
 	
-	if(box.style.display == "block" && name == infoBoxCache){
+	if(box.style.display == "block" && code == infoBoxCache){
 		box.style.display = "none";
 	} else{
-		infoBoxCache = name;
-		if(skills[name]['img']){
-			inner += `<img class="skill-info-box-img" src="./imgs/skill/${skills[name]['img']}.png">`;
+		infoBoxCache = code;
+		if(item['icon']){
+			inner += `<img class="skill-info-box-img" src="./imgs/skill/${item['icon']}">`;
 		}
-		inner += `<span class="skill-info-box-title">${name}</span><br><br>`;
-		if(skills[name]['cost']){
-			inner += `▶ 필요 스킬Pt: ${skills[name]['cost']}<br>`;
+		inner += `<span class="skill-info-box-title">[${item['grade']}] ${item['name']}</span><br><br>`;
+		if(item['cost']){
+			inner += `▶ 필요 스킬Pt: ${item['cost']}<br>`;
 		}
-		inner += `▶ 발동조건: ${skills[name]['condition']}<br>▶ 효과: ${skills[name]['effect']}<br>▶ ${skills[name]['duration']}`;
+		inner += `▶ 발동조건: ${item['condition']}<br>▶ 효과: ${item['effect']}<br>▶ ${item['duration']}`;
 		
-		if(skills[name]['recommend'][0] || skills[name]['recommend'][1] || skills[name]['recommend'][2] || skills[name]['recommend'][3]){ //If any data exist
+		if(item['recommend'][0] || item['recommend'][1] || item['recommend'][2] || item['recommend'][3]){ //If any data exist
 			inner += `<br>▶ 각질별 추천도:`;
 			let typeArr = ['추입', '선입', '선행', '도주'];
 			for(let i = 0; i < 4; i++){
 				inner += ` ${typeArr[i]}:`;
-				switch(skills[name]['recommend'][i]){
+				switch(item['recommend'][i]){
 					case 0:
 						inner += `?`;
 						break

@@ -22,7 +22,7 @@ let items = [
 		supportCardSetting: "정석적인 3스피드, 2스태미너, 1친구 조합 추천",
 		supportCardComment: "▶ 도주마로 키울 거면 타즈나는 웬만하면 픽.<br>▶ 자력으로 얻는 회복기 성능이 구림. 슈퍼크릭도 웬만하면 픽.",
 		supportCardRecommend: ["ssr_sp_2", "ssr_sp_9", "sr_sp_1", "ssr_st_5", "sr_in_8", "ssr_fr_1"],
-		feature: "▶ 게임 초반 귀한 장거리 도주마.<br>▶ 3레벨 각성스킬은 구리고 4, 5레벨은 선행용이라 도주마로 쓸 거면 2렙까지만.<br>▶ 고유스킬 <span class='skill-info'>[일반] 존귀한 사명을 완수하기 위하여</span>는 좋은 계승고유기 중 하나임.",
+		feature: "▶ 게임 초반 귀한 장거리 도주마.<br>▶ 3레벨 각성스킬은 구리고 4, 5레벨은 선행용이라 도주마로 쓸 거면 2렙까지만.<br>▶ 고유스킬 ${skill(900131)}는 좋은 계승고유기 중 하나임.",
 		idealStatTaget: "장거리 도주마",
 		idealStat: [1100, 1000, 900, 440, 400],
 		hiddenMissionCondition: ["▶ 가을 시니어 삼관 달성<br>(1) 천황상 가을 (시니어 10월 후반)<br>(2) 재팬컵 (시니어 11월 후반, 기본 목표에 없음)<br>(3) 아리마기념 (시니어 12월 후반, 기본 목표에 없음)"],
@@ -74,7 +74,7 @@ let items = [
 		idealStatTaget: "단거리 도주마",
 		idealStat: [1200, 410, 950, "x", 1100],
 		hiddenMissionCondition: ["▶ 스프린터스 스테이크스 2연패(모두 육성목표에 있음)"],
-		hiddenMissionReward: ["컨디션 +3, 스피드 +13, 스태미나·파워·근성·지능 +3, 스킬Pt +51, 시나리오NPC 우정도 +4<br><span class='skill-info'>[일반] 기세로 밀어붙이기</span> 힌트Lv +1<br><span class='skill-info'>[일반] 나카야마 경기장○</span> 힌트Lv +1<br><span class='condition-info'>주목받는 신예</span> 획득"]
+		hiddenMissionReward: ["컨디션 +3, 스피드 +13, 스태미나·파워·근성·지능 +3, 스킬Pt +51, 시나리오NPC 우정도 +4<br>${skill(201282)} 힌트Lv +1<br>${skill(200042)} 힌트Lv +1<br><span class='condition-info'>주목받는 신예</span> 획득"]
 	},
 	{ 	type: 'chara', id: 'chara_4', score: 0,
 		createDate: "2022-08-13",
@@ -146,7 +146,7 @@ let items = [
 		idealStatTaget: "단거리 더트 도주마",
 		idealStat: [1000, 300, 600, 300, 300],
 		hiddenMissionCondition: ["▶ 시니어급 아리마기념에서 우승(시니어 12월 후반)"],
-		hiddenMissionReward: ["▶ 모든 스탯 +4, 스킬Pt +63, <span class='skill-info'>[일반] 복병○</span> 힌트Lv +1, 시나리오 NPC 우정도 +5"]
+		hiddenMissionReward: ["▶ 모든 스탯 +4, 스킬Pt +63, ${skill(200302)} 힌트Lv +1, 시나리오 NPC 우정도 +5"]
 	},
 	{ 	type: 'chara', id: 'chara_7', score: 0,
 		createDate: "2022-08-13",
@@ -166,11 +166,11 @@ let items = [
 		supportCardSetting: "3스피드를 기본으로",
 		supportCardComment: "▶ 컨디션 하락 이벤트가 많은 편이라 추입마라도 타즈나 가져가도 됨.",
 		supportCardRecommend: ["ssr_sp_1", "sr_sp_1", "ssr_st_5", "sr_st_2", "sr_pw_1", "ssr_fr_1"],
-		feature: "▶ 일부러 히든미션을 달성하고 아래 선택지를 골라 <span class='skill-info'>[일반] 게이트 난동</span>을 달고 늦게 출발해서 역분사를 막거나 후방에서 발동하는 스킬을 노리는 전략도 있다.",
+		feature: "▶ 일부러 히든미션을 달성하고 아래 선택지를 골라 ${skill(200433)}을 달고 늦게 출발해서 역분사를 막거나 후방에서 발동하는 스킬을 노리는 전략도 있다.",
 		idealStatTaget: "장거리 추입마",
 		idealStat: [1000, 1000, 1000, "x", 700],
 		hiddenMissionCondition: ["▶ 타카라즈카 기념 2연패(클래식, 시니어 6월 후반)"],
-		hiddenMissionReward: ["▶ [무지막지 대단하지] 선택 시<br>컨디션 +1, 모든 스탯 +3, 스킬Pt +45, 시나리오 NPC 우정도 +4<br><br>▶ [역사에 이름을 남길 정도로 대단하지] 선택 시<br>컨디션 +1, 모든 스탯 +3, 스킬Pt +45, <span class='condition-info'>애교○</span> 또는 <span class='skill-info'>[일반] 게이트 난동</span> 획득, 시나리오 NPC 우정도 +4"]
+		hiddenMissionReward: ["▶ [무지막지 대단하지] 선택 시<br>컨디션 +1, 모든 스탯 +3, 스킬Pt +45, 시나리오 NPC 우정도 +4<br><br>▶ [역사에 이름을 남길 정도로 대단하지] 선택 시<br>컨디션 +1, 모든 스탯 +3, 스킬Pt +45, <span class='condition-info'>애교○</span> 또는 ${skill(200433)} 획득, 시나리오 NPC 우정도 +4"]
 	},
 	{ 	type: 'chara', id: 'chara_8', score: 0,
 		createDate: "2022-08-13",
@@ -194,7 +194,7 @@ let items = [
 		idealStatTaget: "마일 선행마",
 		idealStat: [1200, 600, 900, "x", 500],
 		hiddenMissionCondition: ["▶ 히든1. 클래식급 엘리자베스 여왕배 우승(클래식 11월 전반)", "▶ 히든2. 야스다 기념 2연패(클래식, 시니어 6월 전반)"],
-		hiddenMissionReward: ["체력 -15, 컨디션 +1, 랜덤스탯 +9~12, 스킬Pt +53~54", "파워 +20, 모든 스탯 +1~3, 스킬Pt +58, <span class='skill-info'>[일반] 뒤처지기 방지</span> 힌트Lv +1, <span class='condition-info'>훈련 능숙○</span> 획득, 시나리오NPC 우정도 +4"]
+		hiddenMissionReward: ["체력 -15, 컨디션 +1, 랜덤스탯 +9~12, 스킬Pt +53~54", "파워 +20, 모든 스탯 +1~3, 스킬Pt +58, ${skill(200492)} 힌트Lv +1, <span class='condition-info'>훈련 능숙○</span> 획득, 시나리오NPC 우정도 +4"]
 	},
 	{ 	type: 'chara', id: 'chara_9', score: 0,
 		createDate: "2022-08-19",
@@ -210,7 +210,7 @@ let items = [
 		difficultyComment: "▶ 육성 중 <span class='condition-info'>작은 역경</span>을 일시적으로 달게되는데, 최소실패확률이 5%로 고정되기 때문에 폭사하기 쉽다.",
 		runningType: "선행",
 		distanceType: "장거리",
-		typeComment: "▶ 회복스킬이 좋고 스태미너 보정이 달려 장거리마에 최적화.<br>▶ 다만 <span class='skill-info'>[레어] 원호의 마에스트로</span>만 배우면 스태 500 선에서도 장거리 육성목표 전부 달성이 가능하니 중거리마로 써도 무방함.",
+		typeComment: "▶ 회복스킬이 좋고 스태미너 보정이 달려 장거리마에 최적화.<br>▶ 다만 ${skill(200351)}만 배우면 스태 500 선에서도 장거리 육성목표 전부 달성이 가능하니 중거리마로 써도 무방함.",
 		supportCardSetting: "▶ 3~4스피드, 2스태<br>▶ 3~4스피드, 2지능",
 		supportCardComment: "▶ 스태미나 보정치가 높으니 자신 있으면 스태 빼도 된다.",
 		supportCardRecommend: ["ssr_sp_1", "ssr_sp_2", "ssr_sp_3", "sr_sp_1", "ssr_st_1", "sr_st_1"],
@@ -218,7 +218,7 @@ let items = [
 		idealStatTaget: "장거리 선행마",
 		idealStat: [1100, 850, 1000, 'x', 800],
 		hiddenMissionCondition: ["사츠키상 우승(클래식 4월 전반)", "일본더비 우승(클래식 5월 후반)", "국화상 우승(클래식 10월 후반)"],
-		hiddenMissionReward: ["체력 -15, 랜덤스탯 +10, 스킬Pt +45, 시나리오NPC 우정도 +4", "체력 -15, 랜덤스탯 +10, 스킬Pt +45, 시나리오NPC 우정도 +4", "모든 스탯 +3, 스킬Pt +45, <span class='skill-info'>[일반] 양호한 경기장○</span> 힌트 +1, <span class='condition-info'>커다란 빛</span> 획득, <span class='condition-info'>작은 역경</span> 제거, 시나리오NPC 우정도 +4"]
+		hiddenMissionReward: ["체력 -15, 랜덤스탯 +10, 스킬Pt +45, 시나리오NPC 우정도 +4", "체력 -15, 랜덤스탯 +10, 스킬Pt +45, 시나리오NPC 우정도 +4", "모든 스탯 +3, 스킬Pt +45, ${skill(200152)} 힌트 +1, <span class='condition-info'>커다란 빛</span> 획득, <span class='condition-info'>작은 역경</span> 제거, 시나리오NPC 우정도 +4"]
 	},
 	{ 	type: 'chara', id: 'chara_10', score: 0,
 		createDate: "2022-08-19",
@@ -260,7 +260,7 @@ let items = [
 		distanceType: "더트(기본B)",
 		typeComment: "▶ 잔디 마일, 중거리도 좋지만 더트마가 귀해서 보통 더트로 쓴다",
 		supportCardSetting: "▶ 3스피드, 2스태, 타즈나<br>▶ 4스피드, 2지능",
-		supportCardComment: "▶ 키우기 힘들면 파워카드 낑가넣자<br>▶ 마일마도 스태미나 훈련에 쓸 턴 아낄 겸 <span class='skill-info'>[레어] 원호의 마에스트로</span> 배우면 좋다",
+		supportCardComment: "▶ 키우기 힘들면 파워카드 낑가넣자<br>▶ 마일마도 스태미나 훈련에 쓸 턴 아낄 겸 ${skill(200351)} 배우면 좋다",
 		supportCardRecommend: ["ssr_sp_1", "ssr_sp_3", "sr_sp_1", "ssr_st_5", "sr_st_2", "ssr_fr_1"],
 		feature: "▶ 챔스에서 마일 도주마로 활약한다고 함.",
 		idealStatTaget: "더트 선행마",
@@ -286,7 +286,7 @@ let items = [
 		supportCardSetting: "2스피드, 2지능을 기본으로",
 		supportCardComment: "",
 		supportCardRecommend: ["ssr_sp_4", "ssr_sp_1", "ssr_sp_7", "ssr_in_1", "sr_in_7", "ssr_fr_1"],
-		feature: "▶ 고유스킬인 <span class='skill-info'>[일반] 홍염 기어/LP1211-M</span>은 좋은 계승기 중 하나다.",
+		feature: "▶ 고유스킬인 ${skill(900041)}은 좋은 계승기 중 하나다.",
 		idealStatTaget: "마일 도주마",
 		idealStat: [1200, 600, 970, 'x', 1100],
 		hiddenMissionCondition: ["라디오 NIKKEI상에서 승리(클래식 7월 전반)"],
@@ -314,7 +314,7 @@ let items = [
 		idealStatTaget: "중거리 도주마",
 		idealStat: [1100, 700, 800, 'x', 1000],
 		hiddenMissionCondition: ["클래식 3관 달성<br>(1) 사츠키상(클래식 4월 전반)<br>(2) 일본 더비(클래식 5월 후반)<br>(3) 국화상(클래식 10월 후반)"],
-		hiddenMissionReward: ["근성 빼고 나머지 4스탯 +3<br>근성 +18, 스킬Pt +45<br><span class='skill-info'>[일반] 직선 가속</span> 힌트Lv +2<br>시나리오NPC 우정도 +4"]
+		hiddenMissionReward: ["근성 빼고 나머지 4스탯 +3<br>근성 +18, 스킬Pt +45<br>${skill(200372)} 힌트Lv +2<br>시나리오NPC 우정도 +4"]
 	},
 	{ 	type: 'chara', id: 'chara_14', score: 0,
 		createDate: "2022-08-24",
@@ -330,11 +330,11 @@ let items = [
 		difficultyComment: "",
 		runningType: "선입<br>선행",
 		distanceType: "중거리<br>장거리",
-		typeComment: "▶ 고유스킬 <span class='skill-info'>[고유] 그대, 황제의 신위를 보라</span> 발동에는 선입이 훨씬 유리하다.",
+		typeComment: "▶ 고유스킬 ${skill(900171)} 발동에는 선입이 훨씬 유리하다.",
 		supportCardSetting: "▶ 3스피드, 2스태, 타즈나<br>▶ 4스피드, 2스태<br>▶ 3스피드, 2스태, 1파워",
 		supportCardComment: "",
 		supportCardRecommend: ["ssr_sp_1", "ssr_sp_8", "sr_sp_1", "sr_sp_2", "ssr_st_5", "sr_st_2"],
-		feature: "▶ 각성 3레벨까지는 무조건. 4레벨은 선행용이라 애매하고 5레벨 <span class='skill-info'>[레어] 호선의 프로페서</span>는 사실 서포트카드 고정자리인 SSR 키타산 블랙이 힌트를 주기 때문에 재화가 부족하면 뒷순위. 찍으면 키타산 블랙 3체인 이벤트 안 뜨는 경우도 커버가 가능해서 좋다.<br>▶ 키우기도 쉽고 기본 스킬도 좋으며 계승 상성도 매우 뛰어나 인자 계승마로 잘 쓰인다.<br>▶ 디버프 스킬을 많이 가지고 있어서 역병마로 쓸 수도 있다. 근데 PVP 씹어먹는 1티어 말을 역병마로 쓰기는 좀.<br>▶ 루돌프는 데뷔전부터 G1 7승을 상징하는 메달을 옷에 달고 달린다.<br>▶ 히든미션 중 G1 7승까지는 육성목표에 모두 있으니 다 이기기만 하면 달성.",
+		feature: "▶ 각성 3레벨까지는 무조건. 4레벨은 선행용이라 애매하고 5레벨 ${skill(200331)}는 사실 서포트카드 고정자리인 SSR 키타산 블랙이 힌트를 주기 때문에 재화가 부족하면 뒷순위. 찍으면 키타산 블랙 3체인 이벤트 안 뜨는 경우도 커버가 가능해서 좋다.<br>▶ 키우기도 쉽고 기본 스킬도 좋으며 계승 상성도 매우 뛰어나 인자 계승마로 잘 쓰인다.<br>▶ 디버프 스킬을 많이 가지고 있어서 역병마로 쓸 수도 있다. 근데 PVP 씹어먹는 1티어 말을 역병마로 쓰기는 좀.<br>▶ 루돌프는 데뷔전부터 G1 7승을 상징하는 메달을 옷에 달고 달린다.<br>▶ 히든미션 중 G1 7승까지는 육성목표에 모두 있으니 다 이기기만 하면 달성.",
 		idealStatTaget: "중·장거리 선입마",
 		idealStat: [1100, 900, 1100, 'x', 600],
 		hiddenMissionCondition: ["▶ 클래식 3관 달성<br>(1) 사츠키상(클래식 4월 전반)<br>(2) 일본 더비(클래식 5월 후반)<br>(3) 국화상(클래식 10월 후반)", "▶ G1 레이스 7승 달성", "▶ G1 레이스 8승 달성"],
@@ -386,7 +386,7 @@ let items = [
 		idealStatTaget: "장거리 선행마",
 		idealStat: [1000, 1000, 900, 300, 550],
 		hiddenMissionCondition: ["사츠키상 우승(클래식 4월 전반)", "일본더비 우승(클래식 5월 후반)", "클래식 3관 달성<br>- 사츠키상(클래식 4월 전반)<br>- 일본더비(클래식 5월 후반)<br>- 국화상(클래식 10월 후반)", "봄 시니어 3관 달성<br>- 오사카배(시니어 3월 후반)<br>- 텐노상(봄)(4월 후반)<br>- 타카라즈카 기념(시니어 6월 후반)"],
-		hiddenMissionReward: ["모든 스탯 +3~4, 스킬Pt +50~60, 시나리오NPC 우정도 +4", "모든 스탯 +3~4, 스킬Pt +50~60, 시나리오NPC 우정도 +4, <span class='skill-info'>[일반] 뒤처지기 방지</span> 힌트 +1", "모든 스탯 +3~4, 스킬Pt +50~60, 시나리오NPC 우정도 +4", "스피드, 파워 +32"]
+		hiddenMissionReward: ["모든 스탯 +3~4, 스킬Pt +50~60, 시나리오NPC 우정도 +4", "모든 스탯 +3~4, 스킬Pt +50~60, 시나리오NPC 우정도 +4, ${skill(200492)} 힌트 +1", "모든 스탯 +3~4, 스킬Pt +50~60, 시나리오NPC 우정도 +4", "스피드, 파워 +32"]
 	},
 	{ 	type: 'chara', id: 'chara_17', score: 0,
 		createDate: "2022-09-24",
@@ -406,7 +406,7 @@ let items = [
 		supportCardSetting: "3스피드, 3스태<br>2스피드, 2스태, 2지능",
 		supportCardComment: "",
 		supportCardRecommend: ["ssr_sp_1", "ssr_sp_3", "sr_sp_1", "ssr_st_5", "sr_st_1", "ssr_fr_1"],
-		feature: "▶ 3레벨 각성스킬 <span class='skill-info'>[레어] 스피드스터</span>가 핵심. 5레벨 각성스킬 <span class='skill-info'>[레어] 킬러 튠</span>도 중거리마에게 매우 좋은 스킬.<br>▶ 고유기가 없는 취급이므로 히든미션 보상을 두 번 받아 스탯을 최대한 올리는 게 육성 중 최우선 목표임. 총 120의 스탯을 획득할 수 있다.",
+		feature: "▶ 3레벨 각성스킬 ${skill(200581)}가 핵심. 5레벨 각성스킬 ${skill(200721)}도 중거리마에게 매우 좋은 스킬.<br>▶ 고유기가 없는 취급이므로 히든미션 보상을 두 번 받아 스탯을 최대한 올리는 게 육성 중 최우선 목표임. 총 120의 스탯을 획득할 수 있다.",
 		idealStatTaget: "장거리 선행마",
 		idealStat: [1000, 1000, 750, 'x', 500],
 		hiddenMissionCondition: ["가을 3관 달성<br>- 텐노상(클래식/시니어 10월 후반)<br>- 재팬컵(클래식/시니어 11월 후반)<br>- 아리마기념(클래식/시니어 12월 후분)<br>※ 이 히든미션은 클래식급/시니어급에서 두 번 획득할 수 있다."],
@@ -414,8 +414,6 @@ let items = [
 	},
 
 
-	
-	
 	/*
 	{ 	type: 'chara', id: 'chara_', score: 0,
 		createDate: "2022--",
@@ -479,7 +477,7 @@ let items = [
 		character: null,
 		title: "SSR 타즈나 서포트카드 동반 외출 효과",
 		descImg: "machimoong.gif",
-		desc: `1회:<br>체력+25~40, 스피드+5~6, 컨디션 +1, 타즈나 우정도 +5<br><br>2회:<br>체력+25~40, 타즈나 우정도 +5, 상태이상효과 제거 <br><br>3회:<br>- 위 선택지<br>체력+25~40, 스테미너 +5~6, 컨디션 +1, 타즈나 우정도 +5 <br>- 아래 선택지<br>스테미너+10~13, 근성+10~13, 컨디션 +1, 타즈나 우정도 +5 <br><br>4회:<br>체력+35~56, 지능+5~6, 컨디션 +1, 타즈나 우정도 +5, 상태이상효과 제거 <br><br>5회:<br>체력+35~56, 스킬포인트+30~40, 컨디션 +2, 타즈나 우정도 +5<br>다음 중 랜덤으로 하나 겟(완전 랜덤인 것 같기도 하고 아닌 것 같기도 하고)<br>- <span class='skill-info'>[일반] 집중력</span> 힌트Lv +1<br>- <span class='skill-info'>[레어] 컨센트레이션</span> 힌트Lv +1<br>`,
+		desc: `1회:<br>체력+25~40, 스피드+5~6, 컨디션 +1, 타즈나 우정도 +5<br><br>2회:<br>체력+25~40, 타즈나 우정도 +5, 상태이상효과 제거 <br><br>3회:<br>- 위 선택지<br>체력+25~40, 스테미너 +5~6, 컨디션 +1, 타즈나 우정도 +5 <br>- 아래 선택지<br>스테미너+10~13, 근성+10~13, 컨디션 +1, 타즈나 우정도 +5 <br><br>4회:<br>체력+35~56, 지능+5~6, 컨디션 +1, 타즈나 우정도 +5, 상태이상효과 제거 <br><br>5회:<br>체력+35~56, 스킬포인트+30~40, 컨디션 +2, 타즈나 우정도 +5<br>다음 중 랜덤으로 하나 겟(완전 랜덤인 것 같기도 하고 아닌 것 같기도 하고)<br>- ${skill(200432)} 힌트Lv +1<br>- ${skill(200431)} 힌트Lv +1<br>`,
 	},
 	{	type: 'tip', id: 'tip_4', score: 0,
 		createDate: "2022-07-21",

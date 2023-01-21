@@ -14,3 +14,11 @@
 	font-weight: bold;
 	font-size: 25px;
 }
+
+.in-desc-skill-icon{
+	display: inline;
+	margin-right:4px;
+	vertical-align: -2px;
+	height:18px;
+	width:18px;
+}

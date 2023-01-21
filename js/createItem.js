@@ -27,6 +27,7 @@ function drawCard(val){
 	return `<img class="card-img" src="./imgs/card/${val}.png">`;
 }
 
+
 function createItem(item){
 	let e = document.createElement('div');
 	e.className = "item";
@@ -197,19 +198,19 @@ function createSkillItem(inner, item){
 					return `데이터가 없습니다.`;
 					break
 				case 1:
-					return `1티어: 힌트 있으면 꼭 찍자.`;
+					return `1티어: 힌트 있으면 꼭.`;
 					break
 				case 2:
-					return `2티어: 있으면 좋다.`;
+					return `2티어: 있으면 좋다`;
 					break
 				case 3:
-					return `3티어: 별로다.`;
+					return `3티어: 정말 달리 찍을 게 없을 때`;
 					break
 				case 4:
-					return `4티어: 포인트 낭비. 정말 찍을 게 없을 때만.`;
+					return `4티어: 포인트 낭비`;
 					break
 				case 9:
-					return `지뢰: 찍으면 오히려 성능을 떨어트릴 수도 있다.`;
+					return `지뢰: 찍으면 오히려 성능을 떨어트릴 수도 있다`;
 					break
 			}
 	}
@@ -217,7 +218,7 @@ function createSkillItem(inner, item){
 	inner =  `<details id="${item['id']}"><summary class="title">`
 		+ subjectFinder(item['type']);
 	if(item['img']){
-		let imgUrl = "./imgs/skill/" + item['img'] + ".png";
+		let imgUrl = "./imgs/skill/" + item['img'];
 		inner += `<img class="title-img" src="${imgUrl}">`;
 	}
 	inner += `<span class="${item['titleStyle']}">${item['title']}</span></summary><div class='desc'>`;

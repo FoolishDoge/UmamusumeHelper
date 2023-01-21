@@ -36,38 +36,38 @@ SEARCH 버튼을 눌러 검색창으로 이동 후 자판을 엶. 설정창에�
 const TIP4_DESC = `<br>
 <b>[스킬 획득한 채로 육성 완료 미션]</b><br>
 <br>
-▶ <span class='skill-info'>[레어] 호선의 프로페서</span><br>
+▶ ${skill(200331)}<br>
 &nbsp&nbsp&nbsp&nbsp- 심볼리 루돌프 5레벨 각성시 힌트 획득.<br>
 &nbsp&nbsp&nbsp&nbsp- 'SSR [다가오는 열기에 떠밀려] 키타산 블랙' 서포트 카드로부터 획득 가능<br>
 <br>
-▶ <span class='skill-info'>[레어] 원호의 마에스트로</span><br>
+▶ ${skill(200351)}<br>
 &nbsp&nbsp&nbsp&nbsp- 슈퍼 크릭 5레벨 각성시 힌트 획득.<br>
 &nbsp&nbsp&nbsp&nbsp- 'SSR [한 알의 평온] 슈퍼 크릭' 서포트카드로부터 획득 가능 (연속 이벤트 3체인에서 100% 확률로 획득)<br>
 <br>
-▶ <span class='skill-info'>[레어] 전심전력</span><br>
+▶ ${skill(200511)}<br>
 &nbsp&nbsp&nbsp&nbsp- 스페셜 위크 5레벨 각성시 힌트 획득.<br>
 &nbsp&nbsp&nbsp&nbsp- 'SSR [일본 최고의 무대를] 스페셜 위크' 서포트카드로부터 획득 가능 (연속 이벤트 3체인에서 그리 높지 않은 확률로 획득. 아게마셍!)<br>
 <br>
-▶ <span class='skill-info'>[레어] 호전일식</span><br>
+▶ ${skill(200381)}<br>
 &nbsp&nbsp&nbsp&nbsp- 마야노 탑건 3레벨 각성시 힌트 획득.<br>
 &nbsp&nbsp&nbsp&nbsp- 보드카 3레벨 각성시 힌트 획득.<br>
 &nbsp&nbsp&nbsp&nbsp- 'SSR [로드·오브·보드카] 보드카' 서포트카드로부터 획득 가능 (연속 이벤트 3체인에서 100% 확률로 획득)<br>
 &nbsp&nbsp&nbsp&nbsp- 랜덤 발생하는 URA 시나리오 이벤트 '좋은 표정이로다!'에서 '그럼 당근을 나눠주실 수 있나요?' 선택지를 골라 획득 가능<br>
 <br>
-▶ <span class='skill-info'>[레어] 한줄기 질풍</span><br>
+▶ ${skill(200361)}<br>
 &nbsp&nbsp&nbsp&nbsp- 랜덤 발생하는 URA 시나리오 이벤트 '좋은 표정이로다!'에서 '그럼 새 훈련 도구를 부탁해도 될까요?' 선택지를 골라 획득 가능<br>
 &nbsp&nbsp&nbsp&nbsp- 'SSR [아직 작은 꽃봉오리지만] 니시노 플라워' 서포트카드로부터 획득 가능 (연속 이벤트 3체인에서 랜덤하게 획득)<br>
 <br>
-▶ <span class='skill-info'>[레어] 일진광풍</span><br>
+▶ ${skill(200371)}<br>
 &nbsp&nbsp&nbsp&nbsp- 'SSR [꿈은 내걸으라고 있는 거야!] 토카이 테이오' 서포트카드로부터 획득 가능 (연속 이벤트 3체인에서 100% 확률로 획득)<br>
 <br>
-▶ <span class='skill-info'>[레어] 곡선의 소믈리에</span><br>
+▶ ${skill(200341)}<br>
 &nbsp&nbsp&nbsp&nbsp- 오구리 캡 5레벨 각성시 힌트 획득.<br>
 &nbsp&nbsp&nbsp&nbsp- 'SSR [불침함의 진격] 골드 쉽' 서포트카드로부터 획득 가능 (연속 이벤트 3체인에서 100% 확률로 획득)<br>
 <br>
-▶ <span class='skill-info'>[레어] 컨센트레이션</span><br>
+▶ ${skill(200431)}<br>
 &nbsp&nbsp&nbsp&nbsp- 사일런스 스즈카 3레벨 각성시 힌트 획득.<br>
-&nbsp&nbsp&nbsp&nbsp- 'SSR [트레센 학원에 어서 오세요!] 하야카와 타즈나' 서포트카드로부터 획득 가능 (5번째 외출에서 랜덤하게 획득. 하위스킬인 <span class='skill-info'>[일반] 집중력</span>과 50:50 확률로 알려져 있음.)<br>
+&nbsp&nbsp&nbsp&nbsp- 'SSR [트레센 학원에 어서 오세요!] 하야카와 타즈나' 서포트카드로부터 획득 가능 (5번째 외출에서 랜덤하게 획득. 하위스킬인 ${skill(200432)}과 50:50 확률로 알려져 있음.)<br>
 <br>
 ※ 한 번의 육성에서 위 스킬들 중 여러 개를 동시에 획득해도 됩니다.<br>
 <br>
@@ -139,13 +139,13 @@ Q. 스태미나에는 최대치가 있다. 그럼 '초반'에 발동한다는 �
 &nbsp결론부터 말하면 효과가 아주 없지는 않다. 레이스는 '초반(스타트) / 초반(스퍼트) / 초반 / 중반 / 종반(최종코너) / 종반(최종직선) / 종반(라스트스퍼트)' 단계로 나뉘어진다. 여기서 초반 회복 스킬들은 3단계에 회복되는 스킬들로 1, 2단계인 스타트, 스퍼트 단계에서도 충분히 스태미나를 소모하기 때문에(약 12~14%) 효과가 있다.<br>
 그런데 문제는 초반 회복 스킬에 붙은 조건문이다. 특정 페이즈에 한정되는 스킬들은 기본적으로 발동할 수 있는 시간 자체가 짧을 수밖에 없는데, '초반' 스킬들같은 경우 레이스가 시작하자마자 스킬이 터지는 것을 방지하겠다고 경기시간이 5초 경과한 시점부터 발동하도록 설계되어있다. 그만큼 발동할 수 있는 시간이 더욱 짧아진다는 것이다. 길어봐야 1~2분인 레이스를 n등분해 페이즈를 나누는데 5초는 굉장히 긴 시간이다.<br>
 <br>
-Q. <span class="skill-info">[레어] 호전일식</span>은 왜 쿠소스킬인가?<br>
+Q. ${skill(200381)}은 왜 쿠소스킬인가?<br>
 &nbsp호전일식은 경기 중 단 한 번밖에 발동하지 않는데(쿨타임이 500초), 문제는 '직선'이라면 언제든 발동할 수 있게 되어있다는 것이다.<br>
 레이스에선 게이트가 열리는 순간부터 '직선'으로 판정된다. 따라서 운이 나쁘다면 레이스가 시작하자마자 스태미나가 조금도 달지 않았는데 호전일식이 터질 수도 있다.<br>
 뿐만 아니라, 만약 종반(최종직선) 페이즈에서 발동한다고 해도 이미 가속도와 속도가 한계까지 올라있는 상태라 거기서 스태미나를 회복한다고 별 영향이 없다.<br>
 그리고 작성 기준일을 보자. 이걸 읽고 있는 시점에는 이미 패치되어 상향되었을 수도 있다.<br>
 <br>
-Q. 그럼 <span class="skill-info">[레어] 원호의 마에스트로</span>는 왜 적폐스킬인가?<br>
+Q. 그럼 ${skill(200351)}는 왜 적폐스킬인가?<br>
 &nbsp다른 까다로운 조건이 안 붙고 레이스 내내 터질 수 있는 두 개의 회복스킬 중, 호전일식이 직선이라면 원호의 마에스트로는 코너에서 발동한다. 다시 말하면 반드시 스태미나가 어느정도 소모된 순간부터 발동한다는 것이고, 터지기만 하면 반드시 회복효과를 최대로 누릴 수 있다는 것이다. 이 이유만으로 현재까지 원호의 마에스트로보다 좋은 회복스킬은 없다.<br>
 `;
 
@@ -192,7 +192,7 @@ const TIP7_DESC = `
 <br>
 <img src="./imgs/desc/green.PNG" style="height:25px;"> <span style="font-size:20px;">녹인자</span><br>
 고유스킬의 힌트를 주는 인자다. 청, 적인자와 마찬가지로 육성 시작시 부모(조부모는 x)의 녹인자를 무조건 계승받고 시작한다. 이후 육성 중의 계승에선 조부모, 부모의 녹인자를 모두 확률로 계승받는다.<br>
-<span style="color: blue">왜 중요한가요?</span> 딱히 중요하진 않다. 심볼리 루돌프의 <span class="skill-info">[일반] 그대, 황제의 신위를 보라</span>나 마르젠스키의 <span class="skill-info">[일반] 홍염 기어/LP1211-M</span>처럼 좋은 고유기가 있긴 하지만 필수라고 할 만한 건 없다.<br>
+<span style="color: blue">왜 중요한가요?</span> 딱히 중요하진 않다. 심볼리 루돌프의 ${skill(900171)}나 마르젠스키의 ${skill(900041)}처럼 좋은 고유기가 있긴 하지만 필수라고 할 만한 건 없다.<br>
 <span style="color: blue">어떻게 얻나요?</span> 확률적으로 붙으며, 재능개화 레벨이 높을 수록, 육성 마무리시 육성랭크(점수)가 높을 수록 잘 붙는다고 알려져 있다. 육성랭크 기준으로 유저들이 조사한 대략적인 확률은 아래와 같다.<br>
 <table class="desc-table"><tr><td class="td-label">육성랭크</td><td class="td-label">★</td><td class="td-label">★★</td><td class="td-label">★★★</td></tr><tr><td class="td-label">SS(17500점)<br>미만</td><td class="td-desc">50%</td><td class="td-desc">45%</td><td class="td-desc">5%</td></tr><tr><td class="td-label">SS(17500점)<br>이상</td><td class="td-desc">20%</td><td class="td-desc">70%</td><td class="td-desc">10%</td></tr></table>
 <br>
@@ -310,14 +310,14 @@ const TIP10_DESC = `
 </tr>
 <tr>
 <td class="td-label">강점</td>
-<td class="td-desc">- 트레이닝 효과 매우 높음<br>- 특기율 50<br>- 낮은 확률로 <span class="condition-info">애교○</span>를 확정적으로 얻을 수 있는 이벤트<br>- 체인이벤트에서 스킬 <span class="skill-info">[일반] 고독한 늑대</span> 확정 획득</td>
-<td class="td-desc">- 특기율 60<br>- 힌트 레벨 상승량 3<br>- 파워 보너스 존재<br>- <span class="skill-info">[일반] 코너 회복○</span> 힌트 획득 가능</td>
+<td class="td-desc">- 트레이닝 효과 매우 높음<br>- 특기율 50<br>- 낮은 확률로 <span class="condition-info">애교○</span>를 확정적으로 얻을 수 있는 이벤트<br>- 체인이벤트에서 스킬 ${skill(201641)} 확정 획득</td>
+<td class="td-desc">- 특기율 60<br>- 힌트 레벨 상승량 3<br>- 파워 보너스 존재<br>- ${skill(200352)} 힌트 획득 가능</td>
 <td class="td-desc">- 선입 각질에 도움이 되는 스킬이 매우 많음<br>- 범용 스킬도 좋음<br>- 힌트 레벨 상승량 2<br>- 의욕 상승, 체력 최대치 증가 이벤트</td>
 </tr>
 <tr>
 <td class="td-label">코멘트</td>
-<td class="td-desc"> 키타산 블랙 정도를 제외하면 SSR 카드 중에서도 훈련 보너스로 이길 카드가 거의 없다.<br><span class="skill-info">[일반] 고독한 늑대</span>는 육성 중에 사실상 스피드 확정 펑핑.</td>
-<td class="td-desc">특기율 미쳤고 <span class="skill-info">[일반] 코너 회복○</span>이나 <span class="skill-info">[일반] 뒷심</span>같은 범용 스킬도 힌트 3레벨씩 준다.</td>
+<td class="td-desc"> 키타산 블랙 정도를 제외하면 SSR 카드 중에서도 훈련 보너스로 이길 카드가 거의 없다.<br>${skill(201641)}는 육성 중에 사실상 스피드 확정 펑핑.</td>
+<td class="td-desc">특기율 미쳤고 ${skill(200352)}이나 ${skill(200512)}같은 범용 스킬도 힌트 3레벨씩 준다.</td>
 <td class="td-desc">체력 최대치 증가 이벤트는 증가량은 4밖에 안 되지만 육성 안정성을 많이 높여주므로 도움이 됨.</td>
 </tr>
 </table>
@@ -348,7 +348,7 @@ const TIP10_DESC = `
 <tr>
 <td class="td-label">코멘트</td>
 <td class="td-desc"></td>
-<td class="td-desc">힌트를 주는 스킬만 <span class="skill-info">[일반] 집중력</span>, <span class="skill-info">[일반] 직선 달인</span>, <span class="skill-info">[일반] 코너 달인○</span>, <span class="skill-info">[일반] 뒤처지기 방지</span>, <span class="skill-info">[일반] 임기응변</span> 등등...</td>
+<td class="td-desc">힌트를 주는 스킬만 ${skill(200432)}, ${skill(200362)}, ${skill(200332)}, ${skill(200492)}, ${skill(200502)} 등등...</td>
 </tr>
 </table>
 
@@ -378,7 +378,7 @@ const TIP10_DESC = `
 <tr>
 <td class="td-label">코멘트</td>
 <td class="td-desc">스탯 상승량이 1티어 SSR 카드 급으로 높다. 밸런스 맞춘다고 그랬는지 스킬들은 쓰레기를 넣어놨다.</td>
-<td class="td-desc"><span class="skill-info">[일반] 집중력</span>, <span class="skill-info">[일반] 코너 회복○</span>처럼 비싼 스킬 주는 서포트카드 드물다.</td>
+<td class="td-desc">${skill(200432)}, ${skill(200352)}처럼 비싼 스킬 주는 서포트카드 드물다.</td>
 </tr>
 </table>
 
@@ -407,7 +407,7 @@ const TIP10_DESC = `
 <td class="td-label">강점</td>
 <td class="td-desc">- 초기 우정도가 높음<br>- 특기율 50<br>- 풀돌 아니어도 고성능</td>
 <td class="td-desc">- 뛰어난 범용성<br>- 디버프 스킬 보유<br>- 특기율 50<br>- 컨디션 상승 이벤트</td>
-<td class="td-desc">- 트레이닝 효과 좋음<br>- <span class="skill-info">[일반] 시계 방향○</span><br>- 이벤트로 스킬Pt를 많이 얻을 수 있음</td>
+<td class="td-desc">- 트레이닝 효과 좋음<br>- ${skill(200012)}<br>- 이벤트로 스킬Pt를 많이 얻을 수 있음</td>
 </tr>
 <tr>
 <td class="td-label">코멘트</td>
@@ -435,7 +435,7 @@ const TIP11_DESC = `
 <br><br>
 <table class="desc-table"><tr><td class="td-label" colspan="2">URA 시나리오 히든 보상 조건</td></tr><tr>
 <td class="td-label">1</td><td class="td-desc">
-'2인3각' 이벤트: 클래식급(2년차) 11월 전반 팬 수 5만 이상일 경우 지능 +20, 스킬Pt +20, <span class="skill-info">[레어] 강철 같은 의지</span> 힌트+1 (11월 전반 행동 후 이벤트 발생)</td></tr>
+'2인3각' 이벤트: 클래식급(2년차) 11월 전반 팬 수 5만 이상일 경우 지능 +20, 스킬Pt +20, ${skill(200441)} 힌트+1 (11월 전반 행동 후 이벤트 발생)</td></tr>
 <tr><td class="td-label">2</td><td class="td-desc">
 '당근 대농원에서' 이벤트: 클래식급(2년차) 12월 후반 팬 수 10만 이상일 경우 스킬Pt +30 (12월 후반 행동 후 이벤트 발생)</td></tr>
 <tr><td class="td-label">3</td><td class="td-desc">
@@ -452,7 +452,7 @@ const TIP12_DESC = `
 타즈나와 외출을 나가면 확정적으로 5번 나쁜 컨디션에 걸릴 걱정 없이 체력을 회복할 수 있다. 풀돌 타즈나 기준으로 1~3회는 40, 4~5회는 56을 회복시켜주는데, 회복양도 양이지만 배드 컨디션 한 번 뜨면 잘 나가다가 그대로 말아먹을 수도 있는 개씹억까운빨좆망겜 우마무스메에서 걱정없이 체력회복을 할 수 있다는 건 운영에 상당한 안정감을 부여한다.<br>
 <br>
 2. 스킬<br>
-5번째 외출에서 확률적으로 주는 <span class='skill-info'>[레어] 컨센트레이션</span>은 도주마라면 필수 취급이니 말할 것도 없고, 주니어급(1년차) 기간 중 우정도를 초록칸 이상으로 올리고 열정적인 두 사람 이벤트를 띄우면 클래식급 1월 전반에 <span class='skill-info'>[일반] 꼬리 올리기</span>의 힌트와 소량의 체력, 스피드를 올려주는데, 여기서 <span class='skill-info'>[일반] 꼬리 올리기</span>도 상당히 좋은 스킬이다.<br>
+5번째 외출에서 확률적으로 주는 ${skill(200431)}은 도주마라면 필수 취급이니 말할 것도 없고, 주니어급(1년차) 기간 중 우정도를 초록칸 이상으로 올리고 열정적인 두 사람 이벤트를 띄우면 클래식급 1월 전반에 ${skill(201611)}의 힌트와 소량의 체력, 스피드를 올려주는데, 여기서 ${skill(201611)}도 상당히 좋은 스킬이다.<br>
 <br>
 3. 사실상 컨디션 최상으로 고정<br>
 타즈나와 외출을 나가면 두 번째 외출을 제외하고 무조건 컨디션을 올려주며, 타즈나와 같이 트레이닝을 하면 확률적으로 컨디션을 높혀주는데, 그 횟수가 어마어마해서 스페셜 위크나 마야노 탑건처럼 육성 중 컨디션 하락이 10번씩 뜨기도 하는 지랄마들조차 멱살을 잡고 끌어올려 컨디션 최상을 유지할 수 있게 해준다. 컨디션은 최상인 경우 훈련 보정에 +20%가 들어가는 만큼 매우 중요하기 때문에 컨디션 관리를 위해서라도 컨디션 기복이 심한 말딸 육성에서 타즈나는 필수로 꼽힌다.<br>
@@ -472,13 +472,13 @@ const TIP14_DESC = `
 <td class="td-desc">교토</td><td class="td-desc">3000m<br>장거리</td><td class="td-desc">시계(우)<br>바깥쪽(외)</td><td class="td-desc">가을</td><td class="td-desc">맑음</td><td class="td-desc">양호</td></tr></table>
 - 거리적성 S 효과 매우 큼.<br>
 - 3000m의 초장거리 레이스기 때문에 힐스킬이 필수적이며, 좋은 금딱 힐을 내장하고 있는 캐릭터들이 매우 유리함.<br>
-- 스타트 직후 오르막이 있어 <span class="skill-info">[일반] 등산가</span> 스킬의 입지가 <span class="skill-info">[일반] 터다지기</span>급으로 좋아짐.<br>
-- 앞각질의 경우 초반 목표 속도가 높음 → 가속에 걸리는 시간이 길어 첫 오르막에서 가속중이기 때문에 <span class="skill-info">[일반] 등산가</span>가 효과를 보았으나, 뒷각질의 경우 초반 목표속도가 낮아 스킬이 터지는 시점에서 가속이 완료되어 효과를 보지 못 함.<br>
+- 스타트 직후 오르막이 있어 ${skill(201581)} 스킬의 입지가 ${skill(201601)}급으로 좋아짐.<br>
+- 앞각질의 경우 초반 목표 속도가 높음 → 가속에 걸리는 시간이 길어 첫 오르막에서 가속중이기 때문에 ${skill(201581)}가 효과를 보았으나, 뒷각질의 경우 초반 목표속도가 낮아 스킬이 터지는 시점에서 가속이 완료되어 효과를 보지 못 함.<br>
 - 파워, 지능이 301, 601, 901을 넘길 때마다 마장 보너스를 얻는다. 파워 901 이상, 지능 901 이상일 경우 스피드 보정 +20%<br>
-- 도주마의 <span class="skill-info">[일반] 앵글링×스키밍</span>, 선·추입마의 <span class="skill-info">[일반] 레츠 아나볼릭!</span>은 여전히 효과적이나, 이전과 달리 완벽하게 종반 시작과 함께 발동하지 않기 때문에 다소 약화됨.<br>
-- 종반 구간이 직선으로 시작하기 때문에, <span class="skill-info">[레어] 육박하는 그림자</span>, <span class="skill-info">[일반] 직선 주파</span>가 매우 효과적.<br>
+- 도주마의 ${skill(900201)}, 선·추입마의 ${skill(900271)}은 여전히 효과적이나, 이전과 달리 완벽하게 종반 시작과 함께 발동하지 않기 때문에 다소 약화됨.<br>
+- 종반 구간이 직선으로 시작하기 때문에, ${skill(200641)}, ${skill(200642)}가 매우 효과적.<br>
 - 최종 코너 가속기는 거의 효과가 없음.<br>
-- 선입마의 경우 좋은 스킬은 가지고 있으나 추입이 많아질 경우 순위조건에서 밀려나 <span class="skill-info">[일반] 레츠 아나볼릭!</span>의 발동이 어려워질 것.<br>
+- 선입마의 경우 좋은 스킬은 가지고 있으나 추입이 많아질 경우 순위조건에서 밀려나 ${skill(900271)}의 발동이 어려워질 것.<br>
 - 이상의 이유로 추입 > 선행 > 선입 > 도주 순으로 유리할 것으로 보임.<br>
 <br>
 <br>
@@ -530,11 +530,11 @@ const TIP15_DESC = `
 [팀명별 획득 스킬]<br>
 <table class="desc-table">
 <tr><td class="td-label">제안자</td><td class="td-label">팀명</td><td class="td-label">획득 스킬</td></tr>
-<tr><td class="td-desc">타이키 셔틀</td><td class="td-desc">HOP CHEERS</td><td class="td-desc"><span class="skill-info">[레어] 마일의 지배자</span></td></tr>
-<tr><td class="td-desc">라이스 샤워</td><td class="td-desc">블룸스</td><td class="td-desc"><span class="skill-info">[레어] 쿨다운</span></td></tr>
-<tr><td class="td-desc">하루 우라라</td><td class="td-desc">당근 푸딩</td><td class="td-desc"><span class="skill-info">[레어] 꺾이지 않는 마음</span></td></tr>
-<tr><td class="td-desc">마치카네 후쿠키타루</td><td class="td-desc">경삿날 러너스</td><td class="td-desc"><span class="skill-info">[레어] 천리안</span></td></tr>
-<tr><td class="td-desc">(기본)</td><td class="td-desc">팀 캐럿츠</td><td class="td-desc"><span class="skill-info">[레어] 논스톱 걸</span></td></tr>
+<tr><td class="td-desc">타이키 셔틀</td><td class="td-desc">HOP CHEERS</td><td class="td-desc">${skill(200681)}</td></tr>
+<tr><td class="td-desc">라이스 샤워</td><td class="td-desc">블룸스</td><td class="td-desc">${skill(200741)}</td></tr>
+<tr><td class="td-desc">하루 우라라</td><td class="td-desc">당근 푸딩</td><td class="td-desc">${skill(200471)}</td></tr>
+<tr><td class="td-desc">마치카네 후쿠키타루</td><td class="td-desc">경삿날 러너스</td><td class="td-desc">${skill(201121)}</td></tr>
+<tr><td class="td-desc">(기본)</td><td class="td-desc">팀 캐럿츠</td><td class="td-desc">${skill(200491)}</td></tr>
 </tr></table>
 <br><br>
 [팀레이스 랭킹별 기초 능력치 보너스]<br>
