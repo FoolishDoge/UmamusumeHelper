@@ -69,7 +69,7 @@ function createCharaItem(inner, item){
 		+ subjectFinder(item['type']);
 	if(item['character']){
 		let imgUrl = "./imgs/chara/" + item['character'] + ".png";
-		inner += `<img class="title-img" src="${imgUrl}">`;
+		inner += `<img class="title-img-chara" src="${imgUrl}">`;
 	}
 	inner += `<span class="${item['titleStyle']}"><span class="title-chara-name">${item['characterTitle']}</span> ${item['title']}</span></summary><div class='desc'>`;
 	if(item['descImg']){
@@ -155,7 +155,7 @@ function createEventItem(inner, item){
 		+ subjectFinder(item['type']);
 	if(item['character']){
 		let imgUrl = "./imgs/chara/" + item['character'] + ".png";
-		inner += `<img class="title-img" src="${imgUrl}">`;
+		inner += `<img class="title-img-chara" src="${imgUrl}">`;
 	}
 	inner += `<span class="${item['titleStyle']}">${item['title']}`;
 	if(item['cardName']){
@@ -219,9 +219,9 @@ function createSkillItem(inner, item){
 		+ subjectFinder(item['type']);
 	if(item['img']){
 		let imgUrl = "./imgs/skill/" + item['img'];
-		inner += `<img class="title-img" src="${imgUrl}">`;
+		inner += `<img class="title-img-skill" src="${imgUrl}">`;
 	}
-	inner += `<span class="${item['titleStyle']}">${item['title']}</span></summary><div class='desc'>`;
+	inner += `<span class="${item['titleStyle']}">[${item['grade']}] ${item['title']}</span></summary><div class='desc'>`;
 	if(item['descImg']){
 		let imgUrl = "./imgs/desc/" + item['descImg'];
 		inner += `<img src="${imgUrl}" class="desc-img">`;
@@ -258,7 +258,7 @@ function createTipItem(inner, item){
 		+ subjectFinder(item['type']);
 	if(item['character']){
 		let imgUrl = "./imgs/chara/" + item['character'] + ".png";
-		inner += `<img class="title-img" src="${imgUrl}">`;
+		inner += `<img class="title-img-chara" src="${imgUrl}">`;
 	}
 	inner += `<span class="${item['titleStyle']}">${item['title']}</span></summary><div class='desc'>`;
 	if(item['descImg']){

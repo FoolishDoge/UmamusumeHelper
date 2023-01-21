@@ -617,30 +617,33 @@ document.querySelector(".info-box").onclick = function(){
 };
 
 function infoBoxPositioning(box, posX, posY){
-		let clientWidth = document.body.clientWidth;
-		let clientHeight = document.body.clientHeight;
-		box.style.display = "block";
-		let boxWidth = box.offsetWidth;
-		let boxHeight = box.offsetHeight;
-		
-		if(boxWidth > 240){ // max-width
-			if(clientWidth < 240){
-				boxWidth = clientWidth - 10;
-			} else{
-				boxWidth = 240;
-			}
-		}
-		
-		if(posX + boxWidth > clientWidth){
-			posX += (clientWidth - (posX + boxWidth)) - 40;
-		}
-		if(posY + boxHeight > clientHeight){
-			posY += (clientHeight - (posY + boxHeight)) - 20;
-		}
+	// "clientWidth" does not consider scale. Therefore, you need to divide value by current scale to get the exact size of the client.
+	// On the other hand, "getBoundingClientRect()" returns the exact coordinates and sizes which actually rendered.
+	let clientWidth = document.body.clientWidth / scale;
+	let clientHeight = document.body.clientHeight / scale;
+	box.style.display = "block";
+	let boxWidth = box.offsetWidth;
+	let boxHeight = box.offsetHeight;
+	let maxWidth = 260;
 	
-		box.style.left = posX + "px";
-		box.style.top = posY + "px";
-		box.style.width = boxWidth + "px";
+	if(boxWidth > maxWidth){
+		if(clientWidth < maxWidth){
+			boxWidth = clientWidth - 10;
+		} else{
+			boxWidth = maxWidth;
+		}
+	}
+	
+	if(posX + boxWidth > clientWidth){
+		posX += (clientWidth - (posX + boxWidth)) - 40;
+	}
+	if(posY + boxHeight > clientHeight){
+		posY += (clientHeight - (posY + boxHeight)) - 20;
+	}
+
+	box.style.left = posX + "px";
+	box.style.top = posY + "px";
+	box.style.width = boxWidth + "px";
 }
 function showSkillInfo(e, code){
 	let box = document.querySelector('.info-box');
