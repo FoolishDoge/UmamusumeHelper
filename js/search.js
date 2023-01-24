@@ -70,7 +70,7 @@ function filter(item, keyword, isEssential, toggleAcc, toggleEss, searchDesc){
 		searchTarget += `${item['choice']} ${item['effect']}`.toLowerCase();
 		}
 	} else if(item['type'] == "skill"){
-		searchTarget += `${item['title']} ${item['hiddenTag']}`.toLowerCase();
+		searchTarget += `[${item['grade']}] ${item['title']} ${item['hiddenTag']}`.toLowerCase();
 		if(searchDesc){
 			searchTarget += `${item['condition']} ${item['effect']}`.toLowerCase();
 		}
