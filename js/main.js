@@ -661,6 +661,9 @@ function showSkillInfo(e, code){
 			inner += `<img class="skill-info-box-img" src="./imgs/skill/${item['icon']}">`;
 		}
 		inner += `<span class="skill-info-box-title">[${item['grade']}] ${item['name']}</span><br><br>`;
+		if(item['grade'] == "고유" || item['grade'] == "계승"){
+			inner += `▶ 계승: ${item['owner']}<br>`;
+		}
 		if(item['cost']){
 			inner += `▶ 필요 스킬Pt: ${item['cost']}<br>`;
 		}
