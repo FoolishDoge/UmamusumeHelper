@@ -260,7 +260,11 @@ function createTipItem(inner, item){
 		let imgUrl = "./imgs/chara/" + item['character'] + ".png";
 		inner += `<img class="title-img-chara" src="${imgUrl}">`;
 	}
-	inner += `<span class="${item['titleStyle']}">${item['title']}</span></summary><div class='desc'>`;
+	inner += `<span class="${item['titleStyle']}">${item['title']}`;
+	if(item['fix']){
+		inner += `<span style="font-size:15px; position:relative; bottom:10px;"> 📌</span>`;
+	}
+	inner += `</span></summary><div class='desc'>`;
 	if(item['descImg']){
 		let imgUrl = "./imgs/desc/" + item['descImg'];
 		inner += `<img src="${imgUrl}" class="desc-img">`;
