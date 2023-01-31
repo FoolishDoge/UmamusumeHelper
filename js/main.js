@@ -703,7 +703,7 @@ function showSkillInfo(e, code){
 		if(item['rel']){
 			inner += `<br>▶ 관련스킬: `;
 			for(let i = 0; i < item['rel'].length; i++){
-				inner += `${skill(item['rel'][i])}`;
+				inner += `${skillName(item['rel'][i])}`;
 				if(i < item['rel'].length-1){
 					inner += ` / `;
 				}

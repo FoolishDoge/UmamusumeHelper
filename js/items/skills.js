@@ -8,6 +8,9 @@ function skill(code){
 
     return `<span class='skill-info' code='${code}'><img class='in-desc-skill-icon' src='./imgs/skill/${icon}'>${name}</span>`;
 }
+function skillName(code){
+    return '[' + skills[code]['grade'] + '] ' + skills[code]['name'];
+}
 
 
 
