@@ -353,6 +353,7 @@ function modifySkills(){
 		dict['condition'] = val['condition'];
 		dict['effect'] = val['effect'];
 		dict['duration'] = val['duration'];
+		dict['rel'] = val['rel'];
 		dict['comment'] = val['comment'];
 		dict['recommend'] = val['recommend'];
 		items.push(dict);
@@ -696,6 +697,15 @@ function showSkillInfo(e, code){
 				}
 				if(i < 3){
 					inner += ` /`;
+				}
+			}
+		}
+		if(item['rel']){
+			inner += `<br>▶ 관련스킬: `;
+			for(let i = 0; i < item['rel'].length; i++){
+				inner += `${skill(item['rel'][i])}`;
+				if(i < item['rel'].length-1){
+					inner += ` / `;
 				}
 			}
 		}

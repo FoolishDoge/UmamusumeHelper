@@ -235,6 +235,15 @@ function createSkillItem(inner, item){
 		inner += `<tr><td nowrap class="td-label">스킬Pt비용</td><td class="td-desc">${item['cost']}</td></tr>`;
 	}
 	inner += `</tr><tr><td nowrap class="td-label">발동조건</td><td class="td-desc">${item['condition']}</td></tr><tr><td nowrap class="td-label">효과</td><td class="td-desc">${item['effect']}</td></tr><tr><td nowrap class="td-label">지속시간</td><td class="td-desc">${item['duration']}</td></tr>`;
+	if(item['rel']){
+		inner += `<tr><td class="td-label">관련스킬</td><td class="td-desc">`;
+		for(let i = 0; i < item['rel'].length; i++){
+			inner += `${skill(item['rel'][i])}`;
+			if(i < item['rel'].length-1){
+				inner += ` / `;
+			}
+		}
+	}
 	if(item['comment']){
 		inner += `<tr><td class="td-desc align-left" colspan="2">${item['comment']}</td></tr>`;
 	}
