@@ -26,6 +26,9 @@ const supportEvents = [
     {createDate:`2022-11-08`, character:`나리타 브라이언`, eventType:`support`,  cardName: `[Two Pieces] 나리타 브라이언`, title: `③ 이어지는 꿈을 향해 달려나가서`, choice: [`(선택지 없음)`], effect: [`체력-10<br>스피드+20<br>${skill(201361)} 힌트 LV+1`]},
     {createDate:`2022-11-08`, character:`나리타 브라이언`, eventType:`support`,  cardName: null, title: `고독한 늑대`, choice: [`무리하진 마`, `혼자서 달리고 싶었구나`], effect: [`스피드+3<br>스태미나+3<br>파워+3<br>나리타 브라이언의 우정도+5`, `${skill(201641)} 힌트 LV+1<br>나리타 브라이언의 우정도+5`]},
     {createDate:`2022-11-08`, character:`나리타 브라이언`, eventType:`support`,  cardName: null, title: `학생회 임원!`, choice: [`도와줄까?`, `체력이 붙을 것 같아`], effect: [`컨디션 상승+1<br>스피드+5<br>나리타 브라이언의 우정도+5`, `체력 최대치+4<br>나리타 브라이언의 우정도+5`]},
+    {createDate:`2023-02-08`, character:`나리타 브라이언`, eventType:`support`, cardName: `[하늘을 비웃는 효시] 나리타 브라이언`, title: `① 언젠가의 목표`, choice: [`(선택지 없음)`], effect: [`스태미나+10`]},
+    {createDate:`2023-02-08`, character:`나리타 브라이언`, eventType:`support`, cardName: `[하늘을 비웃는 효시] 나리타 브라이언`, title: `② 연못의 패자`, choice: [`(대단한 아우라다!)`, `(힘으로만 밀어붙이고 있는 거 아닌가...?)`], effect: [`성공 시 :<br>체력 최대치+4<br>스태미나+10<br>나리타 브라이언의 우정도+5<br>${skill(200722)} 힌트 LV+1실패 시 :<br>근성+10<br>나리타 브라이언의 우정도-5`, `지능+10<br>나리타 브라이언의 우정도+5`]},
+    {createDate:`2023-02-08`, character:`나리타 브라이언`, eventType:`support`, cardName: `[하늘을 비웃는 효시] 나리타 브라이언`, title: `③ 전장의 마음가짐`, choice: [`(선택지 없음)`], effect: [`체력-5<br>스태미나+5<br>${skill(200361)} 힌트 LV+2나리타 브라이언의 우정도+5`]},
     //나리타 타이신
     {createDate:`2022-08-13`, character:`나리타 타이신`, eventType:`support`, cardName: null, title: `딱히, 내버려 둬`, choice: [`응원은 하게 해줘!`, `하지만 힘이 되고 싶어`], effect: [`스태미나+5<br>스킬 Pt+15<br>나리타 타이신의 우정도+5`, `파워+5<br>스킬 Pt+15<br>나리타 타이신의 우정도+5`]},
     {createDate:`2022-08-13`, character:`나리타 타이신`, eventType:`support`, cardName: null, title: `딱히, 방해하지 마`, choice: [`선택지가 없는 경우`, `늦지 않게 조심해`, `무리하는 건 좋지 않아`], effect: [`나리타 타이신의 우정도+5<br>${skill(201212)} 힌트 LV+1`, `${skill(201212)} 힌트 LV+1<br>나리타 타이신의 우정도+5`, `스킬 Pt+30<br>나리타 타이신의 우정도+5`]},
@@ -43,6 +46,11 @@ const supportEvents = [
     {createDate:`2022-12-10`, character:`나이스 네이처`, eventType:`support`,  cardName: `[소원까지는 닦지 않아] 나이스 네이처`, title: `② 억누를 수 없는 마음`, choice: [`단과자를 먹자`, `달리면서 머리를 비우자`], effect: [`체력+10<br>나이스 네이처의 우정도+5`, `체력-5<br>스피드+5<br>파워+5<br>배드 컨디션 회복<br>나이스 네이처의 우정도+5`]},
     {createDate:`2022-12-10`, character:`나이스 네이처`, eventType:`support`,  cardName: `[소원까지는 닦지 않아] 나이스 네이처`, title: `③ 퀴즈로 복수!!`, choice: [`(선택지 없음)`], effect: [`체력+10<br>스피드+5<br>지능+5<br>${skill(200601)} 힌트 LV+1<br>나이스 네이처의 우정도+5`]},
     //나카야마 페스타
+    {createDate:`2023-02-08`, character:`나카야마 페스타`, eventType:`support`, cardName: `[43, 8, 1] 나카야마 페스타`, title: `① 징조의 밤`, choice: [`그냥 넘어갈 수 없어! 내가 널 대신할게!`, `전력으로 도망간다!`], effect: [`스태미나+10<br>근성+5<br>스킬 Pt+10<br>나카야마 페스타의 우정도+5<br>※ 선택지에 따라 연속 이벤트 3이 분기`, `체력-10<br>스킬 Pt+5<br>나카야마 페스타의 우정도+5<br>※ 선택지에 따라 연속 이벤트 3이 분기`]},
+    {createDate:`2023-02-08`, character:`나카야마 페스타`, eventType:`support`, cardName: `[43, 8, 1] 나카야마 페스타`, title: `② 불꽃 튀는 낮`, choice: [`(선택지 없음)`], effect: [`스킬 Pt+25<br>나카야마 페스타의 우정도+5`]},
+    {createDate:`2023-02-08`, character:`나카야마 페스타`, eventType:`support`, cardName: `[43, 8, 1] 나카야마 페스타`, title: `③ 어둠에 녹아내리는 저녁`, choice: [`(선택지 없음)`], effect: [`징조의 밤(1번째 이벤트)에서 1번 선택지를 선택한 경우<br>스킬 Pt+40<br>${skill(201591)} 힌트 LV+1나카야마 페스타의 우정도+5<br>또는<br>징조의 밤(1번째 이벤트)에서 1번 선택지를 선택하고 성공 시<br>스태미나+15<br>근성+15<br>스킬 Pt+20<br>${skill(201701)} 힌트 LV+3나카야마 페스타의 우정도+5<br>또는<br>징조의 밤(1번째 이벤트)에서 2번 선택지를 선택한 경우<br>컨디션 하락+1<br>근성+10<br>${skill(201702)} 힌트 LV+3나카야마 페스타의 우정도+5`]},
+    {createDate:`2023-02-08`, character:`나카야마 페스타`, eventType:`support`, cardName: null, title: `해 질 녘에 한판 승부`, choice: [`위험하다… 일단 이 승부는 포기하자`, `블러프다…… 모든 코인을 건다!`], effect: [`체력+15<br>나카야마 페스타의 우정도+5`, `근성+15<br>나카야마 페스타의 우정도+5`]},
+    {createDate:`2023-02-08`, character:`나카야마 페스타`, eventType:`support`, cardName: null, title: `해 질 녘의 혼밥`, choice: [`곱창조림인가?`, `돈까스 카레가 좋겠어`], effect: [`나카야마 페스타의 우정도+5<br>${skill(200042)} 힌트 LV+1`, `나카야마 페스타의 우정도+5<br>${skill(200052)} 힌트 LV+1`]},
     //니시노 플라워
     {createDate:`2022-08-13`, character:`니시노 플라워`, eventType:`support`, cardName: null, title: `예쁘게 피우자♪`, choice: [`분담해서 효율적으로 진행하자!`, `서둘러 물뿌리개에 물을 담아올게!`], effect: [`지능+15<br>니시노 플라워의 우정도+5`, `스피드+10<br>파워+5<br>니시노 플라워의 우정도+5`]},
     {createDate:`2022-08-13`, character:`니시노 플라워`, eventType:`support`, cardName: null, title: `온기가 담긴 애정 도시락`, choice: [`귀여운 반찬이다`, `영양가가 풍부할 것 같아`], effect: [`<span class='condition-info'>애교○</span> 상태 획득<br>니시노 플라워의 우정도+5`, `체력+20<br>니시노 플라워의 우정도+5`]},
@@ -251,6 +259,10 @@ const supportEvents = [
     {createDate:`2022-08-13`, character:`스페셜 위크`, eventType:`support`, cardName: `[저녁놀은 동경의 색] 스페셜 위크`, title: `② 조금이라도 비슷해지기 위해서`, choice: [`역시 머리일까?`, `과묵한 점이라든가?`, `없지 않을까…`], effect: [`체력-10<br>스피드+15<br>스페셜 위크의 우정도+5`, `체력-10<br>스킬 Pt+20<br>스페셜 위크의 우정도+5`, `체력-10<br>스페셜 위크의 우정도+5<br>${skill(201621)} 힌트 LV+1`]},
     {createDate:`2022-08-13`, character:`스페셜 위크`, eventType:`support`, cardName: `[저녁놀은 동경의 색] 스페셜 위크`, title: `③ 동경의 형태`, choice: [`(선택지 없음)`], effect: [`성공 시 :<br>체력+10<br>스피드+10<br>스킬 Pt +10<br>${skill(201351)} 힌트 LV+3<br>실패 시 :<br>체력+10<br>스피드+5<br>${skill(201352)} 힌트 LV+1`]},
     //시리우스 심볼리
+    {createDate:`2023-02-08`, character:`시리우스 심볼리`, eventType:`support`, cardName: `[일등성은 흔들리지 않는다] 시리우스 심볼리`, title: `① 문제아들의 왕`, choice: [`(선택지 없음)`], effect: [`근성+15<br>시리우스 심볼리의 우정도+5`]},
+    {createDate:`2023-02-08`, character:`시리우스 심볼리`, eventType:`support`, cardName: `[일등성은 흔들리지 않는다] 시리우스 심볼리`, title: `② 물과 기름`, choice: [`루돌프의 모두를 아우르는 의견에 동의한다`, `시리우스의 개인을 중시하는 의견에 동의한다`], effect: [`성공 시 :<br>스피드+15<br>파워+15<br>시리우스 심볼리의 우정도+5<br>실패 시 :<br>체력-5<br>스피드+10<br>시리우스 심볼리의 우정도-5`, `스킬 Pt+20<br>시리우스 심볼리의 우정도+5<br>${skill(201332)} 힌트 LV+1`]},
+    {createDate:`2023-02-08`, character:`시리우스 심볼리`, eventType:`support`, cardName: null, title: `가르쳐줄까?`, choice: [`스스로 힘내본다`, `가르침을 받는다`], effect: [`체력-5<br>스태미나+20<br>시리우스 심볼리의 우정도+5`, `지능+10<br>시리우스 심볼리의 우정도+5`]},
+    {createDate:`2023-02-08`, character:`시리우스 심볼리`, eventType:`support`, cardName: null, title: `도와줄까?`, choice: [`부탁합니다, 돌려주세요!`, `애걸복걸하지 않는다`], effect: [`지능+5<br>시리우스 심볼리의 우정도+5<br>${skill(201372)} 힌트 LV+1`, `스킬 Pt+15<br>시리우스 심볼리의 우정도+5`]},
     //시킹 더 펄
     {createDate:`2022-09-05`, character:`시킹 더 펄`, eventType:`support`,  cardName: null, title: `전력으로 씽킹!`, choice: [`실제로 하긴 힘들 것 같은데…`, `재미있는 아이디어가 나왔군!`], effect: [`지능+20<br>시킹 더 펄의 우정도+5`, `체력-10<br>${skill(201591)} 힌트 LV+3<br>시킹 더 펄의 우정도+5`]},
     {createDate:`2022-09-05`, character:`시킹 더 펄`, eventType:`support`,  cardName: null, title: `전력으로 패션!`, choice: [`그건 좀…`, `그럼 마음껏 즐길게`], effect: [`체력+10<br>컨디션 상승`, `파워+5<br>근성+5<br>시킹 더 펄의 우정도+5`]},
@@ -339,6 +351,9 @@ const supportEvents = [
     {createDate:`2022-08-13`, character:`유키노 비진`, eventType:`support`, cardName: null, title: `멋진 라이브를 위해`, choice: [`격렬한 스텝을 넣어보면 어때?`, `아크로바틱한 안무를 해보면 어때?`], effect: [`근성+10<br>유키노 비진의 우정도+5`, `체력-10<br>근성+15<br>유키노 비진의 우정도+5`]},
     {createDate:`2022-08-13`, character:`유키노 비진`, eventType:`support`, cardName: `[시티걸 입문#] 유키노 비진`, title: `① 오더 트레이닝`, choice: [`(선택지 없음)`], effect: [`컨디션 상승<br>파워+5`]},
     {createDate:`2022-08-13`, character:`유키노 비진`, eventType:`support`, cardName: `[시티걸 입문#] 유키노 비진`, title: `② 내추럴 시티 걸`, choice: [`(선택지 없음)`], effect: [`컨디션 상승<br>지능+25`]},
+    {createDate:`2023-02-08`, character:`유키노 비진`, eventType:`support`, cardName: `[밤을 비추는 봉납의 춤] 유키노 비진`, title: `① 제가 어떻게든 하겠습니다!`, choice: [`(선택지 없음)`], effect: [`체력-10<br>근성+10<br>지능+10<br>유키노 비진의 우정도+5`]},
+    {createDate:`2023-02-08`, character:`유키노 비진`, eventType:`support`, cardName: `[밤을 비추는 봉납의 춤] 유키노 비진`, title: `② 꾸밈없는 매력을…`, choice: [`실제로 체험시켜 주자!`, `동영상 같은 건 어때?`], effect: [`체력-10<br>스태미나+5<br>근성+10<br>유키노 비진의 우정도+5<br>${skill(200242)} 힌트 LV+1`, `스킬 Pt+20<br>${skill(201661)} 힌트 LV+1유키노 비진의 우정도-5<br>연속 이벤트 종료`]},
+    {createDate:`2023-02-08`, character:`유키노 비진`, eventType:`support`, cardName: `[밤을 비추는 봉납의 춤] 유키노 비진`, title: `③ '활짝 개어라'의 주역`, choice: [`(선택지 없음)`], effect: [`체력-10<br>근성+10<br>지능+5<br>${skill(200341)} 힌트 LV+1유키노 비진의 우정도+5`]},
     //이나리 원
     //이쿠노 딕터스
     {createDate:`2022-08-13`, character:`이쿠노 딕터스`, eventType:`support`, cardName: null, title: `이쿠노식 만전 메서드`, choice: [`전부 혼자서 해?`, `정말 열심히 하는구나`], effect: [`지능+10<br>이쿠노 딕터스의 우정도+5`, `스킬 Pt+30<br>이쿠노 딕터스의 우정도+5`]},
@@ -358,6 +373,11 @@ const supportEvents = [
     {createDate:`2023-01-18`, character:`젠노 롭 로이`, eventType:`support`, cardName: `[마력을 받은 영웅] 젠노 롭 로이`, title: `③ 독서 소녀와 어느 개구리인 친구`, choice: [`(선택지 없음)`], effect: [`스킬 Pt+20<br>${skill(201691)} 힌트 LV+1`]},
     //츠루마루 츠요시
     //카렌짱
+    {createDate:`2023-02-08`, character:`카렌짱`, eventType:`support`, cardName: null, title: `#귀여움포유☆`, choice: [`단체사진은 어때?`, `정렬해서 효율적으로 촬영하자!`], effect: [`스킬 Pt+15<br>카렌짱의 우정도+5`, `카렌짱의 우정도+5<br>${skill(201012)} 힌트 LV+1`]},
+    {createDate:`2023-02-08`, character:`카렌짱`, eventType:`support`, cardName: null, title: `#당신만의귀여움`, choice: [`지적인 느낌이 좋아보여`, `기운이 넘치는 게 좋겠어!`], effect: [`스피드+5<br>지능+10<br>카렌짱의 우정도+5`, `스피드+10<br>파워+5<br>카렌짱의 우정도+5`]},
+    {createDate:`2023-02-08`, character:`카렌짱`, eventType:`support`, cardName: `[사랑스러운 그대, 귀여운 그대] 카렌짱`, title: `① #카렌의가능성`, choice: [`그렇지 않아`, `음……`], effect: [`성공 시 :<br>스피드+10<br>지능+10<br>카렌짱의 우정도+5<br>${skill(201022)} 힌트 LV+1실패 시 :<br>스피드+5<br>지능+5<br>카렌짱의 우정도+5`, `체력+30<br>연속 이벤트 종료<br>${skill(201661)} 힌트 LV+1`]},
+    {createDate:`2023-02-08`, character:`카렌짱`, eventType:`support`, cardName: `[사랑스러운 그대, 귀여운 그대] 카렌짱`, title: `② #카렌의의문`, choice: [`(선택지 없음)`], effect: [`지능+10`]},
+    {createDate:`2023-02-08`, character:`카렌짱`, eventType:`support`, cardName: `[사랑스러운 그대, 귀여운 그대] 카렌짱`, title: `③ #카렌답게`, choice: [`(선택지 없음)`], effect: [`성공 시 :<br>지능+10<br>스킬 Pt+20<br>${skill(201001)} 힌트 LV+3카렌짱의 우정도+5<br>실패 시 :<br>지능+5<br>스킬 Pt+10<br>${skill(201002)} 힌트 LV+3카렌짱의 우정도+5`]},
     //카시모토 리코s
     {createDate:`2022-12-19`, character:`카시모토 리코`, eventType:`support`,  cardName: null, title: `① 노래에는 마음을 싣고`, choice: [`(선택지 없음)`], effect: [`체력+25<br>컨디션 상승<br>스태미나+10<br>카시모토 리코의 우정도+5<br>※ 서포트 효과에 따라 수치 변동`]},
     {createDate:`2022-12-19`, character:`카시모토 리코`, eventType:`support`,  cardName: null, title: `② 잠깐의 휴식을`, choice: [`(선택지 없음)`], effect: [`체력+20<br>컨디션 상승<br>스태미나+10<br>근성+10<br>카시모토 리코의 우정도+5<br>※ 서포트 효과에 따라 수치 변동`]},
