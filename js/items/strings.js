@@ -392,60 +392,56 @@ const TIP11_DESC = `
 
 const TIP14_DESC = `
 [기본 정보]<br>
-- (예상) 2023년 2월 10일 ~ 2월 16일<br>
+- (예상) 2023년 3월 14일 ~ 3월 20일<br>
 <table class="desc-table"><tr>
 <td class="td-label">경기장</td><td class="td-label">거리</td><td class="td-label">방향</td><td class="td-label">계절</td><td class="td-label">날씨</td><td class="td-label">상태</td></tr><tr>
-<td class="td-desc">교토</td><td class="td-desc">3000m<br>장거리</td><td class="td-desc">시계(우)<br>바깥쪽(외)</td><td class="td-desc">가을</td><td class="td-desc">맑음</td><td class="td-desc">양호</td></tr></table>
-- 거리적성 S 효과 매우 큼.<br>
-- 3000m의 초장거리 레이스기 때문에 힐스킬이 필수적이며, 좋은 금딱 힐을 내장하고 있는 캐릭터들이 매우 유리함.<br>
-- 스타트 직후 오르막이 있어 ${skill(201581)} 스킬의 입지가 ${skill(201601)}급으로 좋아짐.<br>
-- 앞각질의 경우 초반 목표 속도가 높음 → 가속에 걸리는 시간이 길어 첫 오르막에서 가속중이기 때문에 ${skill(201581)}가 효과를 보았으나, 뒷각질의 경우 초반 목표속도가 낮아 스킬이 터지는 시점에서 가속이 완료되어 효과를 보지 못 함.<br>
-- 파워, 지능이 301, 601, 901을 넘길 때마다 마장 보너스를 얻는다. 파워 901 이상, 지능 901 이상일 경우 스피드 보정 +20%<br>
-- 도주마의 ${skill(900201)}, 선·추입마의 ${skill(900271)}은 여전히 효과적이나, 이전과 달리 완벽하게 종반 시작과 함께 발동하지 않기 때문에 다소 약화됨.<br>
-- 종반 구간이 직선으로 시작하기 때문에, ${skill(200641)}, ${skill(200642)}가 매우 효과적.<br>
-- 최종 코너 가속기는 거의 효과가 없음.<br>
-- 선입마의 경우 좋은 스킬은 가지고 있으나 추입이 많아질 경우 순위조건에서 밀려나 ${skill(900271)}의 발동이 어려워질 것.<br>
-- 이상의 이유로 추입 > 선행 > 선입 > 도주 순으로 유리할 것으로 보임.<br>
+<td class="td-desc">도쿄</td><td class="td-desc">2000m<br>중거리</td><td class="td-desc">시계(좌)</td><td class="td-desc">가을</td><td class="td-desc">비</td><td class="td-desc">포화</td></tr></table>
+- 경기장 상태가 나빠 뒷각질 추월이 힘듦.<br>
+- 마장보너스 없음.<br>
+
+
 <br>
 <br>
-[필요 스태미너]
-<table class="desc-table"><tr>
-<td class="td-blank"></td>
-<td class="td-label">도주</td><td class="td-label">선행</td><td class="td-label">선입</td><td class="td-label">추입</td></tr><tr>
-<td class="td-label">-</td>
-<td class="td-desc">1220</td><td class="td-desc">1390</td><td class="td-desc">1300</td><td class="td-desc">1335</td></tr>
-<td class="td-label" nowrap>금1</td>
-<td class="td-desc">945</td><td class="td-desc">1100</td><td class="td-desc">1040</td><td class="td-desc">1070</td></tr>
-<td class="td-label"nowrap>금1은1</td>
-<td class="td-desc">875</td><td class="td-desc">1020</td><td class="td-desc">970</td><td class="td-desc">1000</td>
-</tr></table>
-※ 다른 요소 고려 없이 필요 스태미나만 측정한 값. 실제로는 다른 스탯의 영향이나 스킬 발동으로 필요 스태미나는 낮아짐.<br>
-※ 은딱 힐 하나당 -80, 금딱 힐 하나당 -260, 은딱 디버프 +38, 금딱 디버프 +113 정도로 가산할 것.<br>
-※ 지능 목표치가 최대 601 정도로 낮은 만큼 힐 스킬이 확률적으로 발동되지 않을 수도 있다는 걸 고려하기 바람.<br>
-<br>
-<br>
+` + 
+// [필요 스태미너]
+// <table class="desc-table"><tr>
+// <td class="td-blank"></td>
+// <td class="td-label">도주</td><td class="td-label">선행</td><td class="td-label">선입</td><td class="td-label">추입</td></tr><tr>
+// <td class="td-label">-</td>
+// <td class="td-desc">1220</td><td class="td-desc">1390</td><td class="td-desc">1300</td><td class="td-desc">1335</td></tr>
+// <td class="td-label" nowrap>금1</td>
+// <td class="td-desc">945</td><td class="td-desc">1100</td><td class="td-desc">1040</td><td class="td-desc">1070</td></tr>
+// <td class="td-label"nowrap>금1은1</td>
+// <td class="td-desc">875</td><td class="td-desc">1020</td><td class="td-desc">970</td><td class="td-desc">1000</td>
+// </tr></table>
+// ※ 다른 요소 고려 없이 필요 스태미나만 측정한 값. 실제로는 다른 스탯의 영향이나 스킬 발동으로 필요 스태미나는 낮아짐.<br>
+// ※ 은딱 힐 하나당 -80, 금딱 힐 하나당 -260, 은딱 디버프 +38, 금딱 디버프 +113 정도로 가산할 것.<br>
+// ※ 지능 목표치가 최대 601 정도로 낮은 만큼 힐 스킬이 확률적으로 발동되지 않을 수도 있다는 걸 고려하기 바람.<br>
+// <br>
+// <br>
+`
 [추천 육성마]
 <table class="desc-table">
-<tr><td class="td-label">추입</td><td class="td-desc">
-<b>나리타 타이신</b><br>
-<b>골드 쉽</b></tr>
 <tr><td class="td-label">선행</td><td class="td-desc">
-슈퍼 크릭<br>
-세이운 스카이<br>
-메지로 맥퀸<br>
-수영복 마루젠스키
-</td></tr>
-<tr><td class="td-label">선입</td><td class="td-desc">
-나이스 네이처(디버프 담당)<br>
+<b>타이키 셔틀</b><br>
+마루젠스키
 </td></tr>
 <tr><td class="td-label">도주</td><td class="td-desc">
-하루 우라라(선행 페이스메이커 저격용 조커픽)<br>
-할로윈 라이스샤워
+<b>수영복 마루젠스키</b><br>
+세이운 스카이
+</td></tr>
+<tr><td class="td-label">선입</td><td class="td-desc">
+유곽 골드 시티<br>
+그래스 원더<br>
+메지로 라이언
+</td></tr>
+<tr><td class="td-label">추입</td><td class="td-desc">
+-
 </td></tr>
 </table>
 <br><br>
 [참고용 사이트]<br>
-<a target="_blank" href="https://gall.dcinside.com/mgallery/board/view/?id=umamusu&no=1417153&page=1">우마무스메 프리티 더비 갤러리 리브라배 관련 공략 모음.ZIP (01.12 new)</a>
+<a target="_blank" href="https://gall.dcinside.com/mgallery/board/view/?id=umamusu&no=1539449">스콜피오배 공략글 모음.zip</a>
 `;
 
 const TIP15_DESC = `
