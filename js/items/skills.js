@@ -13,6 +13,8 @@ function skillName(code){
 }
 
 
+// id format: S_{code}
+// id is automatically generated from main.js
 
 const skills = {
     '200011': { name:'시계(우) 방향◎', createDate:'2023-01-21', icon:'skillicon_10011.png', grade:'일반', cost:'110', condition:'우회전 코스', effect:'스피드 보정 60', duration:'지속 시간 0초 / 쿨타임 0초', rel:[200012, 200013], recommend:[0,0,0,0], comment:null },

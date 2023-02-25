@@ -391,13 +391,13 @@ function modifySkills(){
 	for(let [key, val] of Object.entries(skills)){
 		dict = {};
 		dict['type'] = 'skill';
-		dict['id'] = 'skill_' + String(cnt);
-		dict['fix'] = false
+		dict['id'] = "s_" + key;
+		dict['fix'] = false;
 		dict['score'] = 0;
 		if(val['createDate']){
 			dict['createDate'] = val['createDate'];
 		} else{
-			dict['createDate'] = null
+			dict['createDate'] = null;
 		}
 		dict['titleStyle'] = null;
 		dict['img'] = val['icon'];
@@ -430,14 +430,14 @@ function modifyEvents(){
 	for(let [key, val] of Object.entries(scenarioEvents)){
 		dict = {};
 		dict['type'] = 'event';
-		dict['typeDetail'] = 'scenario'
-		dict['id'] = 'event_' + String(cnt);
-		dict['fix'] = false
+		dict['typeDetail'] = 'scenario';
+		dict['id'] = val['id']
+		dict['fix'] = false;
 		dict['score'] = 0;
 		if(val['createDate']){
 			dict['createDate'] = val['createDate'];
 		} else{
-			dict['createDate'] = null
+			dict['createDate'] = null;
 		}
 		dict['titleStyle'] = null;
 		if(val['hiddenTag']){
@@ -458,14 +458,14 @@ function modifyEvents(){
 	for(let [key, val] of Object.entries(characterEvents)){
 		dict = {};
 		dict['type'] = 'event';
-		dict['typeDetail'] = 'chara'
-		dict['id'] = 'event_' + String(cnt);
-		dict['fix'] = false
+		dict['typeDetail'] = 'chara';
+		dict['id'] = val['id']
+		dict['fix'] = false;
 		dict['score'] = 0;
 		if(val['createDate']){
 			dict['createDate'] = val['createDate'];
 		} else{
-			dict['createDate'] = null
+			dict['createDate'] = null;
 		}
 		dict['titleStyle'] = null;
 		if(val['hiddenTag']){
@@ -486,14 +486,14 @@ function modifyEvents(){
 	for(let [key, val] of Object.entries(supportEvents)){
 		dict = {};
 		dict['type'] = 'event';
-		dict['typeDetail'] = 'support'
-		dict['id'] = 'event_' + String(cnt);
-		dict['fix'] = false
+		dict['typeDetail'] = 'support';
+		dict['id'] = val['id']
+		dict['fix'] = false;
 		dict['score'] = 0;
 		if(val['createDate']){
 			dict['createDate'] = val['createDate'];
 		} else{
-			dict['createDate'] = null
+			dict['createDate'] = null;
 		}
 		dict['titleStyle'] = null;
 		if(val['hiddenTag']){
@@ -517,13 +517,13 @@ function modifyRaces(){
 	for(let [key, val] of Object.entries(races)){
 		dict = {};
 		dict['type'] = 'race';
-		dict['id'] = 'race_' + String(cnt);
-		dict['fix'] = false
+		dict['id'] = val['id'];
+		dict['fix'] = false;
 		dict['score'] = 0;
 		if(val['createDate']){
 			dict['createDate'] = val['createDate'];
 		} else{
-			dict['createDate'] = null
+			dict['createDate'] = null;
 		}
 		dict['titleStyle'] = null;
 		if(val['hiddenTag']){
