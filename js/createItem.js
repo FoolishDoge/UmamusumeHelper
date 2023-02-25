@@ -27,13 +27,13 @@ function inputFixIcon(fixed, id){
 	let toggleFixIcon = document.querySelector("#toggle-fix-icon");
 	if(toggleFixIcon.checked){
 		if(fixed){
-			return `<span class="fix-icon" id="${id}">📌</span>`;
+			return `<img src="./imgs/common/pin.png" class="fix-icon" id="${id}">`;
 		} else{
-			return `<span class="fix-icon-off" id="${id}">📌</span>`;
+			return `<img src="./imgs/common/pin2.png" class="fix-icon-off" id="${id}">`;
 		}
 	} else{
 		if(fixed){
-			return `<span class="fix-icon" id="${id}">📌</span>`;
+			return `<img src="./imgs/common/pin.png" class="fix-icon" id="${id}">`;
 		} else{
 			return ``;
 		}

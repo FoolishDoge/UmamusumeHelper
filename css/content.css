@@ -205,15 +205,14 @@ table{
 .fix-icon{
 	position:relative;
 	left: 3px;
-	bottom: 15px;
-	font-size: 20px;
-	opacity: 80%;
+	bottom: 8px;
+	width: 25px;
+	height: 25px;
 }
 .fix-icon-off{
 	position:relative;
 	left: 3px;
-	bottom: 15px;
-	font-size: 20px;
-	filter:grayscale(100%);
-	opacity: 40%;
+	bottom: 8px;
+	width: 25px;
+	height: 25px;
 }
