@@ -846,8 +846,8 @@ inputBox.addEventListener('search', function(){
 	}
 	timeout = setTimeout(function(){
 		// In case of mobile chrome, there is a bug that x button doesn't clear the value.
-		// It seems to because of mobile web browser's way of handle input value. When user input something at element, browser load it on the buffer and it is not cleared untill a series of action done.
-		// One of a simple trick to make a circuit from the problem is, using out-focus input tag to make browser believe that a series of action was done.
+		// It seems to be because of the mobile web browser's way of handling input values. When a user inputs something into an element, the browser loads it into a buffer and it is not cleared until a series of actions is completed.
+		// One of a simple trick to make a circuit from the problem is, using out-focus input tag to make browser believe that a series of action was completed.
 		inputBox.blur();
 		search();
 		inputBox.focus();
