@@ -197,3 +197,23 @@ table{
 .title-chara-name{
 	color: #EF9F9F;
 }
+
+
+
+
+
+.fix-icon{
+	position:relative;
+	left: 3px;
+	bottom: 15px;
+	font-size: 20px;
+	opacity: 80%;
+}
+.fix-icon-off{
+	position:relative;
+	left: 3px;
+	bottom: 15px;
+	font-size: 20px;
+	filter:grayscale(100%);
+	opacity: 40%;
+}

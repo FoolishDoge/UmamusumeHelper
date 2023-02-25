@@ -4,7 +4,15 @@ var scale = 1.0;
 var maxItemNum = 200;
 let infoBoxCache = "";
 
-
+// Set up localStorage for the first time
+if( localStorage.getItem('umaFixList') == null ){
+	// tip_0 - 우마무스메HELPER 사용법
+	// tip_4 - 각질별 좋은 계승고유기
+	// tip_14 - 스콜피온배 대비 육성 팁
+	// tip_15 - 아오하루배 팁 모음
+	fixedByDefaultItems = ["tip_0", "tip_4", "tip_14", "tip_15"]
+	localStorage.setItem('umaFixList', JSON.stringify(fixedByDefaultItems));
+}
 
 
 // sorting
@@ -31,6 +39,7 @@ function loadUserData(){
 	let toggleEssential = document.querySelector('#chkbox-toggle-essential');
 	let autoClear = document.querySelector('#chkbox-toggle-auto-clear');
 	let toggleBottomControl = document.querySelector('#toggle-bottom-control');
+	let toggleFixIcon = document.querySelector('#toggle-fix-icon');
 
 	let excludeCharaItem = document.querySelector('#exclude-chara-item');
 	let excludeEventItem = document.querySelector('#exclude-event-item');
@@ -53,6 +62,7 @@ function loadUserData(){
 		document.querySelector('.open-lower-item').style.display = 'none';
 		document.querySelector('.goto-search-btn').style.display = 'none';
 	}
+	if(localStorage.getItem('umaToggleFixIcon') == 'f'){ toggleFixIcon.checked = false; }
 
 	if(localStorage.getItem('umaHelperExcludeCharaItem') == 't'){ excludeCharaItem.checked = true }
 	if(localStorage.getItem('umaHelperExcludeEventItem') == 't'){ excludeEventItem.checked = true }
@@ -114,6 +124,14 @@ function loadUserData(){
 			document.querySelector('.open-upper-item').style.display = 'none';
 			document.querySelector('.open-lower-item').style.display = 'none';
 			document.querySelector('.goto-search-btn').style.display = 'none';
+		}
+		search();
+	});
+	toggleFixIcon.addEventListener('change', function(){
+		if(toggleFixIcon.checked == true){
+			localStorage.setItem('umaToggleFixIcon', 't');
+		} else{
+			localStorage.setItem('umaToggleFixIcon', 'f');
 		}
 		search();
 	});
@@ -209,15 +227,28 @@ function organizeContent(threshold){
 		let e = content.children[0].children[0];
 		e.open = true;
 	}
-	if(content.children.length == 0){
-		let e = document.createElement('div');
-		let inner
-			= "<div class='nothing-here'>"
-			+ "<img src='./imgs/common/missing.png' width='100px'>"
-			+ "<div style='margin-top:10px'>검색결과가 없습니다.</div>"
-			+ "</div>";
-		e.innerHTML = inner;
-		content.appendChild(e);
+	else if(content.children.length == 0){
+		if( document.querySelector("#value").value == "" && document.querySelector("#select-subject").options[document.querySelector("#select-subject").selectedIndex].value == 'all' ){
+			let e = document.createElement('div');
+			let inner
+				= "<div class='nothing-here'>"
+				+ "<img src='./imgs/common/missing2.png' width='100px'>"
+				+ "<div style='margin-top:10px'>고정된📌 아이템이 없습니다.</div>"
+				+ "<div style='font-size:13px;'>태그가 '전체'로 설정된 상태에서 검색어를 아무것도 입력하지 않으면<br>고정된📌 아이템만 표시됩니다.<br>옵션을 열어 '아이템 고정기능'을 켠 상태로<br>아이템 타이틀 옆에 표시된 📌 아이콘을 눌러 고정하세요.</div>"
+				+ "</div>";
+			e.innerHTML = inner;
+			content.appendChild(e);
+		} else{
+			let e = document.createElement('div');
+			let inner
+				= "<div class='nothing-here'>"
+				+ "<img src='./imgs/common/missing.png' width='100px'>"
+				+ "<div style='margin-top:10px'>검색결과가 없습니다.</div>"
+				+ "<div style='font-size:13px;'>우마무스메 HELPER는 유사한 키워드 검색 기능을 지원하지 않습니다.<br>정확한 키워드로 검색해주세요.</div>"
+				+ "</div>";
+			e.innerHTML = inner;
+			content.appendChild(e);
+		}
 	}
 	
 	//skill, condition info
@@ -240,6 +271,39 @@ function organizeContent(threshold){
 			box.style.display = "none";
 		});
 	}
+
+
+	//fix icon
+	let toggleFixIcon = document.querySelector('#toggle-fix-icon');
+	if( toggleFixIcon.checked ){
+		let fixed = document.querySelectorAll(".fix-icon");
+		for(let i = 0, len = fixed.length; i < len; i++){
+			fixed[i].addEventListener('click', function(){
+				let arr = JSON.parse(localStorage.getItem('umaFixList'));
+				arr = arr.filter(item => item !== fixed[i].id);
+				localStorage.setItem('umaFixList', JSON.stringify(arr));
+	
+				let targetIndex = items.findIndex(dict => dict.id === fixed[i].id);
+				items[targetIndex].fix = false;
+				search();
+			});
+		}
+		let unfixed = document.querySelectorAll(".fix-icon-off");
+		for(let i = 0, len = unfixed.length; i < len; i++){
+			unfixed[i].addEventListener('click', function(){
+				let arr = JSON.parse(localStorage.getItem('umaFixList'));
+				arr.push(unfixed[i].id);
+				localStorage.setItem('umaFixList', JSON.stringify(arr));
+	
+				let targetIndex = items.findIndex(dict => dict.id === unfixed[i].id);
+				items[targetIndex].fix = true;
+				search();
+			});
+		}
+	}
+	//fix icon
+
+
 	
 	//highlight
 	let chkBox = document.querySelector("#chkbox-toggle-highlight");
@@ -328,6 +392,7 @@ function modifySkills(){
 		dict = {};
 		dict['type'] = 'skill';
 		dict['id'] = 'skill_' + String(cnt);
+		dict['fix'] = false
 		dict['score'] = 0;
 		if(val['createDate']){
 			dict['createDate'] = val['createDate'];
@@ -367,6 +432,7 @@ function modifyEvents(){
 		dict['type'] = 'event';
 		dict['typeDetail'] = 'scenario'
 		dict['id'] = 'event_' + String(cnt);
+		dict['fix'] = false
 		dict['score'] = 0;
 		if(val['createDate']){
 			dict['createDate'] = val['createDate'];
@@ -394,6 +460,7 @@ function modifyEvents(){
 		dict['type'] = 'event';
 		dict['typeDetail'] = 'chara'
 		dict['id'] = 'event_' + String(cnt);
+		dict['fix'] = false
 		dict['score'] = 0;
 		if(val['createDate']){
 			dict['createDate'] = val['createDate'];
@@ -421,6 +488,7 @@ function modifyEvents(){
 		dict['type'] = 'event';
 		dict['typeDetail'] = 'support'
 		dict['id'] = 'event_' + String(cnt);
+		dict['fix'] = false
 		dict['score'] = 0;
 		if(val['createDate']){
 			dict['createDate'] = val['createDate'];
@@ -450,6 +518,7 @@ function modifyRaces(){
 		dict = {};
 		dict['type'] = 'race';
 		dict['id'] = 'race_' + String(cnt);
+		dict['fix'] = false
 		dict['score'] = 0;
 		if(val['createDate']){
 			dict['createDate'] = val['createDate'];
@@ -473,6 +542,15 @@ function modifyRaces(){
 		dict['comment'] = val['comment'];
 		items.push(dict);
 		cnt++;
+	}
+}
+function applyUmaFixList(){
+	let fixed = JSON.parse(localStorage.getItem('umaFixList'));
+	if(fixed.length == 0){ return; }
+	
+	for(let i = 0; i < fixed.length; i++){
+		let index = items.findIndex(dict => dict.id === fixed[i]);
+		items[index].fix = true;
 	}
 }
 
@@ -817,6 +895,7 @@ window.addEventListener('focus', function(){
 modifySkills();
 modifyEvents();
 modifyRaces();
+applyUmaFixList();
 enableSettingIcon();
 enableBottomControl();
 changePlaceholder();

@@ -23,6 +23,23 @@ function subjectFinder(type){
 	return `<span class='icon'>${icon}</span>`;
 }
 
+function inputFixIcon(fixed, id){
+	let toggleFixIcon = document.querySelector("#toggle-fix-icon");
+	if(toggleFixIcon.checked){
+		if(fixed){
+			return `<span class="fix-icon" id="${id}">📌</span>`;
+		} else{
+			return `<span class="fix-icon-off" id="${id}">📌</span>`;
+		}
+	} else{
+		if(fixed){
+			return `<span class="fix-icon" id="${id}">📌</span>`;
+		} else{
+			return ``;
+		}
+	}
+}
+
 function drawCard(val){
 	return `<img class="card-img" src="./imgs/card/${val}.png">`;
 }
@@ -71,7 +88,9 @@ function createCharaItem(inner, item){
 		let imgUrl = "./imgs/chara/" + item['character'] + ".png";
 		inner += `<img class="title-img-chara" src="${imgUrl}">`;
 	}
-	inner += `<span class="${item['titleStyle']}"><span class="title-chara-name">${item['characterTitle']}</span> ${item['title']}</span></summary><div class='desc'>`;
+	inner += `<span class="${item['titleStyle']}"><span class="title-chara-name">${item['characterTitle']}</span> ${item['title']}</span>`;
+	inner += inputFixIcon(item['fix'], item['id']);
+	inner += `</summary><div class='desc'>`;
 	if(item['descImg']){
 		let imgUrl = "./imgs/desc/" + item['descImg'];
 		inner += `<img src="${imgUrl}" class="desc-img">`;
@@ -176,7 +195,9 @@ function createEventItem(inner, item){
 				break
 		}
 	}
-	inner += `</span></summary><div class='desc'>`;
+	inner += `</span>`;
+	inner += inputFixIcon(item['fix'], item['id']);
+	inner += `</summary><div class='desc'>`;
 	if(item['descImg']){
 		let imgUrl = "./imgs/desc/" + item['descImg'];
 		inner += `<img src="${imgUrl}" class="desc-img">`;
@@ -221,7 +242,9 @@ function createSkillItem(inner, item){
 		let imgUrl = "./imgs/skill/" + item['img'];
 		inner += `<img class="title-img-skill" src="${imgUrl}">`;
 	}
-	inner += `<span class="${item['titleStyle']}">[${item['grade']}] ${item['title']}</span></summary><div class='desc'>`;
+	inner += `<span class="${item['titleStyle']}">[${item['grade']}] ${item['title']}</span>`;
+	inner += inputFixIcon(item['fix'], item['id']);
+	inner += `</summary><div class='desc'>`;
 	if(item['descImg']){
 		let imgUrl = "./imgs/desc/" + item['descImg'];
 		inner += `<img src="${imgUrl}" class="desc-img">`;
@@ -269,11 +292,9 @@ function createTipItem(inner, item){
 		let imgUrl = "./imgs/chara/" + item['character'] + ".png";
 		inner += `<img class="title-img-chara" src="${imgUrl}">`;
 	}
-	inner += `<span class="${item['titleStyle']}">${item['title']}`;
-	if(item['fix']){
-		inner += `<span style="font-size:15px; position:relative; bottom:10px;"> 📌</span>`;
-	}
-	inner += `</span></summary><div class='desc'>`;
+	inner += `<span class="${item['titleStyle']}">${item['title']}</span>`;
+	inner += inputFixIcon(item['fix'], item['id']);
+	inner += `</summary><div class='desc'>`;
 	if(item['descImg']){
 		let imgUrl = "./imgs/desc/" + item['descImg'];
 		inner += `<img src="${imgUrl}" class="desc-img">`;
@@ -286,7 +307,9 @@ function createTipItem(inner, item){
 function createRaceItem(inner, item){
 	inner =  `<details id="${item['id']}"><summary class="title">`
 		+ subjectFinder(item['type']);
-	inner += `<span class="${item['titleStyle']}">[${item['raceGrade']}] ${item['title']} (${item['raceDate']})</span></summary><div class='desc'>`;
+	inner += `<span class="${item['titleStyle']}">[${item['raceGrade']}] ${item['title']} (${item['raceDate']})</span>`;
+	inner += inputFixIcon(item['fix'], item['id']);
+	inner += `</summary><div class='desc'>`;
 	if(item['descImg']){
 		let imgUrl = "./imgs/desc/" + item['descImg'];
 		inner += `<img src="${imgUrl}" class="desc-img">`;
