@@ -3,6 +3,7 @@ function search(){
 	let toggleAccumulation = document.querySelector("#chkbox-toggle-accumulation");
 	let toggleEssential = document.querySelector("#chkbox-toggle-essential");
 	let searchDesc = document.querySelector("#chkbox-search-desc");
+	let searchOnlyCore = document.querySelector('#toggle-search-only-core');
 	let keywords = searchValue.split(" ");
 	let optionValue = document.querySelector("#select-subject").options[document.querySelector("#select-subject").selectedIndex].value;
 
@@ -33,9 +34,9 @@ function search(){
 			let isEssential = isEssentialKeyword(keywords[j])
 			let tempScore = 0
 			if(isEssential){
-				tempScore = filter(items[i], keywords[j].slice(1,-1), isEssential, toggleAccumulation.checked, toggleEssential.checked, searchDesc.checked);
+				tempScore = filter(items[i], keywords[j].slice(1,-1), isEssential, toggleAccumulation.checked, toggleEssential.checked, searchDesc.checked, searchOnlyCore.checked);
 			} else{
-				tempScore = filter(items[i], keywords[j], isEssential, toggleAccumulation.checked, toggleEssential.checked, searchDesc.checked);
+				tempScore = filter(items[i], keywords[j], isEssential, toggleAccumulation.checked, toggleEssential.checked, searchDesc.checked, searchOnlyCore.checked);
 			}
 			
 			if(tempScore == -1){
@@ -56,7 +57,7 @@ function search(){
 	}
 }
 
-function filter(item, keyword, isEssential, toggleAcc, toggleEss, searchDesc){
+function filter(item, keyword, isEssential, toggleAcc, toggleEss, searchDesc, onlyCore){
 	let searchTarget = "";
 	
 	if(item['type'] == "chara"){
@@ -65,12 +66,20 @@ function filter(item, keyword, isEssential, toggleAcc, toggleEss, searchDesc){
 		searchTarget += `${item['runningType']} ${item['distanceType']} ${item['typeComment']} ${item['feature']} ${item['hiddenMissionCondition']} ${item['hiddenMissionReward']}`;
 		}
 	} else if(item['type'] == "event"){
-		searchTarget += `${item['title']} ${item['hiddenTag']} ${item['cardName']} ${item['character']}`.toLowerCase();
+		if(onlyCore){
+			searchTarget += `${item['title']} ${item['hiddenTag']}`.toLowerCase();
+		} else{
+			searchTarget += `${item['title']} ${item['hiddenTag']} ${item['cardName']} ${item['character']}`.toLowerCase();
+		}
 		if(searchDesc){
 		searchTarget += `${item['choice']} ${item['effect']}`.toLowerCase();
 		}
 	} else if(item['type'] == "skill"){
-		searchTarget += `[${item['grade']}] ${item['title']} ${item['hiddenTag']}`.toLowerCase();
+		if(onlyCore){
+			searchTarget += `${item['title']} ${item['hiddenTag']}`.toLowerCase();
+		} else{
+			searchTarget += `[${item['grade']}] ${item['title']} ${item['hiddenTag']}`.toLowerCase();
+		}
 		if(searchDesc){
 			searchTarget += `${item['condition']} ${item['effect']}`.toLowerCase();
 		}
@@ -80,7 +89,11 @@ function filter(item, keyword, isEssential, toggleAcc, toggleEss, searchDesc){
 			searchTarget += `${item['desc']}`;
 		}
 	} else if(item['type'] == "race"){
-		searchTarget += `${item['raceGrade']} ${item['title']} ${item['hiddenTag']} ${item['raceDate']}`.toLowerCase();
+		if(onlyCore){
+			searchTarget += `${item['title']} ${item['hiddenTag']}`.toLowerCase();
+		} else{
+			searchTarget += `${item['raceGrade']} ${item['title']} ${item['hiddenTag']} ${item['raceDate']}`.toLowerCase();
+		}
 		if(searchDesc){
 			searchTarget += `${item['raceBasic']} ${item['comment']}`;
 		}

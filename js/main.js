@@ -40,6 +40,7 @@ function loadUserData(){
 	let autoClear = document.querySelector('#chkbox-toggle-auto-clear');
 	let toggleBottomControl = document.querySelector('#toggle-bottom-control');
 	let toggleFixIcon = document.querySelector('#toggle-fix-icon');
+	let toggleSearchOnlyCore = document.querySelector('#toggle-search-only-core');
 
 	let excludeCharaItem = document.querySelector('#exclude-chara-item');
 	let excludeEventItem = document.querySelector('#exclude-event-item');
@@ -63,6 +64,7 @@ function loadUserData(){
 		document.querySelector('.goto-search-btn').style.display = 'none';
 	}
 	if(localStorage.getItem('umaToggleFixIcon') == 'f'){ toggleFixIcon.checked = false; }
+	if(localStorage.getItem('umaToggleSearchOnlyCore') == 'f'){ toggleSearchOnlyCore.checked = false; }
 
 	if(localStorage.getItem('umaHelperExcludeCharaItem') == 't'){ excludeCharaItem.checked = true }
 	if(localStorage.getItem('umaHelperExcludeEventItem') == 't'){ excludeEventItem.checked = true }
@@ -132,6 +134,14 @@ function loadUserData(){
 			localStorage.setItem('umaToggleFixIcon', 't');
 		} else{
 			localStorage.setItem('umaToggleFixIcon', 'f');
+		}
+		search();
+	});
+	toggleSearchOnlyCore.addEventListener('change', function(){
+		if(toggleSearchOnlyCore.checked == true){
+			localStorage.setItem('umaToggleSearchOnlyCore', 't');
+		} else{
+			localStorage.setItem('umaToggleSearchOnlyCore', 'f');
 		}
 		search();
 	});
