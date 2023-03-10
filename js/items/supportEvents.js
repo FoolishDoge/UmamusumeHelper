@@ -1,5 +1,5 @@
 // id format: es_{number}
-// current highest number: 42
+// current highest number: 438
 
 const supportEvents = [
     //골드 쉽
@@ -37,6 +37,9 @@ const supportEvents = [
     {createDate:`2022-08-13`, id:`es_27`, character:`나리타 타이신`, eventType:`support`, cardName: null, title: `딱히, 방해하지 마`, choice: [`선택지가 없는 경우`, `늦지 않게 조심해`, `무리하는 건 좋지 않아`], effect: [`나리타 타이신의 우정도+5<br>${skill(201212)} 힌트 LV+1`, `${skill(201212)} 힌트 LV+1<br>나리타 타이신의 우정도+5`, `스킬 Pt+30<br>나리타 타이신의 우정도+5`]},
     {createDate:`2022-08-13`, id:`es_28`, character:`나리타 타이신`, eventType:`support`, cardName: `[물결치는 기분] 나리타 타이신`, title: `① 밤에 몰래…?`, choice: [`(선택지 없음)`], effect: [`스피드+5<br>스태미너+5`]},
     {createDate:`2022-08-13`, id:`es_29`, character:`나리타 타이신`, eventType:`support`, cardName: `[물결치는 기분] 나리타 타이신`, title: `② 인조이 뮤지컬!`, choice: [`(선택지 없음)`], effect: [`스피드+5<br>스태미너+5<br>파워+5<br>${skill(201472)} 힌트 LV+1`]},
+    {createDate:`2023-03-10`, id:`es_424`, character:`나리타 타이신`, eventType:`support`, cardName: `[고집불통 마르크트] 나리타 타이신`, title: `① 은혜 갚는 타이신`, choice: [`(선택지 없음)`], effect: [`체력-5<br>스태미나+10<br>지능+10<br>나리타 타이신의 우정도+5`]},
+    {createDate:`2023-03-10`, id:`es_425`, character:`나리타 타이신`, eventType:`support`, cardName: `[고집불통 마르크트] 나리타 타이신`, title: `② 솔직 트레이닝!`, choice: [`좋은 친구구나`, `이번에는 두 사람에게 솔직해지자!`], effect: [`파워+10<br>나리타 타이신의 우정도+5<br>${skill(201142)} 힌트 LV+1`, `스태미나+10<br>나리타 타이신의 우정도+5<br>${skill(201202)} 힌트 LV+1`]},
+    {createDate:`2023-03-10`, id:`es_426`, character:`나리타 타이신`, eventType:`support`, cardName: `[고집불통 마르크트] 나리타 타이신`, title: `③ 똑바로 전해져라, 이 마음!`, choice: [`(선택지 없음)`], effect: [`성공 시 :<br>스태미나+10<br>지능+10<br>${skill(200621)} 힌트 LV+3실패 시 :<br>스태미나+5<br>지능+5<br>${skill(200622)} 힌트 LV+3`]},
     //나리타 탑 로드
     //나이스 네이처
     {createDate:`2022-08-13`, id:`es_30`, character:`나이스 네이처`, eventType:`support`, cardName: null, title: `(맛있는) 참견`, choice: [`무를 갈아서 같이 먹으면 페이스 업!`, `기숙사에서 튀김 파티다!`], effect: [`${skill(200462)} 힌트 LV+1<br>나이스 네이처의 우정도+5`, `컨디션 상승<br>체력 최대치+4<br>나이스 네이처의 우정도+5`]},
@@ -76,6 +79,9 @@ const supportEvents = [
     {createDate:`2022-08-13`, id:`es_59`, character:`다이타쿠 헬리오스`, eventType:`support`, cardName: null, title: `태양과 인카운터☆`, choice: [`각오하고 열창한다`, `추임새를 넣으며 분위기를 띄운다`], effect: [`파워+10<br>다이타쿠 헬리오스의 우정도+5`, `<span class='condition-info'>주목받는 신예</span> 상태 획득<br>다이타쿠 헬리오스의 우정도+5`]},
     {createDate:`2022-08-13`, id:`es_60`, character:`다이타쿠 헬리오스`, eventType:`support`, cardName: `[파티 피플 · 파티 나이트!] 다이타쿠 헬리오스`, title: `① #bff #Party!`, hiddenTag: `비에프에프 파티`, choice: [`잘 부탁해! 웨~이!`, `뭐, 나도!?`], effect: [`파워+10<br>다이타쿠 헬리오스의 우정도+5`, `스피드+10<br>다이타쿠 헬리오스의 우정도+5`]},
     {createDate:`2022-08-13`, id:`es_61`, character:`다이타쿠 헬리오스`, eventType:`support`, cardName: `[파티 피플 · 파티 나이트!] 다이타쿠 헬리오스`, title: `② #lol #Party!! #2nd`, hiddenTag: `롤 파티`, choice: [`피해!`, `잡아!`], effect: [`파워+10<br>${skill(201342)} 힌트 LV+1<br>다이타쿠 헬리오스의 우정도+5<br>또는<br>스피드+10<br>파워+10<br>${skill(201342)} 힌트 LV+3<br>다이타쿠 헬리오스의 우정도+5`, `체력+20<br>다이타쿠 헬리오스의 우정도+5<br>${skill(200692)} 힌트 LV+1`]},
+    {createDate:`2023-03-10`, id:`es_434`, character:`다이타쿠 헬리오스`, eventType:`support`, cardName: `[춤춰라・떠들어라・축제를 열어라!] 다이타쿠 헬리오스`, title: `① 웃는 얼굴 전설 탄생!`, choice: [`주목도를 높인다던가?`, `지금 이대로면 충분할 것 같아!`], effect: [`성공 시 :<br>체력-5<br>파워+15<br>다이타쿠 헬리오스의 우정도+5<br>실패 시 :<br>체력-5<br>파워+15<br>다이타쿠 헬리오스의 우정도+5<br>${skill(200532)} 힌트 LV+1`, `체력+10<br>스피드+15<br>연속 이벤트 종료<br>${skill(201322)} 힌트 LV+1`]},
+    {createDate:`2023-03-10`, id:`es_435`, character:`다이타쿠 헬리오스`, eventType:`support`, cardName: `[춤춰라・떠들어라・축제를 열어라!] 다이타쿠 헬리오스`, title: `② 텐션 업☆ 헬리오스 채널~!`, choice: [`(선택지 없음)`], effect: [`체력-5<br>파워+10<br>스킬 Pt+20`]},
+    {createDate:`2023-03-10`, id:`es_436`, character:`다이타쿠 헬리오스`, eventType:`support`, cardName: `[춤춰라・떠들어라・축제를 열어라!] 다이타쿠 헬리오스`, title: `③ 웃는 얼굴은 계속 될 거야, 어디든`, choice: [`(선택지 없음)`], effect: [`성공 시 :<br>체력-10<br>스피드+20<br>파워+20<br>${skill(200541)} 힌트 LV+3다이타쿠 헬리오스의 우정도+5<br>실패 시 :<br>체력-10<br>스피드+10<br>파워+10<br>${skill(200542)} 힌트 LV+3다이타쿠 헬리오스의 우정도+5`]},
     //데어링 택트
     //라이스 샤워
     {createDate:`2022-08-13`, id:`es_62`, character:`라이스 샤워`, eventType:`support`, cardName: null, title: `꽃집에서의 1페이지`, choice: [`물 주는 거 도와줄까?`, `꽃 진열하고 올까?`], effect: [`컨디션 2단계 상승<br>라이스 샤워의 우정도+5`, `스태미나+10<br>라이스 샤워의 우정도+5`]},
@@ -94,11 +100,17 @@ const supportEvents = [
     {createDate:`2022-08-13`, id:`es_73`, character:`마블러스 선데이`, eventType:`support`, cardName: null, title: `문답무용 Marvelous☆`, hiddenTag: `마블러스`, choice: [`요즘 힘이 잘 안나`, `컨디션이 더 생겼으면 좋겠어`], effect: [`체력+10<br>스피드+5<br>마블러스 선데이의 우정도+5`, `컨디션 상승<br>스피드+5<br>마블러스 선데이의 우정도+5`]},
     {createDate:`2022-08-13`, id:`es_74`, character:`마블러스 선데이`, eventType:`support`, cardName: `[마블러스☆대작전] 마블러스 선데이`, title: `① 세계 Marvelous 계획☆`, hiddenTag: `마블러스`, choice: [`(선택지 없음)`], effect: [`지능+5<br>근성+5`]},
     {createDate:`2022-08-13`, id:`es_75`, character:`마블러스 선데이`, eventType:`support`, cardName: `[마블러스☆대작전] 마블러스 선데이`, title: `② 정말로 대단해 Marvelous☆`, hiddenTag: `마블러스`, choice: [`(선택지 없음)`], effect: [`지능+15<br>근성+15`]},
+    {createDate:`2023-03-10`, id:`es_420`, character:`마블러스 선데이`, eventType:`support`, cardName: `[스노우 크리스털 데이] 마블러스 선데이`, title: `① 마블러스로 안내할게☆`, choice: [`(선택지 없음)`], effect: [`스피드+5`]},
+    {createDate:`2023-03-10`, id:`es_421`, character:`마블러스 선데이`, eventType:`support`, cardName: `[스노우 크리스털 데이] 마블러스 선데이`, title: `② 반짝반짝 빛나는 마블러스☆`, choice: [`지쳤을지도...`, `다시 한번 이 눈으로 확인해보고 싶다...!`], effect: [`체력+10<br>마블러스 선데이의 우정도+5`, `마블러스 선데이의 우정도+5<br>${skill(200222)} 힌트 LV+2`]},
+    {createDate:`2023-03-10`, id:`es_422`, character:`마블러스 선데이`, eventType:`support`, cardName: `[스노우 크리스털 데이] 마블러스 선데이`, title: `③ 백은의 마블러스☆`, choice: [`(선택지 없음)`], effect: [`성공 시 :<br>스피드+5<br>스킬 Pt+10<br>${skill(200591)} 힌트 LV+3마블러스 선데이의 우정도+5<br>실패 시 :<br>스피드+5<br>스킬 Pt+10<br>${skill(200592)} 힌트 LV+3마블러스 선데이의 우정도+5`]},
     //마야노 탑건
     {createDate:`2022-08-13`, id:`es_76`, character:`마야노 탑건`, eventType:`support`, cardName: null, title: `마야노식 간식 회의!`, choice: [`새로운 맛에 도전!`, `확실한 게 제일!`], effect: [`스태미나+5<br>근성+5<br>마야노 탑건의 우정도+5`, `스태미나+10<br>마야노 탑건의 우정도+5`]},
     {createDate:`2022-08-13`, id:`es_77`, character:`마야노 탑건`, eventType:`support`, cardName: null, title: `마야노식 패션 회의!`, choice: [`최신 유행의 센스 극강 코디!`, `움직이기 편한 기능성 코디!`], effect: [`마야노 탑건의 우정도+5<br>${skill(200362)} 힌트 LV+1`, `스태미나+10<br>마야노 탑건의 우정도+5`]},
     {createDate:`2022-08-13`, id:`es_78`, character:`마야노 탑건`, eventType:`support`, cardName: `[귀여움+귀여움은~?] 마야노 탑건`, title: `① 아직도 택싱 중?`, choice: [`(선택지 없음)`], effect: [`스킬 Pt+30<br>마야노 탑건의 우정도+5`]},
     {createDate:`2022-08-13`, id:`es_79`, character:`마야노 탑건`, eventType:`support`, cardName: `[귀여움+귀여움은~?] 마야노 탑건`, title: `② 트렌드로 테이크 오프♪`, choice: [`(선택지 없음)`], effect: [`스태미너+10<br>스킬 Pt+15<br>${skill(200432)} 힌트 LV+1<br>마야노 탑건의 우정도+5`]},
+    {createDate:`2023-03-10`, id:`es_429`, character:`마야노 탑건`, eventType:`support`, cardName: `[포메이션: PARTY] 마야노 탑건`, title: `① 아무것도 아닌 날…♪`, choice: [`멋진 아버지로군`, `누굴 챙길 수 있다니 "어른이구나"`, `그럼 나도 뭐 줄까?`], effect: [`성공 시 :<br>의욕 상승<br>스피드+20<br>근성+10<br>마야노 탑건의 우정도+5<br>실패 시 :<br>체력-10<br>의욕 상승<br>근성+10<br>마야노 탑건의 우정도+5<br>${skill(201902)} 힌트 LV+1`, `지능+15<br>마야노 탑건의 우정도+5`, `체력+20<br>스태미나+10<br>${skill(200282)} 힌트 LV+1연속 이벤트 종료`]},
+    {createDate:`2023-03-10`, id:`es_430`, character:`마야노 탑건`, eventType:`support`, cardName: `[포메이션: PARTY] 마야노 탑건`, title: `② 멋진 휴일의…♪`, choice: [`(선택지 없음)`], effect: [`스피드+10<br>근성+5`]},
+    {createDate:`2023-03-10`, id:`es_431`, character:`마야노 탑건`, eventType:`support`, cardName: `[포메이션: PARTY] 마야노 탑건`, title: `③ 특별한 날의 특별한…♪`, choice: [`(선택지 없음)`], effect: [`체력+10<br>스피드+10<br>근성+5<br>${skill(201281)} 힌트 LV+1마야노 탑건의 우정도+5`]},
     //마치카네 탄호이저
     {createDate:`2022-08-13`, id:`es_80`, character:`마치카네 탄호이저`, eventType:`support`, cardName: `[Just keep going.] 마치카네 탄호이저`, title: `① 필요해, 개성!`, choice: [`다른 우마무스메에게 상담하기?`, `이대로도 좋아.`], effect: [`컨디션 상승<br>마치카네 탄호이저의 우정도+5`, `체력+10~30<br>마치카네 탄호이저의 우정도+5`]},
     {createDate:`2022-08-13`, id:`es_81`, character:`마치카네 탄호이저`, eventType:`support`, cardName: `[Just keep going.] 마치카네 탄호이저`, title: `② 목표는 장난꾸러기!`, choice: [`(선택지 없음)`], effect: [`파워+5<br>스킬 Pt+10<br>마치카네 탄호이저의 우정도+5`]},
@@ -179,6 +191,8 @@ const supportEvents = [
     {createDate:`2022-08-13`, id:`es_142`, character:`보드카`, eventType:`support`, cardName: `[로드 · 오브 · 보드카] 보드카`, title: `① 따라야 할 것은 자신의 마음`, choice: [`(선택지 없음)`], effect: [`파워+5<br>스킬 Pt+15`]},
     {createDate:`2022-08-13`, id:`es_143`, character:`보드카`, eventType:`support`, cardName: `[로드 · 오브 · 보드카] 보드카`, title: `② 석양에 맹세한 빛`, choice: [`(선택지 없음)`], effect: [`파워+5<br>스킬 Pt+15`]},
     {createDate:`2022-08-13`, id:`es_144`, character:`보드카`, eventType:`support`, cardName: `[로드 · 오브 · 보드카] 보드카`, title: `③ 기록으로 남겨둬`, choice: [`(선택지 없음)`], effect: [`파워+5<br>스킬 Pt+30<br>${skill(200381)} 힌트 LV+1`]},
+    {createDate:`2023-03-10`, id:`es_419`, character:`보드카`, eventType:`support`, cardName: `[시끄러운 감시역] 보드카`, title: `① 황혼 사보타주`, choice: [`반성의 태도를 보이자!`, `순순히 사과하면 된다`], effect: [`체력 최대치+4<br>파워+10<br>보드카의 우정도+5`, `스피드+15<br>보드카의 우정도+5<br>${skill(201042)} 힌트 LV+1`]},
+    {createDate:`2023-03-10`, id:`es_420`, character:`보드카`, eventType:`support`, cardName: `[시끄러운 감시역] 보드카`, title: `② 용감한 싸움 네버 기브 업`, choice: [`(선택지 없음)`], effect: [`스피드+15<br>스킬 Pt+15`]},
     //비와 하야히데
     {createDate:`2022-08-13`, id:`es_145`, character:`비와 하야히데`, eventType:`support`, cardName: null, title: `아슬아슬 양상론`, choice: [`한계 직전까지 트레이닝`, `이전 레이스 관찰하기`], effect: [`파워+15<br>비와 하야히데의 우정도+5`, `스피드+10<br>스킬 Pt+15<br>비와 하야히데의 우정도+5`]},
     {createDate:`2022-08-13`, id:`es_146`, character:`비와 하야히데`, eventType:`support`, cardName: null, title: `탈 무난론`, choice: [`머리로 생각하기보다 먼저 행동해 보자`, `다치면 다 소용없어`], effect: [`체력-10<br>비와 하야히데의 우정도+5<br>${skill(200752)} 힌트 LV+1`, `체력+10<br>스태미나+10<br>비와 하야히데의 우정도+5`]},
@@ -509,7 +523,7 @@ const supportEvents = [
     {createDate:`2022-08-13`, id:`es_413`, character:`히시 아마존`, eventType:`support`, cardName: null, title: `히시아마 언니 분투기 ~추입 편~`, choice: [`기백으로 라이벌을 압도한다`, `바깥쪽으로 크게 돌아 치고 나가본다`], effect: [`히시 아마존의 우정도+5<br>${skill(200941)} 힌트 LV+1`, `파워+5<br>스킬 Pt+15<br>히시 아마존의 우정도+5`]},
     //히시 아케보노
     {createDate:`2022-09-16`, id:`es_414`, character:`히시 아케보노`, eventType:`support`,  cardName: null, title: `얼마든지☆드세요♪`, choice: [`좀 쉬는 게 어때?`, `굉장히 힘을 싣고 있기도 하고…`], effect: [`체력+10<br>히시 아케보노의 우정도+5`, `체력-5<br>파워+15<br>히시 아케보노의 우정도+5`]},
-    {createDate:`2022-09-16`, id:`es_415`, character:`히시 아케보노`, eventType:`support`,  cardName: null, title: `얼마든지☆맡기세요♪`, choice: [`차량을 밀어서 이동시킬 수 있겠어?`, `코스를 달려서 평탄화를 부탁해!`], effect: [`스태미나+10<br>히시 아케보노의 우정도+5`, `체력-15<br>히시 아케보노의 우정도+5`]},
+    {createDate:`2022-09-16`, id:`es_415`, character:`히시 아케보노`, eventType:`support`,  cardName: null, title: `얼마든지☆맡기세요♪`, choice: [`차량을 밀어서 이동시킬 수 있겠어?`, `코스를 달려서 평탄화를 부탁해!`], effect: [`스태미나+10<br>히시 아케보노의 우정도+5`, `${skill(200652)} 힌트 LV+2<br>체력-15<br>히시 아케보노의 우정도+5`]},
     {createDate:`2022-09-16`, id:`es_416`, character:`히시 아케보노`, eventType:`support`,  cardName: `[드세요, 퍼스트 Bite!] 히시 아케보노`, title: `① 있는 그대로의 자신으로 보노보노♪`, choice: [`(선택지 없음)`], effect: [`체력 최대치+4<br>근성+5<br>히시 아케보노의 우정도+5`]},
     {createDate:`2022-09-16`, id:`es_417`, character:`히시 아케보노`, eventType:`support`,  cardName: `[드세요, 퍼스트 Bite!] 히시 아케보노`, title: `② 시작 하기요…보노☆`, choice: [`너무 많은 거 아니야…?`, `본격적으로 스모 기술도 배우는 게 어떨까?`], effect: [`체력+30<br>근성+5<br>히시 아케보노의 우정도+5<br>랜덤으로 <span class='condition-info'>살찜 주의</span> 획득`, `스태미나+5<br>파워+5<br>히시 아케보노의 우정도+5`]},
     {createDate:`2022-09-16`, id:`es_418`, character:`히시 아케보노`, eventType:`support`,  cardName: `[드세요, 퍼스트 Bite!] 히시 아케보노`, title: `③ 당신에게 보노, 나도 보노☆`, choice: [`(선택지 없음)`], effect: [`스태미나+5<br>근성+10<br>${skill(201261)} 힌트 LV+3<br>또는<br>스태미나+5<br>근성+10<br>${skill(201262)} 힌트 LV+3`]},
