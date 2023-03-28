@@ -100,6 +100,7 @@ const TIP4_DESC = `
 <tr><td class="td-desc">${skill(900101)}</td><td class="td-desc" nowrap>단거리<br>마일<br>선행</td><td class="td-desc">선행용 종반 가속기.</td></tr>
 <tr><td class="td-desc">${skill(900061)}</td><td class="td-desc" nowrap>선행<br>선입<br>추입<br></td><td class="td-desc">종반 속도기. 골까지 200m 남은 시점으로 확정되기 때문에 매우 안정적이다. 단, 장거리 경기장에선 200m 시점에서 발동하면 다소 늦은 감이 있다.</td></tr>
 <tr><td class="td-desc">${skill(900271)}</td><td class="td-desc" nowrap>선입<br>추입</td><td class="td-desc">종반 가속기. 순위에 따라 발동하지 않거나 늦게 발동할 수 있다는 위험성은 있으나, 여전히 좋은 스킬이다.</td></tr>
+<tr><td class="td-desc">${skill(900591)}</td><td class="td-desc" nowrap>선입<br>추입</td><td class="td-desc">종반 가속기2. 선, 추입마를 육성할 때 ${skill(900271)}과 함께 찍는 '카나볼릭' 메타가 매우 강하다고 알려져있다.</td></tr>
 <tr><td class="td-desc">${skill(900171)}</td><td class="td-desc" nowrap>선입<br>추입</td><td class="td-desc">종반 속도기. 선입, 추입마일 경우 조건이 매우 쉽다.</td></tr>
 </table>
 `;
@@ -411,56 +412,51 @@ const TIP11_DESC = `
 
 const TIP14_DESC = `
 [기본 정보]<br>
-- (예상) 2023년 3월 14일 ~ 3월 20일<br>
+- (예상) 2023년 4월 11일 ~ 4월 17일<br>
 <table class="desc-table"><tr>
 <td class="td-label">경기장</td><td class="td-label">거리</td><td class="td-label">방향</td><td class="td-label">계절</td><td class="td-label">날씨</td><td class="td-label">상태</td></tr><tr>
-<td class="td-desc">도쿄</td><td class="td-desc">2000m<br>중거리</td><td class="td-desc">시계(좌)</td><td class="td-desc">가을</td><td class="td-desc">비</td><td class="td-desc">포화</td></tr></table>
-- 경기장 상태가 나빠 뒷각질 추월이 힘듦.<br>
-- 마장보너스 없음.<br>
-
-
+<td class="td-desc">나카야마</td><td class="td-desc">2500m<br>장거리</td><td class="td-desc">우, 내측</td><td class="td-desc">겨울</td><td class="td-desc">맑음</td><td class="td-desc">양호</td></tr></table>
 <br>
+
+[추천 스태미너]<br
+스피드 1200, 파워 1000, 지능 1000, 장거리 S 기준<br>
+<table class="desc-table"><tr>
+<td class="td-blank"></td>
+<td class="td-label">도주</td><td class="td-label">선행</td><td class="td-label">선입</td><td class="td-label">추입</td></tr><tr>
+<td class="td-label" nowrap>2금힐</td>
+<td class="td-desc">700</td><td class="td-desc">800</td><td class="td-desc">760</td><td class="td-desc">780</td></tr>
+<td class="td-label" nowrap>1금힐</td>
+<td class="td-desc">850</td><td class="td-desc">950</td><td class="td-desc">910</td><td class="td-desc">930</td>
+</tr></table>
 <br>
-` + 
-// [필요 스태미너]
-// <table class="desc-table"><tr>
-// <td class="td-blank"></td>
-// <td class="td-label">도주</td><td class="td-label">선행</td><td class="td-label">선입</td><td class="td-label">추입</td></tr><tr>
-// <td class="td-label">-</td>
-// <td class="td-desc">1220</td><td class="td-desc">1390</td><td class="td-desc">1300</td><td class="td-desc">1335</td></tr>
-// <td class="td-label" nowrap>금1</td>
-// <td class="td-desc">945</td><td class="td-desc">1100</td><td class="td-desc">1040</td><td class="td-desc">1070</td></tr>
-// <td class="td-label"nowrap>금1은1</td>
-// <td class="td-desc">875</td><td class="td-desc">1020</td><td class="td-desc">970</td><td class="td-desc">1000</td>
-// </tr></table>
-// ※ 다른 요소 고려 없이 필요 스태미나만 측정한 값. 실제로는 다른 스탯의 영향이나 스킬 발동으로 필요 스태미나는 낮아짐.<br>
-// ※ 은딱 힐 하나당 -80, 금딱 힐 하나당 -260, 은딱 디버프 +38, 금딱 디버프 +113 정도로 가산할 것.<br>
-// ※ 지능 목표치가 최대 601 정도로 낮은 만큼 힐 스킬이 확률적으로 발동되지 않을 수도 있다는 걸 고려하기 바람.<br>
-// <br>
-// <br>
-`
+
 [추천 육성마]
 <table class="desc-table">
-<tr><td class="td-label">선행</td><td class="td-desc">
-<b>타이키 셔틀</b><br>
-마루젠스키
+<tr><td class="td-label">추입</td><td class="td-desc">
+<b>타마모 크로스</b><br>
+<b>나리타 타이신</b><br>
+맨하탄 카페<br>
+골드 쉽<br>
+크리스마스 오구리 캡
 </td></tr>
 <tr><td class="td-label">도주</td><td class="td-desc">
 <b>수영복 마루젠스키</b><br>
-세이운 스카이
+세이운 스카이<br>
+다이와 스칼렛
+</td></tr>
+<tr><td class="td-label">선행</td><td class="td-desc">
+크리스마스 오구리 캡<br>
+에어 그루브 (역병)
 </td></tr>
 <tr><td class="td-label">선입</td><td class="td-desc">
-유곽 골드 시티<br>
-그래스 원더<br>
-메지로 라이언
-</td></tr>
-<tr><td class="td-label">추입</td><td class="td-desc">
--
+크리스마스 오구리 캡<br>
+나이스 네이처 (역병)
 </td></tr>
 </table>
-<br><br>
+<br>
+
 [참고용 사이트]<br>
-<a target="_blank" href="https://gall.dcinside.com/mgallery/board/view/?id=umamusu&no=1539449">스콜피오배 공략글 모음.zip</a>
+<a target="_blank" href="https://gall.dcinside.com/mgallery/board/view/?id=umamusu&no=1687179">사지타리우스배 공략글 모음.zip</a>
 `;
 
 const TIP15_DESC = `
