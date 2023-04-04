@@ -1,5 +1,5 @@
 // id format: es_{number}
-// current highest number: 438
+// current highest number: 443
 
 const supportEvents = [
     //골드 쉽
@@ -127,6 +127,9 @@ const supportEvents = [
     {createDate:`2022-08-13`, id:`es_90`, character:`맨하탄 카페`, eventType:`support`, cardName: null, title: `밤의 독주`, choice: [`…늘 이 시간까지 달려?`, `…굉장한 집중력이군`], effect: [`스태미나+10<br>맨하탄 카페의 우정도+5`, `체력+10<br>스태미나+5<br>맨하탄 카페의 우정도+5`]},
     {createDate:`2022-08-13`, id:`es_91`, character:`맨하탄 카페`, eventType:`support`, cardName: `[비의 독주, 나의 독창] 맨하탄 카페`, title: `① 비의 유혹`, choice: [`(선택지 없음)`], effect: [`체력+15<br>스킬 Pt+15`]},
     {createDate:`2022-08-13`, id:`es_92`, character:`맨하탄 카페`, eventType:`support`, cardName: `[비의 독주, 나의 독창] 맨하탄 카페`, title: `② 큰비의 유혹`, choice: [`(선택지 없음)`], effect: [`스태미너+15<br>${skill(201432)} 힌트 LV+1<br>맨하탄 카페의 우정도+5`]},
+    {createDate:`2023-04-05`, id:`es_437`, character:`맨하탄 카페`, eventType:`support`, cardName: `[독주・나선 카논] 맨하탄 카페`, title: `① 이끌려서`, choice: [`(선택지 없음)`], effect: [`스태미나+5<br>지능+5<br>맨하탄 카페의 우정도+5`]},
+    {createDate:`2023-04-05`, id:`es_438`, character:`맨하탄 카페`, eventType:`support`, cardName: `[독주・나선 카논] 맨하탄 카페`, title: `② 발견해서`, choice: [`빨리 쉬고 아침에 다시 뛰는 게 어때?`, `무리는 좋지 않아`], effect: [`성공 시 :<br>스태미나+10<br>지능+10<br>${skill(201182)} 힌트 LV+1<br>맨하탄 카페의 우정도+5<br>실패 시 :<br>스태미나+10<br>지능+10<br>${skill(201182)} 힌트 LV+1<br><span class='condition-info'>밤샘 습관</span>이 된다.<br>맨하탄 카페의 우정도+5`, `체력+15<br>맨하탄 카페의 우정도+5`]},
+    {createDate:`2023-04-05`, id:`es_439`, character:`맨하탄 카페`, eventType:`support`, cardName: `[독주・나선 카논] 맨하탄 카페`, title: `③ 뒤쫓아서`, choice: [`(선택지 없음)`], effect: [`스태미나+15<br>${skill(201221)} 힌트 LV+1<br>맨하탄 카페의 우정도+5`]},
     //메이쇼 도토
     {createDate:`2022-08-13`, id:`es_93`, character:`메이쇼 도토`, eventType:`support`, cardName: null, title: `당근… 사 주세요`, choice: [`트레센 학원과 거래해 보자`, `사람이 많은 곳에서 홍보해 보자`], effect: [`체력+10<br>지능+5<br>메이쇼 도토의 우정도+5`, `${skill(201322)} 힌트 LV+1<br>메이쇼 도토의 우정도+5`]},
     {createDate:`2022-08-13`, id:`es_94`, character:`메이쇼 도토`, eventType:`support`, cardName: null, title: `저… 개혁이에요`, choice: [`우선은 흔들리지 않는 자신감을 보고 배우자`, `우선은 저 넘치는 에너지를 보고 배우자`], effect: [`체력+10<br>컨디션 상승<br>메이쇼 도토의 우정도+5`, `근성+15<br>메이쇼 도토의 우정도+5`]},
@@ -372,6 +375,10 @@ const supportEvents = [
     {createDate:`2023-02-08`, id:`es_287`, character:`유키노 비진`, eventType:`support`, cardName: `[밤을 비추는 봉납의 춤] 유키노 비진`, title: `② 있는 그대로의, 매력을…`, choice: [`체험 행사로 해 보는 게 어떨까?`, `동영상은 어때?`], effect: [`체력-10<br>스태미나+5<br>근성+10<br>유키노 비진의 우정도+5<br>${skill(200242)} 힌트 LV+1`, `스킬 Pt+20<br>${skill(201661)} 힌트 LV+1유키노 비진의 우정도-5<br>연속 이벤트 종료`]},
     {createDate:`2023-02-08`, id:`es_288`, character:`유키노 비진`, eventType:`support`, cardName: `[밤을 비추는 봉납의 춤] 유키노 비진`, title: `③ '해피 엔딩'의 일등 공신`, choice: [`(선택지 없음)`], effect: [`체력-10<br>근성+10<br>지능+5<br>${skill(200341)} 힌트 LV+1유키노 비진의 우정도+5`]},
     //이나리 원
+    {createDate:`2023-04-05`, id:`es_440`, character:`이나리 원`, eventType:`support`, cardName: `[진창의 미소, 올곧게] 이나리 원`, title: `① 제법 멋져!`, choice: [`(선택지 없음)`], effect: [`체력-10<br>스피드+12<br>파워+12<br>이나리 원의 우정도+5`]},
+    {createDate:`2023-04-05`, id:`es_441`, character:`이나리 원`, eventType:`support`, cardName: `[진창의 미소, 올곧게] 이나리 원`, title: `② 시끌벅쩍!`, choice: [`속도를 줄였으면 좋겠어…`, `평소처럼 달려서 괜찮아!`], effect: [`체력-5<br>컨디션 2단계 상승<br>스피드+3<br>파워+3<br>근성+3<br>이나리 원의 우정도+5`, `${skill(200952)} 힌트 LV+3<br>체력-5<br>스피드+10<br>이나리 원의 우정도+5`]},
+    {createDate:`2023-04-05`, id:`es_442`, character:`이나리 원`, eventType:`support`, cardName: null, title: `싸움이다 영차`, choice: [`건투를 칭송해주지`, `음료수를 넣어준다던가`], effect: [`체력+5<br>파워+15<br>이나리 원의 우정도+5`, `컨디션 상승<br>근성+5<br>이나리 원의 우정도+5`]},
+    {createDate:`2023-04-05`, id:`es_443`, character:`이나리 원`, eventType:`support`, cardName: null, title: `축제 가마다 영차`, choice: [`돌진하는 약동감?`, `관객이 없어서 그런 거 아닐까?`], effect: [`스킬 Pt+15<br>이나리 원의 우정도+5`, `${skill(200032)} 힌트 LV+1<br>이나리 원의 우정도+5`]},
     //이쿠노 딕터스
     {createDate:`2022-08-13`, id:`es_289`, character:`이쿠노 딕터스`, eventType:`support`, cardName: null, title: `이쿠노식 만전 메서드`, choice: [`전부 혼자서 해?`, `정말 열심히 하는구나`], effect: [`지능+10<br>이쿠노 딕터스의 우정도+5`, `스킬 Pt+30<br>이쿠노 딕터스의 우정도+5`]},
     {createDate:`2022-08-13`, id:`es_290`, character:`이쿠노 딕터스`, eventType:`support`, cardName: null, title: `이쿠노식 매니지먼트론`, choice: [`내 스케줄도 봐줄래?`, `비법 좀 가르쳐줘`], effect: [`스태미나+20<br>이쿠노 딕터스의 우정도+5`, `이쿠노 딕터스의 우정도+5<br>${skill(200781)} 힌트 LV+1`]},

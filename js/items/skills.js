@@ -502,6 +502,8 @@ const skills = {
     '110231': { name:'Presents from X', createDate:'2023-03-10', owner:'[노엘 루주 캐럴] 비와 하야히데', icon:'skillicon_20013.png', grade:'고유', cost:null, condition:'순위 비율 40% 이하 유지 / 레이스 중반 / 진행거리 비율 50% 이상 / 순위 2 이상, 순위 비율 40% 이하 (챔피언스 미팅 : 2~4위 / 팀 경기장 : 2~5위 / 풀 게이트 : 2~7위)', effect:'속도 상승 0.35', duration:'지속 시간 5초 / 쿨타임 500초', rel:[910231], recommend:[0,0,0,0], comment:null },
     '910061': { name:'크리스마스 이브의 미라클 런!', createDate:'2023-03-10', owner:'[기적의 하얀 별] 오구리 캡', icon:'skillicon_20011.png', grade:'계승', cost:'200', condition:'발동한 지구력 회복 스킬 3개 이상 / 진행거리 비율 50% 이상', effect:'속도 상승 0.05 / 가속 상승 0.1 / 지구력 회복 0.005', duration:'지속 시간 3초 / 쿨타임 500초', rel:[110061], recommend:[0,0,0,0], comment:null },
     '110061': { name:'크리스마스 이브의 미라클 런!', createDate:'2023-03-10', owner:'[기적의 하얀 별] 오구리 캡', icon:'skillicon_20013.png', grade:'고유', cost:null, condition:'발동한 지구력 회복 스킬 3개 이상 / 진행거리 비율 50% 이상', effect:'속도 상승 0.25 / 가속 상승 0.3 / 지구력 회복 0.035', duration:'지속 시간 5초 / 쿨타임 500초', rel:[910061], recommend:[0,0,0,0], comment:null },
+    '100221': { name:'Fairy tale', createDate:'2023-04-05', owner:'[Noble Seamair] 파인 모션', icon:'skillicon_20013.png', grade:'고유', cost:null, condition:'진행거리 비율 50% 이상 / 순위 2 이상, 순위 비율 40% 이하 (챔피언스 미팅 : 2~4위 / 팀 경기장 : 2~5위 / 풀 게이트 : 2~7위) / 옆쪽 가로막힘 2초 이상', effect:'속도 상승 0.35', duration:'지속 시간 5초 / 쿨타임 500초', rel:[900221], recommend:[0,0,0,0], comment:null },
+    '900221': { name:'Fairy tale', createDate:'2023-04-05', owner:'[Noble Seamair] 파인 모션', icon:'skillicon_20011.png', grade:'계승', cost:'200', condition:'진행거리 비율 50% 이상 / 순위 2 이상, 순위 비율 40% 이하 (챔피언스 미팅 : 2~4위 / 팀 경기장 : 2~5위 / 풀 게이트 : 2~7위) / 옆쪽 가로막힘 2초 이상', effect:'속도 상승 0.15', duration:'지속 시간 3초 / 쿨타임 500초', rel:[100221], recommend:[0,0,0,0], comment:null },
 };
 
 /*
