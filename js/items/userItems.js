@@ -578,6 +578,15 @@ let items = [
 		descImg: null,
 		desc: TIP17_DESC,
 	},
+	{	type: 'tip', id: 'tip_18', score: 0, fix: false,
+		createDate: "2023-04-09",
+		titleStyle: null,
+		hiddenTag: null,
+		character: null,
+		title: "'접속'이란?",
+		descImg: null,
+		desc: TIP18_DESC,
+	},
 ];
 
 
