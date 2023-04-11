@@ -1,5 +1,5 @@
 // id format: eu_{charaCode}_{number}
-// current highest charaCode: 43 메지로 도베르
+// current highest charaCode: 45 타마모 크로스
 
 const characterEvents = [
     //골드 쉽 0

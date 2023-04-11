@@ -587,6 +587,15 @@ let items = [
 		descImg: null,
 		desc: TIP18_DESC,
 	},
+	{	type: 'tip', id: 'tip_19', score: 0, fix: false,
+		createDate: "2023-04-11",
+		titleStyle: null,
+		hiddenTag: null,
+		character: null,
+		title: "팀레이스 고득점용 스킬",
+		descImg: null,
+		desc: TIP19_DESC,
+	},
 ];
 
 
