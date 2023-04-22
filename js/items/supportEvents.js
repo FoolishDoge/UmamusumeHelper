@@ -1,5 +1,5 @@
 // id format: es_{number}
-// current highest number: 443
+// current highest number: 451
 
 const supportEvents = [
     //골드 쉽
@@ -122,6 +122,9 @@ const supportEvents = [
     {createDate:`2022-08-13`, id:`es_86`, character:`마치카네 후쿠키타루`, eventType:`support`, cardName: null, title: `전력 스피리추얼`, choice: [`그냥 서두르고 있는 거 같은데…`, `기합도 아주 조금만 넣어 본다면?`], effect: [`지능+5<br>스킬 Pt+15<br>마치카네 후쿠키타루의 우정도+5`, `체력-10<br>스피드+5<br>스태미나+5<br>파워+5<br>마치카네 후쿠키타루의 우정도+5`]},
     {createDate:`2022-08-13`, id:`es_87`, character:`마치카네 후쿠키타루`, eventType:`support`, cardName: `[운의 행방] 마치카네 후쿠키타루`, title: `① 도와주세요, 콧쿠리 님!`, choice: [`(선택지 없음)`], effect: [`체력+5<br>컨디션 상승<br>스킬 Pt+15<br>마치카네 후쿠키타루의 우정도+5`]},
     {createDate:`2022-08-13`, id:`es_88`, character:`마치카네 후쿠키타루`, eventType:`support`, cardName: `[운의 행방] 마치카네 후쿠키타루`, title: `② 지도와 친구`, choice: [`모두를 믿어!`, `기분전환으로 한번 달릴래?`], effect: [`스킬 Pt+45<br>마치카네 후쿠키타루의 우정도+5`, `체력+10<br>컨디션 상승<br>${skill(200012)} 힌트 LV+3<br>마치카네 후쿠키타루의 우정도+5<br>실패 시 :<br>체력-20<br>${skill(200012)} 힌트 LV+1`]},
+    {createDate:`2023-04-22`, id:`es_449`, character:`마치카네 후쿠키타루`, eventType:`support`, cardName: `[옷깃 스치면 복이 온다♪] 마치카네 후쿠키타루`, title: `① 미스터리한 의식 그림으로 운수 시험!`, choice: [`최고로 해피한 비술일지도!?`, `봉인해 두어야 하는 것이라던가`], effect: [`성공 시 :<br>모든 능력치+7<br>마치카네 후쿠키타루의 우정도+7<br>실패 시 :<br>지능+4<br>연속 이벤트 종료`, `체력+5<br>마치카네 후쿠키타루의 우정도+5<br>연속 이벤트 종료`]},
+    {createDate:`2023-04-22`, id:`es_450`, character:`마치카네 후쿠키타루`, eventType:`support`, cardName: `[옷깃 스치면 복이 온다♪] 마치카네 후쿠키타루`, title: `② 동료와 함께 웃으면 복이 와요!`, choice: [`아직 보물의 정체는 수수께끼로 남아있다고!`, `지도, 소중히 해야지`], effect: [`성공 시 :<br>모든 능력치+7<br>마치카네 후쿠키타루의 우정도+7<br>실패 시 :<br>체력+5<br>마치카네 후쿠키타루의 우정도+5<br>연속 이벤트 종료`, `체력+5<br>마치카네 후쿠키타루의 우정도+5<br>연속 이벤트 종료`]},
+    {createDate:`2023-04-22`, id:`es_451`, character:`마치카네 후쿠키타루`, eventType:`support`, cardName: `[옷깃 스치면 복이 온다♪] 마치카네 후쿠키타루`, title: `③ 도달했어, 미라클 해피!`, choice: [`(선택지 없음)`], effect: [`대성공 시 :<br>모든 능력치+7<br>스킬 Pt+77<br>${skill(201561)} 힌트 LV+3<br>마치카네 후쿠키타루의 우정도+7<br>성공 시 :<br>모든 능력치+7<br>스킬 Pt+7<br>${skill(201561)} 힌트 LV+1<br>마치카네 후쿠키타루의 우정도+7<br>실패 시 :<br>스킬 Pt+7<br>${skill(201562)} 힌트 LV+3<br>마치카네 후쿠키타루의 우정도+7`]},    
     //맨하탄 카페
     {createDate:`2022-08-13`, id:`es_89`, character:`맨하탄 카페`, eventType:`support`, cardName: null, title: `고요함을 즐기다`, choice: [`쉬는 시간이었어?`, `혼자 어두운 곳에 있어도 안 무섭나 보다`], effect: [`스태미나+5<br>스킬 Pt+15<br>맨하탄 카페의 우정도+5`, `${skill(200142)} 힌트 LV+1<br>맨하탄 카페의 우정도+5`]},
     {createDate:`2022-08-13`, id:`es_90`, character:`맨하탄 카페`, eventType:`support`, cardName: null, title: `밤의 독주`, choice: [`…늘 이 시간까지 달려?`, `…굉장한 집중력이군`], effect: [`스태미나+10<br>맨하탄 카페의 우정도+5`, `체력+10<br>스태미나+5<br>맨하탄 카페의 우정도+5`]},
@@ -322,6 +325,11 @@ const supportEvents = [
     {createDate:`2022-08-19`, id:`es_243`, character:`야에노 무테키`, eventType:`support`, cardName: null, title: `강인하고 꾸밈없는 사람은, 인에 가깝다`, choice: [`주먹 스피드 강화에 집중하는 건 어때?`, `주먹 파워 강화에 집중하는 건 어때?`], effect: [`스피드+10`, `컨디션 상승<br>파워+5`]},
     {createDate:`2022-08-19`, id:`es_244`, character:`야에노 무테키`, eventType:`support`, cardName: null, title: `아아, 지키고 싶어…!`, choice: [`혹독하게 수행하는 것 같은 표정이었어`, `재미있는 면도 있구나`], effect: [`스태미나+10<br>파워+10`, `${skill(201112)} 힌트 LV+1`]},
     //어드마이어 베가
+    {createDate:`2023-04-22`, id:`es_444`, character:`어드마이어 베가`, eventType:`support`, cardName: `[밤에는 새벽, 하늘엔 서성] 어드마이어 베가`, title: `① 아야베 씨는 못 본 체하지 않는다`, choice: [`다시 한 번 생각해보는 게 어때?`, `완성된 포스터를 보는 게 기대되!`], effect: [`성공 시 :<br>파워+5<br>지능+15<br>${skill(200871)} 힌트 LV+2<br>실패 시 :<br>파워+5<br>지능+10`, `체력+15<br>어드마이어 베가의 우정도+5`]},
+    {createDate:`2023-04-22`, id:`es_445`, character:`어드마이어 베가`, eventType:`support`, cardName: `[밤에는 새벽, 하늘엔 서성] 어드마이어 베가`, title: `② 아야베 씨는 타협하지 않는다`, choice: [`(선택지 없음)`], effect: [`파워+7<br>지능+7`]},
+    {createDate:`2023-04-22`, id:`es_446`, character:`어드마이어 베가`, eventType:`support`, cardName: `[밤에는 새벽, 하늘엔 서성] 어드마이어 베가`, title: `③ 아야베 씨는 굴하지 않는다`, choice: [`나도 온천에 들어갈 걸 그랬어`, `사실은 모델이 적성에 맞는 거 아니야?`], effect: [`파워+15<br>지능+10<br>${skill(202021)} 힌트 LV+1<br>어드마이어 베가의 우정도+5`, `스피드+15<br>스킬 Pt+30<br>어드마이어 베가의 우정도+5`]},
+    {createDate:`2023-04-22`, id:`es_447`, character:`어드마이어 베가`, eventType:`support`, cardName: null, title: `고고한 케페우스`, choice: [`먼저 조금씩 정리해두자!`, `그녀의 생각을 존중하자`], effect: [`${skill(200861)} 힌트 LV+1<br>어드마이어 베가의 우정도+5`, `지능+10<br>어드마이어 베가의 우정도+5`]},
+    {createDate:`2023-04-22`, id:`es_448`, character:`어드마이어 베가`, eventType:`support`, cardName: null, title: `서투른 트리앙글룸`, choice: [`힘을 모으자!`, `우선은 진정시키자`], effect: [`파워+15<br>어드마이어 베가의 우정도+5`, `체력+10<br>어드마이어 베가의 우정도+5`]},    
     //에어 그루브
     {createDate:`2022-08-13`, id:`es_245`, character:`에어 그루브`, eventType:`support`, cardName: null, title: `날렵하고도 강인하게`, choice: [`혼자서 이걸 옮기려면 힘이 들겠어`, `이 양을 다 치우려면 상당히 서둘러야겠는데…`], effect: [`파워+15<br>에어 그루브의 우정도+5`, `스피드+10<br>스태미나+5<br>에어 그루브의 우정도+5`]},
     {createDate:`2022-08-13`, id:`es_246`, character:`에어 그루브`, eventType:`support`, cardName: null, title: `준엄하고도 은혜롭게`, choice: [`항상 엄하게 대해?`, `상대를 잘 관찰하고 있구나`], effect: [`에어 그루브의 우정도+5<br>${skill(200502)} 힌트 LV+1`, `체력+10<br>지능+10`]},

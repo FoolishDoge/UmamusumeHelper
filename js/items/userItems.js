@@ -547,7 +547,7 @@ let items = [
 		titleStyle: null,
 		hiddenTag: null,
 		character: null,
-		title: "사지타리우스배 대비 육성 팁",
+		title: "카프리콘배 대비 육성 팁",
 		descImg: null,
 		desc: TIP14_DESC,
 	},

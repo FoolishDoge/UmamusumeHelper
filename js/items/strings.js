@@ -412,14 +412,20 @@ const TIP11_DESC = `
 
 const TIP14_DESC = `
 [기본 정보]<br>
-- (예상) 2023년 4월 11일 ~ 4월 17일<br>
+- 2023년 5월 13일 ~ 5월 19일<br>
 <table class="desc-table"><tr>
 <td class="td-label">경기장</td><td class="td-label">거리</td><td class="td-label">방향</td><td class="td-label">계절</td><td class="td-label">날씨</td><td class="td-label">상태</td></tr><tr>
-<td class="td-desc">나카야마</td><td class="td-desc">2500m<br>장거리</td><td class="td-desc">우, 내측</td><td class="td-desc">겨울</td><td class="td-desc">맑음</td><td class="td-desc">양호</td></tr></table>
+<td class="td-desc">츄코<br>잔디</td><td class="td-desc">1200m<br>단거리</td><td class="td-desc">좌</td><td class="td-desc">겨울</td><td class="td-desc">눈</td><td class="td-desc">포화</td></tr></table>
+- 타츠노미야키 기념과 같은 조건.<br>
+- 종반 코너가 존재하지 않음.<br>
+- 종반 속도 계열기 도주마들 약세. 이 점을 노려 마개조 도주마들을 출전시키는 경우가 발견됨.<br>
+- 종반 경합에 유리한 선행마 강세.<br>
+- ${skill(201581)} 스킬이 핵심픽으로 떠오름. ${skill(200371)}, ${skill(200651)}도 주목받음.<br>
 <br>
-
-[추천 스태미너]<br
-스피드 1200, 파워 1000, 지능 1000, 장거리 S 기준<br>
+[추천 스태미너]<br>
+대충 450 이상.<br>
+`
+/*
 <table class="desc-table"><tr>
 <td class="td-blank"></td>
 <td class="td-label">도주</td><td class="td-label">선행</td><td class="td-label">선입</td><td class="td-label">추입</td></tr><tr>
@@ -428,35 +434,34 @@ const TIP14_DESC = `
 <td class="td-label" nowrap>1금힐</td>
 <td class="td-desc">850</td><td class="td-desc">950</td><td class="td-desc">910</td><td class="td-desc">930</td>
 </tr></table>
+*/
++ `
 <br>
-
 [추천 육성마]
 <table class="desc-table">
-<tr><td class="td-label">추입</td><td class="td-desc">
-<b>타마모 크로스</b><br>
-<b>나리타 타이신</b><br>
-맨하탄 카페<br>
-골드 쉽<br>
-크리스마스 오구리 캡
-</td></tr>
-<tr><td class="td-label">도주</td><td class="td-desc">
-<b>수영복 마루젠스키</b><br>
-세이운 스카이<br>
-다이와 스칼렛
-</td></tr>
 <tr><td class="td-label">선행</td><td class="td-desc">
-크리스마스 오구리 캡<br>
-에어 그루브 (역병)
+<b>사쿠라 바쿠신 오</b><br>
+<b>카렌쨩</b><br>
+<b>오구리 캡</b><br>
+할로윈 슈퍼 크릭(단거리 마개조)<br>
+엘 콘도르 파사(단거리 마개조)
 </td></tr>
 <tr><td class="td-label">선입</td><td class="td-desc">
-크리스마스 오구리 캡<br>
-나이스 네이처 (역병)
+<b>오구리 캡</b><br>
+에어 그루브<br>
+킹 헤일로
+</td></tr>
+<tr><td class="td-label">도주</td><td class="td-desc">
+<b>스마트 팔콘</b><br>
+엘 콘도르 파사(도주, 단거리 마개조)
+</td></tr>
+<tr><td class="td-label">추입</td><td class="td-desc">
+나리타 타이신
 </td></tr>
 </table>
 <br>
-
 [참고용 사이트]<br>
-<a target="_blank" href="https://gall.dcinside.com/mgallery/board/view/?id=umamusu&no=1687179">사지타리우스배 공략글 모음.zip</a>
+<a target="_blank" href="https://gall.dcinside.com/mgallery/board/view/?id=umamusu&no=1794037">카프리콘배 공략글 모음</a>
 `;
 
 const TIP15_DESC = `

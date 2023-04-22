@@ -1,6 +1,9 @@
 // id format: eu_{charaCode}_{number}
 // current highest charaCode: 45 타마모 크로스
 
+// 23.04.21 육성 하루우라라 카루타 이벤트 누락
+// 23.04.21 육성 오페라오 카루타 이벤트 누락
+
 const characterEvents = [
     //골드 쉽 0
     {createDate:`2022-08-13`, id:`eu_0_0`, character:`골드 쉽`, eventType:`chara`, cardName: `[레드 스트라이프] 골드 쉽`, title: `골쉽류 데이트`, choice: [`마실 거라도 사올게`, `연장전이야! 이길 때까지 간다!`], effect: [`스태미나+20`, `파워+20`]},
