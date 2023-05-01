@@ -566,8 +566,6 @@ function applyUmaFixList(){
 
 
 
-
-
 // organize UI
 function changePlaceholder(){
 	let ph = document.querySelector('#value');
