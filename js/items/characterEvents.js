@@ -331,7 +331,7 @@ const characterEvents = [
     //미호노 부르봉 15
     {createDate:`2022-08-13`, id:`eu_15_0`, character:`미호노 부르봉`, eventType:`chara`, cardName: null, title: `『오퍼레이션: 댄스 피버』`, choice: [`멋있는 댄스곡으로!`, `신나는 댄스곡을!`], effect: [`스태미나+5<br>근성+5`, `스태미나+5<br>지능+5`]},
     {createDate:`2022-08-13`, id:`eu_15_1`, character:`미호노 부르봉`, eventType:`chara`, cardName: null, title: `『오퍼레이션: 보습』`, choice: [`잠깐 쉬자!`, `손바느질은 안 돼?`], effect: [`체력+10<br>컨디션 상승`, `지능+10`]},
-    {createDate:`2022-08-13`, id:`eu_15_2`, character:`미호노 부르봉`, eventType:`chara`, cardName: null, title: `『오퍼레이션: 오더 수행』`, choice: [`외부 러닝 2바퀴!`, `근력 운동 메뉴 1세트!`], effect: [`스태미나+10`, `파워+10`]},
+    {createDate:`2022-08-13`, id:`eu_15_2`, character:`미호노 부르봉`, eventType:`chara`, cardName: null, title: `『오퍼레이션: 지시 수행』`, choice: [`외부 러닝 2바퀴!`, `근력 운동 메뉴 1세트!`], effect: [`스태미나+10`, `파워+10`]},
     {createDate:`2022-08-13`, id:`eu_15_3`, character:`미호노 부르봉`, eventType:`chara`, cardName: null, title: `『오퍼레이션: 외출 시 트러블』`, choice: [`내려가는 리프트를 찾자`, `정상에 오르자`], effect: [`스태미나+10<br>스킬 Pt+15`, `${skill(200162)} 힌트 LV+1`]},
     {createDate:`2022-08-13`, id:`eu_15_4`, character:`미호노 부르봉`, eventType:`chara`, cardName: null, title: `『오퍼레이션: 인조이 잿날』`, choice: [`그럼 사격을 해 볼까`, `아니, 다른 노점 요리도 다 먹어보자`], effect: [`파워+10`, `스태미나+5<br>근성+5`]},
     {createDate:`2022-08-13`, id:`eu_15_5`, character:`미호노 부르봉`, eventType:`chara`, cardName: null, title: `댄스 레슨`, choice: [`아이돌은 개성 승부!`, `아이돌은 체력 승부!`], effect: [`스킬 Pt+20`, `스태미나+10`]},

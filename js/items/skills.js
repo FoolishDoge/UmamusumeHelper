@@ -369,6 +369,8 @@ const skills = {
     '202022': { name:'이른 작전', createDate:'2023-04-22', icon:'skillicon_20011.png', grade:'일반', cost:'180', condition:'추입 / 레이스 중반 무작위 / 순위 비율 50% 이상 (챔피언스 미팅 : 5~9위 / 팀 경기장 : 6~12위 / 풀 게이트 : 9~18위)', effect:'속도 상승 0.05', duration:'지속 시간 4초 / 쿨타임 500초', rel:[202021], recommend:[0,0,0,0], comment:null },
     '202011': { name:'노력의 결정체', createDate:'2023-04-22', icon:'skillicon_20012.png', grade:'레어', cost:'160', condition:'장거리 / 레이스 중반의 후반 무작위 / 순위 비율 50% 이하 (챔피언스 미팅 : 1~5위 / 팀 경기장 : 1~6위 / 풀 게이트 : 1~9위)', effect:'속도 상승 0.35', duration:'지속 시간 2.4초 / 쿨타임 500초', rel:[202012], recommend:[0,0,0,0], comment:null },
     '202012': { name:'노력의 결과', createDate:'2023-04-22', icon:'skillicon_20011.png', grade:'일반', cost:'160', condition:'장거리 / 레이스 중반의 후반 무작위 / 순위 비율 50% 이하 (챔피언스 미팅 : 1~5위 / 팀 경기장 : 1~6위 / 풀 게이트 : 1~9위)', effect:'속도 상승 0.15', duration:'지속 시간 2.4초 / 쿨타임 500초', rel:[202011], recommend:[0,0,0,0], comment:null },
+    '202031': { name:'도박사', createDate:'2023-05-03', icon:'skillicon_20012.png', grade:'레어', cost:'120', condition:'진행거리 비율 50% 이후 무작위', effect:'속도 상승 0.45 / 지구력 회복 -1', duration:'지속 시간 1.8초 / 쿨타임 500초', rel:[202032], recommend:[0,0,0,0], comment:null },
+    '202032': { name:'수상한 작전', createDate:'2023-05-03', icon:'skillicon_20011.png', grade:'일반', cost:'120', condition:'진행거리 비율 50% 이후 무작위', effect:'속도 상승 0.25 / 지구력 회복 -1', duration:'지속 시간 1.8초 / 쿨타임 500초', rel:[202031], recommend:[0,0,0,0], comment:null },
 
 
 

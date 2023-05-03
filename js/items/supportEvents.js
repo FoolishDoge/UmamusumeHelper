@@ -1,5 +1,5 @@
 // id format: es_{number}
-// current highest number: 451
+// current highest number: 462 안심자와 사사미
 
 const supportEvents = [
     //골드 쉽
@@ -316,6 +316,18 @@ const supportEvents = [
     {createDate:`2022-08-13`, id:`es_237`, character:`아이네스 후진`, eventType:`support`, cardName: `[뛰쳐나와, 반짝여라] 아이네스 후진`, title: `① 언니의 순발력`, choice: [`(선택지 없음)`], effect: [`체력-10<br>스피드+5<br>스태미너+5<br>근성+10`]},
     {createDate:`2022-08-13`, id:`es_238`, character:`아이네스 후진`, eventType:`support`, cardName: `[뛰쳐나와, 반짝여라] 아이네스 후진`, title: `② 해피해피한 전진`, choice: [`(선택지 없음)`], effect: [`체력-10<br>근성+10<br>스킬 Pt+30<br>아이네스 후진의 우정도+5`]},
     {createDate:`2022-08-13`, id:`es_239`, character:`아이네스 후진`, eventType:`support`, cardName: `[뛰쳐나와, 반짝여라] 아이네스 후진`, title: `③ 목표는 반짝이는 순간!`, choice: [`(선택지 없음)`], effect: [`성공 시 :<br>체력-10<br>근성+20<br>지능+5<br>${skill(201281)} 힌트 LV+3<br>또는<br>체력-10<br>근성+10<br>지능+5<br>${skill(201281)} 힌트 LV+1<br>실패 시 :<br>체력-10<br>근성+10<br>${skill(201282)} 힌트 LV+1`]},
+    //안심자와 사사미
+    {createDate:`2023-05-03`, id:`es_452`, character:`안심자와 사사미`, eventType:`support`, cardName: `[한 방 푹 어때?] 안심자와 사사미`, title: `① 안심~ 이인삼각!?`, choice: [`(선택지 없음)`], effect: [`성공 시 :<br>체력+48<br>컨디션 상승+1<br>5개 스테이터스 중 랜덤으로 1개+15<br>안심자와 사사미의 우정도+5<br>실패 시 :<br>체력+16<br>컨디션 하락-1<br>안심자와 사사미의 우정도+5`]},
+    {createDate:`2023-05-03`, id:`es_453`, character:`안심자와 사사미`, eventType:`support`, cardName: `[한 방 푹 어때?] 안심자와 사사미`, title: `② 안심~☆ 선글라스`, choice: [`(선택지 없음)`], effect: [`성공 시 :<br>체력+48<br>컨디션 상승+1<br>5개 스테이터스 중 랜덤으로 2개+15<br>안심자와 사사미의 우정도+5<br>실패 시 :<br>체력+16<br>컨디션 하락-1<br>안심자와 사사미의 우정도+5`]},
+    {createDate:`2023-05-03`, id:`es_454`, character:`안심자와 사사미`, eventType:`support`, cardName: `[한 방 푹 어때?] 안심자와 사사미`, title: `③ 결전☆ 안심~이여 영원하라!`, choice: [`마음껏 찔러주세요!`, `안심~ 제일로 부탁드려요…!`], effect: [`성공 시 :<br>체력+48<br>모든 능력치+15<br>스킬 Pt+30<br>${skill(202031)} 힌트 LV+3<br>안심자와 사사미의 우정도+5<br>실패 시 :<br>체력-10<br>컨디션 하락-2<br>안심자와 사사미의 우정도+5`, `성공 시 :<br>체력 전체 회복<br>컨디션 상승<br>${skill(202031)} 힌트 LV+1<br>안심자와 사사미의 우정도+5<br>실패 시 :<br>체력+20<br>${skill(202032)} 힌트 LV+1<br>안심자와 사사미의 우정도+5`]},
+    {createDate:`2023-05-03`, id:`es_455`, character:`안심자와 사사미`, eventType:`support`, cardName: `[한 방 푹 어때?] 안심자와 사사미`, title: `모든 길은 세침으로 통한다`, choice: [`(선택지 없음)`], effect: [`성공 시 :<br>5개 스테이터스 중 랜덤으로 1개+15<br>안심자와 사사미의 우정도+5<br>랜덤으로 <span class='condition-info'>수완가</span> 획득<br>실패 시 :<br>스킬 Pt+75<br>${skill(200283)} 획득<br>안심자와 사사미의 우정도+5`]},
+    {createDate:`2023-05-03`, id:`es_456`, character:`안심자와 사사미`, eventType:`support`, cardName: `[한 방 푹 어때?] 안심자와 사사미`, title: `모락모락 온천☆안심~ 여정`, choice: [`(선택지 없음)`], effect: [`※ 모든 육성 목표 완료 후에 육성 종료 시, 안심자와 사사미와의 외출을 끝까지 한 경우에 이벤트 발생<br>5개 스테이터스 중 랜덤으로 2개+22<br>스킬 Pt+45`]},
+    {createDate:`2023-05-03`, id:`es_457`, character:`안심자와 사사미`, eventType:`support`, cardName: `[한 방 푹 어때?] 안심자와 사사미`, title: `사사미와의 인연ㆍ취하면 안심~?`, choice: [`거, 건강해지는 혈을…`, `머리가 좋아지는 혈을!`, `매력이 넘치게 되는 혈?`], effect: [`체력+10<br>5개 스테이터스 중 랜덤으로 2개+10<br>${skill(201591)} 힌트 LV+3<br>안심자와 사사미의 우정도+5`, `※ 위 선택지와 동일`, `※ 위 선택지와 동일`]},
+    {createDate:`2023-05-03`, id:`es_458`, character:`안심자와 사사미`, eventType:`support`, cardName: `[한 방 푹 어때?] 안심자와 사사미`, title: `수상한 사람이지만, 안심~!?`, choice: [`(선택지 없음)`], effect: [`※ 처음 함께 트레이닝 할 경우 한 번에 한하여 이벤트 발생<br>5개 스테이터스 중 랜덤으로 1개+30<br>안심자와 사사미의 우정도+5`]},
+    {createDate:`2023-05-03`, id:`es_459`, character:`안심자와 사사미`, eventType:`support`, cardName: `[한 방 푹 어때?] 안심자와 사사미`, title: `안심~ 연습대?`, choice: [`알겠습니다, 해 볼게요!`, `그, 그러면 상황을 좀 보면서…`, `거절하겠습니다!!`], effect: [`성공 시 :<br>체력 최대치+4<br>체력+16<br>컨디션 상승+1<br>안심자와 사사미의 우정도+10<br>안심자와 사사미와의 외출 이벤트 해방<br>실패 시 :<br>스킬 Pt+75<br>${skill(200353)} 획득<br>안심자와 사사미의 우정도+5<br>안심자와 사사미와의 외출 이벤트 해방`, `컨디션 상승+1<br>5개의 스테이터스 중 1개+15<br>안심자와 사사미의 우정도+5<br>안심자와 사사미와의 외출 이벤트 해방`, `체력-10<br>스킬 Pt+150<br>${skill(202032)} 힌트 LV+1<br>${skill(200521)} 획득<br>안심자와 사사미의 우정도-10<br>안심자와 사사미와의 외출 이벤트 종료`]},
+    {createDate:`2023-05-03`, id:`es_460`, character:`안심자와 사사미`, eventType:`support`, cardName: `[한 방 푹 어때?] 안심자와 사사미`, title: `안심~할만한 계승!?`, choice: [`(선택지 없음)`], effect: [`※ 모든 육성 목표 완료 후에 육성 종료 시, 안심자와 사사미와의 외출을 끝까지 하지 못한 경우에 이벤트 발생<br>5개 스테이터스 중 랜덤으로 2개+15<br>스킬 Pt+30`]},
+    {createDate:`2023-05-03`, id:`es_461`, character:`안심자와 사사미`, eventType:`support`, cardName: `[한 방 푹 어때?] 안심자와 사사미`, title: `푹 맡겨만 줘☆`, choice: [`(선택지 없음)`], effect: [`함께 트레이닝 했다가 실패한 경우 랜덤하게 이벤트 발생<br>성공 시 :<br>모든 능력치+3<br>랜덤으로 훈련 능숙○ 상태 획득<br>안심자와 사사미의 우정도+5<br>실패 시 :<br>체력-10<br>컨디션 하락-2<br>안심자와 사사미의 우정도+5`]},
+    {createDate:`2023-05-03`, id:`es_462`, character:`안심자와 사사미`, eventType:`support`, cardName: `[한 방 푹 어때?] 안심자와 사사미`, title: `필중☆세침사`, choice: [`(선택지 없음)`], effect: [`※ 함께 트레이닝 할 경우 랜덤하게 이벤트 발생<br>성공 시 :<br>체력+3<br>5개 스테이터스 중 랜덤으로 1개+6<br>안심자와 사사미의 우정도+5<br>실패 시 :<br>체력-5<br>안심자와 사사미의 우정도+5`]},
     //애스턴 마짱
     //야마닌 제퍼
     //야에노 무테키
@@ -469,6 +481,8 @@ const supportEvents = [
     {createDate:`2023-01-18`, id:`es_355`, character:`타마모 크로스`, eventType:`support`, cardName: `[붙어보자, 할로윈 나이트!] 타마모 크로스`, title: `① 미라 헌트 ~희극을 타파하라!~`, choice: [`재밌었어!`, `무섭단 느낌은 안 들었는데…`], effect: [`파워+10<br>타마모 크로스의 우정도+5`, `체력+20<br>스피드+10<br>연속 이벤트 종료<br>${skill(200162)} 힌트 LV+1`]},
     {createDate:`2023-01-18`, id:`es_356`, character:`타마모 크로스`, eventType:`support`, cardName: `[붙어보자, 할로윈 나이트!] 타마모 크로스`, title: `② 미라 헌트 ~깨어나라, 사냥꾼!~`, choice: [`(선택지 없음)`], effect: [`스피드+10<br>파워+10`]},
     {createDate:`2023-01-18`, id:`es_357`, character:`타마모 크로스`, eventType:`support`, cardName: `[붙어보자, 할로윈 나이트!] 타마모 크로스`, title: `③ 미라 헌트 ~가장 무서운 스위트 머미~`, choice: [`(선택지 없음)`], effect: [`스피드+5<br>파워+5<br>${skill(201411)} 힌트 LV+1<br>또는<br>스피드+15<br>파워+15<br>${skill(201411)} 힌트 LV+3`]},
+    {createDate:`2023-05-03`, id:`es_462`, character:`타마모 크로스`, eventType:`support`, cardName: `[이게 우리 오사카식 오징어 구이대이!] 타마모 크로스`, title: `① 인정 랩소디`, choice: [`어째서 이렇게 친절한 거야?`, `착하군`], effect: [`컨디션 상승+1<br>스피드+5<br>타마모 크로스의 우정도+5`, `체력+10<br>스태미나+5<br>타마모 크로스의 우정도+5`]},
+    {createDate:`2023-05-03`, id:`es_463`, character:`타마모 크로스`, eventType:`support`, cardName: `[이게 우리 오사카식 오징어 구이대이!] 타마모 크로스`, title: `② 장삿길은 사람의 길`, choice: [`나도 먹어 보고 싶은걸`, `더 많이 팔아 보자`], effect: [`스피드+10<br>스킬 Pt+10<br>${skill(201322)} 힌트 LV+1<br>타마모 크로스의 우정도+5`, `스태미나+10<br>스킬 Pt+10<br>${skill(201392)} 힌트 LV+1<br>타마모 크로스의 우정도+5`]},
     //타이키 셔틀
     {createDate:`2022-08-13`, id:`es_358`, character:`타이키 셔틀`, eventType:`support`, cardName: `[트레센 학원] 타이키 셔틀`, title: `Oh! Tonight Party☆`, hiddenTag: `오 투나잇 파티`, choice: [`멀리 돌아서 전력 대시다!`, `집단을 헤친다는 이미지로 달리자!`], effect: [`체력-10<br>스피드+5<br>파워+10`, `${skill(200582)} 힌트 LV+1`]},
     {createDate:`2022-08-13`, id:`es_359`, character:`타이키 셔틀`, eventType:`support`, cardName: `[트레센 학원] 타이키 셔틀`, title: `Yes! Let's hug☆`, hiddenTag: `예스 렛츠 허그`, choice: [`스피드라고 생각해`, `파워라고 생각해`], effect: [`스피드+10`, `스피드+5<br>파워+5`]},
