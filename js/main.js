@@ -569,7 +569,7 @@ function applyUmaFixList(){
 // organize UI
 function changePlaceholder(){
 	let ph = document.querySelector('#value');
-	let lst = ["돌고래가 좋으면 돌고 올래?", "소다를 자판기에서 뽑았소다", "중앙을 우습게 보지마", "'동경'하는 분들께, 일'동경'례!", "카를 톡 치면 카톡", "생강이 없다니 생각이 없군", "벌레 오른쪽에 인형을 두면 좌충우돌", "실수로 생수를 사버렸군", "자판기에서 콜라를 골라버려"]
+	let lst = ["돌고래가 좋으면 돌고 올래?", "소다를 자판기에서 뽑았소다", "중앙을 우습게 보지마", "'동경'하는 분들께, 일'동경'례!", "카를 톡 치면 카톡", "생강이 없다니 생각이 없군", "벌레 오른쪽에 인형을 두면 좌충우돌", "실수로 생수를 사버렸군", "자판기에서 콜라를 골라버려", "새해 복만이 받으세요... 복만이가 누구지?"]
 	let rd = Math.floor((Math.random()*lst.length));
 	
 	ph.placeholder = lst[rd]

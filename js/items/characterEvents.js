@@ -1,5 +1,5 @@
 // id format: eu_{charaCode}_{number}
-// current highest charaCode: 45 타마모 크로스
+// current highest charaCode: 46 사쿠라 치요노 오
 
 const characterEvents = [
     //골드 쉽 0
@@ -420,7 +420,24 @@ const characterEvents = [
     {createDate:`2022-08-13`, id:`eu_19_13`, character:`사쿠라 바쿠신 오`, eventType:`chara`, cardName: null, title: `최고의 돌진!`, choice: [`하지만 친구는 아주 기뻐했어`, `정신 차려, 반장!`], effect: [`지능+10`, `스태미나+5<br>근성+5`]},
     {createDate:`2022-08-13`, id:`eu_19_14`, character:`사쿠라 바쿠신 오`, eventType:`chara`, cardName: null, title: `학생들의 목소리 모집 중!!`, choice: [`하는 수 없이 우격다짐으로 철수시킨다`, `초고속으로 허가를 받아오라고 한다`], effect: [`체력−10<br>스태미나+10<br>파워+10`, `스피드+10`]},
     {createDate:`2022-08-13`, id:`eu_19_15`, character:`사쿠라 바쿠신 오`, eventType:`chara`, cardName: null, title: `학우와 돌진!`, choice: [`스태미나를 길러서 돌진하자!`, `돌진도 타이밍을 봐가며 해야 해`], effect: [`파워+5<br>근성+5`, `스피드+5<br>지능+5`]},
-    //사쿠라 치요노 오
+    //사쿠라 치요노 오 46
+    {createDate:`2023-05-17`, id:`eu_46_0`, character:`사쿠라 치요노 오`, eventType:`chara`, cardName: `[천하무쌍 · 만개한 벚꽃의 빛] 사쿠라 치요노 오`, title: `『그곳에 있는 것이, 바로 일상이다』`, choice: [`친구들을 부르자`, `가족한테 직접 보여주는 건 어때?`], effect: [`파워+10<br>지능+10`, `스태미나+20`]},
+    {createDate:`2023-05-17`, id:`eu_46_1`, character:`사쿠라 치요노 오`, eventType:`chara`, cardName: `[천하무쌍 · 만개한 벚꽃의 빛] 사쿠라 치요노 오`, title: `『꽃은 벚꽃, 우마무스메는…』`, choice: [`요조숙녀 그래스 원더`, `무도소녀 야에노 무테키`], effect: [`파워+20<br>랜덤으로 <span class='condition-info'>훈련 능숙○</span> 획득`, `스피드+20<br>랜덤으로 <span class='condition-info'>훈련 능숙○</span> 획득`]},
+    {createDate:`2023-05-17`, id:`eu_46_2`, character:`사쿠라 치요노 오`, eventType:`chara`, cardName: `[천하무쌍 · 만개한 벚꽃의 빛] 사쿠라 치요노 오`, title: `『마음은 버블리하게 감싸이고』`, choice: [`마루젠스키는 어떤 애인데?`, `치요 노트에 답이 이미 있을지도 몰라`], effect: [`근성+10<br>스킬 Pt+15`, `지능+20`]},
+    {createDate:`2023-05-17`, id:`eu_46_3`, character:`사쿠라 치요노 오`, eventType:`chara`, cardName: `[천하무쌍 · 만개한 벚꽃의 빛] 사쿠라 치요노 오`, title: `가라! 결정타 지도!?`, choice: [`지금 당장 근성으로 외울게!`, `외우는 요령 같은 거 없을까…?`], effect: [`스피드+10<br>근성+5`, `${skill(201532)} 힌트 LV+1<br>`]},
+    {createDate:`2023-05-17`, id:`eu_46_4`, character:`사쿠라 치요노 오`, eventType:`chara`, cardName: `[천하무쌍 · 만개한 벚꽃의 빛] 사쿠라 치요노 오`, title: `너무 맛있는 만주`, choice: [`과식하지 않게 조심해`, `숙달되도록 잔뜩 만들어서 먹자`], effect: [`체력+10<br>스킬 Pt+5`, `성공 시 :<br>체력+30<br>스킬 Pt+10<br>실패 시 :<br>체력+30<br>스킬 Pt+10<br>스피드-5<br>파워+5<br><span class='condition-info'>살찜 주의</span> 획득`]},
+    {createDate:`2023-05-17`, id:`eu_46_5`, character:`사쿠라 치요노 오`, eventType:`chara`, cardName: `[천하무쌍 · 만개한 벚꽃의 빛] 사쿠라 치요노 오`, title: `댄스 레슨`, choice: [`예전도 지금과 이어져 있네`, `주위 아이들을 한번 볼래?`], effect: [`지능+10`, `파워+10`]},
+    {createDate:`2023-05-17`, id:`eu_46_6`, character:`사쿠라 치요노 오`, eventType:`chara`, cardName: `[천하무쌍 · 만개한 벚꽃의 빛] 사쿠라 치요노 오`, title: `믿음직하다는 의미`, choice: [`멋진 모습 보여주고 와!`, `믿음직스럽구나`, `나도 해볼까`], effect: [`지능+10`, `스피드+10`, `파워+10`]},
+    {createDate:`2023-05-17`, id:`eu_46_7`, character:`사쿠라 치요노 오`, eventType:`chara`, cardName: `[천하무쌍 · 만개한 벚꽃의 빛] 사쿠라 치요노 오`, title: `믿음직한 사람 투어?`, choice: [`너무 무리하지는 마`, `그 기세로 가는 거야!`], effect: [`파워+10`, `스피드+10`]},
+    {createDate:`2023-05-17`, id:`eu_46_8`, character:`사쿠라 치요노 오`, eventType:`chara`, cardName: `[천하무쌍 · 만개한 벚꽃의 빛] 사쿠라 치요노 오`, title: `새해 첫 참배`, choice: [`건강제일, 과도한 자율 트레이닝은 금물!`, `성장을 위해서 기초부터 열심히 하자`, `모두를 무찌를 스킬도 익히자`], effect: [`체력+30`, `5개 스테이터스+5`, `스킬 Pt+35`]},
+    {createDate:`2023-05-17`, id:`eu_46_9`, character:`사쿠라 치요노 오`, eventType:`chara`, cardName: `[천하무쌍 · 만개한 벚꽃의 빛] 사쿠라 치요노 오`, title: `선도부장상, 수상자인걸요`, choice: [`좋아, 힘껏 뛰어들자!`, `좋아, 돌아가서 협공하자!`], effect: [`체력+5<br>파워+5`, `스태미나+10`]},
+    {createDate:`2023-05-17`, id:`eu_46_10`, character:`사쿠라 치요노 오`, eventType:`chara`, cardName: `[천하무쌍 · 만개한 벚꽃의 빛] 사쿠라 치요노 오`, title: `신년 포부`, choice: [`레이스의 흐름을 파악하는 힘 아닐까`, `일단 쉬어`, `오히려 새로운 일면을 개척하자`], effect: [`지능+10`, `체력+20`, `스킬 Pt+20`]},
+    {createDate:`2023-05-17`, id:`eu_46_11`, character:`사쿠라 치요노 오`, eventType:`chara`, cardName: `[천하무쌍 · 만개한 벚꽃의 빛] 사쿠라 치요노 오`, title: `여름 합숙(2년 차)에서`, choice: [`스모 대련을 하자`, `해변 러닝을 계속하자`], effect: [`파워+10`, `근성+10`]},
+    {createDate:`2023-05-17`, id:`eu_46_12`, character:`사쿠라 치요노 오`, eventType:`chara`, cardName: `[천하무쌍 · 만개한 벚꽃의 빛] 사쿠라 치요노 오`, title: `우마무스메 트로트 대회!`, choice: [`무척 감동했어`, `앙코르 요청하고 싶어!`], effect: [`파워+10`, `스피드+5<br>근성+5`]},
+    {createDate:`2023-05-17`, id:`eu_46_13`, character:`사쿠라 치요노 오`, eventType:`chara`, cardName: `[천하무쌍 · 만개한 벚꽃의 빛] 사쿠라 치요노 오`, title: `최근 유행하는 부티크`, choice: [`댄스에 안성맞춤인 드레스`, `어른스럽고 지적인 수트`], effect: [`스피드+10`, `지능+10`]},
+    {createDate:`2023-05-17`, id:`eu_46_14`, character:`사쿠라 치요노 오`, eventType:`chara`, cardName: `[천하무쌍 · 만개한 벚꽃의 빛] 사쿠라 치요노 오`, title: `치요노 오는 믿음직했으면 좋겠어!`, choice: [`둘 다 즐거웠을 거야`, `처음부터 잘 되는 일은 없어`], effect: [`근성+10`, `스태미나+10`]},
+    {createDate:`2023-05-17`, id:`eu_46_15`, character:`사쿠라 치요노 오`, eventType:`chara`, cardName: `[천하무쌍 · 만개한 벚꽃의 빛] 사쿠라 치요노 오`, title: `카레이스 프렌드`, choice: [`좋은 오락실 친구가 될 것 같군`, `그러면 다시 한번 대결을!`], effect: [`스피드+10`, `스태미나+10`]},
+    {createDate:`2023-05-17`, id:`eu_46_16`, character:`사쿠라 치요노 오`, eventType:`chara`, cardName: `[천하무쌍 · 만개한 벚꽃의 빛] 사쿠라 치요노 오`, title: `텐노상 (가을) 후에・하늘에 손을`, choice: [`마일 노선인 『야스다 기념』`, `중거리 노선인 『타카라즈카 기념』`], effect: [`1위：<br>5개 스테이터스+3<br>스킬 Pt+45<br>시나리오에 따른 NPC의 우정도+4<br>2위：：<br>5개 스테이터스+2<br>스킬 Pt+45<br>시나리오에 따른 NPC의 우정도+4<br>3위：<br>5개 스테이터스+1<br>스킬 Pt+35~45<br>시나리오에 따른 NPC의 우정도`, `1위：<br>5개 스테이터스+3<br>스킬 Pt+45<br>시나리오에 따른 NPC의 우정도+4<br>2위：：<br>5개 스테이터스+2<br>스킬 Pt+45<br>시나리오에 따른 NPC의 우정도+4<br>3위：<br>5개 스테이터스+1<br>스킬 Pt+35~45<br>시나리오에 따른 NPC의 우정도`]},
     //사토노 다이아몬드
     //사토노 크라운
     //세이운 스카이 20
