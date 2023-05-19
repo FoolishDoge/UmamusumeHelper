@@ -412,18 +412,17 @@ const TIP11_DESC = `
 
 const TIP14_DESC = `
 [기본 정보]<br>
-- 2023년 5월 13일 ~ 5월 19일<br>
+- 2023년 6월 9일 ~ 6월 15일<br>
 <table class="desc-table"><tr>
 <td class="td-label">경기장</td><td class="td-label">거리</td><td class="td-label">방향</td><td class="td-label">계절</td><td class="td-label">날씨</td><td class="td-label">상태</td></tr><tr>
-<td class="td-desc">츄코<br>잔디</td><td class="td-desc">1200m<br>단거리</td><td class="td-desc">좌</td><td class="td-desc">겨울</td><td class="td-desc">눈</td><td class="td-desc">포화</td></tr></table>
-- 타츠노미야키 기념과 같은 조건.<br>
-- 종반 코너가 존재하지 않음.<br>
-- 종반 속도 계열기 도주마들 약세. 이 점을 노려 마개조 도주마들을 출전시키는 경우가 발견됨.<br>
-- 종반 경합에 유리한 선행마 강세.<br>
-- ${skill(201581)} 스킬이 핵심픽으로 떠오름. ${skill(200371)}, ${skill(200651)}도 주목받음.<br>
+<td class="td-desc">도쿄<br>더트</td><td class="td-desc">1600m<br>마일</td><td class="td-desc">좌</td><td class="td-desc">겨울</td><td class="td-desc">맑음</td><td class="td-desc">양호</td></tr></table>
+- 페브러리 스테이크스와 같은 조건.<br>
+- 종반 코너가 매우 짧고 최종 직선은 긺.<br>
+- 도주, 선입, 추입 강세.<br>
+- 더트 마장이라 파워가 중요.<br>
 <br>
 [추천 스태미너]<br>
-대충 450 이상.<br>
+대충 601 이상.<br>
 `
 /*
 <table class="desc-table"><tr>
@@ -439,29 +438,29 @@ const TIP14_DESC = `
 <br>
 [추천 육성마]
 <table class="desc-table">
-<tr><td class="td-label">선행</td><td class="td-desc">
-<b>사쿠라 바쿠신 오</b><br>
-<b>카렌쨩</b><br>
-<b>오구리 캡</b><br>
-할로윈 슈퍼 크릭(단거리 마개조)<br>
-엘 콘도르 파사(단거리 마개조)
+<tr><td class="td-label">도주</td><td class="td-desc">
+<b>발렌타인 미호노 부르봉(더트 마개조)</b><br>
+<b>스마트 팔콘</b><br>
+수영복 마루젠스키
 </td></tr>
 <tr><td class="td-label">선입</td><td class="td-desc">
 <b>오구리 캡</b><br>
-에어 그루브<br>
-킹 헤일로
-</td></tr>
-<tr><td class="td-label">도주</td><td class="td-desc">
-<b>스마트 팔콘</b><br>
-엘 콘도르 파사(도주, 단거리 마개조)
+<b>아그네스 디지털</b><br>
+유곽 골드 시티
 </td></tr>
 <tr><td class="td-label">추입</td><td class="td-desc">
-나리타 타이신
+<b>오구리 캡</b><br>
+<b>아그네스 디지털</b>
+</td></tr>
+<tr><td class="td-label">선행</td><td class="td-desc">
+유곽 골드 시티<br>
+엘 콘도르 파사
 </td></tr>
 </table>
 <br>
 [참고용 사이트]<br>
-<a target="_blank" href="https://gall.dcinside.com/mgallery/board/view/?id=umamusu&no=1794037">카프리콘배 공략글 모음</a>
+<a target="_blank" href="https://gall.dcinside.com/mgallery/board/view/?id=umamusu&no=1922987">말딸갤 아쿠아리우스배(더트챔미) 공략글 모음집.ZIP</a><br>
+<a target="_blank" href="https://gall.dcinside.com/mgallery/board/view/?id=umamusu&no=1801037">말딸갤 아쿠아리우스배 마신표</a>
 `;
 
 const TIP15_DESC = `

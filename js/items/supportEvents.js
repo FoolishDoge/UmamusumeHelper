@@ -1,5 +1,5 @@
 // id format: es_{number}
-// current highest number: 462 안심자와 사사미
+// current highest number: 470 박신
 
 const supportEvents = [
     //골드 쉽
@@ -65,6 +65,9 @@ const supportEvents = [
     {createDate:`2022-08-13`, id:`es_48`, character:`니시노 플라워`, eventType:`support`, cardName: `[아직 작은 꽃봉오리지만] 니시노 플라워`, title: `① 내가 할 수 있는 일`, choice: [`(선택지 없음)`], effect: [`체력 최대치+4<br>스킬 Pt+10`]},
     {createDate:`2022-08-13`, id:`es_49`, character:`니시노 플라워`, eventType:`support`, cardName: `[아직 작은 꽃봉오리지만] 니시노 플라워`, title: `② 동경의…`, choice: [`굉장히 어른스러워`, `그, 그러니까…`], effect: [`체력-10<br>지능+20<br>니시노 플라워의 우정도+5`, `지능+5<br>스킬 Pt+15`]},
     {createDate:`2022-08-13`, id:`es_50`, character:`니시노 플라워`, eventType:`support`, cardName: `[아직 작은 꽃봉오리지만] 니시노 플라워`, title: `③ 소중한 것은!`, choice: [`(선택지 없음)`], effect: [`스피드+5<br>지능+10<br>한줄기 질풍 힌트 LV+1~3<br>또는<br>스피드+5<br>지능+10<br>${skill(200362)} 힌트 LV+1`]},
+    {createDate:`2023-05-19`, id:`es_465`, character:`니시노 플라워`, eventType:`support`, cardName: `[작은 컵에 마음을 담아] 니시노 플라워`, title: `① 자그마한 꽃에 단비를`, choice: [`(선택지 없음)`], effect: [`지능+10<br>스킬 Pt+10<br>니시노 플라워의 우정도+5`]},
+    {createDate:`2023-05-19`, id:`es_466`, character:`니시노 플라워`, eventType:`support`, cardName: `[작은 컵에 마음을 담아] 니시노 플라워`, title: `② 저, 엄마가 될래요!`, choice: [`오늘의 너는 완벽했어!`, `네 마음은 모두에게 전해졌을 거야`, `언젠가 그럴 날이 오면 좋겠네`], effect: [`스킬 Pt+15<br>${skill(201052)} 힌트 LV+1<br>니시노 플라워의 우정도+5`, `컨디션 상승<br>상태 이상 치료<br>니시노 플라워의 우정도+10`, `파워+25<br>니시노 플라워의 우정도-5<br>※ 연속 이벤트 종료`]},
+    {createDate:`2023-05-19`, id:`es_467`, character:`니시노 플라워`, eventType:`support`, cardName: `[작은 컵에 마음을 담아] 니시노 플라워`, title: `③ 꽃피는 마음을 담아`, choice: [`(선택지 없음)`], effect: [`체력+20<br>${skill(201341)} 힌트 LV+1<br>`]},
     //다이와 스칼렛
     {createDate:`2022-08-13`, id:`es_51`, character:`다이와 스칼렛`, eventType:`support`, cardName: null, title: `내일은 내가 이길 거야!`, choice: [`항상 이렇게 일찍 와?`, `2등도 정말 대단해`], effect: [`지능+10<br>다이와 스칼렛의 우정도+5`, `컨디션 상승<br>스킬 Pt+15<br>다이와 스칼렛의 우정도+5`]},
     {createDate:`2022-08-13`, id:`es_52`, character:`다이와 스칼렛`, eventType:`support`, cardName: null, title: `이 정도는 괜찮다니까!`, choice: [`테이핑 해줄까?`, `혹시 모르니 양호실에 가자!`], effect: [`다이와 스칼렛의 우정도+5<br>${skill(200562)} 힌트 LV+1`, `체력+20<br>컨디션 상승<br>다이와 스칼렛의 우정도+5`]},
@@ -229,6 +232,9 @@ const supportEvents = [
     {createDate:`2022-08-13`, id:`es_167`, character:`사쿠라 바쿠신 오`, eventType:`support`, cardName: `[빠르다! 맛있다! 빠르다!] 사쿠라 바쿠신 오`, title: `① 바쿠신의 요리!!`, choice: [`(선택지 없음)`], effect: [`스피드+10`]},
     {createDate:`2022-08-13`, id:`es_168`, character:`사쿠라 바쿠신 오`, eventType:`support`, cardName: `[빠르다! 맛있다! 빠르다!] 사쿠라 바쿠신 오`, title: `② 바쿠신의 마음!!`, choice: [`(선택지 없음)`], effect: [`스피드+5<br>파워+5`]},
     {createDate:`2022-08-13`, id:`es_169`, character:`사쿠라 바쿠신 오`, eventType:`support`, cardName: `[빠르다! 맛있다! 빠르다!] 사쿠라 바쿠신 오`, title: `③ 바쿠신의 대성공!!`, choice: [`(선택지 없음)`], effect: [`스피드+10<br>파워+5<br>${skill(200651)} 힌트 LV+1`]},
+    {createDate:`2023-05-19`, id:`es_468`, character:`사쿠라 바쿠신 오`, eventType:`support`, cardName: `[아주 빨리! 제일 빨리! 벚꽃 폭풍!] 사쿠라 바쿠신 오`, title: `① 『꼬마 우마무스메 달리기 대회』`, choice: [`지금은 내버려 두자`, `특훈을 시켜주자!`], effect: [`근성+5<br>${skill(201601)} 힌트 LV+1<br>사쿠라 바쿠신 오의 우정도+5`, `체력 최대치+4<br>스피드+5<br>사쿠라 바쿠신 오의 우정도+5`]},
+    {createDate:`2023-05-19`, id:`es_469`, character:`사쿠라 바쿠신 오`, eventType:`support`, cardName: `[아주 빨리! 제일 빨리! 벚꽃 폭풍!] 사쿠라 바쿠신 오`, title: `② 언니의 뒷모습`, choice: [`알았어, 응원할게`, `도와주고 싶어!`], effect: [`스피드+5<br>근성+10<br>사쿠라 바쿠신 오의 우정도+5`, `스킬 Pt+30<br>※ 연속 이벤트 종료`]},
+    {createDate:`2023-05-19`, id:`es_470`, character:`사쿠라 바쿠신 오`, eventType:`support`, cardName: `[아주 빨리! 제일 빨리! 벚꽃 폭풍!] 사쿠라 바쿠신 오`, title: `③ 당신답게`, choice: [`(선택지 없음)`], effect: [`성공 시 :<br>스피드+15<br>근성+15<br>${skill(202041)} 힌트 LV+3<br>실패 시 :<br>스피드+5<br>근성+5<br>${skill(202042)} 힌트 LV+3<br>`]},    
     //사쿠라 치요노 오
     {createDate:`2022-09-05`, id:`es_170`, character:`사쿠라 치요노 오`, eventType:`support`,  cardName: `[바야흐로 한창인 벚꽃] 사쿠라 치요노 오`, title: `① 꽃 피는, 한 걸음!`, choice: [`(선택지 없음)`], effect: [`스킬 Pt+15`]},
     {createDate:`2022-09-05`, id:`es_171`, character:`사쿠라 치요노 오`, eventType:`support`,  cardName: `[바야흐로 한창인 벚꽃] 사쿠라 치요노 오`, title: `② 꽃 피는, 희망!`, choice: [`이왕이면 마음껏 즐기자!`, `느긋하게 하자`], effect: [`스태미나+15<br>사쿠라 치요노 오의 우정도+5<br>배드 컨디션 회복<br>체력-10<br>근성+15<br>사쿠라 치요노 오의 우정도+5`, `체력+10<br>컨디션 상승<br>사쿠라 치요노 오의 우정도+5`]},
@@ -481,8 +487,8 @@ const supportEvents = [
     {createDate:`2023-01-18`, id:`es_355`, character:`타마모 크로스`, eventType:`support`, cardName: `[붙어보자, 할로윈 나이트!] 타마모 크로스`, title: `① 미라 헌트 ~희극을 타파하라!~`, choice: [`재밌었어!`, `무섭단 느낌은 안 들었는데…`], effect: [`파워+10<br>타마모 크로스의 우정도+5`, `체력+20<br>스피드+10<br>연속 이벤트 종료<br>${skill(200162)} 힌트 LV+1`]},
     {createDate:`2023-01-18`, id:`es_356`, character:`타마모 크로스`, eventType:`support`, cardName: `[붙어보자, 할로윈 나이트!] 타마모 크로스`, title: `② 미라 헌트 ~깨어나라, 사냥꾼!~`, choice: [`(선택지 없음)`], effect: [`스피드+10<br>파워+10`]},
     {createDate:`2023-01-18`, id:`es_357`, character:`타마모 크로스`, eventType:`support`, cardName: `[붙어보자, 할로윈 나이트!] 타마모 크로스`, title: `③ 미라 헌트 ~가장 무서운 스위트 머미~`, choice: [`(선택지 없음)`], effect: [`스피드+5<br>파워+5<br>${skill(201411)} 힌트 LV+1<br>또는<br>스피드+15<br>파워+15<br>${skill(201411)} 힌트 LV+3`]},
-    {createDate:`2023-05-03`, id:`es_462`, character:`타마모 크로스`, eventType:`support`, cardName: `[이게 우리 오사카식 오징어 구이대이!] 타마모 크로스`, title: `① 인정 랩소디`, choice: [`어째서 이렇게 친절한 거야?`, `착하군`], effect: [`컨디션 상승+1<br>스피드+5<br>타마모 크로스의 우정도+5`, `체력+10<br>스태미나+5<br>타마모 크로스의 우정도+5`]},
-    {createDate:`2023-05-03`, id:`es_463`, character:`타마모 크로스`, eventType:`support`, cardName: `[이게 우리 오사카식 오징어 구이대이!] 타마모 크로스`, title: `② 장삿길은 사람의 길`, choice: [`나도 먹어 보고 싶은걸`, `더 많이 팔아 보자`], effect: [`스피드+10<br>스킬 Pt+10<br>${skill(201322)} 힌트 LV+1<br>타마모 크로스의 우정도+5`, `스태미나+10<br>스킬 Pt+10<br>${skill(201392)} 힌트 LV+1<br>타마모 크로스의 우정도+5`]},
+    {createDate:`2023-05-03`, id:`es_463`, character:`타마모 크로스`, eventType:`support`, cardName: `[이게 우리 오사카식 오징어 구이대이!] 타마모 크로스`, title: `① 인정 랩소디`, choice: [`어째서 이렇게 친절한 거야?`, `착하군`], effect: [`컨디션 상승+1<br>스피드+5<br>타마모 크로스의 우정도+5`, `체력+10<br>스태미나+5<br>타마모 크로스의 우정도+5`]},
+    {createDate:`2023-05-03`, id:`es_464`, character:`타마모 크로스`, eventType:`support`, cardName: `[이게 우리 오사카식 오징어 구이대이!] 타마모 크로스`, title: `② 장삿길은 사람의 길`, choice: [`나도 먹어 보고 싶은걸`, `더 많이 팔아 보자`], effect: [`스피드+10<br>스킬 Pt+10<br>${skill(201322)} 힌트 LV+1<br>타마모 크로스의 우정도+5`, `스태미나+10<br>스킬 Pt+10<br>${skill(201392)} 힌트 LV+1<br>타마모 크로스의 우정도+5`]},
     //타이키 셔틀
     {createDate:`2022-08-13`, id:`es_358`, character:`타이키 셔틀`, eventType:`support`, cardName: `[트레센 학원] 타이키 셔틀`, title: `Oh! Tonight Party☆`, hiddenTag: `오 투나잇 파티`, choice: [`멀리 돌아서 전력 대시다!`, `집단을 헤친다는 이미지로 달리자!`], effect: [`체력-10<br>스피드+5<br>파워+10`, `${skill(200582)} 힌트 LV+1`]},
     {createDate:`2022-08-13`, id:`es_359`, character:`타이키 셔틀`, eventType:`support`, cardName: `[트레센 학원] 타이키 셔틀`, title: `Yes! Let's hug☆`, hiddenTag: `예스 렛츠 허그`, choice: [`스피드라고 생각해`, `파워라고 생각해`], effect: [`스피드+10`, `스피드+5<br>파워+5`]},
