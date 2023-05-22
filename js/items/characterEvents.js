@@ -346,7 +346,7 @@ const characterEvents = [
     {createDate:`2022-08-13`, id:`eu_15_6`, character:`미호노 부르봉`, eventType:`chara`, cardName: `[MB-19890425] 미호노 부르봉`, title: `동경의 빛줄기`, choice: [`그래서 그런 디자인으로…`, `동경하는 마음, 이해해!`], effect: [`스피드+20`, `파워+20`]},
     {createDate:`2022-08-13`, id:`eu_15_8`, character:`미호노 부르봉`, eventType:`chara`, cardName: `[MB-19890425] 미호노 부르봉`, title: `미소의 연쇄`, choice: [`다음에는 웃는 얼굴을 보여주자!`, `시험 삼아 다양한 표정을 지어보자!`], effect: [`스태미나+20`, `근성+20`]},
     {createDate:`2022-08-13`, id:`eu_15_14`, character:`미호노 부르봉`, eventType:`chara`, cardName: `[MB-19890425] 미호노 부르봉`, title: `의지할 것은`, choice: [`가까이 있는 친구들한테 부탁한다`, `도구를 사용해서 사면 어떨까`], effect: [`지능+20<br>랜덤으로 <span class='condition-info'>주목받는 신예</span> 획득`, `파워+20<br>랜덤으로 <span class='condition-info'>주목받는 신예</span> 획득`]},
-    {createDate:`2023-05-19`, id:`eu_15_17`, character:`미호노 부르봉`, eventType:`chara`, cardName: `[CODE: 글라사주] 미호노 부르봉`, title: `Not Found`, choice: [`생각한대로 말을 늘어놓자`, `몸짓으로 표현하자!`], effect: [`체력+10<br>스피드+10<br>스태미나+15`, `체력+10<br>${skill(201082)} 힌트 LV+3<br>`]},
+    {createDate:`2023-05-19`, id:`eu_15_17`, character:`미호노 부르봉`, eventType:`chara`, cardName: `[CODE: 글라사주] 미호노 부르봉`, title: `Not Found`, hiddenTag: '낫 파운드', choice: [`생각한대로 말을 늘어놓자`, `몸짓으로 표현하자!`], effect: [`체력+10<br>스피드+10<br>스태미나+15`, `체력+10<br>${skill(201082)} 힌트 LV+3<br>`]},
     //뱀부 메모리
     //보드카 16_15
     {createDate:`2022-08-13`, id:`eu_16_0`, character:`보드카`, eventType:`chara`, cardName: null, title: `'딴 길'로 새보자`, choice: [`오늘은 깔끔하게 포기하자!`, `육감을 각성해 봐!`], effect: [`스피드+10`, `체력+5<br>컨디션 상승`]},
