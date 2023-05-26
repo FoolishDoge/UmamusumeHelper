@@ -596,6 +596,15 @@ let items = [
 		descImg: null,
 		desc: TIP19_DESC,
 	},
+	{	type: 'tip', id: 'tip_20', score: 0, fix: false,
+		createDate: "2023-05-26",
+		titleStyle: null,
+		hiddenTag: null,
+		character: null,
+		title: "팀레이스 스태미나 얼마나 찍어요",
+		descImg: null,
+		desc: TIP20_DESC,
+	},
 ];
 
 
