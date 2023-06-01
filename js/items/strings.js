@@ -410,58 +410,7 @@ const TIP11_DESC = `
 'URA파이널스 출장 결정' 이벤트: 시니어급(3년차) 12월 후반 팬 수 24만 이상일 경우 스킬Pt +30</td></tr></table>
 `;
 
-const TIP14_DESC = `
-[기본 정보]<br>
-- 2023년 6월 9일 ~ 6월 15일<br>
-<table class="desc-table"><tr>
-<td class="td-label">경기장</td><td class="td-label">거리</td><td class="td-label">방향</td><td class="td-label">계절</td><td class="td-label">날씨</td><td class="td-label">상태</td></tr><tr>
-<td class="td-desc">도쿄<br>더트</td><td class="td-desc">1600m<br>마일</td><td class="td-desc">좌</td><td class="td-desc">겨울</td><td class="td-desc">맑음</td><td class="td-desc">양호</td></tr></table>
-- 페브러리 스테이크스와 같은 조건.<br>
-- 종반 코너가 매우 짧고 최종 직선은 긺.<br>
-- 도주, 선입, 추입 강세.<br>
-- 더트 마장이라 파워가 중요.<br>
-<br>
-[추천 스태미너]<br>
-대충 601 이상.<br>
-`
-/*
-<table class="desc-table"><tr>
-<td class="td-blank"></td>
-<td class="td-label">도주</td><td class="td-label">선행</td><td class="td-label">선입</td><td class="td-label">추입</td></tr><tr>
-<td class="td-label" nowrap>2금힐</td>
-<td class="td-desc">700</td><td class="td-desc">800</td><td class="td-desc">760</td><td class="td-desc">780</td></tr>
-<td class="td-label" nowrap>1금힐</td>
-<td class="td-desc">850</td><td class="td-desc">950</td><td class="td-desc">910</td><td class="td-desc">930</td>
-</tr></table>
-*/
-+ `
-<br>
-[추천 육성마]
-<table class="desc-table">
-<tr><td class="td-label">도주</td><td class="td-desc">
-<b>발렌타인 미호노 부르봉(더트 마개조)</b><br>
-<b>스마트 팔콘</b><br>
-수영복 마루젠스키
-</td></tr>
-<tr><td class="td-label">선입</td><td class="td-desc">
-<b>오구리 캡</b><br>
-<b>아그네스 디지털</b><br>
-유곽 골드 시티
-</td></tr>
-<tr><td class="td-label">추입</td><td class="td-desc">
-<b>오구리 캡</b><br>
-<b>아그네스 디지털</b>
-</td></tr>
-<tr><td class="td-label">선행</td><td class="td-desc">
-유곽 골드 시티<br>
-엘 콘도르 파사
-</td></tr>
-</table>
-<br>
-[참고용 사이트]<br>
-<a target="_blank" href="https://gall.dcinside.com/mgallery/board/view/?id=umamusu&no=1922987">말딸갤 아쿠아리우스배(더트챔미) 공략글 모음집.ZIP</a><br>
-<a target="_blank" href="https://gall.dcinside.com/mgallery/board/view/?id=umamusu&no=1801037">말딸갤 아쿠아리우스배 마신표</a>
-`;
+
 
 const TIP15_DESC = `
 1. 핵심은 아오하루 특훈 -> 팀원 스탯 높이기 -> 훈련 레벨 높이기 -> 스탯작.<br>
@@ -635,4 +584,58 @@ const TIP20_DESC = `
 마일 1800m / 3 = 600 + a<br>
 중거리 2400m / 3 = 800 + a<br>
 장거리 3200m / 3 = 1100 + a
+`;
+
+
+const TIP14_DESC = `
+[기본 정보]<br>
+- 2023년 6월 9일 ~ 6월 15일<br>
+<table class="desc-table"><tr>
+<td class="td-label">경기장</td><td class="td-label">거리</td><td class="td-label">방향</td><td class="td-label">계절</td><td class="td-label">날씨</td><td class="td-label">상태</td></tr><tr>
+<td class="td-desc">도쿄<br>더트</td><td class="td-desc">1600m<br>마일</td><td class="td-desc">좌</td><td class="td-desc">겨울</td><td class="td-desc">맑음</td><td class="td-desc">양호</td></tr></table>
+- 페브러리 스테이크스와 같은 조건.<br>
+- 종반 코너가 매우 짧고 최종 직선은 긺.<br>
+- 도주, 선입, 추입 강세.<br>
+- 더트 마장이라 파워가 중요.<br>
+<br>
+[추천 스태미너]<br>
+대충 601 이상(601 이상부터 속도 보너스).<br>
+`
+/*
+<table class="desc-table"><tr>
+<td class="td-blank"></td>
+<td class="td-label">도주</td><td class="td-label">선행</td><td class="td-label">선입</td><td class="td-label">추입</td></tr><tr>
+<td class="td-label" nowrap>2금힐</td>
+<td class="td-desc">700</td><td class="td-desc">800</td><td class="td-desc">760</td><td class="td-desc">780</td></tr>
+<td class="td-label" nowrap>1금힐</td>
+<td class="td-desc">850</td><td class="td-desc">950</td><td class="td-desc">910</td><td class="td-desc">930</td>
+</tr></table>
+*/
++ `
+<br>
+[추천 육성마]
+<table class="desc-table">
+<tr><td class="td-label">도주</td><td class="td-desc">
+<b>발렌타인 미호노 부르봉(더트 마개조)</b><br>
+<b>스마트 팔콘</b><br>
+수영복 마루젠스키
+</td></tr>
+<tr><td class="td-label">선입</td><td class="td-desc">
+<b>오구리 캡</b><br>
+<b>아그네스 디지털</b><br>
+유곽 골드 시티
+</td></tr>
+<tr><td class="td-label">추입</td><td class="td-desc">
+<b>오구리 캡</b><br>
+<b>아그네스 디지털</b>
+</td></tr>
+<tr><td class="td-label">선행</td><td class="td-desc">
+유곽 골드 시티<br>
+엘 콘도르 파사
+</td></tr>
+</table>
+<br>
+[참고용 사이트]<br>
+<a target="_blank" href="https://gall.dcinside.com/mgallery/board/view/?id=umamusu&no=1922987">말딸갤 아쿠아리우스배(더트챔미) 공략글 모음집.ZIP</a><br>
+<a target="_blank" href="https://gall.dcinside.com/mgallery/board/view/?id=umamusu&no=1801037">말딸갤 아쿠아리우스배 마신표</a>
 `;

@@ -1,5 +1,5 @@
 // id format: eu_{charaCode}_{number}
-// current highest charaCode: 46 사쿠라 치요노 오
+// current highest charaCode: 47 메지로 아르당
 
 const characterEvents = [
     //골드 쉽 0_17
@@ -325,7 +325,25 @@ const characterEvents = [
     {createDate:`2022-08-13`, id:`eu_14_18`, character:`메지로 맥퀸`, eventType:`chara`, cardName: `[엔드 오브 스카이] 메지로 맥퀸`, title: `룸메이트인 그 아이 ~그럴 거라 생각했어요~`, choice: [`좋은 친구라고 했어`, `네 꿈을 소중히 하고 싶대`], effect: [`${skill(200482)} 힌트 LV+2`, `스태미나+10<br>스킬 Pt+15`]},
     {createDate:`2022-08-13`, id:`eu_14_19`, character:`메지로 맥퀸`, eventType:`chara`, cardName: `[엔드 오브 스카이] 메지로 맥퀸`, title: `메지로 가문의 그 아이들 ~어려운 선택~`, choice: [`위험하니까 도망쳐야 해`, `머무르면서 기회를 살려야 해`], effect: [`스피드+10<br>파워+10`, `스태미나+7<br>근성+7<br>지능+7`]},
     //메지로 브라이트
-    //메지로 아르당
+    //메지로 아르당 47
+    {createDate:`2023-06-02`, id:`eu_47_0`, character:`메지로 아르당`, eventType:`chara`, cardName: `[클리노클로어・라인] 메지로 아르당`, title: `같이 보는 영화`, choice: [`그럼 나한테 추천해 줄 만한 건 있어?`, `다음엔 참가자를 늘려도 되겠는걸`], effect: [`지능+10`, `스피드+10`]},
+    {createDate:`2023-06-02`, id:`eu_47_1`, character:`메지로 아르당`, eventType:`chara`, cardName: `[클리노클로어・라인] 메지로 아르당`, title: `길, 갈라지고`, choice: [`『국화상』에 출전한다`, `『텐노상(가을)』에 출전한다`], effect: [`스태미나+5<br>다음 목표 레이스가 국화상으로 변경`, `스피드+5<br>다음 목표 레이스가 텐노상(가을)로 변경`]},
+    {createDate:`2023-06-02`, id:`eu_47_2`, character:`메지로 아르당`, eventType:`chara`, cardName: `[클리노클로어・라인] 메지로 아르당`, title: `댄스 레슨`, choice: [`익숙한 댄스를 춰 보자`, `우선… 따라서 춰 보자!`], effect: [`스피드+10`, `파워+10`]},
+    {createDate:`2023-06-02`, id:`eu_47_3`, character:`메지로 아르당`, eventType:`chara`, cardName: `[클리노클로어・라인] 메지로 아르당`, title: `뜻밖의 늠름함?`, choice: [`아르당은 듬직…하구나…!`, `나, 나도 다 먹어야지!`], effect: [`스태미나+10`, `근성+10`]},
+    {createDate:`2023-06-02`, id:`eu_47_4`, character:`메지로 아르당`, eventType:`chara`, cardName: `[클리노클로어・라인] 메지로 아르당`, title: `몸이 멋대로…?`, choice: [`그대로 자유롭게 행동하는 것도 좋잖아`, `오히려 지금이니까 할 수 있는 게 아닐까?`], effect: [`스피드+10<br>스킬 Pt+15`, `${skill(200582)} 힌트 LV+1<br>`]},
+    {createDate:`2023-06-02`, id:`eu_47_5`, character:`메지로 아르당`, eventType:`chara`, cardName: `[클리노클로어・라인] 메지로 아르당`, title: `새해 첫 참배`, choice: [`아르당이 건강히 지낼 수 있도록`, `아르당이 강해질 수 있도록`, `아르당이 행복해질 수 있도록`], effect: [`체력+30`, `5개 스테이터스+5`, `스킬 Pt+35`]},
+    {createDate:`2023-06-02`, id:`eu_47_6`, character:`메지로 아르당`, eventType:`chara`, cardName: `[클리노클로어・라인] 메지로 아르당`, title: `서로 믿는다는 것`, choice: [`승리를 향한 첫걸음이야`, `말았지만?`], effect: [`스피드+20`, `근성+20`]},
+    {createDate:`2023-06-02`, id:`eu_47_7`, character:`메지로 아르당`, eventType:`chara`, cardName: `[클리노클로어・라인] 메지로 아르당`, title: `소녀의 대화`, choice: [`…내성이 부족했던 모양이야`, `묘사를 잘해서 너무 감정 이입이 됐나 봐`], effect: [`근성+5<br>컨디션 상승`, `지능+10`]},
+    {createDate:`2023-06-02`, id:`eu_47_8`, character:`메지로 아르당`, eventType:`chara`, cardName: `[클리노클로어・라인] 메지로 아르당`, title: `신년 포부`, choice: [`얼굴 그림 맞추기`, `떡국을 먹으러 간다`, `연날리기`], effect: [`스피드+10`, `체력+20`, `스킬 Pt+20`]},
+    {createDate:`2023-06-02`, id:`eu_47_9`, character:`메지로 아르당`, eventType:`chara`, cardName: `[클리노클로어・라인] 메지로 아르당`, title: `아르당의 딴짓 강의・변칙편`, choice: [`다 함께 사이좋게 나누자!`, `일단 도전해 보는 거야!`], effect: [`체력+10`, `5개 스테이터스 중 랜덤으로+10`]},
+    {createDate:`2023-06-02`, id:`eu_47_10`, character:`메지로 아르당`, eventType:`chara`, cardName: `[클리노클로어・라인] 메지로 아르당`, title: `아르당의 딴짓 강의・초급편`, choice: [`귀여웠어`, `딴 길로 새니까 즐겁네`], effect: [`파워+10`, `지능+10`]},
+    {createDate:`2023-06-02`, id:`eu_47_11`, character:`메지로 아르당`, eventType:`chara`, cardName: `[클리노클로어・라인] 메지로 아르당`, title: `아르당의 딴짓 강의・추억편`, choice: [`앞으로도 다양한 곳에 들르고 싶다`, `언제든 어떤 곳이든 함께할게!`, `좋은 휴식이 된 것 같아`], effect: [`스피드+10`, `지능+10`, `스태미나+10`]},
+    {createDate:`2023-06-02`, id:`eu_47_12`, character:`메지로 아르당`, eventType:`chara`, cardName: `[클리노클로어・라인] 메지로 아르당`, title: `엄마 떼러 갔다 언니 붙여 온다`, choice: [`언니 같은 부분이 있긴 하지`, `아기가 되는 것보다야 나을걸…`], effect: [`스피드+10`, `스태미나+10`]},
+    {createDate:`2023-06-02`, id:`eu_47_13`, character:`메지로 아르당`, eventType:`chara`, cardName: `[클리노클로어・라인] 메지로 아르당`, title: `여름 합숙(2년 차)에서`, choice: [`『힘을 불어넣자. 불마왕 고기 증량 마파두부』`, `『근성을 올려라. 맵부심 국물 없는 탄탄면』`], effect: [`파워+10`, `근성+10`]},
+    {createDate:`2023-06-02`, id:`eu_47_14`, character:`메지로 아르당`, eventType:`chara`, cardName: `[클리노클로어・라인] 메지로 아르당`, title: `역사를 돌이켜보고`, choice: [`파란만장한 걸 읽고 싶어`, `초보자를 위한 걸 읽고 싶어`, `아르당이 좋아하는 걸 읽고 싶어`], effect: [`체력+25`, `${skill(201532)} 힌트 LV+3<br>`, `체력+10<br>랜덤으로 <span class='condition-info'>애교○</span> 획득`]},
+    {createDate:`2023-06-02`, id:`eu_47_15`, character:`메지로 아르당`, eventType:`chara`, cardName: `[클리노클로어・라인] 메지로 아르당`, title: `유리의 왈츠`, choice: [`확실히 반짝이는 춤이었어`, `다음부터는 미리 의논해 주면 좋겠어`], effect: [`파워+10<br>근성+10`, `지능+20`]},
+    {createDate:`2023-06-02`, id:`eu_47_16`, character:`메지로 아르당`, eventType:`chara`, cardName: `[클리노클로어・라인] 메지로 아르당`, title: `좋은 약은 입에 쓰다`, choice: [`과잉 섭취가 될 거야`, `많이 먹어서 몸을 강하게 만들자`], effect: [`체력+10<br>스킬 Pt+5`, `성공 시 :<br>체력+30<br>스킬 Pt+10<br>실패 시 :<br>체력+30<br>스킬 Pt+10<br>스피드-5<br>파워+5<br><span class='condition-info'>살찜 주의</span> 획득`]},
+    {createDate:`2023-06-02`, id:`eu_47_17`, character:`메지로 아르당`, eventType:`chara`, cardName: `[클리노클로어・라인] 메지로 아르당`, title: `추억이 빛나는 한낮`, choice: [`흐뭇해지는걸`, `모두의 언니 같아`], effect: [`스태미나+20<br>랜덤으로 <span class='condition-info'>수완가</span> 획득`, `지능+20<br>랜덤으로 <span class='condition-info'>수완가</span> 획득`]},
     //메지로 파머
     //미스터 시비
     //미호노 부르봉 15_17
