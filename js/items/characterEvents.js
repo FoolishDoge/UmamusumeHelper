@@ -483,7 +483,7 @@ const characterEvents = [
     {createDate:`2022-08-13`, id:`eu_21_1`, character:`슈퍼 크릭`, eventType:`chara`, cardName: null, title: `꾹꾹 마사지!`, choice: [`이왕이면 몸이 따뜻할 때 하는 게 좋아`, `나는 상관없어`], effect: [`근성+10`, `스피드+5<br>지능+5`]},
     {createDate:`2022-08-13`, id:`eu_21_2`, character:`슈퍼 크릭`, eventType:`chara`, cardName: null, title: `댄스 레슨`, choice: [`좋아, 하자!`, `자율 연습에 방해가 될 테고…`], effect: [`스태미나+10`, `스피드+10`]},
     {createDate:`2022-08-13`, id:`eu_21_3`, character:`슈퍼 크릭`, eventType:`chara`, cardName: null, title: `미아를 찾아라!`, choice: [`따로따로 찾아보자`, `미아 방송으로 찾자`], effect: [`체력-10<br>스태미나+10<br>파워+10`, `지능+10`]},
-    {createDate:`2022-08-13`, id:`eu_21_4`, character:`슈퍼 크릭`, eventType:`chara`, cardName: null, title: `밤의 달콤한 유혹`, choice: [`괜찮을 거야`, `참는 게 좋지 않을까…`], effect: [`체력+30<br>스피드+10<br>스킬 Pt+10<br>랜덤으로 컨디션 하락<br><span class='condition-info'>살찜 주의</span> 획득`, `체력+10<br>스피드+5<br>스킬 Pt+5`]},
+    {createDate:`2022-08-13`, id:`eu_21_4`, character:`슈퍼 크릭`, eventType:`chara`, cardName: null, title: `밤의 달콤한 유혹`, choice: [`괜찮을 거야`, `참는 게 좋지 않을까…`], effect: [`체력+30<br>스피드+10<br>스킬 Pt+10<br>랜덤으로 컨디션 하락<br>랜덤으로 <span class='condition-info'>살찜 주의</span> 획득`, `체력+10<br>스피드+5<br>스킬 Pt+5`]},
     {createDate:`2022-08-13`, id:`eu_21_5`, character:`슈퍼 크릭`, eventType:`chara`, cardName: null, title: `별을 본다면 둘이서`, choice: [`별이 예뻤으니까`, `아닌데…`], effect: [`파워+5<br>근성+5`, `스태미나+10`]},
     {createDate:`2022-08-13`, id:`eu_21_6`, character:`슈퍼 크릭`, eventType:`chara`, cardName: null, title: `불안감을 씻어내고`, choice: [`그렇지 않아!`, `내 실력이 부족해서 불안했어`], effect: [`파워+10`, `스피드+5<br>근성+5`]},
     {createDate:`2022-08-13`, id:`eu_21_7`, character:`슈퍼 크릭`, eventType:`chara`, cardName: null, title: `새해 첫 참배`, choice: [`성모 각성`, `기백 작렬`, `집안일 향상`], effect: [`체력+30`, `5개 스테이터스+5`, `스킬 Pt+35`]},
@@ -805,7 +805,7 @@ const characterEvents = [
     {createDate:`2022-08-13`, id:`eu_35_13`, character:`타이키 셔틀`, eventType:`chara`, cardName: null, title: `신년 포부`, choice: [`스피드를 늘려 가자`, `쉴 때는 확실히 쉬자`, `무기를 계속 단련하자`], effect: [`스피드+10`, `체력+20`, `스킬 Pt+20`]},
     {createDate:`2022-08-13`, id:`eu_35_14`, character:`타이키 셔틀`, eventType:`chara`, cardName: null, title: `여름 합숙(2년 차)에서`, choice: [`그럼 바다 트레이닝으로 할까`, `얼른 트레이닝을 끝내자!`], effect: [`파워+10`, `근성+10`]},
     {createDate:`2022-08-13`, id:`eu_35_15`, character:`타이키 셔틀`, eventType:`chara`, cardName: `[와일드 프론티어] 타이키 셔틀`, title: `질 수 없는 싸움이, 있는 거예YO`, choice: [`음식에 대한 집념이 아닐까`, `카우걸 정신일까`], effect: [`지능+20`, `스태미나+20`]},
-    {createDate:`2022-08-13`, id:`eu_35_16`, character:`타이키 셔틀`, eventType:`chara`, cardName: null, title: `특급 riddle편?`, hiddenTag: `리들`, choice: [`혹시 그림의 떡?`, `케이크가 아닌 거 같은데?`], effect: [`컨디션 상승<br>스태미나+5<br>파워+10<br>랜덤으로 컨디션 하락`, `지능+10`]},
+    {createDate:`2022-08-13`, id:`eu_35_16`, character:`타이키 셔틀`, eventType:`chara`, cardName: null, title: `특급 riddle편?`, hiddenTag: `리들`, choice: [`혹시 그림의 떡?`, `케이크가 아닌 거 같은데?`], effect: [`성공 시 :<br>컨디션 상승<br>스태미나+5<br>파워+10<br><br>실패 시 :<br>컨디션 하락`, `지능+10`]},
     {createDate:`2022-08-13`, id:`eu_35_17`, character:`타이키 셔틀`, eventType:`chara`, cardName: null, title: `함께 돌아가YO!`, choice: [`그래, 지루하게 해서 미안`, `침 나왔는데?`], effect: [`컨디션 상승<br>스피드+5`, `컨디션 상승<br>스태미나+5`]},
     //토센 조던 36
     {createDate:`2023-03-19`, id:`eu_36_0`, character:`토센 조던`, eventType:`chara`, cardName: null, title: `갸루, 그림을 말하다`, choice: [`좋은 감성을 지녔구나!`, `독창적이군…`], effect: [`스피드+10`, `파워+10`]},

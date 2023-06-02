@@ -1,5 +1,5 @@
 // id format: es_{number}
-// current highest number: 470 박신
+// current highest number: 475 아이네스 후진
 
 const supportEvents = [
     //골드 쉽
