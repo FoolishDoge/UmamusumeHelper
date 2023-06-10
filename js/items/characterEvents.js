@@ -1,5 +1,5 @@
 // id format: eu_{charaCode}_{number}
-// current highest charaCode: 47 메지로 아르당
+// current highest charaCode: 48 어드마이어 베가
 
 const characterEvents = [
     //골드 쉽 0_17
@@ -606,6 +606,23 @@ const characterEvents = [
     //야마닌 제퍼
     //야에노 무테키
     //어드마이어 베가
+    {createDate:`2023-06-10`, id:`eu_48_0`, character:`어드마이어 베가`, eventType:`chara`, cardName: `[Starry Nocturne] 어드마이어 베가`, title: `구름 너머, 하늘 저편`, choice: [`도움이 돼서 다행이네`, `관측하는 요령을 알려 주면 어떨까?`], effect: [`파워+10<br>스킬 Pt+15`, `${skill(200632)} 힌트 LV+1<br>`]},
+    {createDate:`2023-06-10`, id:`eu_48_1`, character:`어드마이어 베가`, eventType:`chara`, cardName: `[Starry Nocturne] 어드마이어 베가`, title: `그건, 당연한 거잖아`, choice: [`알아! 『멋있지』!`, `여긴 내게 맡겨`], effect: [`파워+10`, `지능+10`]},
+    {createDate:`2023-06-10`, id:`eu_48_2`, character:`어드마이어 베가`, eventType:`chara`, cardName: `[Starry Nocturne] 어드마이어 베가`, title: `꿈에 그리던 광경`, choice: [`하지만 즐거웠지`, `좋은 자매로군`], effect: [`스태미나+10`, `스피드+10`]},
+    {createDate:`2023-06-10`, id:`eu_48_3`, character:`어드마이어 베가`, eventType:`chara`, cardName: `[Starry Nocturne] 어드마이어 베가`, title: `단 하나의 사명`, choice: [`나도 가능한 한 함께 노력할게`, `유일한 건 아니라고 생각해`], effect: [`파워+10<br>근성+10<br>랜덤으로 <span class='condition-info'>애교○</span> 획득`, `스피드+20<br>랜덤으로 <span class='condition-info'>애교○</span> 획득`]},
+    {createDate:`2023-06-10`, id:`eu_48_4`, character:`어드마이어 베가`, eventType:`chara`, cardName: `[Starry Nocturne] 어드마이어 베가`, title: `댄스 레슨`, choice: [`그럼 내가 대신 말해 줄게`, `해 볼 가치는 있어`], effect: [`지능+10`, `스피드+10`]},
+    {createDate:`2023-06-10`, id:`eu_48_5`, character:`어드마이어 베가`, eventType:`chara`, cardName: `[Starry Nocturne] 어드마이어 베가`, title: `마음이여, 전해져라`, choice: [`모델 일도 할 수 있을 것 같은데`, `완성본이 기대되는걸`], effect: [`파워+20`, `스태미나+20`]},
+    {createDate:`2023-06-10`, id:`eu_48_6`, character:`어드마이어 베가`, eventType:`chara`, cardName: `[Starry Nocturne] 어드마이어 베가`, title: `말+…`, choice: [`그럼 맛있게 구워 줘야겠네!`, `배운 게 많은 하루였어`], effect: [`체력+10`, `스피드+10`]},
+    {createDate:`2023-06-10`, id:`eu_48_7`, character:`어드마이어 베가`, eventType:`chara`, cardName: `[Starry Nocturne] 어드마이어 베가`, title: `말없이 통하는`, choice: [`운명적인 무언가가 있는 걸지도`, `좋은 친구로군`], effect: [`지능+20`, `스피드+20`]},
+    {createDate:`2023-06-10`, id:`eu_48_8`, character:`어드마이어 베가`, eventType:`chara`, cardName: `[Starry Nocturne] 어드마이어 베가`, title: `보들보들 심미안`, choice: [`하지만 아기 양에게 도움이 된 건 사실이야`, `다른 일에도 응용할 수 있지 않을까?`], effect: [`지능+10`, `파워+10`]},
+    {createDate:`2023-06-10`, id:`eu_48_9`, character:`어드마이어 베가`, eventType:`chara`, cardName: `[Starry Nocturne] 어드마이어 베가`, title: `새해 첫 참배`, choice: [`(최대한 건강하게 지낼 수 있기를!)`, `(레이스에서 잔뜩 활약할 수 있기를)`, `(수많은 즐거움을 발견할 수 있기를)`], effect: [`체력+30`, `5개 스테이터스+5`, `스킬 Pt+35`]},
+    {createDate:`2023-06-10`, id:`eu_48_10`, character:`어드마이어 베가`, eventType:`chara`, cardName: `[Starry Nocturne] 어드마이어 베가`, title: `신년 포부`, choice: [`기운이 날 것 같은 따뜻한 간식`, `릴랙스할 수 있을 것 같은 인스턴트 수프`, `머리가 맑아질 것 같은 디저트`], effect: [`스피드+10`, `체력+20`, `스킬 Pt+20`]},
+    {createDate:`2023-06-10`, id:`eu_48_11`, character:`어드마이어 베가`, eventType:`chara`, cardName: `[Starry Nocturne] 어드마이어 베가`, title: `아야베 씨의 샌드위치`, choice: [`무난한 재료를 추천한다`, `진미(고기)를 추천해 보자!`, `진미(생선)를 추천해 보자!`, `진미(채소)를 추천해 보자!`], effect: [`${skill(200362)} 힌트 LV+2<br>`, `대성공 시 :<br>컨디션 상승<br>파워+15<br>${skill(200642)} 힌트 LV+2<br>성공 시 :<br>컨디션 상승<br>파워+10<br>실패 시 :<br>컨디션 하락<br>파워+10`, `대성공 시 :<br>컨디션 상승<br>지능+15<br>${skill(201102)} 힌트 LV+2<br>성공 시 :<br>컨디션 상승<br>지능+10<br>실패 시 :<br>컨디션 하락<br>지능+10`, `대성공 시 :<br>컨디션 상승<br>스피드+15<br>${skill(200442)} 힌트 LV+2<br>성공 시 :<br>컨디션 상승<br>스피드+10<br>실패 시 :<br>컨디션 하락<br>스피드+10`]},
+    {createDate:`2023-06-10`, id:`eu_48_12`, character:`어드마이어 베가`, eventType:`chara`, cardName: `[Starry Nocturne] 어드마이어 베가`, title: `여동생계 룸메이트는 못 당한다`, choice: [`쇠뿔도 단김에 빼랬어!`, `힘을 빌려 보자`], effect: [`스피드+10`, `체력+5<br>파워+5`]},
+    {createDate:`2023-06-10`, id:`eu_48_13`, character:`어드마이어 베가`, eventType:`chara`, cardName: `[Starry Nocturne] 어드마이어 베가`, title: `여름 합숙(2년 차)에서`, choice: [`힘이 날 것 같은! 『BLT 샌드위치』`, `기운이 날 것 같은! 『오렌지 샌드위치』`], effect: [`파워+10`, `근성+10`]},
+    {createDate:`2023-06-10`, id:`eu_48_14`, character:`어드마이어 베가`, eventType:`chara`, cardName: `[Starry Nocturne] 어드마이어 베가`, title: `이제서야, 받아들이는 것`, choice: [`다음 '오페라'도 기대된다!`, `그 꽃, 어디에 장식할까?`, `눈시울이 뜨거워지네…`], effect: [`근성+10`, `스태미나+10`, `지능+10`]},
+    {createDate:`2023-06-10`, id:`eu_48_15`, character:`어드마이어 베가`, eventType:`chara`, cardName: `[Starry Nocturne] 어드마이어 베가`, title: `푹신푹신 디저트`, choice: [`과식하지 않게 조심해`, `(이대로 마음껏 먹게 놔두자)`], effect: [`체력+10<br>스킬 Pt+5`, `성공 시 :<br>체력+30<br>스킬 Pt+10<br>실패 시 :<br>체력+30<br>스킬 Pt+10<br>스피드-5<br>파워+5<br><span class='condition-info'>살찜 주의</span> 획득`]},
+    {createDate:`2023-06-10`, id:`eu_48_16`, character:`어드마이어 베가`, eventType:`chara`, cardName: `[Starry Nocturne] 어드마이어 베가`, title: `필살・아야베 씨`, choice: [`이것이 '해결사'의 힘…!`, `끈기가 필요한 일이니까`], effect: [`체력-10<br>파워+20`, `근성+10`]},
     //에어 그루브 27
     {createDate:`2022-08-13`, id:`eu_27_0`, character:`에어 그루브`, eventType:`chara`, cardName: null, title: `'여제'와 '제왕'`, choice: [`댄스 게임`, `카드 게임`], effect: [`파워+10`, `지능+10`]},
     {createDate:`2022-08-13`, id:`eu_27_1`, character:`에어 그루브`, eventType:`chara`, cardName: null, title: `'여제'와 '황제'`, choice: [`네 무기로 모두를 매료시키자!`, `나는 우주 규모의 트레이너가 된다!`], effect: [`${skill(200512)} 힌트 LV+1`, `컨디션 상승<br>스킬 Pt+15`]},

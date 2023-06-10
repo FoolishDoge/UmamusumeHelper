@@ -605,6 +605,7 @@ let items = [
 		descImg: null,
 		desc: TIP20_DESC,
 	},
+
 ];
 
 
