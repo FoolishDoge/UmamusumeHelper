@@ -1,5 +1,5 @@
 // id format: eu_{charaCode}_{number}
-// current highest charaCode: 48 어드마이어 베가
+// current highest charaCode: 50 마치카네 탄호이저
 
 const characterEvents = [
     //골드 쉽 0_17
@@ -209,7 +209,23 @@ const characterEvents = [
     {createDate:`2022-09-16`, id:`eu_9_17`, character:`마야노 탑건`, eventType:`chara`, cardName: `[선라이트 부케] 마야노 탑건`, title: `Meant To Be♪`, hiddenTag: `민트 투 비`, choice: [`다시 한 번 기회를 줄래?`, `당연히 가장 소중하지`], effect: [`${skill(200472)} 힌트 LV+2`, `${skill(200372)} 힌트 LV+2`]},
     {createDate:`2022-09-16`, id:`eu_9_18`, character:`마야노 탑건`, eventType:`chara`, cardName: `[선라이트 부케] 마야노 탑건`, title: `With My Whole Heart！`, hiddenTag: `위드 마이 홀 하트`, choice: [`안심해, 금방 기운을 차릴 테니까`, `항상 의지하고 있는걸`], effect: [`스태미나+10<br>스킬 Pt+15<br>랜덤으로 <span class='condition-info'>훈련 능숙○</span> 획득`, `체력+15<br>랜덤으로 <span class='condition-info'>훈련 능숙○</span> 획득`]},
     {createDate:`2022-09-16`, id:`eu_9_19`, character:`마야노 탑건`, eventType:`chara`, cardName: `[선라이트 부케] 마야노 탑건`, title: `You're My Sunshine☆`, hiddenTag: `유어 유얼 마이 선샤인`, choice: [`마야는 어떤 옷을 입어도 가장 반짝거려`, `다음에도 섭외받을 수 있도록, 열심히 하자!`], effect: [`스태미나+20`, `파워+20`]},
-    //마치카네 탄호이저
+    //마치카네 탄호이저 50
+    {createDate:`2023-06-16`, id:`eu_50_0`, character:`마치카네 탄호이저`, eventType:`chara`, cardName: `[팡파카 틸토트] 마치카네 탄호이저`, title: `『평범』을 넘어`, choice: [`자신감 있게 하고 와`, `같이 기합을 넣자!`], effect: [`파워+20`, `근성+20`]},
+    {createDate:`2023-06-16`, id:`eu_50_1`, character:`마치카네 탄호이저`, eventType:`chara`, cardName: `[팡파카 틸토트] 마치카네 탄호이저`, title: `기다리고 기다리던 런치`, choice: [`과감하게 매점으로 돌아가자!`, `복이 오기를 잠자코 기다리자`], effect: [`컨디션 상승<br>스태미나+10`, `${skill(200472)} 힌트 LV+1<br>`]},
+    {createDate:`2023-06-16`, id:`eu_50_2`, character:`마치카네 탄호이저`, eventType:`chara`, cardName: `[팡파카 틸토트] 마치카네 탄호이저`, title: `나도 할 때는……?!`, choice: [`신경 쓰지 않아도 돼`, `레이스 결과로 보답해줘!`], effect: [`스태미나+10`, `지능+10`]},
+    {createDate:`2023-06-16`, id:`eu_50_3`, character:`마치카네 탄호이저`, eventType:`chara`, cardName: `[팡파카 틸토트] 마치카네 탄호이저`, title: `대접의 반대`, choice: [`앞으로 써먹으면 돼!`, `무리하지 마`], effect: [`근성+10`, `스태미나+10`]},
+    {createDate:`2023-06-16`, id:`eu_50_4`, character:`마치카네 탄호이저`, eventType:`chara`, cardName: `[팡파카 틸토트] 마치카네 탄호이저`, title: `댄스 레슨`, choice: [`놀이와 댄스를 합쳐볼까?`, `댄스 교실로 댄스 스킬 업!`], effect: [`근성+10`, `지능+10`]},
+    {createDate:`2023-06-16`, id:`eu_50_5`, character:`마치카네 탄호이저`, eventType:`chara`, cardName: `[팡파카 틸토트] 마치카네 탄호이저`, title: `마치탄의 초대 모자`, choice: [`그럼 하나, 좋은 걸로 부탁할게`, `네가 또 미아가 돼도 안심이네`], effect: [`스태미나+5<br>지능+5`, `스피드+10`]},
+    {createDate:`2023-06-16`, id:`eu_50_6`, character:`마치카네 탄호이저`, eventType:`chara`, cardName: `[팡파카 틸토트] 마치카네 탄호이저`, title: `목표는! 믿음직한 누나`, choice: [`언니 역할 제대로 했어`, `오히려 반대…`], effect: [`파워+10`, `근성+10`]},
+    {createDate:`2023-06-16`, id:`eu_50_7`, character:`마치카네 탄호이저`, eventType:`chara`, cardName: `[팡파카 틸토트] 마치카네 탄호이저`, title: `사랑은 고등어 구이의 맛`, choice: [`왠지 맛있어 보이는 얘기였군`, `빠르게 해결했네!`], effect: [`스태미나+10`, `컨디션 상승<br>스피드+5`]},
+    {createDate:`2023-06-16`, id:`eu_50_8`, character:`마치카네 탄호이저`, eventType:`chara`, cardName: `[팡파카 틸토트] 마치카네 탄호이저`, title: `새해 첫 참배`, choice: [`우선 체력을 보존하자!`, `모처럼이니까 풀코스!`, `신춘, 적 동향 시찰!`], effect: [`체력+30`, `5개 스테이터스+5`, `스킬 Pt+35`]},
+    {createDate:`2023-06-16`, id:`eu_50_9`, character:`마치카네 탄호이저`, eventType:`chara`, cardName: `[팡파카 틸토트] 마치카네 탄호이저`, title: `신년 포부`, choice: [`달려라 달려, 연날리기 대결!`, `버티면 승리, 죽방울 대결!`, `웃으면 패배, 얼굴 그림 맞추기 대결!`], effect: [`근성+25`, `체력+20`, `스킬 Pt+20`]},
+    {createDate:`2023-06-16`, id:`eu_50_10`, character:`마치카네 탄호이저`, eventType:`chara`, cardName: `[팡파카 틸토트] 마치카네 탄호이저`, title: `신부님 마치탄과 결혼식`, choice: [`과연 신부님!`, `꼭 맏언니 같아`], effect: [`지능+20`, `스태미나+10<br>스킬 Pt+15`]},
+    {createDate:`2023-06-16`, id:`eu_50_11`, character:`마치카네 탄호이저`, eventType:`chara`, cardName: `[팡파카 틸토트] 마치카네 탄호이저`, title: `실력파 마스코트 아가씨, 탄생`, choice: [`『평범』의 껍질을 깼구나!`, `이젠 지명도를 높이는 것만 남았군`], effect: [`스태미나+10<br>파워+10<br>랜덤으로 <span class='condition-info'>주목받는 신예</span> 획득`, `근성+10<br>지능+10<br>랜덤으로 <span class='condition-info'>주목받는 신예</span> 획득`]},
+    {createDate:`2023-06-16`, id:`eu_50_12`, character:`마치카네 탄호이저`, eventType:`chara`, cardName: `[팡파카 틸토트] 마치카네 탄호이저`, title: `언제나, 언제까지나!`, choice: [`너다운 멋진 대접이었어`, `두근두근거리는 평범함이군!`, `앞으로도 변하지 말아줬으면 해`], effect: [`지능+10`, `스피드+10`, `근성+10`]},
+    {createDate:`2023-06-16`, id:`eu_50_13`, character:`마치카네 탄호이저`, eventType:`chara`, cardName: `[팡파카 틸토트] 마치카네 탄호이저`, title: `여름 합숙(2년 차)에서`, choice: [`그럼, 섬을 한 바퀴 헤엄쳐서 불끈불끈!`, `그거라면, 한계 마라톤으로 정신통일`], effect: [`파워+10`, `근성+10`]},
+    {createDate:`2023-06-16`, id:`eu_50_14`, character:`마치카네 탄호이저`, eventType:`chara`, cardName: `[팡파카 틸토트] 마치카네 탄호이저`, title: `정식 파티`, choice: [`너무 많이 먹지 않게 조심해`, `실컷 먹고 와`], effect: [`체력+10<br>스킬 Pt+5`, `성공 시 :<br>체력+30<br>스킬 Pt+10<br>실패 시 :<br>체력+30<br>스킬 Pt+10<br>스피드-5<br>파워+5<br><span class='condition-info'>살찜 주의</span> 획득`]},
+    {createDate:`2023-06-16`, id:`eu_50_15`, character:`마치카네 탄호이저`, eventType:`chara`, cardName: `[팡파카 틸토트] 마치카네 탄호이저`, title: `파바밧 해결!`, choice: [`네 방식으로 계속해 보자`, `수리를 부탁해 보자`], effect: [`파워+10`, `체력+5<br>스킬 Pt+15`]},    
     //마치카네 후쿠키타루 10_32
     {createDate:`2022-08-13`, id:`eu_10_0`, character:`마치카네 후쿠키타루`, eventType:`chara`, cardName: null, title: `감사의 참배`, choice: [`알겠어`, `사실 저기 있어`], effect: [`파워+5<br>근성+5`, `스피드+5<br>스태미나+5`]},
     {createDate:`2022-08-13`, id:`eu_10_1`, character:`마치카네 후쿠키타루`, eventType:`chara`, cardName: null, title: `댄스 레슨`, choice: [`좋아, 안 돼도 본전이지!`, `활발하게 움직여 봐!`], effect: [`파워+10`, `지능+10`]},
@@ -767,7 +783,24 @@ const characterEvents = [
     {createDate:`2023-03-28`, id:`eu_33_16`, character:`카와카미 프린세스`, eventType:`chara`, cardName: null, title: `전직 골목대장의 아우라`, choice: [`만난 김에 가르쳐 주자`, `이 기세로 동네 제패다!`], effect: [`스태미나+5<br>스킬 Pt+15`, `파워+10`]},
     //케이에스 미라클
     //코파노 리키
-    //키타산 블랙
+    //키타산 블랙 49
+    {createDate:`2023-06-16`, id:`eu_49_0`, character:`키타산 블랙`, eventType:`chara`, cardName: `[금상・금화가마] 키타산 블랙`, title: `귀신 쯤이야!`, choice: [`행사날이 기대되는걸!`, `무서워하면서도 열심히 한 성과가 있군!`], effect: [`스피드+5<br>스태미나+5`, `근성+10`]},
+    {createDate:`2023-06-16`, id:`eu_49_1`, character:`키타산 블랙`, eventType:`chara`, cardName: `[금상・금화가마] 키타산 블랙`, title: `귀여움의 재능!?`, choice: [`떠올려 봐, 우마돌은…`, `이쪽에 팬서비스 해 주세요~!`], effect: [`스태미나+10<br>지능+10<br>랜덤으로 <span class='condition-info'>애교○</span> 획득`, `근성+20<br>랜덤으로 <span class='condition-info'>애교○</span> 획득`]},
+    {createDate:`2023-06-16`, id:`eu_49_2`, character:`키타산 블랙`, eventType:`chara`, cardName: `[금상・금화가마] 키타산 블랙`, title: `긴급 개점! 키타짱 마사지`, choice: [`발을 부탁한다`, `허리를 부탁한다`, `어깨를 부탁한다`], effect: [`스피드+20`, `체력+10<br>근성+10`, `${skill(200352)} 힌트 LV+2<br>`]},
+    {createDate:`2023-06-16`, id:`eu_49_3`, character:`키타산 블랙`, eventType:`chara`, cardName: `[금상・금화가마] 키타산 블랙`, title: `당신의 목소리라면`, choice: [`누군가 아는 사람하고 목소리가 닮은걸까?`, `엔카 발성 덕분일지도 몰라`], effect: [`지능+10`, `파워+10`]},
+    {createDate:`2023-06-16`, id:`eu_49_4`, character:`키타산 블랙`, eventType:`chara`, cardName: `[금상・금화가마] 키타산 블랙`, title: `댄스 레슨`, choice: [`추임새를 살리는 방법을 알아보자`, `쿨해지는 방법을 물어볼까?`], effect: [`근성+10`, `지능+10`]},
+    {createDate:`2023-06-16`, id:`eu_49_5`, character:`키타산 블랙`, eventType:`chara`, cardName: `[금상・금화가마] 키타산 블랙`, title: `마녀와 키타산`, choice: [`나쁜 마녀의 괴롭힘을 견디고 있나…!?`, `스윕 토쇼에게 미움받고 싶지 않은 거구나`], effect: [`스태미나+10`, `컨디션 상승<br>스피드+5`]},
+    {createDate:`2023-06-16`, id:`eu_49_6`, character:`키타산 블랙`, eventType:`chara`, cardName: `[금상・금화가마] 키타산 블랙`, title: `살짝 달콤한 추억`, choice: [`추억의 맛이구나?`, `가족을 정말 좋아하는구나`], effect: [`스태미나+10`, `근성+5<br>지능+5`]},
+    {createDate:`2023-06-16`, id:`eu_49_7`, character:`키타산 블랙`, eventType:`chara`, cardName: `[금상・금화가마] 키타산 블랙`, title: `새해 첫 참배`, choice: [`눈 가리고 얼굴 만들기`, `겨울 수영`, `새해 등산`], effect: [`체력+30`, `5개 스테이터스+5`, `스킬 Pt+35`]},
+    {createDate:`2023-06-16`, id:`eu_49_8`, character:`키타산 블랙`, eventType:`chara`, cardName: `[금상・금화가마] 키타산 블랙`, title: `선배하고!`, choice: [`병합 훈련 상대를 부탁하고 싶어!`, `같이 밥 먹으러 갈래?`], effect: [`스피드+10`, `체력+10`]},
+    {createDate:`2023-06-16`, id:`eu_49_9`, character:`키타산 블랙`, eventType:`chara`, cardName: `[금상・금화가마] 키타산 블랙`, title: `슬쩍 드라마 출연도 노리고`, choice: [`근성과 상냥함이 넘치는 아이거든`, `그렇게 얻은 스킬로 미래의 은막 스타가…`], effect: [`스피드+5<br>근성+10`, `${skill(200332)} 힌트 LV+1<br>`]},
+    {createDate:`2023-06-16`, id:`eu_49_10`, character:`키타산 블랙`, eventType:`chara`, cardName: `[금상・금화가마] 키타산 블랙`, title: `신년 포부`, choice: [`『순식간에 떠난 그 사람』`, `아버지의 노래를 1시간 메들리`, `『나는 바다야, 엄마』`], effect: [`스피드+25`, `체력+20`, `스킬 Pt+20`]},
+    {createDate:`2023-06-16`, id:`eu_49_11`, character:`키타산 블랙`, eventType:`chara`, cardName: `[금상・금화가마] 키타산 블랙`, title: `여름 합숙(2년 차)에서`, choice: [`골드 쉽의 전대미문의 행동`, `보드카의 반골 정신`], effect: [`파워+10`, `근성+10`]},
+    {createDate:`2023-06-16`, id:`eu_49_12`, character:`키타산 블랙`, eventType:`chara`, cardName: `[금상・금화가마] 키타산 블랙`, title: `와 보세요 보고 가세요!`, choice: [`멋진 보답인걸!`, `손님 모으기, 재미있었어`], effect: [`스태미나+10`, `지능+10`]},
+    {createDate:`2023-06-16`, id:`eu_49_13`, character:`키타산 블랙`, eventType:`chara`, cardName: `[금상・금화가마] 키타산 블랙`, title: `음지에서 양지에서`, choice: [`뒤쪽 장식끈 색에도 의미가 있어?`, `그 『소원』, 나와 함께 이루자!`], effect: [`스피드+10<br>지능+10`, `파워+20`]},
+    {createDate:`2023-06-16`, id:`eu_49_14`, character:`키타산 블랙`, eventType:`chara`, cardName: `[금상・금화가마] 키타산 블랙`, title: `주인공은 여러분 축제 어기여차!`, choice: [`그래, 즐거웠지!`, `전부 키타산 덕분이야`, `힘든 일도 있었던 것 같은데…?`], effect: [`지능+10`, `파워+10`, `스피드+10`]},
+    {createDate:`2023-06-16`, id:`eu_49_15`, character:`키타산 블랙`, eventType:`chara`, cardName: `[금상・금화가마] 키타산 블랙`, title: `축제를 먹어라!`, choice: [`제로 칼로리가 되진 않을 거야`, `마음껏 즐겨 보자!`], effect: [`체력+10<br>스킬 Pt+5`, `성공 시 :<br>체력+30<br>스킬 Pt+10<br>실패 시 :<br>체력+30<br>스킬 Pt+10<br>스피드-5<br>파워+5<br><span class='condition-info'>살찜 주의</span> 획득`]},
+    {createDate:`2023-06-16`, id:`eu_49_16`, character:`키타산 블랙`, eventType:`chara`, cardName: `[금상・금화가마] 키타산 블랙`, title: `포겟 미 낫!`, choice: [`포기하지 말고 다시 한번 교내를 돌자!`, `다른 사람의 도움이 필요할지도…`], effect: [`스태미나+20`, `스피드+20`]},
     //킹 헤일로 34
     {createDate:`2022-08-13`, id:`eu_34_0`, character:`킹 헤일로`, eventType:`chara`, cardName: `[킹 오브 에메랄드] 킹 헤일로`, title: `나에게 가장 어울리는 옷`, choice: [`그 옷을 입고 많이 이기자!`, `승부복, 잘 어울려!`], effect: [`스피드+10<br>근성+10`, `파워+20`]},
     {createDate:`2022-08-13`, id:`eu_34_1`, character:`킹 헤일로`, eventType:`chara`, cardName: `[킹 오브 에메랄드] 킹 헤일로`, title: `달리는 것만이 전부가 아니야`, choice: [`달리기 말고 다른 트레이닝에 전념하자!`, `실수했어?`], effect: [`스태미나+20`, `스피드+10<br>파워+10`]},

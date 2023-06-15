@@ -245,6 +245,14 @@ function createSkillItem(inner, item){
 	inner += `<span class="${item['titleStyle']}">[${item['grade']}] ${item['title']}</span>`;
 	inner += inputFixIcon(item['fix'], item['id']);
 	inner += `</summary><div class='desc'>`;
+
+	// 1주년 패치 관련
+	let dateFirstAniv = new Date('2023-06-15');
+	let curItemDate = new Date(item.createDate);
+	if(curItemDate < dateFirstAniv ){
+		inner += `<span style="font-size:12px; color:red">※ 이 항목은 1주년 패치 이전에 작성되었음.</span><br><br>`;
+	}
+
 	if(item['descImg']){
 		let imgUrl = "./imgs/desc/" + item['descImg'];
 		inner += `<img src="${imgUrl}" class="desc-img">`;
@@ -297,6 +305,14 @@ function createTipItem(inner, item){
 	inner += `<span class="${item['titleStyle']}">${item['title']}</span>`;
 	inner += inputFixIcon(item['fix'], item['id']);
 	inner += `</summary><div class='desc'>`;
+
+	// 1주년 패치 관련
+	let dateFirstAniv = new Date('2023-06-15');
+	let curItemDate = new Date(item.createDate);
+	if(curItemDate < dateFirstAniv ){
+		inner += `<span style="font-size:12px; color:red">※ 이 항목은 1주년 패치 이전에 작성되었음.</span><br><br>`;
+	}
+
 	if(item['descImg']){
 		let imgUrl = "./imgs/desc/" + item['descImg'];
 		inner += `<img src="${imgUrl}" class="desc-img">`;

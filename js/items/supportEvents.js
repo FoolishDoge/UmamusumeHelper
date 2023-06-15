@@ -1,5 +1,5 @@
 // id format: es_{number}
-// current highest number: 475 아이네스 후진
+// current highest number: 486 사쿠라 바쿠신 오
 
 const supportEvents = [
     //골드 쉽
@@ -41,6 +41,11 @@ const supportEvents = [
     {createDate:`2023-03-10`, id:`es_425`, character:`나리타 타이신`, eventType:`support`, cardName: `[고집불통 마르크트] 나리타 타이신`, title: `② 솔직 트레이닝!`, choice: [`좋은 친구인걸`, `이번에는 친구들이 솔직해질 때야!`], effect: [`파워+10<br>나리타 타이신의 우정도+5<br>${skill(201142)} 힌트 LV+1`, `스태미나+10<br>나리타 타이신의 우정도+5<br>${skill(201202)} 힌트 LV+1`]},
     {createDate:`2023-03-10`, id:`es_426`, character:`나리타 타이신`, eventType:`support`, cardName: `[고집불통 마르크트] 나리타 타이신`, title: `③ 똑바로 전해져라, 이 마음!`, choice: [`(선택지 없음)`], effect: [`성공 시 :<br>스태미나+10<br>지능+10<br>${skill(200621)} 힌트 LV+3실패 시 :<br>스태미나+5<br>지능+5<br>${skill(200622)} 힌트 LV+3`]},
     //나리타 탑 로드
+    {createDate:`2023-06-16`, id:`es_476`, character:`나리타 탑 로드`, eventType:`support`, cardName: `[분홍색 백 샷] 나리타 탑 로드`, title: `① 반 친구의 위기라면…!`, choice: [`(선택지 없음)`], effect: [`컨디션 상승<br>체력-10<br>스피드+7<br>스태미나+7<br>지능+7<br>${skill(201532)} 힌트 LV+1<br>나리타 탑 로드의 우정도+5`]},
+    {createDate:`2023-06-16`, id:`es_477`, character:`나리타 탑 로드`, eventType:`support`, cardName: `[분홍색 백 샷] 나리타 탑 로드`, title: `② 기대를 짊어지고!`, choice: [`모의 레이스에서 활약하길 기대할게!`, `하지만 너무 무리는 하지 말고`], effect: [`체력-10<br>스피드+15<br>스태미나+15<br>${skill(201212)} 힌트 LV+1<br>나리타 탑 로드의 우정도+5`, `체력+20<br>스킬 Pt+10<br>나리타 탑 로드의 우정도+5`]},
+    {createDate:`2023-06-16`, id:`es_478`, character:`나리타 탑 로드`, eventType:`support`, cardName: `[분홍색 백 샷] 나리타 탑 로드`, title: `③ 라이벌이기에 잘 알아`, choice: [`(선택지 없음)`], effect: [`체력-10<br>스피드+15<br>스태미나+20<br>스킬 Pt+20<br>양호한 경기장의 귀신○+1<br>나리타 탑 로드의 우정도+5`]},
+    {createDate:`2023-06-16`, id:`es_479`, character:`나리타 탑 로드`, eventType:`support`, cardName: null, title: `빈틈없이, 점검!`, choice: [`일단 쉬는 게 어때?`, `서둘러 마치자!`], effect: [`체력+20<br>나리타 탑 로드의 우정도+5`, `체력-10<br>스피드+25<br>나리타 탑 로드의 우정도+5`]},
+    {createDate:`2023-06-16`, id:`es_480`, character:`나리타 탑 로드`, eventType:`support`, cardName: null, title: `열심히, 노력!`, choice: [`연습만이 살길이지!`, `일부러 곡의 템포를 올려 보면 어떨까?`], effect: [`스태미나+10<br>나리타 탑 로드의 우정도+5`, `${skill(200722)} 힌트 LV+1<br>나리타 탑 로드의 우정도+5`]},
     //나이스 네이처
     {createDate:`2022-08-13`, id:`es_30`, character:`나이스 네이처`, eventType:`support`, cardName: null, title: `(맛있는) 참견`, choice: [`무를 갈아서 같이 먹으면 페이스 업!`, `기숙사에서 튀김 파티다!`], effect: [`${skill(200462)} 힌트 LV+1<br>나이스 네이처의 우정도+5`, `컨디션 상승<br>체력 최대치+4<br>나이스 네이처의 우정도+5`]},
     {createDate:`2022-08-13`, id:`es_31`, character:`나이스 네이처`, eventType:`support`, cardName: null, title: `(하냐도) 어울리지 않아`, choice: [`힐링하는 것도 중요하다고 전한다`, `현명하게 가게에 들어가는 방법을 전한다`], effect: [`체력+20<br>나이스 네이처의 우정도+5`, `체력+10<br>지능+5<br>나이스 네이처의 우정도+5`]},
@@ -158,6 +163,8 @@ const supportEvents = [
     {createDate:`2022-11-05`, id:`es_108`, character:`메지로 라이언`, eventType:`support`,  cardName: `[상쾌! 위닝 샷!] 메지로 라이언`, title: `① 허둥지둥 오후의 차!`, choice: [`너희가 나누어 먹으면 다 먹을 수 있어!`, `테이크아웃할래?`], effect: [`체력+10<br>컨디션 상승`, `${skill(201532)} 힌트 LV+3<br>지능+10<br>스킬 Pt+15<br>※ 다음 이벤트가 발생하지 않음`]},
     {createDate:`2022-11-05`, id:`es_109`, character:`메지로 라이언`, eventType:`support`,  cardName: `[상쾌! 위닝 샷!] 메지로 라이언`, title: `② 용솟음쳐라 홈런 더비!`, choice: [`(선택지 없음)`], effect: [`파워+10<br>근성+5`]},
     {createDate:`2022-11-05`, id:`es_110`, character:`메지로 라이언`, eventType:`support`,  cardName: `[상쾌! 위닝 샷!] 메지로 라이언`, title: `③ 불굴의 버닝 하트!!`, choice: [`(선택지 없음)`], effect: [`${skill(200731)} 힌트 LV+1<br>파워+10<br>근성+5`]},
+    {createDate:`2023-06-16`, id:`es_481`, character:`메지로 라이언`, eventType:`support`, cardName: `[고동이 빨라지는 쿨다운] 메지로 라이언`, title: `① 모든 길은 근육으로 통한다!`, choice: [`(선택지 없음)`], effect: [`스태미나+10<br>메지로 라이언의 우정도+5`]},
+    {createDate:`2023-06-16`, id:`es_482`, character:`메지로 라이언`, eventType:`support`, cardName: `[고동이 빨라지는 쿨다운] 메지로 라이언`, title: `② 천 리 길도 근력 운동부터!`, choice: [`너의 프레젠테이션 능력도 한몫했어`, `근력 운동에 열중하면 되겠군!`], effect: [`체력+25<br>메지로 라이언의 우정+5`, `스태미나+10<br>파워+5<br>${skill(201382)} 힌트 LV+<br>메지로 라이언의 우정도+5`]},
     //메지로 맥퀸
     {createDate:`2022-08-13`, id:`es_111`, character:`메지로 맥퀸`, eventType:`support`, cardName: null, title: `몸무게를 유지하기 위해`, choice: [`레이스가 끝날 때까지 열심히 버티자`, `먹은 만큼 달리면 문제없어`], effect: [`체력-10<br>스태미나+15<br>메지로 맥퀸의 우정도+5`, `체력 최대치+4<br>스태미나+5<br>메지로 맥퀸의 우정도+5`]},
     {createDate:`2022-08-13`, id:`es_112`, character:`메지로 맥퀸`, eventType:`support`, cardName: null, title: `정점에 다다르기 위해`, choice: [`스태미나와 근성을 키우자`, `스타트 대시를 의식하자`], effect: [`스태미나+5<br>근성+5<br>메지로 맥퀸의 우정도+5`, `${skill(200532)} 힌트 LV+1<br>메지로 맥퀸의 우정도+5`]},
@@ -165,6 +172,11 @@ const supportEvents = [
     {createDate:`2022-08-13`, id:`es_114`, character:`메지로 맥퀸`, eventType:`support`, cardName: `[『에이스』로서] 메지로 맥퀸`, title: `② '기대'는 호의`, choice: [`(선택지 없음)`], effect: [`컨디션 상승<br>스태미너+10`]},
     {createDate:`2022-08-13`, id:`es_115`, character:`메지로 맥퀸`, eventType:`support`, cardName: `[『에이스』로서] 메지로 맥퀸`, title: `③ '기대'에 부응하다`, choice: [`(선택지 없음)`], effect: [`체력-10<br>스태미너+10<br>${skill(200741)} 힌트 LV+3<br>또는<br>체력-10<br>${skill(200742)} 힌트 LV+1`]},
     //메지로 브라이트
+    {createDate:`2023-06-16`, id:`es_487`, character:`메지로 브라이트`, eventType:`support`, cardName: `[리틀・바이・리틀] 메지로 브라이트`, title: `① 저, 찾을게요~`, choice: [`안심할 수 있는 장소에 있을지도…?`, `즐거운 장소에 있을지도…?`], effect: [`스태미나+10<br>컨디션 상승<br>메지로 브라이트의 우정도+10`, `체력+10<br>지능+10<br>메지로 브라이트의 우정도+10`]},
+    {createDate:`2023-06-16`, id:`es_488`, character:`메지로 브라이트`, eventType:`support`, cardName: `[리틀・바이・리틀] 메지로 브라이트`, title: `② 저, 연기할게요~`, choice: [`(선택지 없음)`], effect: [`스태미나+15<br>${skill(202022)} 힌트 LV+1<br>메지로 브라이트의 우정도+5`]},
+    {createDate:`2023-06-16`, id:`es_489`, character:`메지로 브라이트`, eventType:`support`, cardName: `[리틀・바이・리틀] 메지로 브라이트`, title: `③ 저, 지지 않아요~`, choice: [`(선택지 없음)`], effect: [`스태미나+15<br>${skill(201211)} 힌트 LV+1<br>메지로 브라이트의 우정도+5`]},
+    {createDate:`2023-06-16`, id:`es_490`, character:`메지로 브라이트`, eventType:`support`, cardName: `[리틀・바이・리틀] 메지로 브라이트`, title: `한가로이, 느긋하게.`, choice: [`걱정되는 부분에 집중해 보면 어떨까?`, `전체를 대강 외워보면 어떨까?`], effect: [`스태미나+15<br>근성+5<br>메지로 브라이트의 우정도+5`, `스피드+15<br>파워+5<br>메지로 브라이트의 우정도+5`]},
+    {createDate:`2023-06-16`, id:`es_491`, character:`메지로 브라이트`, eventType:`support`, cardName: `[리틀・바이・리틀] 메지로 브라이트`, title: `확실히, 차분히.`, choice: [`연습만이 살길이지!`, `안 다치게 조심해`], effect: [`체력+10<br>${skill(200742)} 힌트 LV+1<br>메지로 브라이트의 우정도+5`, `지능+20<br>메지로 브라이트의 우정도+5`]},
     //메지로 아르당
     {createDate:`2022-11-05`, id:`es_116`, character:`메지로 아르당`, eventType:`support`,  cardName: `[그 마음에 휘몰아치다] 메지로 아르당`, title: `① 다 함께 만드는 특제 드링크♪`, choice: [`그만큼 둘을 좋아한다는 뜻이지`, `라이벌을 잘 체크하고 있군`], effect: [`성공 시 :<br>체력+10<br>스피드+5<br>지능+5<br>스킬 Pt+10<br>실패 시 :<br>지능+10`, `컨디션 상승<br>스피드+10`]},
     {createDate:`2022-11-05`, id:`es_117`, character:`메지로 아르당`, eventType:`support`,  cardName: `[그 마음에 휘몰아치다] 메지로 아르당`, title: `② 서고 싶은 장소는 오직 하나`, choice: [`(선택지 없음)`], effect: [`체력+30<br>컨디션 상승`]},
@@ -235,6 +247,8 @@ const supportEvents = [
     {createDate:`2023-05-19`, id:`es_468`, character:`사쿠라 바쿠신 오`, eventType:`support`, cardName: `[아주 빨리! 제일 빨리! 벚꽃 폭풍!] 사쿠라 바쿠신 오`, title: `① 『꼬마 우마무스메 달리기 대회』`, choice: [`지금은 내버려 두자`, `특훈을 시켜주자!`], effect: [`근성+5<br>${skill(201601)} 힌트 LV+1<br>사쿠라 바쿠신 오의 우정도+5`, `체력 최대치+4<br>스피드+5<br>사쿠라 바쿠신 오의 우정도+5`]},
     {createDate:`2023-05-19`, id:`es_469`, character:`사쿠라 바쿠신 오`, eventType:`support`, cardName: `[아주 빨리! 제일 빨리! 벚꽃 폭풍!] 사쿠라 바쿠신 오`, title: `② 언니의 뒷모습`, choice: [`알았어, 응원할게`, `도와주고 싶어!`], effect: [`스피드+5<br>근성+10<br>사쿠라 바쿠신 오의 우정도+5`, `스킬 Pt+30<br>※ 연속 이벤트 종료`]},
     {createDate:`2023-05-19`, id:`es_470`, character:`사쿠라 바쿠신 오`, eventType:`support`, cardName: `[아주 빨리! 제일 빨리! 벚꽃 폭풍!] 사쿠라 바쿠신 오`, title: `③ 당신답게`, choice: [`(선택지 없음)`], effect: [`성공 시 :<br>스피드+15<br>근성+15<br>${skill(202041)} 힌트 LV+3<br>실패 시 :<br>스피드+5<br>근성+5<br>${skill(202042)} 힌트 LV+3<br>`]},    
+    {createDate:`2023-06-16`, id:`es_485`, character:`사쿠라 바쿠신 오`, eventType:`support`, cardName: `[울려 퍼져라! 모범적인 인사!] 사쿠라 바쿠신 오`, title: `① 인사 돌진 운동입니다!!`, choice: [`보디랭귀지로 표현해 본다든가`, `멋진 슬로건을 생각해 본다든가`], effect: [`체력-10<br>스피드+30<br>사쿠라 바쿠신 오의 우정도+5`, `체력-10<br>스킬 Pt+30<br>사쿠라 바쿠신 오의 우정도+5`]},
+    {createDate:`2023-06-16`, id:`es_486`, character:`사쿠라 바쿠신 오`, eventType:`support`, cardName: `[울려 퍼져라! 모범적인 인사!] 사쿠라 바쿠신 오`, title: `② 인사는 대단해!!`, choice: [`(선택지 없음)`], effect: [`체력-10<br>파워+10<br>${skill(201611)} 힌트 LV+2<br>사쿠라 바쿠신 오의 우정도+5`]},
     //사쿠라 치요노 오
     {createDate:`2022-09-05`, id:`es_170`, character:`사쿠라 치요노 오`, eventType:`support`,  cardName: `[바야흐로 한창인 벚꽃] 사쿠라 치요노 오`, title: `① 꽃 피는, 한 걸음!`, choice: [`(선택지 없음)`], effect: [`스킬 Pt+15`]},
     {createDate:`2022-09-05`, id:`es_171`, character:`사쿠라 치요노 오`, eventType:`support`,  cardName: `[바야흐로 한창인 벚꽃] 사쿠라 치요노 오`, title: `② 꽃 피는, 희망!`, choice: [`이왕이면 마음껏 즐기자!`, `느긋하게 하자`], effect: [`스태미나+15<br>사쿠라 치요노 오의 우정도+5<br>배드 컨디션 회복<br>체력-10<br>근성+15<br>사쿠라 치요노 오의 우정도+5`, `체력+10<br>컨디션 상승<br>사쿠라 치요노 오의 우정도+5`]},
@@ -247,6 +261,9 @@ const supportEvents = [
     {createDate:`2022-08-13`, id:`es_177`, character:`사토노 다이아몬드`, eventType:`support`, cardName: `[그 뒷모습을 넘어서] 사토노 다이아몬드`, title: `③ 당신에게만큼은 절대로`, choice: [`소등시간까지 지켜본다`, `살며시 그 장소에서 떠난다`], effect: [`체력-20<br>스태미나+30<br>${skill(200441)} 힌트 LV+1<br>사토노 다이아몬드의 우정도+5`, `체력+5<br>근성+5<br>사토노 다이아몬드의 우정도+5<br>${skill(200441)} 힌트 LV+1`]},
     {createDate:`2022-08-13`, id:`es_178`, character:`사토노 다이아몬드`, eventType:`support`, cardName: null, title: `새로운 거, 정말 좋아해요!`, choice: [`찻잔으로 마시게?`, `멜론 소다는 처음이야?`], effect: [`근성+10<br>사토노 다이아몬드의 우정도+5`, `체력-10<br>스태미나+20<br>사토노 다이아몬드의 우정도+5`]},
     {createDate:`2022-08-13`, id:`es_179`, character:`사토노 다이아몬드`, eventType:`support`, cardName: null, title: `어려운 일, 정말 좋아해요!`, choice: [`좋아, 해보자!`, `우선 어떤 건지 한번 보고 결정하자`], effect: [`스태미나+5<br>근성+10<br>사토노 다이아몬드의 우정도+5`, `사토노 다이아몬드의 우정도+5<br>${skill(200851)} 힌트 LV+1`]},
+    {createDate:`2023-06-16`, id:`es_492`, character:`사토노 다이아몬드`, eventType:`support`, cardName: `[SPECIAL DREAMERS!!] 사토노 다이아몬드`, title: `① 보이지 않는 헌신`, choice: [`(선택지 없음)`], effect: [`지능+10<br>${skill(201631)} 힌트 LV+1<br>사토노 다이아몬드의 우정도+5`]},
+    {createDate:`2023-06-16`, id:`es_493`, character:`사토노 다이아몬드`, eventType:`support`, cardName: `[SPECIAL DREAMERS!!] 사토노 다이아몬드`, title: `② 말로는 부족하다`, choice: [`(선택지 없음)`], effect: [`스피드+10<br>지능+10<br>사토노 다이아몬드의 우정도+5`]},
+    {createDate:`2023-06-16`, id:`es_494`, character:`사토노 다이아몬드`, eventType:`support`, cardName: `[SPECIAL DREAMERS!!] 사토노 다이아몬드`, title: `③ 모두와 꾸는 꿈`, choice: [`(선택지 없음)`], effect: [`성공 시 :<br>지능+30<br>${skill(201691)} 힌트 LV+3<br>사토노 다이아몬드의 우정도+5<br>실패 시 :<br>지능+10<br>${skill(201692)} 힌트 LV+3<br>사토노 다이아몬드의 우정도+5`]},
     //사토노 크라운
     //세이운 스카이
     {createDate:`2022-08-13`, id:`es_180`, character:`세이운 스카이`, eventType:`support`, cardName: null, title: `느긋하게 모집, 고양이 잡는 법`, choice: [`양지에서 기다린다`, `전력으로 쫓아간다!`], effect: [`체력+10<br>지능+5<br>세이운 스카이의 우정도+5`, `체력-10<br>스피드+15<br>스태미나+5<br>세이운 스카이의 우정도+5`]},
@@ -352,7 +369,9 @@ const supportEvents = [
     {createDate:`2023-04-22`, id:`es_445`, character:`어드마이어 베가`, eventType:`support`, cardName: `[밤에는 새벽, 하늘엔 서성] 어드마이어 베가`, title: `② 아야베 씨는 타협하지 않는다`, choice: [`(선택지 없음)`], effect: [`파워+7<br>지능+7`]},
     {createDate:`2023-04-22`, id:`es_446`, character:`어드마이어 베가`, eventType:`support`, cardName: `[밤에는 새벽, 하늘엔 서성] 어드마이어 베가`, title: `③ 아야베 씨는 굴하지 않는다`, choice: [`나도 온천에 들어갈 걸 그랬어`, `사실은 모델이 적성에 맞는 거 아니야?`], effect: [`파워+15<br>지능+10<br>${skill(202021)} 힌트 LV+1<br>어드마이어 베가의 우정도+5`, `스피드+15<br>스킬 Pt+30<br>어드마이어 베가의 우정도+5`]},
     {createDate:`2023-04-22`, id:`es_447`, character:`어드마이어 베가`, eventType:`support`, cardName: null, title: `고고한 케페우스`, choice: [`먼저 조금씩 정리해두자!`, `그녀의 생각을 존중하자`], effect: [`${skill(200861)} 힌트 LV+1<br>어드마이어 베가의 우정도+5`, `지능+10<br>어드마이어 베가의 우정도+5`]},
-    {createDate:`2023-04-22`, id:`es_448`, character:`어드마이어 베가`, eventType:`support`, cardName: null, title: `서투른 트리앙글룸`, choice: [`힘을 모으자!`, `우선은 진정시키자`], effect: [`파워+15<br>어드마이어 베가의 우정도+5`, `체력+10<br>어드마이어 베가의 우정도+5`]},    
+    {createDate:`2023-04-22`, id:`es_448`, character:`어드마이어 베가`, eventType:`support`, cardName: null, title: `서투른 트리앙글룸`, choice: [`힘을 모으자!`, `우선은 진정시키자`], effect: [`파워+15<br>어드마이어 베가의 우정도+5`, `체력+10<br>어드마이어 베가의 우정도+5`]},
+    {createDate:`2023-06-16`, id:`es_483`, character:`어드마이어 베가`, eventType:`support`, cardName: `[일등성을 향해서] 어드마이어 베가`, title: `① 함께 있는 행복`, choice: [`다행이구나`, `다정하구나`], effect: [`체력+20<br>스피드+10<br>어드마이어 베가의 우정도+5`, `<span class='condition-info'>훈련 능숙○</span> 상태 획득<br>지능+10<br>어드마이어 베가의 우정도+5`]},
+    {createDate:`2023-06-16`, id:`es_484`, character:`어드마이어 베가`, eventType:`support`, cardName: `[일등성을 향해서] 어드마이어 베가`, title: `② 계속 나아가는 일등성`, choice: [`(선택지 없음)`], effect: [`${skill(201552)} 힌트 LV+2<br>근성+10<br>어드마이어 베가의 우정도+5`]},
     //에어 그루브
     {createDate:`2022-08-13`, id:`es_245`, character:`에어 그루브`, eventType:`support`, cardName: null, title: `날렵하고도 강인하게`, choice: [`혼자서 이걸 옮기려면 힘이 들겠어`, `이 양을 다 치우려면 상당히 서둘러야겠는데…`], effect: [`파워+15<br>에어 그루브의 우정도+5`, `스피드+10<br>스태미나+5<br>에어 그루브의 우정도+5`]},
     {createDate:`2022-08-13`, id:`es_246`, character:`에어 그루브`, eventType:`support`, cardName: null, title: `준엄하고도 은혜롭게`, choice: [`항상 엄하게 대해?`, `상대를 잘 관찰하고 있구나`], effect: [`에어 그루브의 우정도+5<br>${skill(200502)} 힌트 LV+1`, `체력+10<br>지능+10`]},
