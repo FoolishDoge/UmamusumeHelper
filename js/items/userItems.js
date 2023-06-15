@@ -542,15 +542,6 @@ let items = [
 		descImg: null,
 		desc: "<b>단거리를 제외하고</b> 경기장이 직선구간보다 코너구간이 더 많기도 하고, 코너에서 발동하는 것이 보다 효과적일 때가 많기 때문에 일반적으론 코너 스킬이 우선된다.<br>다만, 경기장의 모양에 따라 코너 스킬의 활용도가 떨어지는 경우가 있으므로 챔피언스미팅용 말을 육성하는 경우 경기장의 구조를 파악하고 찍도록 하자. (예컨대, 첫 번째 코너가 스타트 지점에서 멀어 코너 구간에 진입했을 때 이미 가속이 끝나는 경기장이라면, 첫 코너에서 터지거나 혹은 터질 가능성이 있는 코너 가속 스킬의 가치는 크게 떨어진다)",
 	},
-	{	type: 'tip', id: 'tip_14', score: 0, fix: false,
-		createDate: "2023-03-28",
-		titleStyle: null,
-		hiddenTag: null,
-		character: null,
-		title: "챔피언스미팅 아쿠아리우스배 정보",
-		descImg: null,
-		desc: TIP14_DESC,
-	},
 	{	type: 'tip', id: 'tip_15', score: 0, fix: false,
 		createDate: "2022-12-19",
 		titleStyle: null,
@@ -605,7 +596,28 @@ let items = [
 		descImg: null,
 		desc: TIP20_DESC,
 	},
+	{	type: 'tip', id: 'tip_21', score: 0, fix: true,
+		createDate: "2023-06-16",
+		titleStyle: null,
+		hiddenTag: null,
+		character: null,
+		title: "메이크 어 뉴트랙 팁 모음",
+		descImg: null,
+		desc: TIP21_DESC,
+	},
 
+
+
+
+	{	type: 'tip', id: 'tip_14', score: 0, fix: false,
+	createDate: "2023-03-28",
+	titleStyle: null,
+	hiddenTag: null,
+	character: null,
+	title: "챔피언스미팅 아쿠아리우스배 정보",
+	descImg: null,
+	desc: TIP14_DESC,
+},
 ];
 
 

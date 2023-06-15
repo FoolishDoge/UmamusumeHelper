@@ -586,6 +586,45 @@ const TIP20_DESC = `
 장거리 3200m / 3 = 1100 + a
 `;
 
+const TIP21_DESC = `
+[뉴트랙 레이스 족보]<br>
+※ 레이스 보너스, 스킬 힌트, 칭호로 얻는 보너스 스탯 등의 효율을 최대화하는 루트임.<br>
+<a target="_blank" href="https://gall.dcinside.com/mgallery/board/view/?id=umamusu&no=2036494">말딸갤 뉴트랙 출주표 정리</a><br>
+<br>
+[상점 아이템의 가치]<br>
+<a target="_blank" href="https://www.inven.co.kr/webzine/news/?news=285622&site=uma">인벤 상점 아이템 공략</a><br>
+※ 요약하자면 다음과 같다.<br>
+1. 체력 회복 아이템, 스탯 증가 아이템, 트레이닝 효율 상승 아이템, 훈련 Lv을 높여주는 탄원서가 육성의 핵심이다. 괜찮은 조건의 훈련이 가능할 때, 메가폰과 앵클을 중첩 사용하여 최대한 많은 스탯을 얻어야 한다.<br>
+2. 레이스 효율 상승 아이템은 G1 레이스 위주로, 팬 수 증가 아이템은 G1 중에서도 획득 팬 수가 많은 레이스 위주로 사용한다.<br>
+3. <span class='condition-info'>수완가</span> 등의 굿 컨디션 획득 아이템, 3연속 레이스 출주시 발생할 수 있는 <span class='condition-info'>피부 트러블</span> 제거 아이템도 매우 중요하다.<br>
+4. 빠른 우정작은 여전히 중요하니 게임 초반 당근 BBQ 세트는 반드시 구입한다.<br>
+5. 리셋 휘슬은 한 두개 정도 가지고 있어야 중요한 순간에 우정트레이닝이 안 뜨는 참사를 막을 수 있다.<br>
+6. 시나리오 특성상 파워, 지능을 얻기가 힘드므로, 파워, 지능 아이템의 가치가 더 높으며, 지능 훈련의 경우 지능 앵클 아이템이 없기 때문에 다른 훈련보다 탄원서가 중요하다.<br>
+7. 최대체력과 체력을 소량 올려주는 에너지 드링크 MAX도 효율이 좋은데, 체력이 0인 상태로 레이스 출주시 나쁜 이벤트가 발생할 확률이 높아 이를 방지하는데 쓰인다.<br>
+<br>
+[기타 팁]<br>
+- '니이가타' 경기장은 도주마에게 매우 불리하다. 선입으로 각질을 바꿔 나가는 것이 좋다.<br>
+- 무조건 레이스에 많이 나가는 건 효율이 나쁘다. 일섭에서 검증받은 족보를 따라 예약된 레이스에 나가되, 상황에 따라 조금씩 변형을 가하면 된다.<br>
+- 탄원서가 중요한 것은 맞으나, 코인이 부족할 경우 다른 핵심 아이템보다 우선순위는 낮다. 대부분의 턴을 레이스로 소모하기 때문에 훈련에 사용되는 턴은 얼마 되지 않고, 합숙 기간에는 어차피 훈련레벨이 5로 고정되기 때문이다.<br>
+- 최종 클라이맥스 레이스는 스탯 보상이 매우 높다. 편자 망치를 사용 가능하므로 레이스 보상 35% 증가 편자 망치 세 개는 마지막에 가지고 있어야 한다.<br>
+- 훈련에 임하는 턴 자체가 매우 적다보니 특정 훈련 전용인 앵클 아이템은 많이 쓰이지 않는다. 무지성 구매는 자제하자. 메가폰은 항상 부족하니 무조건 풀매수 하자.<br>
+- 고유기 레벨업 이벤트 발동 조건은 다음과 같다.<br>
+<table class="desc-table">
+<tr><td class="td-label">시점</td><td class="td-label">이사장 우정도</td><td class="td-label">팬 수</td></tr>
+<tr><td class="td-desc">주니어 말</td><td class="td-desc">19 이상</td><td class="td-desc">5000</td></tr>
+<tr><td class="td-desc">클래식 말</td><td class="td-desc">31 이상</td><td class="td-desc">60000</td></tr>
+<tr><td class="td-desc">시니어 말</td><td class="td-desc">51 이상</td><td class="td-desc">120000</td></tr>
+</tr></table>
+<br>
+<br>
+<a target="_blank" href="https://gall.dcinside.com/umamusu/1828095">말딸갤 뉴트랙 서폿풀 (무소과금 기준)</a><br>
+<a target="_blank" href="https://gall.dcinside.com/umamusu/1997864">말딸갤 뉴트랙 정보글 모음</a><br>
+`;
+
+
+
+
+
 
 const TIP14_DESC = `
 [기본 정보]<br>
