@@ -605,8 +605,17 @@ let items = [
 		descImg: null,
 		desc: TIP21_DESC,
 	},
-
-
+	{	type: 'tip', id: 'tip_22', score: 0, fix: true,
+	createDate: "2023-06-16",
+	titleStyle: null,
+	hiddenTag: null,
+	character: null,
+	title: "[알림] 우마무스메 HELPER는 이제부터 이벤트 선택지만 업데이트 할 예정",
+	descImg: null,
+	desc: `우마 어시스턴트(<a target="_blank" href="https://play.google.com/store/apps/details?id=com.assistant.uma">구글 플레이</a>) 앱 업데이트로 웬만한 정보는 다 들어있는 걸 확인하여 주인장은 앞으로 우마 어시스턴트를 쓸 예정입니다.<br>
+	그래도 아직 선택지가 완벽하게 다 있는 건 아닌 것 같아서 보조용으로 우마무스메 HELPER 갱신 매크로는 가끔 돌려줄 거임.<br>
+	ㅂ2ㅂ2`,
+	},
 
 
 	{	type: 'tip', id: 'tip_14', score: 0, fix: false,
