@@ -589,10 +589,10 @@ const TIP20_DESC = `
 const TIP21_DESC = `
 [뉴트랙 레이스 족보]<br>
 ※ 레이스 보너스, 스킬 힌트, 칭호로 얻는 보너스 스탯 등의 효율을 최대화하는 루트임.<br>
-<a target="_blank" href="https://gall.dcinside.com/mgallery/board/view/?id=umamusu&no=2036494">말딸갤 뉴트랙 출주표 정리</a><br>
+<a target="_blank" href="https://gall.dcinside.com/mgallery/board/view/?id=umamusu&no=2036494">말딸갤: 뉴트랙 출주표 정리</a><br>
 <br>
 [상점 아이템의 가치]<br>
-<a target="_blank" href="https://www.inven.co.kr/webzine/news/?news=285622&site=uma">인벤 상점 아이템 공략</a><br>
+<a target="_blank" href="https://www.inven.co.kr/webzine/news/?news=285622&site=uma">인벤: 상점 아이템 공략</a><br>
 ※ 요약하자면 다음과 같다.<br>
 1. 체력 회복 아이템, 스탯 증가 아이템, 트레이닝 효율 상승 아이템, 훈련 Lv을 높여주는 탄원서가 육성의 핵심이다. 괜찮은 조건의 훈련이 가능할 때, 메가폰과 앵클을 중첩 사용하여 최대한 많은 스탯을 얻어야 한다.<br>
 2. 레이스 효율 상승 아이템은 G1 레이스 위주로, 팬 수 증가 아이템은 G1 중에서도 획득 팬 수가 많은 레이스 위주로 사용한다.<br>
@@ -617,8 +617,12 @@ const TIP21_DESC = `
 </tr></table>
 <br>
 <br>
-<a target="_blank" href="https://gall.dcinside.com/umamusu/1828095">말딸갤 뉴트랙 서폿풀 (무소과금 기준)</a><br>
-<a target="_blank" href="https://gall.dcinside.com/umamusu/1997864">말딸갤 뉴트랙 정보글 모음</a><br>
+<a target="_blank" href="https://gall.dcinside.com/umamusme/953929">말딸갤: 뉴트랙 시나리오 시스템과 운영법 v1.1</a><br>
+<a target="_blank" href="https://gall.dcinside.com/umamusu/1828095">말딸갤: 뉴트랙 서폿풀 (무소과금 기준)</a><br>
+<a target="_blank" href="https://gall.dcinside.com/umamusu/2054848">말딸갤: 다시 써보는 뉴트랙 서폿 편성 (무소과금편)</a></br>
+<a target="_blank" href="https://gall.dcinside.com/umamusu/2055884">말딸갤: 근성 카드의 분류</a></br>
+<br>
+<a target="_blank" href="https://gall.dcinside.com/umamusu/1997864">말딸갤: 뉴트랙 정보글 모음</a><br>
 `;
 
 
