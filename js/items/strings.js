@@ -625,24 +625,65 @@ const TIP21_DESC = `
 <a target="_blank" href="https://gall.dcinside.com/umamusu/1997864">말딸갤: 뉴트랙 정보글 모음</a><br>
 `;
 
+const TIP23_DESC = `
+<table class="desc-table">
+<tr><td class="td-label">칭호명</td><td class="td-label">조건Lv</td><td class="td-label">보상</td></tr>
+<tr><td class="td-desc"><span style="color:#decf00">레전드 우마무스메</span></td><td class="td-desc">카리스마 우마무스메, 히로인 우마무스메 중 하나를 달성하고 봄의 패자 및 가을의 패자를 달성</td><td class="td-desc">${skill(200512)}</td></tr>
+<tr><td class="td-desc"><span style="color:#decf00">신속 마일러</span></td><td class="td-desc">NHK 마일컵, 벚꽃상, 야스다 기념, 빅토리아 마일, 마일 CS에서 우승하고 한신JF, 아사히배FS 중 하나 우승</td><td class="td-desc">${skill(201032)}</td></tr>
+<tr><td class="td-desc"><span style="color:#decf00">고속 마일러</span></td><td class="td-desc">NHK 마일컵, 야스다 기념, 마일 CS에서 승리</td><td class="td-desc">랜덤한 스탯 2종+15</td></tr>
+<tr><td class="td-desc"><span style="color:#decf00">베스트 우마무스메</span></td><td class="td-desc">카리스마 우마무스메를 달성하고 텐노상(봄), 타카라즈카 기념, 재팬컵, 텐노상(가을), 오사카배, 아리마 기념 중에서 2회 우승</td><td class="td-desc">랜덤한 스탯 2종+15</td></tr>
+<tr><td class="td-desc"><span style="color:#decf00">원더풀 우마무스메</span></td><td class="td-desc">카리스마 우마무스메를 달성하고 재팬컵(클래식급), 아리마 기념(클래식급) 중 하나를 우승</td><td class="td-desc">랜덤한 스탯 2종+15</td></tr>
+<tr><td class="td-desc"><span style="color:#decf00">퀸 우마무스메</span></td><td class="td-desc">히로인 우마무스메를 달성하고 빅토리아 마일, 한신JF를 우승하고 엘리자베스 여왕배를 2연패</td><td class="td-desc">랜덤한 스탯 2종+15</td></tr>
+<tr><td class="td-desc"><span style="color:#decf00">프린세스 우마무스메</span></td><td class="td-desc">히로인 우마무스메를 달성하고, 엘리자배스 여왕배(클래식급)에서 우승</td><td class="td-desc">랜덤한 스탯 2종+10</td></tr>
+<tr><td class="td-desc"><span style="color:#decf00">더트 G1 패자</span></td><td class="td-desc">더트 G1 레이스 9회 우승</td><td class="td-desc">${skill(201672)}</td></tr>
+<tr><td class="td-desc"><span style="color:#decf00">더트 달인</span></td><td class="td-desc">더트 레이스에서 15회 우승</td><td class="td-desc">랜덤한 스탯 2종+10</td></tr>
 
+<tr><td class="td-desc"><span style="color:#8f8f8f">카리스마 우마우스메</span></td><td class="td-desc">사츠키상, 일본 더비, 국화상 우승</td><td class="td-desc">랜덤한 스탯 2종+10</td></tr>
+<tr><td class="td-desc"><span style="color:#8f8f8f">수완 스프린터</span></td><td class="td-desc">타카마츠노미야 기념, 스프린터즈 S 우승</td><td class="td-desc">랜덤한 스탯 2종+15</td></tr>
+<tr><td class="td-desc"><span style="color:#8f8f8f">히로인 우마무스메</span></td><td class="td-desc">벚꽃상, 오크스, 추화상 우승</td><td class="td-desc">랜덤한 스탯 2종+10</td></tr>
+<tr><td class="td-desc"><span style="color:#8f8f8f">광속 스프린터</span></td><td class="td-desc">타카마츠노미야 기념, 스프린터즈 S, 야스다 기념, 마일 CS 우승</td><td class="td-desc">랜덤한 스탯 2종+15</td></tr>
+<tr><td class="td-desc"><span style="color:#8f8f8f">표창패의 패자</span></td><td class="td-desc">텐노상(봄)과 텐노상(가을) 우승</td><td class="td-desc">랜덤한 스탯 2종+10</td></tr>
+<tr><td class="td-desc"><span style="color:#8f8f8f">봄의 패자</span></td><td class="td-desc">오사카배, 텐노상(봄), 타카라즈카 기념 우승</td><td class="td-desc">랜덤한 스탯 2종+10</td></tr>
+<tr><td class="td-desc"><span style="color:#8f8f8f">가을의 패자</span></td><td class="td-desc">텐노상(가을), 재팬컵, 아리마 기념 우승</td><td class="td-desc">랜덤한 스탯 2종+10</td></tr>
+<tr><td class="td-desc"><span style="color:#8f8f8f">근간거리의 패자</span></td><td class="td-desc">근간거리(마장 거리가 4의 배수) 레이스 10회 우승</td><td class="td-desc">랜덤한 스탯 2종+10</td></tr>
+<tr><td class="td-desc"><span style="color:#8f8f8f">비근간거리의 패자</span></td><td class="td-desc">비근간거리(마장 거리가 4의 배수가 아닌 경우) 레이스 10회 우승</td><td class="td-desc">랜덤한 스탯 2종+10</td></tr>
+<tr><td class="td-desc"><span style="color:#8f8f8f">귀여운 우마무스메</span></td><td class="td-desc">'우마무스메 스테이크스' 이름이 들어간 레이스를 3회 우승</td><td class="td-desc">랜덤한 스탯 2종+5</td></tr>
+<tr><td class="td-desc"><span style="color:#8f8f8f">월드 우마무스메</span></td><td class="td-desc">이름에 나라 이름이 들어간 레이스 3회 우승 (아메리카JCC, 재팬컵 등)</td><td class="td-desc">랜덤한 스탯 2종+5</td></tr>
+<tr><td class="td-desc"><span style="color:#8f8f8f">주니어 우마무스메</span></td><td class="td-desc">'주니어 스테이크스' 이름이 붙은 레이스 3회 우승</td><td class="td-desc">랜덤한 스탯 2종+5</td></tr>
+<tr><td class="td-desc"><span style="color:#8f8f8f">명인 우마무스메</span></td><td class="td-desc">잔디의 단거리, 마일, 중거리, 장거리 레이스에서 각각 1회 우승</td><td class="td-desc">랜덤한 스탯 2종+5</td></tr>
+<tr><td class="td-desc"><span style="color:#8f8f8f">달인 우마무스메</span></td><td class="td-desc">더트의 단거리, 마일, 중거리 레이스에서 각각 1회 우승</td><td class="td-desc">랜덤한 스탯 2종+5</td></tr>
+<tr><td class="td-desc"><span style="color:#8f8f8f">더트 G1 제왕</span></td><td class="td-desc">더트 G1 레이스 5회 우승</td><td class="td-desc">랜덤한 스탯 2종+15</td></tr>
+<tr><td class="td-desc"><span style="color:#8f8f8f">더트 G1 괴물</span></td><td class="td-desc">더트 G1 레이스 4회 우승</td><td class="td-desc">랜덤한 스탯 2종+10</td></tr>
+<tr><td class="td-desc"><span style="color:#8f8f8f">더트 G1 강자</span></td><td class="td-desc">더트 G1 레이스 3회 우승</td><td class="td-desc">랜덤한 스탯 2종+10</td></tr>
+<tr><td class="td-desc"><span style="color:#8f8f8f">더트 전문가</span></td><td class="td-desc">더트 레이스 10회 우승</td><td class="td-desc">랜덤한 스탯 2종+10</td></tr>
+<tr><td class="td-desc"><span style="color:#8f8f8f">더트 고수</span></td><td class="td-desc">더트 레이스 5회 우승</td><td class="td-desc">랜덤한 스탯 2종+5</td></tr>
+<tr><td class="td-desc"><span style="color:#8f8f8f">더트 스프린터</span></td><td class="td-desc">JBC 스프린트를 2연패</td><td class="td-desc">랜덤한 스탯 2종+10</td></tr>
+<tr><td class="td-desc"><span style="color:#8f8f8f">더트의 신성</span></td><td class="td-desc">유니콘 스테이크스, 레오파드 스테이크스, 재팬 더트 더비에서 우승</td><td class="td-desc">랜덤한 스탯 2종+5</td></tr>
+
+
+
+<tr><td class="td-desc"><span style="color:#ba8f32">베테랑 우마무스메</span></td><td class="td-desc">오픈 이상의 레이스에서 10회 우승</td><td class="td-desc">랜덤한 스탯 2종+5</td></tr>
+<tr><td class="td-desc"><span style="color:#ba8f32">홋카이도 마스터</span></td><td class="td-desc">삿포로, 하코다테 개최 대상경주(=중상, G3 이상) 3회 우승</td><td class="td-desc">랜덤한 스탯 2종+5</td></tr>
+<tr><td class="td-desc"><span style="color:#ba8f32">토호쿠 마스터</span></td><td class="td-desc">후쿠시마, 니이가타, 모리오카 개최 대상경주 3회 우승</td><td class="td-desc">랜덤한 스탯 2종+5</td></tr>
+<tr><td class="td-desc"><span style="color:#ba8f32">칸토 마스터</span></td><td class="td-desc">도쿄, 나카야마, 오이, 카와사키, 후나바시 개최 대상경주 3회 우승</td><td class="td-desc">랜덤한 스탯 2종+5</td></tr>
+<tr><td class="td-desc"><span style="color:#ba8f32">서일본 마스터</span></td><td class="td-desc">츄쿄, 한신, 교토 개최 대상경주 3회 우승</td><td class="td-desc">랜덤한 스탯 2종+5</td></tr>
+<tr><td class="td-desc"><span style="color:#ba8f32">코쿠라 마스터</span></td><td class="td-desc">코쿠라 개최 대상경주 2회 우승</td><td class="td-desc">랜덤한 스탯 2종+5</td></tr>
+
+</tr></table>
+`;
 
 
 
 
 const TIP14_DESC = `
 [기본 정보]<br>
-- 2023년 6월 9일 ~ 6월 15일<br>
+- 2023년 7월 11일 ~ 7월 17일<br>
 <table class="desc-table"><tr>
 <td class="td-label">경기장</td><td class="td-label">거리</td><td class="td-label">방향</td><td class="td-label">계절</td><td class="td-label">날씨</td><td class="td-label">상태</td></tr><tr>
-<td class="td-desc">도쿄<br>더트</td><td class="td-desc">1600m<br>마일</td><td class="td-desc">좌</td><td class="td-desc">겨울</td><td class="td-desc">맑음</td><td class="td-desc">양호</td></tr></table>
-- 페브러리 스테이크스와 같은 조건.<br>
-- 종반 코너가 매우 짧고 최종 직선은 긺.<br>
-- 도주, 선입, 추입 강세.<br>
-- 더트 마장이라 파워가 중요.<br>
+<td class="td-desc">한신<br>잔디</td><td class="td-desc">3200m<br>장거리</td><td class="td-desc">우, 외측 -> 내측</td><td class="td-desc">봄</td><td class="td-desc">비</td><td class="td-desc">불량</td></tr></table>
 <br>
 [추천 스태미너]<br>
-대충 601 이상(601 이상부터 속도 보너스).<br>
+1100 이상 + 금딱힐<br>
 `
 /*
 <table class="desc-table"><tr>
@@ -659,26 +700,21 @@ const TIP14_DESC = `
 [추천 육성마]
 <table class="desc-table">
 <tr><td class="td-label">도주</td><td class="td-desc">
-<b>발렌타인 미호노 부르봉(더트 마개조)</b><br>
-<b>스마트 팔콘</b><br>
+<b>발렌타인 미호노 부르봉</b><br>
+<b>키타산 블랙</b><br>
 수영복 마루젠스키
 </td></tr>
-<tr><td class="td-label">선입</td><td class="td-desc">
-<b>오구리 캡</b><br>
-<b>아그네스 디지털</b><br>
-유곽 골드 시티
+<tr><td class="td-label">선행</td><td class="td-desc">
+<b>크리스마스 오구리 캡</b><br>
 </td></tr>
 <tr><td class="td-label">추입</td><td class="td-desc">
-<b>오구리 캡</b><br>
-<b>아그네스 디지털</b>
-</td></tr>
-<tr><td class="td-label">선행</td><td class="td-desc">
-유곽 골드 시티<br>
-엘 콘도르 파사
+<b>나리타 타이신</b><br>
+<b>타마모 크로스</b><br>
+골드 쉽
 </td></tr>
 </table>
 <br>
 [참고용 사이트]<br>
-<a target="_blank" href="https://gall.dcinside.com/mgallery/board/view/?id=umamusu&no=1922987">말딸갤 아쿠아리우스배(더트챔미) 공략글 모음집.ZIP</a><br>
-<a target="_blank" href="https://gall.dcinside.com/mgallery/board/view/?id=umamusu&no=1801037">말딸갤 아쿠아리우스배 마신표</a>
+<a target="_blank" href="https://gall.dcinside.com/umamusu/1972520">말딸갤 피스케스배 관련 공략 모음.ZIP</a><br>
+<a target="_blank" href="https://gall.dcinside.com/umamusu/2005547">피스케스배 마신표</a>
 `;

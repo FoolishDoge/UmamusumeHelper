@@ -616,17 +616,26 @@ let items = [
 	그래도 아직 선택지가 완벽하게 다 있는 건 아닌 것 같아서 보조용으로 우마무스메 HELPER 갱신 매크로는 가끔 돌려줄 거임.<br>
 	ㅂ2ㅂ2`,
 	},
-
-
-	{	type: 'tip', id: 'tip_14', score: 0, fix: false,
-	createDate: "2023-03-28",
+	{	type: 'tip', id: 'tip_23', score: 0, fix: true,
+	createDate: "2023-06-19",
 	titleStyle: null,
 	hiddenTag: null,
 	character: null,
-	title: "챔피언스미팅 아쿠아리우스배 정보",
+	title: "뉴트랙 칭호 모음",
+	descImg: null,
+	desc: TIP23_DESC,
+	},
+
+
+	{	type: 'tip', id: 'tip_14', score: 0, fix: false,
+	createDate: "2023-06-19",
+	titleStyle: null,
+	hiddenTag: null,
+	character: null,
+	title: "챔피언스미팅 피스케스배 정보",
 	descImg: null,
 	desc: TIP14_DESC,
-},
+	},
 ];
 
 
