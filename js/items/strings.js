@@ -672,6 +672,20 @@ const TIP23_DESC = `
 </tr></table>
 `;
 
+const TIP24_DESC = `
+단거리<br>
+<img src="./imgs/desc/teamrace1.png"/><br><br>
+마일<br>
+<img src="./imgs/desc/teamrace2.png"/><br><br>
+중거리<br>
+<img src="./imgs/desc/teamrace3.png"/><br><br>
+장거리<br>
+<img src="./imgs/desc/teamrace4.png"/><br><br>
+더트<br>
+<img src="./imgs/desc/teamrace5.png"/><br><br>
+`;
+
+
 
 
 

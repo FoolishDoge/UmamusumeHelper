@@ -625,6 +625,17 @@ let items = [
 	descImg: null,
 	desc: TIP23_DESC,
 	},
+	{	type: 'tip', id: 'tip_24', score: 0, fix: true,
+	createDate: "2023-07-01",
+	titleStyle: null,
+	hiddenTag: null,
+	character: null,
+	title: "팀레이스 마장 목록",
+	descImg: null,
+	desc: TIP24_DESC,
+	},
+
+
 
 
 	{	type: 'tip', id: 'tip_14', score: 0, fix: false,

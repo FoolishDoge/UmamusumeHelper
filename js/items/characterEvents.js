@@ -1,5 +1,5 @@
 // id format: eu_{charaCode}_{number}
-// current highest charaCode: 50 마치카네 탄호이저
+// current highest charaCode: 51 사토노 다이아몬드
 
 const characterEvents = [
     //골드 쉽 0_17
@@ -474,6 +474,23 @@ const characterEvents = [
     {createDate:`2023-05-17`, id:`eu_46_15`, character:`사쿠라 치요노 오`, eventType:`chara`, cardName: `[천하무쌍 · 만개한 벚꽃의 빛] 사쿠라 치요노 오`, title: `카레이스 프렌드`, choice: [`좋은 오락실 친구가 될 것 같군`, `그러면 다시 한번 대결을!`], effect: [`스피드+10`, `스태미나+10`]},
     {createDate:`2023-05-17`, id:`eu_46_16`, character:`사쿠라 치요노 오`, eventType:`chara`, cardName: `[천하무쌍 · 만개한 벚꽃의 빛] 사쿠라 치요노 오`, title: `텐노상 (가을) 후에・하늘에 손을`, choice: [`마일 노선인 『야스다 기념』`, `중거리 노선인 『타카라즈카 기념』`], effect: [`1위：<br>5개 스테이터스+3<br>스킬 Pt+45<br>시나리오에 따른 NPC의 우정도+4<br>2위：：<br>5개 스테이터스+2<br>스킬 Pt+45<br>시나리오에 따른 NPC의 우정도+4<br>3위：<br>5개 스테이터스+1<br>스킬 Pt+35~45<br>시나리오에 따른 NPC의 우정도`, `1위：<br>5개 스테이터스+3<br>스킬 Pt+45<br>시나리오에 따른 NPC의 우정도+4<br>2위：：<br>5개 스테이터스+2<br>스킬 Pt+45<br>시나리오에 따른 NPC의 우정도+4<br>3위：<br>5개 스테이터스+1<br>스킬 Pt+35~45<br>시나리오에 따른 NPC의 우정도`]},
     //사토노 다이아몬드
+    {createDate:`2023-07-01`, id:`eu_51_0`, character:`사토노 다이아몬드`, eventType:`chara`, cardName: `[Natural Brilliance] 사토노 다이아몬드`, title: `금단의 블렌드`, choice: [`그전에 기초를 배워 보는 게 어떨까?`, `맛있어질 때까지 도전하자!`], effect: [`지능+10`, `컨디션 상승+1<br>스태미나0+5`]},
+    {createDate:`2023-07-01`, id:`eu_51_1`, character:`사토노 다이아몬드`, eventType:`chara`, cardName: `[Natural Brilliance] 사토노 다이아몬드`, title: `너무나 큰마음`, choice: [`지금도 단련하기엔 충분해`, `학원에 의견을 넣어 보자!`], effect: [`파워+10<br>근성+5`, `${skill(200362)} 힌트 LV+1<br>`]},
+    {createDate:`2023-07-01`, id:`eu_51_2`, character:`사토노 다이아몬드`, eventType:`chara`, cardName: `[Natural Brilliance] 사토노 다이아몬드`, title: `단단한 다이아는 풀솜 속에`, choice: [`다이아 장식이 인상적이군`, `프릴이 인상적이군`], effect: [`근성+20`, `스태미나+20`]},
+    {createDate:`2023-07-01`, id:`eu_51_3`, character:`사토노 다이아몬드`, eventType:`chara`, cardName: `[Natural Brilliance] 사토노 다이아몬드`, title: `댄스 레슨`, choice: [`기초적인 부분을 재검토해 보자`, `아예 키타산 블랙의 노래로 춤춰 볼래?`], effect: [`스피드+10`, `파워+10`]},
+    {createDate:`2023-07-01`, id:`eu_51_4`, character:`사토노 다이아몬드`, eventType:`chara`, cardName: `[Natural Brilliance] 사토노 다이아몬드`, title: `동경을 쫓아서`, choice: [`레슨룸에 열창하러 간 게 아닐까?`, `카페테리아에서 머리를 싸매고 있을 수도`, `트레이닝 코스에서 단련하고 있을 거야!`], effect: [`근성+15<br>${skill(200742)} 힌트 LV+1<br>`, `체력+10<br>지능+10`, `파워+10<br><span class='condition-info'>훈련 능숙○</span> 획득`]},
+    {createDate:`2023-07-01`, id:`eu_51_5`, character:`사토노 다이아몬드`, eventType:`chara`, cardName: `[Natural Brilliance] 사토노 다이아몬드`, title: `동경하는 사람이 기다리는 높은 경지로`, choice: [`칼로리 오버야`, `도전해 볼까?`], effect: [`체력+10<br>스킬 Pt+5`, `성공 시 :<br>체력+30<br>스킬 Pt+10<br>실패 시 :<br>체력+30<br>스킬 Pt+10<br>스피드-5<br>파워+5<br><span class='condition-info'>살찜 주의</span> 획득`]},
+    {createDate:`2023-07-01`, id:`eu_51_6`, character:`사토노 다이아몬드`, eventType:`chara`, cardName: `[Natural Brilliance] 사토노 다이아몬드`, title: `뒷골목 어드벤처`, choice: [`자, 어서 돌아가자!`, `갑자기 말을 걸어서 죄송했다고 하자`], effect: [`지능+10`, `파워+10`]},
+    {createDate:`2023-07-01`, id:`eu_51_7`, character:`사토노 다이아몬드`, eventType:`chara`, cardName: `[Natural Brilliance] 사토노 다이아몬드`, title: `딸꾹질 SOS`, choice: [`열심히 했구나. 수고했어!`, `규모가 상상 이상이었어…`], effect: [`스태미나+10`, `스피드+10`]},
+    {createDate:`2023-07-01`, id:`eu_51_8`, character:`사토노 다이아몬드`, eventType:`chara`, cardName: `[Natural Brilliance] 사토노 다이아몬드`, title: `많은 색상 중에서`, choice: [`어른스러움을 우선한다`, `마야노 탑건에게 어울리는 걸 우선한다`], effect: [`스피드+10`, `근성+10`]},
+    {createDate:`2023-07-01`, id:`eu_51_9`, character:`사토노 다이아몬드`, eventType:`chara`, cardName: `[Natural Brilliance] 사토노 다이아몬드`, title: `사토노 가문으로서, 우마무스메로서`, choice: [`과연 사토노 가문의 일원이구나`, `자선 레이스에는 너도 참가해?`], effect: [`지능+20<br>랜덤으로 <span class='condition-info'>주목받는 신예</span> 획득`, `스태미나+10<br>파워+10<br>랜덤으로 <span class='condition-info'>주목받는 신예</span> 획득`]},
+    {createDate:`2023-07-01`, id:`eu_51_10`, character:`사토노 다이아몬드`, eventType:`chara`, cardName: `[Natural Brilliance] 사토노 다이아몬드`, title: `새해 첫 참배`, choice: [`누워서 지내기`, `복주머니 사기`, `신춘 휘호 쓰기`], effect: [`체력+30`, `5개 스테이터스+5`, `스킬 Pt+35`]},
+    {createDate:`2023-07-01`, id:`eu_51_11`, character:`사토노 다이아몬드`, eventType:`chara`, cardName: `[Natural Brilliance] 사토노 다이아몬드`, title: `스위피 5☆입단 테스트!`, choice: [`스윕 토쇼에게 배우자`, `아그네스 타키온의 도움을 받자`], effect: [`스피드+20`, `파워+15<br>스킬 Pt+15`]},
+    {createDate:`2023-07-01`, id:`eu_51_12`, character:`사토노 다이아몬드`, eventType:`chara`, cardName: `[Natural Brilliance] 사토노 다이아몬드`, title: `신년 포부`, choice: [`릴레이 경주 응원`, `떡 뿌리기 행사에서 떡 줍기`, `연날리기`], effect: [`스태미나+25`, `체력+20`, `스킬 Pt+20`]},
+    {createDate:`2023-07-01`, id:`eu_51_13`, character:`사토노 다이아몬드`, eventType:`chara`, cardName: `[Natural Brilliance] 사토노 다이아몬드`, title: `여름 합숙(2년 차)에서`, choice: [`모래 터널 만들기`, `체공 내구 풍선 배구`], effect: [`파워+10`, `근성+10`]},
+    {createDate:`2023-07-01`, id:`eu_51_14`, character:`사토노 다이아몬드`, eventType:`chara`, cardName: `[Natural Brilliance] 사토노 다이아몬드`, title: `편의점 앞에선 주의하자`, choice: [`말끔한 포장`, `구겨진 포장`], effect: [`스태미나+10`, `근성+10`]},
+    {createDate:`2023-07-01`, id:`eu_51_15`, character:`사토노 다이아몬드`, eventType:`chara`, cardName: `[Natural Brilliance] 사토노 다이아몬드`, title: `프레시!`, choice: [`뭐든지 긍정적인 게 최고!`, `그게 어떤 징크스라도 날려 버릴 수 있어?`], effect: [`스피드+10`, `스태미나+10`]},
+    {createDate:`2023-07-01`, id:`eu_51_16`, character:`사토노 다이아몬드`, eventType:`chara`, cardName: `[Natural Brilliance] 사토노 다이아몬드`, title: `하트비트 익사이트`, choice: [`마음의 준비가 아직…`, `좋아, 타자!`, `다른 모험도 찾아보지 않을래?`], effect: [`스태미나+10`, `근성+10`, `지능+10`]},
     //사토노 크라운
     //세이운 스카이 20
     {createDate:`2022-09-30`, id:`eu_20_0`, character:`세이운 스카이`, eventType:`chara`, cardName: null, title: `검증~ 고양이 언어는 존재하는가?`, choice: [`세이운 스카이의 진심도 보고 싶어.`, `먼저 기본을 가르쳐 주면?`], effect: [`스태미나+10`, `지능+10`]},

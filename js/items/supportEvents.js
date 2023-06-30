@@ -1,5 +1,5 @@
 // id format: es_{number}
-// current highest number: 486 사쿠라 바쿠신 오
+// current highest number: 502
 
 const supportEvents = [
     //골드 쉽
@@ -111,6 +111,9 @@ const supportEvents = [
     {createDate:`2023-03-10`, id:`es_420`, character:`마블러스 선데이`, eventType:`support`, cardName: `[스노우 크리스털 데이] 마블러스 선데이`, title: `① 마블러스로 안내할게☆`, choice: [`(선택지 없음)`], effect: [`스피드+5`]},
     {createDate:`2023-03-10`, id:`es_421`, character:`마블러스 선데이`, eventType:`support`, cardName: `[스노우 크리스털 데이] 마블러스 선데이`, title: `② 반짝반짝 빛나는 마블러스☆`, choice: [`피곤했나 봐…`, `다시 한번 이 눈으로 확인하고 싶어…!`], effect: [`체력+10<br>마블러스 선데이의 우정도+5`, `마블러스 선데이의 우정도+5<br>${skill(200222)} 힌트 LV+2`]},
     {createDate:`2023-03-10`, id:`es_422`, character:`마블러스 선데이`, eventType:`support`, cardName: `[스노우 크리스털 데이] 마블러스 선데이`, title: `③ 백은의 마블러스☆`, choice: [`(선택지 없음)`], effect: [`성공 시 :<br>스피드+5<br>스킬 Pt+10<br>${skill(200591)} 힌트 LV+3마블러스 선데이의 우정도+5<br>실패 시 :<br>스피드+5<br>스킬 Pt+10<br>${skill(200592)} 힌트 LV+3마블러스 선데이의 우정도+5`]},
+    {createDate:`2023-07-01`, id:`es_496`, character:`마블러스 선데이`, eventType:`support`, cardName: `[세계에 더욱☆마블러스] 마블러스 선데이`, title: `① 마블러스☆다이브!!`, choice: [`너무 무모한 행동은 하지 마`, `몸은 괜찮아?`], effect: [`지능+10<br>스킬 Pt+10<br>마블러스 선데이와의 우정도+5`, `체력-10<br>근성+25<br>마블러스 선데이와의 우정도+5`]},
+    {createDate:`2023-07-01`, id:`es_497`, character:`마블러스 선데이`, eventType:`support`, cardName: `[세계에 더욱☆마블러스] 마블러스 선데이`, title: `② 마블러스☆스쿨!!`, choice: [`(선택지 없음)`], effect: [`스킬 Pt+30<br>마블러스 선데이와의 우정도+5`]},
+    {createDate:`2023-07-01`, id:`es_498`, character:`마블러스 선데이`, eventType:`support`, cardName: `[세계에 더욱☆마블러스] 마블러스 선데이`, title: `③ 마블러스☆빅토리!!`, choice: [`(선택지 없음)`], effect: [`체력-10<br>근성+10<br>지능+10<br>스킬 Pt+20<br>${skill(200761)} 힌트 LV+3<br>마블러스 선데이와의 우정도+5`]},
     //마야노 탑건
     {createDate:`2022-08-13`, id:`es_76`, character:`마야노 탑건`, eventType:`support`, cardName: null, title: `마야노식 간식 회의!`, choice: [`새로운 맛에 도전!`, `확실한 게 제일!`], effect: [`스태미나+5<br>근성+5<br>마야노 탑건의 우정도+5`, `스태미나+10<br>마야노 탑건의 우정도+5`]},
     {createDate:`2022-08-13`, id:`es_77`, character:`마야노 탑건`, eventType:`support`, cardName: null, title: `마야노식 패션 회의!`, choice: [`최신 유행의 센스 극강 코디!`, `움직이기 편한 기능성 코디!`], effect: [`마야노 탑건의 우정도+5<br>${skill(200362)} 힌트 LV+1`, `스태미나+10<br>마야노 탑건의 우정도+5`]},
@@ -452,6 +455,8 @@ const supportEvents = [
     {createDate:`2023-02-08`, id:`es_305`, character:`카렌짱`, eventType:`support`, cardName: `[사랑스러운 그대, 귀여운 그대] 카렌짱`, title: `① #카렌의_가능성`, choice: [`그렇지 않아`, `으음….`], effect: [`성공 시 :<br>스피드+10<br>지능+10<br>카렌짱의 우정도+5<br>${skill(201022)} 힌트 LV+1실패 시 :<br>스피드+5<br>지능+5<br>카렌짱의 우정도+5`, `체력+30<br>연속 이벤트 종료<br>${skill(201661)} 힌트 LV+1`]},
     {createDate:`2023-02-08`, id:`es_306`, character:`카렌짱`, eventType:`support`, cardName: `[사랑스러운 그대, 귀여운 그대] 카렌짱`, title: `② #카렌의_의문`, choice: [`(선택지 없음)`], effect: [`지능+10`]},
     {createDate:`2023-02-08`, id:`es_307`, character:`카렌짱`, eventType:`support`, cardName: `[사랑스러운 그대, 귀여운 그대] 카렌짱`, title: `③ #카렌답게`, choice: [`(선택지 없음)`], effect: [`성공 시 :<br>지능+10<br>스킬 Pt+20<br>${skill(201001)} 힌트 LV+3카렌짱의 우정도+5<br>실패 시 :<br>지능+5<br>스킬 Pt+10<br>${skill(201002)} 힌트 LV+3카렌짱의 우정도+5`]},
+    {createDate:`2023-07-01`, id:`es_501`, character:`카렌짱`, eventType:`support`, cardName: `[안심♪꼬옥 메모리] 카렌짱`, title: `① #Curren찾았다`, choice: [`팬을 소중히 여기는구나`, `쇼핑도 제대로 못 했는데, 괜찮아?`], effect: [`스피드+20<br>카렌짱과의 우정도+5`, `스킬 Pt+10<br>${skill(201332)} 힌트 LV+1<br>카렌짱과의 우정도+5`]},
+    {createDate:`2023-07-01`, id:`es_502`, character:`카렌짱`, eventType:`support`, cardName: `[안심♪꼬옥 메모리] 카렌짱`, title: `② #푹신푹신귀여워`, choice: [`(선택지 없음)`], effect: [`${skill(200972)} 힌트 LV+1<br>카렌짱과의 우정도+5`]},
     //카시모토 리코
     {createDate:`2022-12-19`, id:`es_308`, character:`카시모토 리코`, eventType:`support`,  cardName: null, title: `① 노래에는 마음을 싣고`, choice: [`(선택지 없음)`], effect: [`체력+25<br>컨디션 상승<br>스태미나+10<br>카시모토 리코의 우정도+5<br>※ 서포트 효과에 따라 수치 변동`]},
     {createDate:`2022-12-19`, id:`es_309`, character:`카시모토 리코`, eventType:`support`,  cardName: null, title: `② 잠깐의 휴식을`, choice: [`(선택지 없음)`], effect: [`체력+20<br>컨디션 상승<br>스태미나+10<br>근성+10<br>카시모토 리코의 우정도+5<br>※ 서포트 효과에 따라 수치 변동`]},
