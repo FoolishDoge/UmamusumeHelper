@@ -730,5 +730,11 @@ const TIP14_DESC = `
 <br>
 [참고용 사이트]<br>
 <a target="_blank" href="https://gall.dcinside.com/umamusu/1972520">말딸갤 피스케스배 관련 공략 모음.ZIP</a><br>
-<a target="_blank" href="https://gall.dcinside.com/umamusu/2005547">피스케스배 마신표</a>
+<a target="_blank" href="https://gall.dcinside.com/umamusu/2005547">피스케스배 마신표</a><br>
+<br>
+<a target="_blank" href="http://race.wf-calc.net/">(일본어) 레이스 시뮬레이터</a><br>
+<a target="_blank" href="http://dfset.me/maumau/">레이스 플래너</a><br>
+<a target="_blank" href="https://gametora.com/ko/umamusume/compatibility">상성 계산기</a><br>
+<a target="_blank" href="https://uma.inven.co.kr/dataninfo/friends/">인벤 친구찾기</a><br>
+<a target="_blank" href="https://m.inven.co.kr/uma/compare/">인벤 서포트 비교</a>
 `;
