@@ -729,13 +729,14 @@ const TIP25_DESC = `
 
 const TIP14_DESC = `
 [기본 정보]<br>
-- 2023년 7월 11일 ~ 7월 17일<br>
+- 2023년 8월 11일 ~ 8월 17일<br>
 <table class="desc-table"><tr>
 <td class="td-label">경기장</td><td class="td-label">거리</td><td class="td-label">방향</td><td class="td-label">계절</td><td class="td-label">날씨</td><td class="td-label">상태</td></tr><tr>
-<td class="td-desc">한신<br>잔디</td><td class="td-desc">3200m<br>장거리</td><td class="td-desc">우, 외측 -> 내측</td><td class="td-desc">봄</td><td class="td-desc">비</td><td class="td-desc">불량</td></tr></table>
+<td class="td-desc">나카야마<br>잔디</td><td class="td-desc">2000m<br>중거리</td><td class="td-desc">우, 내측</td><td class="td-desc">봄</td><td class="td-desc">맑음</td><td class="td-desc">양호</td></tr></table>
 <br>
 [추천 스태미너]<br>
-1100 이상 + 금딱힐<br>
+약 700<br>
+은딱힐 3~4개 단 클구리는 600 밑으로도 가능<br>
 `
 /*
 <table class="desc-table"><tr>
@@ -753,22 +754,31 @@ const TIP14_DESC = `
 <table class="desc-table">
 <tr><td class="td-label">도주</td><td class="td-desc">
 <b>발렌타인 미호노 부르봉</b><br>
-<b>키타산 블랙</b><br>
 수영복 마루젠스키
 </td></tr>
 <tr><td class="td-label">선행</td><td class="td-desc">
 <b>크리스마스 오구리 캡</b><br>
 </td></tr>
-<tr><td class="td-label">추입</td><td class="td-desc">
-<b>나리타 타이신</b><br>
-<b>타마모 크로스</b><br>
-골드 쉽
+<tr><td class="td-label">선입</td><td class="td-desc">
+메지로 도베르
+</td></tr>
+</table>
+<br>
+[육성시 참고사항]<br>
+- ${skill(200491)} 중요<br>
+<table class="desc-table">
+<tr><td class="td-label">클구리<br>접속용<br>회복기</td>
+<td class="td-desc">
+1. ${skill(200352)} 또는 ${skill(201142)}<br>
+2. ${skill(201352)}<br>
+3. ${skill(900321)}<br>
+4. ${skill(201571)}
 </td></tr>
 </table>
 <br>
 [참고용 사이트]<br>
-<a target="_blank" href="https://gall.dcinside.com/umamusu/1972520">말딸갤 피스케스배 관련 공략 모음.ZIP</a><br>
-<a target="_blank" href="https://gall.dcinside.com/umamusu/2005547">피스케스배 마신표</a><br>
+<a target="_blank" href="https://gall.dcinside.com/umamusu/2155110">말딸갤 공략 모음.ZIP</a><br>
+<a target="_blank" href="https://gall.dcinside.com/umamusu/2113724">마신표</a><br>
 <br>
 <a target="_blank" href="http://race.wf-calc.net/">(일본어) 레이스 시뮬레이터</a><br>
 <a target="_blank" href="http://dfset.me/maumau/">레이스 플래너</a><br>
