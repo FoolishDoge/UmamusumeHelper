@@ -647,11 +647,11 @@ let items = [
 
 
 	{	type: 'tip', id: 'tip_14', score: 0, fix: false,
-	createDate: "2023-07-18",
+	createDate: "2023-08-27",
 	titleStyle: null,
 	hiddenTag: null,
 	character: null,
-	title: "챔피언스미팅 아리에스배 정보",
+	title: "챔피언스미팅 타우러스배 정보",
 	descImg: null,
 	desc: TIP14_DESC,
 	},
